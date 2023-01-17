@@ -1,0 +1,82 @@
+<!-- min-570  -->
+    <!-- featured-collection strat -->
+    <section class="featured-collection-area">
+        <div class="x-container">
+            <div class="featured-collection-title">
+                <h3>{{ section.settings.section_title }}</h3>
+            </div>
+            <div class="featured-collection-wraper">
+                {% for block in section.blocks %}
+                <div class="featured-collection-items">
+                    <img src="{{ block.settings.collection_image | img_url: 'master' }}" alt="">
+                    <div class="featured-collection-item-text">
+                        <h5>{{ block.settings.collection_title }}</h5>
+                        <p>{{ block.settings.collection_subtitle }}</p>
+                        <a class="featured-collection-btn" href="{{ block.settings.collection_cta_url }}">{{ block.settings.collection_cta_title }}</a>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+    <!-- featured-collection end -->
+<!-- justin-area end -->
+{% schema %}
+    {
+      "name": "Feature Collections",
+      "settings": [
+        {
+          "type": "text",
+          "id": "section_title",
+          "label": "Section Title"
+        }
+      ],
+      "blocks": [
+      {
+        "name": "Feature Collections",
+        "type": "slide",
+        "settings": [
+            {
+          "type": "image_picker",
+          "id": "collection_image",
+          "label": "Upload Image"
+        },
+        {
+          "type": "text",
+          "id": "collection_title",
+          "label": "Collection Title"
+        },
+        {
+          "type": "text",
+          "id": "collection_subtitle",
+          "label": "Collection Sub Title"
+        },
+        {
+          "type": "text",
+          "id": "collection_cta_title",
+          "label": "Collection Button Title",
+          "default": "Shop Now"
+        },
+        {
+          "type": "url",
+          "id": "collection_cta_url",
+          "label": "Collection CTA URL"
+        }
+        ]
+      }
+    ],
+    "presets": [
+    {
+      "name": "Feature Collections",
+      "category": "section"
+    }
+  ]
+    }
+  {% endschema %}
+  
+  {% stylesheet %}
+  
+  {% endstylesheet %}
+  
+  {% javascript %}
+  {% endjavascript %}

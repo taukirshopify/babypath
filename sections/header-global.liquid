@@ -1,0 +1,272 @@
+<!-- header area strat -->
+<header class="fast-header-area">
+  <div class="container">
+    <div class="fast-header-item">
+      <div class="main-logo">
+        <a class="logo" href="{{ routes.root_url }}"><img src="{{ section.settings.header_logo_desktop | img_url: 'master' }}" alt="Logo"></a>
+        <a class="logo-991" href="{{ routes.root_url }}"><img src="{{ section.settings.header_logo_mobile | img_url: 'master' }}" alt="Logo"></a>
+      </div>
+      <div class="fast-mobile-menu">
+        <ul class="fast-header-menu">
+          {% for link in section.settings.header_menu.links %}
+            <li class="menu-link">
+              <a href="{{ link.url }}" class="menu-item">{{ link.title }}</a>
+
+              {% if link.links.size > 0 %}
+                <ul class="dropdown-pges-ul dropdown-menu menu dropdown-child">
+                  {% for child_link in link.links %}
+                    <li class="menu-link">
+                      <a href="{{ child_link.url }}">{{ child_link.title }}</a>
+
+                      {% if child_link.links.size > 0 %}
+                        <ul class="menu dropdown-grandchild">
+                          {% for grandchild_link in child_link.links %}
+                            <li class="menu-link">
+                              <a href="{{ grandchild_link.url }}">{{ grandchild_link.title }}</a>
+                            </li>
+                          {% endfor %}
+                        </ul>
+                      {% endif %}
+                    </li>
+                  {% endfor %}
+                </ul>
+              {% endif %}
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+      <ul class="header-sigin-btn">
+        <li class="currency-switcher-li">
+          <div class="currency-switcher">
+            <div class="dropdown">
+              <div class="caption">
+                <div class="n-flag">
+                  <img src="{{'flag.svg' | asset_url  }}" alt="">
+                </div>
+                USA
+              </div>
+              <div class="list">
+                <div class="item selected" data-item="RUB">
+                  <div class="n-flag">
+                    <img src="{{'flag.svg' | asset_url  }}" alt="">
+                  </div>
+                  USA
+                </div>
+                <div class="item" data-item="RUB">
+                  <div class="n-flag">
+                    <img src="{{'flag.svg' | asset_url  }}" alt="">
+                  </div>
+                  Россия
+                  <!-- <span>RUB</span> -->
+                </div>
+                <div class="item" data-item="UAH">
+                  <div class="n-flag">
+                    <img src="{{'flag.svg' | asset_url  }}" alt="">
+                  </div>
+                  Украина
+                  <!-- <span>UAH</span> -->
+                </div>
+                <div class="item" data-item="USD">
+                  <div class="n-flag">
+                    <img src="{{'flag.svg' | asset_url  }}" alt="">
+                  </div>
+                  Россия
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="search-option">
+            <!-- Search elament -->
+            <div class="navigation-bar">
+              <button type="button" class="simple-icon searchBoxToggler">
+                <img src="{{'Search.svg' | asset_url  }}" alt="search">
+              </button>
+            </div>
+
+          </div>
+        </li>
+        <li class="header-user-991">
+          <a href="/account"><img src="{{'Profile.svg' | asset_url  }}" alt="My account"></a>
+        </li>
+        <li class="header-bag-991">
+          <a id="cartDrawyerOpener"><img src="{{'shopping.svg' | asset_url  }}" alt="My cart"></a>
+        </li>
+      </ul>
+      <div class="header-r-991">
+        <ul>
+          <li class="header-bag-991">
+            <a id="cartDrawyerOpener"><img src="{{'Shopping2.svg' | asset_url  }}" alt="My cart"></a>
+          </li>
+        </ul>
+        <button class="menu-oparetor sidebar-menu" id="menu-opener">
+          {% render 'MenuBar-svg' %}
+        </button>
+      </div>
+    </div>
+  </div>
+</header>
+<!-- header area end -->
+
+
+<div class="sidebar-menus">
+  <div class="container">
+    <div class="remove-one">
+      <img src="{{ 'remove.svg' | asset_url }}">
+    </div>
+    <div class="header-menu-item mobile-menu">
+      <ul>
+
+
+        {% for link in section.settings.header_menu.links %}
+
+
+
+          <li class="dropdown">
+            <a href="{{ link.url }}">{{ link.title }}</a>
+            {% if link.links.size > 0 %}
+              <ul>
+                {% for child_link in link.links %}
+                  <li class="dropdown">
+                    <a class="featured" href="{{ child_link.url }}">{{ child_link.title }}</a>
+                    {% if child_link.links.size > 0 %}
+                      <ul>
+                        {% for grandchild_link in child_link.links %}
+                          <li>
+                            <a href="{{ grandchild_link.url }})">{{ grandchild_link.title }}</a>
+                          </li>
+                        {% endfor %}
+                      </ul>
+                      <div class="dropdown-btn">
+
+
+                        <div class="menu-plus">
+                          {% render 'plus-svg' %}
+                        </div>
+                        <div class="menu-minous">
+                          {% render 'minus-svg' %}
+
+                        </div>
+
+                      </div>
+                    {% endif %}
+                  </li>
+
+
+                {% endfor %}
+              </ul>
+              <div class="dropdown-btn">
+
+
+                <div class="menu-plus">
+                  {% render 'plus-svg' %}
+                </div>
+                <div class="menu-minous">
+
+
+                  {% render 'minus-svg' %}
+
+                </div>
+
+              </div>
+            {% endif %}
+          </li>
+
+
+        {% endfor %}
+
+
+      </ul>
+    </div>
+    <div class="mobile-menu-logins">
+      <a href="/account">login</a>
+      <p>currency:<span>{{ cart.currency.symbol }}</span>
+      </p>
+      <p class="d-flex align-items-center" id="cartDrawyerOpener">shopping Bag
+        <span>
+          <img src="{{ 'Shoppingbagblack.svg' | asset_url }}">
+        </span>
+      </p>
+    </div>
+    <ul class="cl-start-wrap help-571 mm-help">
+      <li class="cl-item f-help-m">
+        <div class="cl-label-wrap">
+          <span class="cl-label-title">HELP</span>
+        </div>
+        <ul class="ftps-ul header_mobile_url">
+          <li class="cl-item cl-item-no-sub">
+            <div class="cl-label-wrap">
+              {% for link in section.settings.header_privacy_menu.links %}
+                <a href="{{ link.url }}">{{ link.title }}</a>
+              {% endfor %}
+
+            </div>
+          </li>
+        </ul>
+      </li>
+      <li class="cl-item f-help-m">
+        <div class="cl-label-wrap">
+          <span class="cl-label-title">MORE</span>
+        </div>
+        <ul class="ftps-ul header_mobile_url">
+          <li class="cl-item cl-item-no-sub">
+            <div class="cl-label-wrap">
+              {% for link in section.settings.header_second_menu.links %}
+                <a href="{{ link.url }}">{{ link.title }}</a>
+              {% endfor %}
+            </div>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</div>
+
+
+{% schema %}
+  {
+    "name": "Header Global",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "header_logo_desktop",
+        "label": "Desktop Logo"
+      },
+      {
+        "type": "image_picker",
+        "id": "header_logo_mobile",
+        "label": "Mobile Logo"
+      },
+      {
+        "type": "link_list",
+        "id": "header_menu",
+        "label": "Header Menu"
+      },
+      {
+        "type": "link_list",
+        "id": "header_second_menu",
+        "label": "Header Mobile Second Menu"
+      }, {
+        "type": "link_list",
+        "id": "header_privacy_menu",
+        "label": "Header Mobile Privacy Menu"
+      }
+    ]
+  }
+{% endschema %}
+
+
+
+<style>
+
+  .minous .menu-plus {
+    display: none;
+  }
+  .minous .menu-plus {
+    display: none;
+  }
+  button#menu-opener {
+    border: none;
+  }
+</style>

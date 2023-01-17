@@ -1,0 +1,71 @@
+<!-- min-570  -->
+    <!-- featured-collection strat -->
+    <section class="featured-collection-area alternative-collection-area">
+        <div class="x-container">
+            <div class="featured-collection-title text-center">
+                <h3>{{ section.settings.section_title }}</h3>
+            </div>
+            <div class="featured-collection-wraper alternative-collection-grid">
+                {% for block in section.blocks %}
+                <div class="featured-collection-items">
+                    <div class="featured-collection-item-text">
+                        <a class="featured-collection-btn" href="{{ block.settings.collection_cta_url }}">
+                            <img src="{{ block.settings.collection_image | img_url: 'master' }}" alt="">
+                            <p>{{ block.settings.collection_title }}</p>
+                        </a>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+    <!-- featured-collection end -->
+<!-- justin-area end -->
+{% schema %}
+    {
+      "name": "Alternative Collections",
+      "settings": [
+        {
+          "type": "text",
+          "id": "section_title",
+          "label": "Section Title"
+        }
+      ],
+      "blocks": [
+      {
+        "name": "Alternative Collections",
+        "type": "slide",
+        "settings": [
+            {
+          "type": "image_picker",
+          "id": "collection_image",
+          "label": "Upload Image"
+        },
+        {
+          "type": "text",
+          "id": "collection_title",
+          "label": "Collection Title"
+        },
+        {
+          "type": "url",
+          "id": "collection_cta_url",
+          "label": "Collection CTA URL"
+        }
+        ]
+      }
+    ],
+    "presets": [
+    {
+      "name": "Alternative Collections",
+      "category": "section"
+    }
+  ]
+    }
+  {% endschema %}
+  
+  {% stylesheet %}
+  
+  {% endstylesheet %}
+  
+  {% javascript %}
+  {% endjavascript %}

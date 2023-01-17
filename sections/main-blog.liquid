@@ -1,0 +1,448 @@
+{{ 'component-article-card.css' | asset_url | stylesheet_tag }}
+{{ 'component-card.css' | asset_url | stylesheet_tag }}
+{{ 'section-main-blog.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+
+
+
+  <section class="space overflow-hidden splide " id="first-slider">
+    <div class="container ot-container">
+          <div class="row align-items-center" >
+    
+          <div class="col-8" >
+     
+                  <h2 class="page-title">{{ blog.title }}</h2>
+     
+          </div>
+          <div class="col-4">
+
+            <div class="splide__arrows splide__arrows--ltr d-flex justify-content-end position-relative ">
+                <button
+                class="splide__arrow splide__arrow--prev"
+                type="button"
+                aria-label="Previous slide"
+                aria-controls="splide01-track"
+                >
+                <div class="svg-arrow">
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="32" height="32" viewBox="0 0 32 32">
+                        <title>gallery-next15x</title>
+                        <path fill="none" stroke="#000" stroke-width="1.8" stroke-miterlimit="4" stroke-linecap="butt" stroke-linejoin="miter" d="M9.75 4.010l12.51 12.51-12.48 12.47"/>
+                        </svg>
+                </div>
+
+                </button>
+                <button
+                class="splide__arrow splide__arrow--next "
+                type="button"
+                aria-label="Next slide"
+                aria-controls="splide01-track"
+                >
+                    <div class="svg-arrow-right">
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="32" height="32" viewBox="0 0 32 32">
+                        <title>gallery-next15x</title>
+                        <path fill="none" stroke="#000" stroke-width="1.8" stroke-miterlimit="4" stroke-linecap="butt" stroke-linejoin="miter" d="M9.75 4.010l12.51 12.51-12.48 12.47"/>
+                        </svg>
+                </div>
+                </button>
+            </div>
+        </div>
+  
+
+        {% if section.settings.p != blank %}
+        <h3 class="h5 sec-title">{{ section.settings.p }}</h3>
+
+      {% endif %}
+      
+      <div class="splide__track">
+        <ul class="splide__list">
+          {%- for article in blog.articles -%}
+            <div class="splide__slide">
+                <div class="blog-featured">
+              <a href="{{ article.url }}">
+                    <div class="blog-img">
+
+                      <img
+                        srcset="{% if article.image.width >= 350 %}{{ article.image | image_url: width: 350 }} 350w,{% endif %}
+                          {% if article.image.width >= 750 %}{{ article.image | image_url: width: 750 }} 750w,{% endif %}
+                          {% if article.image.width >= 1100 %}{{ article.image | image_url: width: 1100 }} 1100w,{% endif %}
+                          {% if article.image.width >= 1500 %}{{ article.image | image_url: width: 1500 }} 1500w,{% endif %}
+                          {% if article.image.width >= 2200 %}{{ article.image | image_url: width: 2200 }} 2200w,{% endif %}
+                          {% if article.image.width >= 3000 %}{{ article.image | image_url: width: 3000 }} 3000w,{% endif %}
+                          {{ article.image | image_url }} {{ article.image.width }}w"
+                        sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 }}px, (min-width: 750px) calc(100vw - 10rem), 100vw"
+                        src="{{ article.image | image_url: width: 1100 }}"
+                        loading="eager"
+                        width="{{ article.image.width }}"
+                        height="{{ article.image.height }}"
+                        alt="{{ article.image.alt | escape }}">
+                    </div>
+                  </a>
+                    <h3 class="blog-title"><a href="{{ article.url }}">{{ article.title }}</a></h3>
+                    <p class="blog-text">{{ article.content | truncate: 80 }}</p>
+                </div>
+            </div>
+          {%- endfor -%}
+        </ul>
+      </div>
+
+    </div>
+</section>
+
+
+
+
+<script>
+
+  document.addEventListener( 'DOMContentLoaded', function () {
+    new Splide('#first-slider', {
+
+      perPage: 1.5,
+      focus: 'center',
+      autoplay: false,
+      interval: 8000,
+      flickMaxPages: 1,
+      updateOnMove: true,
+      pagination: false,
+
+      throttle: 300,
+      breakpoints: {
+
+      }
+    }).mount();
+  });
+  
+</script>
+
+{% schema %}
+{
+  "name": "t:sections.main-blog.name",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Section title",
+      "default": "Aka NEWS",
+      "placeholder": "Aka NEWS"
+    },
+    {
+      "type": "text",
+      "id": "p",
+      "label": "Section sub title",
+      "default": "WITH OVER 2,000+ APP AVAILABLE IN THE BLOG.",
+
+      "placeholder": "WITH OVER 2,000+ APP AVAILABLE IN THE BLOG."
+    }
+  ]
+}
+{% endschema %}
+
+<style>
+  .splide__arrow{
+    position: unset;
+    transform:translateY(-0%);
+  }
+  .splide__arrow--prev{
+   margin-right: 10px;
+  }
+  .blog-featured {
+    margin: 0 5px;
+}
+ .blog-featured .blog-img {
+    height: 70svh;
+}
+.blog-img img {
+  height: 100%;
+}
+.arrow-group {
+    font-size: 25px;
+}
+.arrow-group svg{
+ width: 20px;
+ height: 20px;
+}
+div#prevr {
+  transform: rotate(180deg);
+  display: inline-block;
+  height:20px;
+}
+
+
+
+
+
+
+.page-title{
+  font-family: 'T-Star Pro';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 100%;
+
+  padding: 30px 0;
+  text-transform: uppercase;
+  
+  color: #000000;
+}
+
+
+.blog-filter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 24px;
+}
+.blog-filter button {
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+  border: none;
+  background-color: transparent;
+  padding: 7px 14px;
+}
+.blog-filter button.active {
+  background-color: #000;
+  color: #fff;
+}
+.space-bottom{
+ margin: 30px 0;
+}
+.blog-card {
+  position: relative;
+  margin: 10px 0;
+}
+.blog-card .blog-img {
+  margin-bottom: 10px;
+  position: relative;
+  overflow:hidden;
+}
+.blog-card .category {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  z-index: 3;
+}
+.blog-card .blog-title {
+  font-size: 24px;
+}
+.blog-card .blog-text {
+  font-size: 14px;
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+.blog-card .blog-content {
+  padding: 0 35px 0 10px;
+}
+.blog-card:hover .blog-img img {
+  -webkit-transform: scale(1.08);
+          transform: scale(1.08);
+          transition:0.4s ;
+}
+
+/* Blog Featured */
+.blog-featured .blog-img {
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+.blog-featured .blog-img img {
+  width: 100%;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+}
+.blog-featured .blog-title {
+  font-size: 30px;
+  margin-bottom: 12px;
+}
+.blog-featured .blog-text {
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+.blog-featured:hover .blog-img img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+#blogFeatured .slick-list {
+  padding: 0 40% 0 0 !important;
+}
+
+.blog-details .blog-title {
+  font-size: 48px;
+  margin: 25px 0 70px 0;
+}
+.blog-details .blog-content {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 70px 0;
+  border-bottom: 1px solid var(--border-color);
+}
+.blog-details blockquote {
+  font-size: 24px;
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 1.45;
+}
+.blog-details blockquote p {
+  line-height: inherit;
+}
+
+.blog-favourite i {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.blog-favourite.added i {
+  font-weight: 900;
+}
+.ot-container{
+ margin-bottom: 15px;
+}
+/* Large devices */
+@media (max-width: 1199px) {
+  .blog-featured .blog-title {
+    font-size: 24px;
+  }
+  .blog-card .blog-title {
+    font-size: 20px;
+  }
+  .blog-card .blog-content {
+    padding: 0 20px 0 10px;
+  }
+  .blog-details .blog-title {
+    font-size: 42px;
+    margin: 25px 0 50px 0;
+  }
+  .blog-details blockquote {
+    font-size: 22px;
+  }
+}
+/* Medium devices */
+@media (max-width: 991px) {
+  .blog-featured .blog-img {
+    margin-bottom: 30px;
+  }
+  .blog-featured .blog-title {
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+  .blog-featured .blog-text {
+    font-size: 16px;
+  }
+  .blog-filter {
+    gap: 0px;
+  }
+  .blog-filter button {
+    font-size: 12px;
+  }
+  .blog-details .blog-title {
+    font-size: 33px;
+    line-height: 1.3;
+    margin: 25px 0 45px 0;
+  }
+  .blog-details .blog-content {
+    padding: 60px 0;
+  }
+  .blog-featured .blog-img {
+    height: 50svh;
+}
+}
+/* Small devices */
+@media (max-width: 767px) {
+  .blog-featured .blog-img {
+    height: 40svh;
+}
+  .blog-featured .blog-title {
+    font-size: 18px;
+  }
+  .blog-card .blog-title {
+    font-size: 16px;
+  }
+  .blog-card .blog-content {
+    padding: 0 10px 0 10px;
+  }
+  .search-form input {
+    width: 100%;
+    max-width: 100%;
+  }
+  .search-form input.active {
+    max-width: 100%;
+  }
+  .blog-details .blog-title {
+    font-size: 28px;
+    line-height: 1.4;
+    margin: 20px 0 35px 0;
+  }
+  .blog-details blockquote {
+    font-size: 20px;
+  }
+}
+/* Extra small devices */
+@media (max-width: 575px) {
+  .blog-featured .blog-title {
+    font-size: 16px;
+  }
+  .blog-featured .blog-text {
+    font-size: 14px;
+  }
+  #blogFeatured .slick-list {
+    padding: 0 30% 0 0 !important;
+  }
+  .blog-filter button {
+    font-size: 9px;
+    padding: 2px 10px;
+  }
+  .blog-card .blog-img {
+    margin-bottom: 10px;
+  }
+  .blog-card .blog-title {
+    font-size: 14px;
+  }
+  .blog-card .blog-text {
+    font-size: 12px;
+  }
+  .blog-card .blog-content {
+    padding: 0;
+  }
+  .blog-card .ot-btn {
+    font-size: 10px;
+    top: 5px;
+    right: 5px;
+  }
+  .blog-details .blog-content {
+    padding: 50px 0;
+  }
+  .blog-details .blog-title {
+    font-size: 20px;
+    line-height: 1.6;
+    margin: 15px 0 30px 0;
+  }
+  .blog-details blockquote {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  .blog-details .h4, .blog-details h4 {
+    font-size: 18px;
+  }
+}
+@media (max-width: 400px) {
+  .blog-select {
+    margin-top: -20px;
+  }
+}
+</style>

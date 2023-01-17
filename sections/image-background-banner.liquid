@@ -1,0 +1,57 @@
+<!-- panties-area strat -->
+<section class="panties-area" style="background-image: url('{{ section.settings.background_image | img_url: 'master'}}');">
+<div class="panties-container">
+    <div class="f-hero-container panties-items"> 
+        <h2>{{ section.settings.banner_title }}</h2> 
+        <p>{{ section.settings.banner_subtitle }}</p>
+        <a class="theme-btn shape-btn" href="{{ section.settings.banner_cta_url }}">{{ section.settings.banner_cta_title }}</a> 
+    </div> 
+</div>
+</section>
+<!-- panties-area end -->
+
+{% schema %}
+    {
+      "name": "Image Background Banner",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "background_image",
+          "label": "Upload Background Image"
+        },
+        {
+          "type": "text",
+          "id": "banner_title",
+          "label": "Banner Title"
+        },
+        {
+          "type": "text",
+          "id": "banner_subtitle",
+          "label": "Banner Sub Title"
+        },
+        {
+          "type": "text",
+          "id": "banner_cta_title",
+          "label": "Banner Button Title"
+        },
+        {
+          "type": "url",
+          "id": "banner_cta_url",
+          "label": "Banner CTA URL"
+        }
+      ],
+        "presets": [
+            {
+            "name": "Image Background Banner",
+            "category": "section"
+            }
+        ]
+    }
+  {% endschema %}
+  
+  {% stylesheet %}
+  
+  {% endstylesheet %}
+  
+  {% javascript %}
+  {% endjavascript %}

@@ -1,0 +1,68 @@
+<!-- belive-area strat -->
+<section class="belive-area">
+    <div class="belive-container">
+        <div class="belive-title">
+            <h6>
+                {{ section.settings.section_title }}
+            </h6>
+        </div>
+        <div class="belive-wraper">
+            {% for block in section.blocks %}
+                <div class="belive-items">
+                <img src="{{ block.settings.collection_image | img_url: 'master' }}" alt="{{ block.settings.collection_name }}">
+                <a href="{{ block.settings.collection_url }}">{{ block.settings.collection_name }}</a>
+            </div>
+            {% endfor %}
+            
+        </div>
+    </div>
+</section>
+<!-- belive-area end -->
+{% schema %}
+    {
+      "name": "Collections Bottom Alt",
+      "settings": [
+        {
+          "type": "textarea",
+          "id": "section_title",
+          "label": "Section Title"
+        }
+      ],
+      "blocks": [
+      {
+        "name": "Collections Bottom Alt",
+        "type": "slide",
+        "settings": [
+            {
+          "type": "image_picker",
+          "id": "collection_image",
+          "label": "Upload Image"
+        },
+        {
+          "type": "text",
+          "id": "collection_name",
+          "label": "Collection Name"
+        },
+        {
+          "type": "url",
+          "id": "collection_url",
+          "label": "Collection URL"
+        }
+        ]
+      }
+    ],
+    "presets": [
+    {
+      "name": "Collections Bottom Alt",
+      "category": "section"
+    }
+  ]
+    }
+  {% endschema %}
+  
+  {% stylesheet %}
+  
+  {% endstylesheet %}
+  
+  {% javascript %}
+  {% endjavascript %}

@@ -1,0 +1,70 @@
+@font-face {
+    font-family: 'T-Star Pro';
+    src: url('T-StarPro-Medium.eot');
+    src: local('T-Star Pro Medium'), local('T-StarPro-Medium'),
+        url('T-StarPro-Medium.eot?#iefix') format('embedded-opentype'),
+        url('T-StarPro-Medium.woff2') format('woff2'),
+        url('T-StarPro-Medium.woff') format('woff'),
+        url('T-StarPro-Medium.ttf') format('truetype'),
+        url('T-StarPro-Medium.svg#T-StarPro-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'T-Star Pro';
+    src: url('T-StarPro-Regular.eot');
+    src: local('T-Star Pro Regular'), local('T-StarPro-Regular'),
+        url('T-StarPro-Regular.eot?#iefix') format('embedded-opentype'),
+        url('T-StarPro-Regular.woff2') format('woff2'),
+        url('T-StarPro-Regular.woff') format('woff'),
+        url('T-StarPro-Regular.ttf') format('truetype'),
+        url('T-StarPro-Regular.svg#T-StarPro-Regular') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'T-Star Pro';
+    src: url('T-StarPro-Heavy.eot');
+    src: local('T-Star Pro Heavy'), local('T-StarPro-Heavy'),
+        url('T-StarPro-Heavy.eot?#iefix') format('embedded-opentype'),
+        url('T-StarPro-Heavy.woff2') format('woff2'),
+        url('T-StarPro-Heavy.woff') format('woff'),
+        url('T-StarPro-Heavy.ttf') format('truetype'),
+        url('T-StarPro-Heavy.svg#T-StarPro-Heavy') format('svg');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'T-Star Pro';
+    src: url('T-StarPro-Light.eot');
+    src: local('T-Star Pro Light'), local('T-StarPro-Light'),
+        url('T-StarPro-Light.eot?#iefix') format('embedded-opentype'),
+        url('T-StarPro-Light.woff2') format('woff2'),
+        url('T-StarPro-Light.woff') format('woff'),
+        url('T-StarPro-Light.ttf') format('truetype'),
+        url('T-StarPro-Light.svg#T-StarPro-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'T-Star Pro';
+    src: url('T-StarPro-Bold.eot');
+    src: local('T-Star Pro Bold'), local('T-StarPro-Bold'),
+        url('T-StarPro-Bold.eot?#iefix') format('embedded-opentype'),
+        url('T-StarPro-Bold.woff2') format('woff2'),
+        url('T-StarPro-Bold.woff') format('woff'),
+        url('T-StarPro-Bold.ttf') format('truetype'),
+        url('T-StarPro-Bold.svg#T-StarPro-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+

@@ -1,0 +1,73 @@
+<!-- featured-gift strat -->
+<section class="featured-gift-area">
+    <div class="x-container">  
+        <div class="featured-gift-wraper">
+            {% for  block in section.blocks %} 
+            <div class="featured-gift-items" style="background-image: url('{{ block.settings.shop_range_image | img_url: 'master' }}');">
+                <div class="f-hero-container featured-gift-text"> 
+                    <h2>{{ block.settings.shop_range_title }}</h2> 
+                    <p>{{ block.settings.shop_range_subtitle }}</p>
+                    <a class="theme-btn shape-btn" href="{{ block.settings.shop_range_cta_url }}">{{ block.settings.shop_range_cta_title }}</a> 
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+<!-- featured-gift end -->
+
+
+{% schema %}
+    {
+      "name": "Shoping Price Range",
+      "settings": [
+      ],
+      "blocks": [
+      {
+        "name": "Shoping Price Range",
+        "type": "slide",
+        "settings": [
+            {
+          "type": "image_picker",
+          "id": "shop_range_image",
+          "label": "Upload Image"
+        },
+        {
+          "type": "text",
+          "id": "shop_range_title",
+          "label": "Shop Range Card Title"
+        },
+        {
+          "type": "text",
+          "id": "shop_range_subtitle",
+          "label": "Shop Range Card Sub Title"
+        },
+        {
+          "type": "text",
+          "id": "shop_range_cta_title",
+          "label": "Shop Range Card Button Title",
+          "default": "Shop Now"
+        },
+        {
+          "type": "url",
+          "id": "shop_range_cta_url",
+          "label": "Shop Range Card CTA URL"
+        }
+        ]
+      }
+    ],
+    "presets": [
+    {
+      "name": "Shoping Price Range",
+      "category": "section"
+    }
+  ]
+    }
+  {% endschema %}
+  
+  {% stylesheet %}
+  
+  {% endstylesheet %}
+  
+  {% javascript %}
+  {% endjavascript %}

@@ -1,0 +1,121 @@
+.sold-item-cart{
+    background: #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+    display: block;
+    font-family: 'T-Star Pro';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 130%;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-align: center;
+    margin-top: 0;
+    position: relative;
+    border: 1px solid transparent;
+    margin-bottom: 10px;
+}
+
+.sold-item-cart:hover{
+
+    color: black;
+}
+.proudct-sale{
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    background: black;
+    padding: 5px;
+    color: #FFFFFF;
+    font-family: 'T-Star Pro';
+font-style: normal;
+font-weight: 900;
+font-size: 12px;
+line-height: 1;
+text-transform: uppercase;
+
+color: #FFFFFF;
+}
+
+
+
+
+
+.button, .shopify-challenge__button, .customer button {
+
+    padding: 10px 3rem;
+    line-height: 1;
+   
+}
+.customer .customer {
+    border: 1px solid #000;
+}
+@media only screen and (max-width: 600px)  {
+
+.collection-ttile{
+    margin-bottom: 10px;
+}
+
+}
+
+button#menu-opener svg {
+    width: 28px;
+}
+.dropdown-btn {
+    display: inline-block;
+    text-align: center;
+}
+
+.menu-minous {
+    display: none;
+}
+.minous .menu-minous {
+    display: block;
+}
+
+.customer h1 {
+  font-size: 5svh;
+}
+
+.product quantity-input.quantity {
+    border: 1px solid #000;
+    height: 40px;
+    width: auto;
+    padding-right: 0px;
+    box-shadow: none !important;
+    outline: none !important;
+    display: inline-flex;
+}
+
+.product  button.quantity__button {
+    height: 101%;
+    position: unset;
+}
+
+.product  button.quantity__button:first-child {
+    border-right:1px solid #000;
+  }
+.product  button.quantity__button:last-child {
+    border-left:1px solid #000;
+  }
+
+
+  .product  .button, .shopify-challenge__button, .customer button {
+    padding: 14px 3rem;
+    line-height: 1;
+}
+
+.product-form__submit{
+    background: #000;
+}
+.product-form__submit span{
+    color: #fff;
+}
+
+ul.header-sigin-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

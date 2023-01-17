@@ -1,0 +1,132 @@
+<script>
+  var get_currency = "{{ cart.currency.symbol }}";
+</script>
+
+<!-- add bag btn card  -->
+<div class="main-card-area">
+  <div class="main-card-container">
+    <form
+      action="/cart"
+      method="post"
+      class="drawer_form"
+      id="cart_form">
+        {% comment %} last cart changes  {% endcomment %}
+      <div class="main-card-title">
+        {% if cart.item_count > 0 %}
+          <div class="d-flex justify-content-between align-items-center cart-space">
+            <h3>my bag (<span class="cart-drawer__count">{{ cart.item_count }}</span>)</h3>
+            <div class="main-card-remove"> {% render 'search-crose' %} </div>
+          </div>
+          
+          <div class="main-card-wraper">
+            <div class="empty_cart_msg d-none">Your Cart is Empty!</div>
+            <div class="product_items_subwrapper">
+              {% for item in cart.items %}
+                <div class="main-card-wraper-items" data-id="{{ item.key }}">
+                  <div class="main-cart-img">
+                    <img src="{{ item | img_url: 'medium' }}" alt="{{ item.title | escape }}" />
+                  </div>
+                  <div class="main-card-wraper-flax">
+                    <div class="main-cart-texts-item">
+                      <h3>
+                        <a class="cart-drawer__url" href="{{ item.url }}">{{ item.product.title }}
+                        </a>
+                      </h3>
+                      <h5 class="cart-drawer__price" data-id="{{ item.key }}">
+                        {% if item.original_line_price != item.line_price %}
+                          {{ item.original_line_price | money }}{% endif %}
+                        {{ item.line_price | money }}
+                        {% for discount in item.discounts %}
+                          {{ discount.title }}{% endfor %}
+                      </h5>
+                    </div>
+                    <div class="main-card-sizing-counte">
+                      {%- for option in item.options_with_values -%}
+                        <div class="product-option">
+                          <dt>{{ option.name }}:</dt>
+                          <dd>{{ option.value }}</dd>
+                        </div>
+                      {%- endfor -%}
+                      <div class="color-remove">
+                        <a
+                          href="/cart/change?line={{ forloop.index }}&amp;quantity=0"
+                          class="cart-drawer__remove-url"
+                          data-id="{{ item.id }}">
+                          <i class="icon-x" aria-hidden="true">remove</i>
+                        </a>
+                      </div>
+                      <div class="main-cari-quantity">
+                        <div class="quantity-control cart-drawer__qty" data-quantity="">
+                          <button
+                            class="quantity-btn minus-btn"
+                            data-quantity-minus=""
+                            type="button">
+                            <span>-</span>
+                          </button>
+                          <input
+                            type="number"
+                            class="quantity-input cart-drawer__qty-input"
+                            data-id="{{ item.key }}"
+                            name="updates[]"
+                            id="updates_{{ item.key }}"
+                            value="{{ item.quantity }}"
+                            min="1"
+                            aria-label="Quantity" />
+                          <button
+                            class="plus-btn cart-drawer__qty-btn quantity-btn"
+                            type="button"
+                            name="button">
+                            <i class="icon-plus">+</i>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              {% endfor %}
+            </div>
+            <a class="theme-btn main-card-btn" href="/checkout">
+              <span class="cart-drawer__total-amount">
+                <span>{{ cart.total_price | money }}</span>
+              </span>
+              - checkout
+            </a>
+          </div>
+          {% else %}
+           <div class="cart-empty">
+               <div class="d-flex justify-content-between align-items-center cart-space">
+                  <h3>my bag (<span class="cart-drawer__count">{{ cart.item_count }}</span>)</h3>
+                  <div class="main-card-remove"> {% render 'search-crose' %} </div>
+                </div>
+                <div class="empty_cart_msg">Your Cart is Empty!</div>
+                <div class="main-card-wraper">
+                  <div class="product_items_empt_subwrapper">
+                   
+                  </div>
+                  <a class="theme-btn main-card-btn d-none" href="/checkout">
+                    <span class="cart-drawer__total-amount">
+                      <span>{{ cart.total_price | money }}</span>
+                    </span>
+                    - checkout
+                  </a>
+                </div>
+           </div>
+        {% endif %}
+    
+      </div>
+
+     
+
+    </form>
+  </div>
+  <div class="drawer-overlap"></div>
+</div>
+
+<style>
+
+  .main-card-remove svg{
+    width: 20px !important;
+  }
+ .cart-space {
+    padding: 10px 0;
+}</style>

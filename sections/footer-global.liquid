@@ -1,0 +1,588 @@
+<!-- footer-area strat--> 
+<section class="footer-area">
+    <div class="footer-container">
+        <div class="fooetr-top-items">
+            <div class="footer-help-item f-item-one">
+                <h3>{{ section.settings.footer_first_menu_title }}</h3>
+                <ul>
+                    {% for link in section.settings.footer_first_menu.links %}
+                        <li>
+                            <a href="{{ link.url }}" class="cl-label-title ftps-a">{{ link.title }}</a>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <div class="footer-help-item">
+                {%- if section.settings.show_newsletter -%}
+                <h3>{{ section.settings.newsletter_title }}</h3>
+                <p>{{ section.settings.newsletter_text }}</p>
+
+                {%- form 'customer', id: 'ContactFooter', class: 'subscribe_form footer-form' -%}
+                    <input type="hidden" name="contact[tags]" value="newsletter">
+                    <div class="input-group">
+                        <input
+                          id="NewsletterForm--{{ section.id }}"
+                          type="email"
+                          name="contact[email]"
+                          class="form-control"
+                          value="{{ form.email }}"
+                          aria-required="true"
+                          autocorrect="off"
+                          autocapitalize="off"
+                          autocomplete="email"
+                          {% if form.errors %}
+                            autofocus
+                            aria-invalid="true"
+                            aria-describedby="ContactFooter-error"
+                          {% elsif form.posted_successfully? %}
+                            aria-describedby="ContactFooter-success"
+                          {% endif %}
+                          placeholder="Your Email"
+                          required
+                        >
+                        <span class="input-group-btn">
+                            <button type="submit" class="btn btn-default" name="commit" id="Subscribe" aria-label="newsletter">
+                                <img src="{{  'right arrow 2.svg' | asset_url }}" alt="">
+                            </button>
+                        </span>
+                    </div>
+                    <div class="form_extra">
+                      {%- if form.errors -%}
+                        <small class="newsletter-form__message form__message" id="ContactFooter-error">{% render 'icon-error' %}{{ form.errors.translated_fields['email'] | capitalize }} {{ form.errors.messages['email'] }}</small>
+                      {%- endif -%}
+                    {%- if form.posted_successfully? -%}
+                      <h3 class="newsletter-form__message newsletter-form__message--success form__message" id="ContactFooter-success" tabindex="-1" autofocus>{% render 'icon-success' %}{{ newsletter.success }}</h3>
+                    {%- endif -%}
+                    </div>
+                  {%- endform -%}
+                <small>{{ section.settings.newsletter_subscribe_text }}</small>
+                <h4 class="sb-text">{{ section.settings.newsletter_sms_text }}</h4>
+                <small>
+                    {{ section.settings.newsletter_footer_text }}
+                </small>
+                {%- endif -%}
+                {%- if section.settings.show_social -%}
+                    <ul class="footer-socil-item" role="list">
+                        {%- if settings.social_twitter_link != blank -%}
+                        <li class="social_twitter_link">
+                            <a href="{{ settings.social_twitter_link }}" class="link list-social__link" >
+                                <img src="{{'mdi_twitter.svg' | asset_url }}" alt="">
+                            <span class="visually-hidden">{{ general.social.links.twitter }}</span>
+                            </a>
+                        </li>
+                        {%- endif -%}
+                        {%- if settings.social_facebook_link != blank -%}
+                        <li class="social_facebook_link">
+                            <a href="{{ settings.social_facebook_link }}" class="link list-social__link" >
+                                <img src="{{'ri_facebook-fill.svg' | asset_url }}" alt="">
+                            <span class="visually-hidden">{{ general.social.links.facebook }}</span>
+                            </a>
+                        </li>
+                        {%- endif -%}
+                        {%- if settings.social_pinterest_link != blank -%}
+                        <li class="social_pinterest_link">
+                            <a href="{{ settings.social_pinterest_link }}" class="link list-social__link" >
+                            {%- render 'icon-pinterest' -%}
+                            <span class="visually-hidden">{{ general.social.links.pinterest }}</span>
+                            </a>
+                        </li>
+                        {%- endif -%}
+                        {%- if settings.social_instagram_link != blank -%}
+                        <li class="social_instagram_link">
+                            <a href="{{ settings.social_instagram_link }}" class="link list-social__link" >
+                            {%- render 'icon-instagram' -%}
+                            <span class="visually-hidden">{{ general.social.links.instagram }}</span>
+                            </a>
+                        </li>
+                        {%- endif -%}
+                        {%- if settings.social_tiktok_link != blank -%}
+                        <li class="social_tiktok_link">
+                            <a href="{{ settings.social_tiktok_link }}" class="link list-social__link" >
+                            {%- render 'icon-tiktok' -%}
+                            <span class="visually-hidden">{{ general.social.links.tiktok }}</span>
+                            </a>
+                        </li>
+                        {%- endif -%}
+                        {%- if settings.social_tumblr_link != blank -%}
+                        <li class="social_tumblr_link">
+                            <a href="{{ settings.social_tumblr_link }}" class="link list-social__link" >
+                            {%- render 'icon-tumblr' -%}
+                            <span class="visually-hidden">{{ general.social.links.tumblr }}</span>
+                            </a>
+                        </li>
+                        {%- endif -%}
+                        {%- if settings.social_snapchat_link != blank -%}
+                        <li class="social_snapchat_link">
+                            <a href="{{ settings.social_snapchat_link }}" class="link list-social__link" >
+                            {%- render 'icon-snapchat' -%}
+                            <span class="visually-hidden">{{ general.social.links.snapchat }}</span>
+                            </a>
+                        </li>
+                        {%- endif -%}
+                        {%- if settings.social_youtube_link != blank -%}
+                        <li class="social_youtube_link">
+                            <a href="{{ settings.social_youtube_link }}" class="link list-social__link" >
+                            {%- render 'icon-youtube' -%}
+                            <span class="visually-hidden">{{ general.social.links.youtube }}</span>
+                            </a>
+                        </li>
+                        {%- endif -%}
+                        {%- if settings.social_vimeo_link != blank -%}
+                        <li class="social_vimeo_link">
+                            <a href="{{ settings.social_vimeo_link }}" class="link list-social__link" >
+                            {%- render 'icon-vimeo' -%}
+                            <span class="visually-hidden">{{ general.social.links.vimeo }}</span>
+                            </a>
+                        </li>
+                        {%- endif -%}
+                    </ul>
+                {%- endif -%}
+                
+                <!-- footer help & more -->
+                <ul class="cl-start-wrap help-571">
+                    <li class="cl-item f-help-m">
+                        <div class="cl-label-wrap">
+                            <span class="cl-label-title">{{ section.settings.footer_first_menu_title }}</span>
+                        </div>
+                        <ul class="ftps-ul">
+                            <li class="cl-item">
+                                <div class="cl-label-wrap">
+                                    {% for link in section.settings.footer_first_menu.links %}
+                                        <a href="{{ link.url }}" class="cl-label-title ftps-a">{{ link.title }}</a>
+                                    {% endfor %}
+                                </div> 
+                            </li> 
+                        </ul>
+                    </li> 
+                    <li class="cl-item f-help-m">
+                        <div class="cl-label-wrap">
+                            <span class="cl-label-title">{{ section.settings.footer_second_menu_title }}</span>
+                        </div>
+                        <ul class="ftps-ul">
+                            <li class="cl-item">
+                                <div class="cl-label-wrap">
+                                    {% for link in section.settings.footer_second_menu.links %}
+                                        <a href="{{ link.url }}" class="cl-label-title ftps-a">{{ link.title }}</a>
+                                    {% endfor %}
+                                </div> 
+                            </li> 
+                        </ul>
+                    </li>
+                </ul>
+            </div> 
+            <div class="footer-help-item f-item-one">
+                <h3>{{ section.settings.footer_second_menu_title }}</h3>
+                <ul>
+                    {% for link in section.settings.footer_second_menu.links %}
+                        <li>
+                            <a href="{{ link.url }}" class="cl-label-title ftps-a">{{ link.title }}</a>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <ul class="header-sigin-btn footer-cuntry"> 
+                <li class="currency-switcher-li f-cs-li">  
+                    <div class="currency-switcher">
+                        <div class="dropdown">
+                          <div class="caption">
+                            <div class="n-flag">
+                                <img src="{{'flag.svg' | asset_url }}" alt="">
+                            </div> 
+                                USA
+                          </div>
+                          <div class="list">
+                            <div class="item selected" data-item="RUB">
+                                <div class="n-flag">
+                                    <img src="{{'flag.svg' | asset_url }}" alt="">
+                                </div>  
+                                    USA
+                            </div>
+                            <div class="item" data-item="RUB">
+                                <div class="n-flag">
+                                    <img src="{{'flag.svg' | asset_url }}" alt="">
+                                </div>
+                              Россия
+                              <!-- <span>RUB</span> -->
+                            </div>
+                            <div class="item" data-item="UAH">
+                                <div class="n-flag">
+                                    <img src="{{'flag.svg' | asset_url }}" alt="">
+                                </div>
+                              Украина
+                              <!-- <span>UAH</span> -->
+                            </div>
+                            <div class="item" data-item="USD">
+                                <div class="n-flag">
+                                    <img src="{{'flag.svg' | asset_url }}" alt="">
+                                </div>
+                            Россия
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </li>  
+            </ul>
+            <ul class="footer-bottom-act">
+                {% for link in section.settings.footer_privacy_menu.links %}
+                    <li>
+                        <a href="{{ link.url }}">{{ link.title }}</a>
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- footer-area end-->  
+
+    <div div class="popup-search-box d-none d-lg-block" id="popupfooter">
+        <button class="searchClose border-theme text-theme">
+           {% include 'search-crose' %}
+        </button>
+      <div class="all-serach-wrpper">
+        <predictive-search>
+          <form action="/search" method="get" role="search" class="custome-serach-new">
+          <input type="hidden" name="type" value="product">
+            <label for="Search">Search</label>
+            <input
+              id="Search"
+              type="search"
+              name="q"
+              value=""role="combobox"
+                aria-expanded="false"
+                aria-owns="predictive-search-results-list"
+                aria-controls="predictive-search-results-list"
+                aria-haspopup="listbox"
+                aria-autocomplete="list"
+                autocorrect="off"
+                autocomplete="off"
+                autocapitalize="off"
+                spellcheck="false">
+            <input name="options[prefix]" type="hidden" value="last">
+            <div id="predictive-search" tabindex="-1"></div>
+            </form>
+        </predictive-search>
+        </div>
+      
+      </div>
+      
+      <script>
+        class PredictiveSearch extends HTMLElement {
+          constructor() {
+            super();
+        
+            this.input = this.querySelector('input[type="search"]');
+            this.predictiveSearchResults = this.querySelector('#predictive-search');
+        
+            this.input.addEventListener('input', this.debounce((event) => {
+              this.onChange(event);
+            }, 300).bind(this));
+          }
+        
+          onChange() {
+            const searchTerm = this.input.value.trim();
+        
+            if (!searchTerm.length) {
+              this.close();
+              return;
+            }
+        
+            this.getSearchResults(searchTerm);
+          }
+        
+          getSearchResults(searchTerm) {
+            fetch(`/search/suggest?q=${searchTerm}&resources[type]=product&resources[limit]=4&section_id=predictive-search`)
+              .then((response) => {
+                if (!response.ok) {
+                  var error = new Error(response.status);
+                  this.close();
+                  throw error;
+                }
+        
+                return response.text();
+              })
+              .then((text) => {
+                const resultsMarkup = new DOMParser().parseFromString(text, 'text/html').querySelector('#shopify-section-predictive-search').innerHTML;
+                this.predictiveSearchResults.innerHTML = resultsMarkup;
+                this.open();
+              })
+              .catch((error) => {
+                this.close();
+                throw error;
+              });
+          }
+        
+          open() {
+            this.predictiveSearchResults.style.display = 'block';
+          }
+        
+          close() {
+            this.predictiveSearchResults.style.display = 'none';
+          }
+        
+          debounce(fn, wait) {
+            let t;
+            return (...args) => {
+              clearTimeout(t);
+              t = setTimeout(() => fn.apply(this, args), wait);
+            };
+          }
+        }
+        customElements.define('predictive-search', PredictiveSearch);
+    </script>
+
+      
+{% schema %}
+  {
+    "name": "Footer Global",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "header_logo_desktop",
+        "label": "Desktop Logo"
+      },
+      {
+        "type": "image_picker",
+        "id": "header_logo_mobile",
+        "label": "Mobile Logo"
+      },
+      {
+        "type": "link_list",
+        "id": "footer_first_menu",
+        "label": "Footer First Menu"
+      },
+      {
+        "type": "text",
+        "id": "footer_first_menu_title",
+        "label": "Footer First Menu Title"
+      },
+      {
+        "type": "link_list",
+        "id": "footer_second_menu",
+        "label": "Footer Second Menu"
+      },
+      {
+        "type": "text",
+        "id": "footer_second_menu_title",
+        "label": "Footer Second Menu Title"
+      },
+      {
+        "type": "link_list",
+        "id": "footer_privacy_menu",
+        "label": "Footer Privacy Menu"
+      },
+      {
+        "type": "checkbox",
+        "id": "show_social",
+        "default": false,
+        "label": "Display Social Links"
+    },
+    {
+        "type": "header",
+        "content": "Newsletter Settings"
+    },
+    {
+        "type": "checkbox",
+        "id": "show_newsletter",
+        "default": false,
+        "label": "Display Newsletter"
+    },
+    {
+        "type": "text",
+        "id": "newsletter_title",
+        "label": "Newsletter Title"
+      }, 
+      {
+        "type": "text",
+        "id": "newsletter_text",
+        "label": "Newsletter text"
+      },
+      {
+        "type": "text",
+        "id": "newsletter_subscribe_text",
+        "label": "Newsletter Subscribe text"
+      },
+      {
+        "type": "html",
+        "id": "newsletter_sms_text",
+        "label": "Newsletter SMS text"
+      },
+      {
+        "type": "textarea",
+        "id": "newsletter_footer_text",
+        "label": "Newsletter Footer text"
+      }
+    ]
+  }
+{% endschema %}
+
+<style>
+    /*------------------- 4.10. Popup Search  -------------------*/
+.popup-search-box {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    background-color: rgba(0, 0, 0, 0.95);
+    height: 0;
+    width: 0;
+    overflow: hidden;
+    z-index: 99999;
+    opacity: 0;
+    visibility: hidden;
+    border-radius: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    -webkit-transition: all ease 0.4s;
+    transition: all ease 0.4s;
+  }
+  .popup-search-box button.searchClose {
+    width: 60px;
+    height: 60px;
+    line-height: 1;
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #fff;
+    background-color: transparent;
+    font-size: 22px;
+    border-radius: 50%;
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+    -webkit-transition: all ease 0.4s;
+    transition: all ease 0.4s;
+  }
+  .popup-search-box button.searchClose:hover {
+    color: var(--body-color);
+    background-color: #fff;
+    border-color: transparent;
+    border-color: transparent;
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+  .popup-search-box form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: inline-block;
+    padding-bottom: 40px;
+    cursor: auto;
+    width: 100%;
+    max-width: 700px;
+    -webkit-transform: translate(-50%, -50%) scale(0);
+            transform: translate(-50%, -50%) scale(0);
+    -webkit-transition: -webkit-transform ease 0.4s;
+    transition: -webkit-transform ease 0.4s;
+    transition: transform ease 0.4s;
+    transition: transform ease 0.4s, -webkit-transform ease 0.4s;
+    /* Large devices */
+  }
+  @media (max-width: 1199px) {
+    .popup-search-box form {
+      max-width: 600px;
+    }
+  }
+  .popup-search-box form input {
+    font-size: 18px;
+    height: 70px;
+    width: 100%;
+    border: 2px solid #fff;
+    border-color: #fff;
+    background-color: transparent;
+    padding-left: 30px;
+    color: #fff;
+    border-radius: 50px;
+  }
+  .popup-search-box form input::-moz-placeholder {
+    color: #fff;
+  }
+  .popup-search-box form input::-webkit-input-placeholder {
+    color: #fff;
+  }
+  .popup-search-box form input:-ms-input-placeholder {
+    color: #fff;
+  }
+  .popup-search-box form input::-ms-input-placeholder {
+    color: #fff;
+  }
+  .popup-search-box form input::placeholder {
+    color: #fff;
+  }
+  .popup-search-box form button {
+    position: absolute;
+    top: 0px;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 24px;
+    right: 12px;
+    color: var(--white-color);
+    cursor: pointer;
+    width: 70px;
+    height: 70px;
+    line-height: 1;
+    -webkit-transition: all ease 0.4s;
+    transition: all ease 0.4s;
+    -webkit-transform: scale(1.001);
+            transform: scale(1.001);
+  }
+  .popup-search-box form button:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  .popup-search-box.show {
+    opacity: 1;
+    visibility: visible;
+    width: 100.1%;
+    height: 100%;
+    -webkit-transition: all ease 0.4s;
+    transition: all ease 0.4s;
+    border-radius: 0;
+  }
+  .popup-search-box.show form {
+    -webkit-transition-delay: 0.5s;
+            transition-delay: 0.5s;
+    -webkit-transform: translate(-50%, -50%) scale(1);
+            transform: translate(-50%, -50%) scale(1);
+  }
+
+  .popup-search-box form input {
+    border: 3px solid #fff;
+}
+  
+</style>
+
+
+<script>
+     /*----------- 06. Search Toogle ----------*/
+  $('.search-form button').on('click', function (e) {
+    $('.search-form input').toggleClass('active');
+});
+     /*---------- 09. Search Box Popup ----------*/
+  function popupSarchBox($searchBox, $searchOpen, $searchCls, $toggleCls) {
+    $($searchOpen).on('click', function (e) {
+      e.preventDefault();
+      $($searchBox).addClass($toggleCls);
+    });
+    $($searchBox).on('click', function (e) {
+      e.stopPropagation();
+      $($searchBox).removeClass($toggleCls);
+    });
+    $($searchBox).find('form').on('click', function (e) {
+      e.stopPropagation();
+      $($searchBox).addClass($toggleCls);
+    });
+    $($searchCls).on('click', function (e) {
+      e.preventDefault();
+      e.stopPropagation();
+      $($searchBox).removeClass($toggleCls);
+    });
+  };
+  popupSarchBox('.popup-search-box', '.searchBoxToggler', '.searchClose', 'show');
+</script>
+
+{% javascript %}
+{% endjavascript %}

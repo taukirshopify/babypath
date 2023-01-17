@@ -1,0 +1,50 @@
+<!-- justin-area strAT -->  
+<section class="product-area">
+    <div class="product-container">
+        <ul class="product-title nav nav-tabs pb-5">
+            <li><a class="product-toggle active">{{ section.settings.product_grid_name }}</a></li>
+        </ul>
+        <div class="tab-content">
+          <div class="collection_grid row pt-4">
+            {% for product in collections[section.settings.product_grid_collection].products limit:8 %}
+              <div class="col-md-3">
+                 {% include 'proudct-grid-item' %}
+              </div>
+              {% endfor %}
+          </div>
+        </div> 
+    </div>
+</section>
+
+
+<!-- justin-area end -->
+{% schema %}
+    {
+      "name": "Simple Product Grid",
+      "settings": [
+        {
+          "type": "text",
+          "id": "product_grid_name",
+          "label": "Product Grid Section Name"
+        },
+        {
+        "type": "collection",
+        "id": "product_grid_collection",
+        "label": "Pick Collection"
+        }
+      ],
+    "presets": [
+    {
+      "name": "Simple Product Grid",
+      "category": "section"
+    }
+  ]
+    }
+  {% endschema %}
+  
+  {% stylesheet %}
+  
+  {% endstylesheet %}
+  
+  {% javascript %}
+  {% endjavascript %}

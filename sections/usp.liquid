@@ -1,0 +1,50 @@
+<div class="usp container">
+    <div class="row usp_row">
+        {% for block in section.blocks %}
+        <div class="col-md-4">
+                <div class="usp_content">
+                    <img src="{{ block.settings.usp_image | img_url: 'master' }}" alt="">
+                    <p>{{ block.settings.usp_title }}</p>
+                </div>
+        </div>
+    {% endfor %}
+    </div>
+</div>
+{% schema %}
+    {
+      "name": "USP Block",
+      "settings": [
+      ],
+      "blocks": [
+      {
+        "name": "USP Block",
+        "type": "slide",
+        "settings": [
+            {
+          "type": "image_picker",
+          "id": "usp_image",
+          "label": "Upload Image"
+        },
+        {
+          "type": "text",
+          "id": "usp_title",
+          "label": "USP Title"
+        }
+        ]
+      }
+    ],
+    "presets": [
+    {
+      "name": "USP Block",
+      "category": "section"
+    }
+  ]
+    }
+  {% endschema %}
+  
+  {% stylesheet %}
+  
+  {% endstylesheet %}
+  
+  {% javascript %}
+  {% endjavascript %}

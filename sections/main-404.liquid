@@ -1,0 +1,51 @@
+<style type="text/css">
+.template-404 a.button {
+    font-family: 'T-Star Pro';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 130%;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background: #000;
+}
+.template-404 p {
+    font-family: 'T-Star Pro';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 52px;
+    line-height: 130%;
+    text-transform: uppercase;
+    color: #000000;
+}
+.template-404 h1 {
+    font-family: 'T-Star Pro';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 130%;
+    text-transform: uppercase;
+    color: #000000;
+}
+  .template-404 .title + * {
+    margin-top: 1rem;
+  }
+
+  @media screen and (min-width: 750px) {
+    .template-404 .title + * {
+      margin-top: 2rem;
+    }
+  }
+</style>
+
+<div class="template-404 page-width page-margin center">
+  <p>
+    {{ 'templates.404.subtext' | t }}
+  </p>
+  <h1 class="title">
+    {{ 'templates.404.title' | t }}
+  </h1>
+  <a href="{{ routes.all_products_collection_url }}" class="button">
+    {{ 'general.continue_shopping' | t }}
+  </a>
+</div>

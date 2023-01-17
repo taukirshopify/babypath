@@ -1,0 +1,103 @@
+<!-- hero-area strat -->
+<section class="hero-area"> 
+    <div class="splide index-slider">
+        <div class="splide__track">
+            <ul class="splide__list">
+                {% for block in section.blocks %}  
+                    <li class="splide__slide f-hero-container">
+                        <div class="slider_content_wrapper">
+                            <div class="slider_content_image">
+                                <img src="{{ block.settings.slider_desktop_image | img_url: 'master' }}" class="img-fluid hideMobile">
+                                <img src="{{ block.settings.slider_mobile_image | img_url: 'master' }}" class="img-fluid mobileOnly">
+                            </div>
+                            <div class="container slider_text_container">
+                                <div class="slider_content_text">
+                                    <h2>{{ block.settings.slider_title }}</h2> 
+                                    <p>{{ block.settings.slider_subtitle }}</p>
+                                    <a class="theme-btn shape-btn" href="{{ block.settings.slider_cta_url }}">{{ block.settings.slider_cta_title }}</a> 
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div> 
+</section>
+<!-- hero-area end -->
+
+{% schema %}
+    {
+      "name": "Hero Slider",
+      "settings": [
+      ],
+      "blocks": [
+      {
+        "name": "Hero Slider",
+        "type": "slide",
+        "settings": [
+           {
+          "type": "image_picker",
+          "id": "slider_desktop_image",
+          "label": "Desktop Image"
+        },
+        {
+          "type": "image_picker",
+          "id": "slider_mobile_image",
+          "label": "Mobile Image"
+        },
+        {
+          "type": "text",
+          "id": "slider_title",
+          "label": "Slider Title"
+        },
+        {
+          "type": "text",
+          "id": "slider_subtitle",
+          "label": "Slider Sub Title"
+        },
+        {
+          "type": "text",
+          "id": "slider_cta_title",
+          "label": "Slider Button Title"
+        },
+        {
+          "type": "url",
+          "id": "slider_cta_url",
+          "label": "Slider CTA URL"
+        }
+        ]
+      }
+    ],
+    "presets": [
+    {
+      "name": "Hero Slider",
+      "category": "section"
+    }
+  ]
+    }
+  {% endschema %}
+  
+  {% stylesheet %}
+  
+  {% endstylesheet %}
+  
+  {% javascript %}
+  {% endjavascript %}
+
+
+<script>
+  $( document ).ready(function() {
+
+
+new Splide( '.index-slider', {
+    type  : 'fade', 
+    rewind: true,
+    arrows: false,
+    type: 'loop',
+    rewind: true,
+    autoplay: true,
+} ).mount();
+
+});
+</script>

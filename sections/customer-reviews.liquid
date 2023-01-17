@@ -1,0 +1,84 @@
+<!-- customers-area strat -->
+<section class="customers-area">
+    <div class="xm-container">
+        <div class="featured-collection-title text-center">
+            <h3>{{ section.settings.section_title }}</h3>
+        </div>
+        <div class="f-c-a-weper">
+            <div class="customers-area-wraper">
+                {% for block in section.blocks %}
+                <div class="customers-items">
+                    <img class="citm" src="{{ block.settings.customer_image | img_url: 'master' }}" alt="">
+                    <div class="customers-item-text">
+                        <div class="customers-star">
+                            <h6>{{ block.settings.customer_name }}</h6>
+                              <div class="5star-svg">
+                                 {% render '5starsvg' %}
+                              </div>
+                        </div> 
+                        <p>“{{ block.settings.customer_review_text }}”</p>
+                        <a class="customers-item-btn" href="{{ block.settings.customer_shop_url }}">SHOP THIS STYLE</a>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>
+<!-- customers-area end -->
+{% schema %}
+    {
+      "name": "Customer Reviews",
+      "settings": [
+        {
+          "type": "text",
+          "id": "section_title",
+          "label": "Section Title"
+        }
+      ],
+      "blocks": [
+      {
+        "name": "Customer Reviews",
+        "type": "slide",
+        "settings": [
+            {
+          "type": "image_picker",
+          "id": "customer_image",
+          "label": "Upload Image"
+        },
+        {
+          "type": "text",
+          "id": "customer_name",
+          "label": "Customer Name"
+        },
+        {
+          "type": "text",
+          "id": "customer_review_text",
+          "label": "Customer Review Text"
+        },
+        {
+          "type": "url",
+          "id": "customer_shop_url",
+          "label": "Customer Shop Url"
+        }
+        ]
+      }
+    ],
+    "presets": [
+    {
+      "name": "Customer Reviews",
+      "category": "section"
+    }
+  ]
+    }
+  {% endschema %}
+  
+  {% stylesheet %}
+  
+  {% endstylesheet %}
+  
+  {% javascript %}
+  {% endjavascript %}
+
+
+

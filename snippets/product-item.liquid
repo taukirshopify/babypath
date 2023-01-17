@@ -1,0 +1,9 @@
+<div class="product_item">
+    <a class="justin-items" href="{{ product.url }}">
+        <img class="justin-item-img" src="{{ product.featured_image | img_url: 'medium' }}" alt="{{ product.title }}">
+        <div class="justin-item-p-text">
+            <p class="justin-item-text">{{ product.title }}</p>
+            <p class="justin-item-text">{{ product.price | money }}</p>   
+        </div> 
+    </a>
+</div>
