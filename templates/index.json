@@ -255,6 +255,7 @@
         "1b2326ca-31d9-4217-97b7-1218f3adfb0c": {
           "type": "slide",
           "settings": {
+            "collection_image": "shopify:\/\/shop_images\/belive-img-4.png",
             "collection_name": "test 3",
             "collection_url": ""
           }
