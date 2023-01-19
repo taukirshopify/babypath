@@ -74,6 +74,7 @@
         "cc9769d2-72b6-45ee-b65b-c3247c7e00fe": {
           "type": "slide",
           "settings": {
+            "collection_image": "shopify:\/\/shop_images\/featured-collection-4.png",
             "collection_title": "Summer Collection",
             "collection_subtitle": "",
             "collection_cta_title": "Shop Now",
@@ -83,6 +84,7 @@
         "e7dac34a-1a28-4bc8-9af3-fbd4afee5c75": {
           "type": "slide",
           "settings": {
+            "collection_image": "shopify:\/\/shop_images\/featured-collection-3.png",
             "collection_title": "Winnter deal",
             "collection_subtitle": "",
             "collection_cta_title": "Shop Now",
@@ -92,6 +94,7 @@
         "f8a71ebb-fe9b-44ac-840c-473b14c08f2a": {
           "type": "slide",
           "settings": {
+            "collection_image": "shopify:\/\/shop_images\/featured-collection-2.png",
             "collection_title": "Best deal",
             "collection_subtitle": "",
             "collection_cta_title": "Shop Now",
@@ -101,6 +104,7 @@
         "7e4464d9-422c-456b-9ef1-38cc3a6c3572": {
           "type": "slide",
           "settings": {
+            "collection_image": "shopify:\/\/shop_images\/featured-collection-1.png",
             "collection_title": "Great deal",
             "collection_subtitle": "",
             "collection_cta_title": "Shop Now",
@@ -124,6 +128,7 @@
         "284e3cce-e08e-4419-b0d0-ad09b39d3a70": {
           "type": "slide",
           "settings": {
+            "shop_range_image": "shopify:\/\/shop_images\/featured-gift-1.png",
             "shop_range_title": "GIFTS UNDER $100",
             "shop_range_subtitle": "Small gifts big impact",
             "shop_range_cta_title": "Shop Now",
@@ -133,6 +138,7 @@
         "49e3b5db-b178-424f-adaf-b184a72fd732": {
           "type": "slide",
           "settings": {
+            "shop_range_image": "shopify:\/\/shop_images\/featured-gift-2_3844b177-a6cd-4f3c-bdc8-92221d69eaaa.png",
             "shop_range_title": "GIFTS UNDER $200",
             "shop_range_subtitle": "Celebrate them with special gifts",
             "shop_range_cta_title": "Shop Now",
@@ -142,6 +148,7 @@
         "2f650d4c-5123-4b68-8500-9430123c440f": {
           "type": "slide",
           "settings": {
+            "shop_range_image": "shopify:\/\/shop_images\/featured-gift-3_26deb5ec-7bc3-4244-ae6c-e051ba664179.png",
             "shop_range_title": "Starts from $520",
             "shop_range_subtitle": "Celebrate them with special gifts",
             "shop_range_cta_title": "Shop Now",
@@ -151,6 +158,7 @@
         "51dcd6b8-4ff8-4680-98d9-c22471a4836f": {
           "type": "slide",
           "settings": {
+            "shop_range_image": "shopify:\/\/shop_images\/featured-gift-4_de0521f9-d983-4eb3-97fa-bfe0a07b0ed9.png",
             "shop_range_title": "LUXE GIFTS",
             "shop_range_subtitle": "Premium picks on every wishlist.",
             "shop_range_cta_title": "Shop Now",
@@ -173,6 +181,7 @@
         "011fc58a-0312-4d66-b3bb-8b0a56a13615": {
           "type": "slide",
           "settings": {
+            "customer_image": "shopify:\/\/shop_images\/1e82d77653d9e6f94a9baf8e6f63c82aedd7949c-670x670_1.jpg",
             "customer_name": "MOnica",
             "customer_review_text": "BELIEVE THE HYPE OUR COLLECTIONS HAVE OVER 26,000 FIVE STAR REVIEWS, AND COUNTING!",
             "customer_shop_url": ""
@@ -181,6 +190,7 @@
         "1cc7fd87-4b95-4021-8df2-8533bb60e040": {
           "type": "slide",
           "settings": {
+            "customer_image": "shopify:\/\/shop_images\/99d48f3bda120757e10f737486bdf446aba5489c-670x670_1.png",
             "customer_name": "RAMBO",
             "customer_review_text": "BELIEVE THE HYPE OUR COLLECTIONS HAVE OVER 26,000 FIVE STAR REVIEWS, AND COUNTING!",
             "customer_shop_url": ""
@@ -189,6 +199,7 @@
         "5c9f5ec8-c428-4941-8669-a3eb7ba9aafe": {
           "type": "slide",
           "settings": {
+            "customer_image": "shopify:\/\/shop_images\/bdaf000364b5b17efce08aaba465c13b4a588a4b-670x670_1.png",
             "customer_name": "MONICA",
             "customer_review_text": "BELIEVE THE HYPE OUR COLLECTIONS HAVE OVER 26,000 FIVE STAR REVIEWS, AND COUNTING!",
             "customer_shop_url": ""
@@ -197,6 +208,7 @@
         "688a5178-369b-42e6-ba38-7886000093b5": {
           "type": "slide",
           "settings": {
+            "customer_image": "shopify:\/\/shop_images\/4f92142dc319eb3a280522d4831c001fe69c9410-660x660_1.png",
             "customer_name": "PHOTON",
             "customer_review_text": "BELIEVE THE HYPE OUR COLLECTIONS HAVE OVER 26,000 FIVE STAR REVIEWS, AND COUNTING!",
             "customer_shop_url": ""
@@ -219,6 +231,7 @@
         "e8585a02-ccf6-4c2c-a92a-0eeedc14edda": {
           "type": "slide",
           "settings": {
+            "collection_image": "shopify:\/\/shop_images\/belive-img-1.png",
             "collection_name": "Test",
             "collection_url": ""
           }
@@ -226,6 +239,7 @@
         "484a1b21-91ea-48b6-95c6-68f129c44641": {
           "type": "slide",
           "settings": {
+            "collection_image": "shopify:\/\/shop_images\/belive-img-2.png",
             "collection_name": "test",
             "collection_url": ""
           }
@@ -233,6 +247,7 @@
         "a28ffa8b-4d94-4e2b-b2db-6d099bf127e8": {
           "type": "slide",
           "settings": {
+            "collection_image": "shopify:\/\/shop_images\/belive-img-3.png",
             "collection_name": "Test",
             "collection_url": ""
           }
@@ -240,14 +255,8 @@
         "1b2326ca-31d9-4217-97b7-1218f3adfb0c": {
           "type": "slide",
           "settings": {
+            "collection_image": "shopify:\/\/shop_images\/belive-img-4.png",
             "collection_name": "test 3",
-            "collection_url": ""
-          }
-        },
-        "66022d9a-e306-4d18-b044-97208885409e": {
-          "type": "slide",
-          "settings": {
-            "collection_name": "",
             "collection_url": ""
           }
         }
@@ -256,8 +265,7 @@
         "e8585a02-ccf6-4c2c-a92a-0eeedc14edda",
         "484a1b21-91ea-48b6-95c6-68f129c44641",
         "a28ffa8b-4d94-4e2b-b2db-6d099bf127e8",
-        "1b2326ca-31d9-4217-97b7-1218f3adfb0c",
-        "66022d9a-e306-4d18-b044-97208885409e"
+        "1b2326ca-31d9-4217-97b7-1218f3adfb0c"
       ],
       "settings": {
         "section_title": "BELIEVE THE HYPE\nOUR COLLECTIONS HAVE OVER 26,000 FIVE STAR\nREVIEWS, AND COUNTING!"
@@ -267,7 +275,7 @@
       "type": "trending-product-grid",
       "settings": {
         "product_grid_name": "tranding",
-        "product_grid_collection": "featured"
+        "product_grid_collection": "sale"
       }
     },
     "7f28b300-5f5c-4dae-af34-56e21cba1acc": {
