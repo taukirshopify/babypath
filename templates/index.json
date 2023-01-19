@@ -231,6 +231,7 @@
         "e8585a02-ccf6-4c2c-a92a-0eeedc14edda": {
           "type": "slide",
           "settings": {
+            "collection_image": "shopify:\/\/shop_images\/belive-img-1.png",
             "collection_name": "Test",
             "collection_url": ""
           }
@@ -238,6 +239,7 @@
         "484a1b21-91ea-48b6-95c6-68f129c44641": {
           "type": "slide",
           "settings": {
+            "collection_image": "shopify:\/\/shop_images\/belive-img-2.png",
             "collection_name": "test",
             "collection_url": ""
           }
