@@ -247,6 +247,7 @@
         "a28ffa8b-4d94-4e2b-b2db-6d099bf127e8": {
           "type": "slide",
           "settings": {
+            "collection_image": "shopify:\/\/shop_images\/belive-img-3.png",
             "collection_name": "Test",
             "collection_url": ""
           }
@@ -257,21 +258,13 @@
             "collection_name": "test 3",
             "collection_url": ""
           }
-        },
-        "66022d9a-e306-4d18-b044-97208885409e": {
-          "type": "slide",
-          "settings": {
-            "collection_name": "",
-            "collection_url": ""
-          }
         }
       },
       "block_order": [
         "e8585a02-ccf6-4c2c-a92a-0eeedc14edda",
         "484a1b21-91ea-48b6-95c6-68f129c44641",
         "a28ffa8b-4d94-4e2b-b2db-6d099bf127e8",
-        "1b2326ca-31d9-4217-97b7-1218f3adfb0c",
-        "66022d9a-e306-4d18-b044-97208885409e"
+        "1b2326ca-31d9-4217-97b7-1218f3adfb0c"
       ],
       "settings": {
         "section_title": "BELIEVE THE HYPE\nOUR COLLECTIONS HAVE OVER 26,000 FIVE STAR\nREVIEWS, AND COUNTING!"
