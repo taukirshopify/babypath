@@ -94,6 +94,7 @@
         "f8a71ebb-fe9b-44ac-840c-473b14c08f2a": {
           "type": "slide",
           "settings": {
+            "collection_image": "shopify:\/\/shop_images\/featured-collection-2.png",
             "collection_title": "Best deal",
             "collection_subtitle": "",
             "collection_cta_title": "Shop Now",
@@ -103,6 +104,7 @@
         "7e4464d9-422c-456b-9ef1-38cc3a6c3572": {
           "type": "slide",
           "settings": {
+            "collection_image": "shopify:\/\/shop_images\/featured-collection-1.png",
             "collection_title": "Great deal",
             "collection_subtitle": "",
             "collection_cta_title": "Shop Now",
