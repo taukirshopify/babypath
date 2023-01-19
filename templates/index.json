@@ -61,6 +61,7 @@
     "b0f3a8d9-9b46-4838-940b-648b9749ead9": {
       "type": "image-background-banner",
       "settings": {
+        "background_image": "shopify:\/\/shop_images\/Banner-2_1.png",
         "banner_title": "3 PANTIES FOR $36",
         "banner_subtitle": "Shop our best-selling styles at special pricing",
         "banner_cta_title": "SHOP NOW",
