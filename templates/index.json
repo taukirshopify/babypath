@@ -74,6 +74,7 @@
         "cc9769d2-72b6-45ee-b65b-c3247c7e00fe": {
           "type": "slide",
           "settings": {
+            "collection_image": "shopify:\/\/shop_images\/featured-collection-4.png",
             "collection_title": "Summer Collection",
             "collection_subtitle": "",
             "collection_cta_title": "Shop Now",
@@ -83,6 +84,7 @@
         "e7dac34a-1a28-4bc8-9af3-fbd4afee5c75": {
           "type": "slide",
           "settings": {
+            "collection_image": "shopify:\/\/shop_images\/featured-collection-3.png",
             "collection_title": "Winnter deal",
             "collection_subtitle": "",
             "collection_cta_title": "Shop Now",
