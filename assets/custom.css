@@ -207,9 +207,7 @@ input.addcart__buttonwrap {
 span.cart-drawer__total-amount span {
     color: #fff !important;
 }
-.main-card-remove {
-    font-size: 34px;
-}
+
 .product-option {
     display: flex;
     font-family: 'T-Star Pro';
@@ -251,7 +249,7 @@ span.cart-drawer__total-amount span {
     margin-top: -18px;
 }
 .main-card-remove {
-    font-size: 34px;
+
     cursor: pointer;
 }
 .product__title {
@@ -805,7 +803,7 @@ h2.product-recommendations__heading {
     display: none;
 }
 .color-remove {
-    margin-top: -36px;
+    margin-top: -34px;
 }
 
 ul.footer-socil-item 
@@ -918,8 +916,8 @@ h2#predictive-search-products {
 .main-card-wraper-items h3 a {
     text-align: left !important;
     padding-top: 0px;
-    font-size: 18px;
-    white-space: nowrap;
+    font-size: 16px;
+    /* white-space: nowrap; */
 }
 .main-cart-texts-item h3 {
     font-weight: 900;
@@ -1001,9 +999,7 @@ button#menu-opener {
     border: none;
     margin-left: 7px;
 }
-button#menu-opener {
-    margin-top: -5px;
-}
+
 .sidebar-menus li.cl-item.f-help-m::after{
     display: none;
 }
@@ -1033,8 +1029,8 @@ section.footer-area span.cl-label-title::after {
     color: #fff;
     font-size: 30px;
     position: absolute;
-    top: 32px;
     right: 10px;
+    top: 5px;
     transition: .3s linear all;
 }
 section.footer-area .cl-item-open span.cl-label-title::after {
@@ -1084,7 +1080,7 @@ input.addcart__buttonwrap {
     button#menu-opener {
         padding: 0;
         background: transparent;
-        margin-top: -7px;
+   
     }
 
     /*Product Page*/
@@ -1236,11 +1232,7 @@ input.addcart__buttonwrap {
         width: 100%;
         max-width: calc(100% - 163px) !important;
     }
-    .main-card-wraper-items h3 a {
-        font-size: 16px;
-        white-space: normal;
-        height: 44px;
-    }
+
     .main-cari-quantity .quantity-control {
         padding: 4px 15px;
     }
@@ -1378,8 +1370,5 @@ input.addcart__buttonwrap {
         font-size: 20px;
         padding-top: 6px;
     }
-    .main-cart-texts-item h3{
-        height: 40px;
-        margin-bottom: 5px;
-    }
+
 }
