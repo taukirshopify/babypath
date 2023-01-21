@@ -4,6 +4,7 @@
 {{ 'component-price.css' | asset_url | stylesheet_tag }}
 {{ 'component-discounts.css' | asset_url | stylesheet_tag }}
 {{ 'component-loading-overlay.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'cart.js' | asset_url }}" defer="defer"></script>
 
 {%- style -%}
   .section-{{ section.id }}-padding {
@@ -90,15 +91,8 @@ cart-remove-button {
     color: #000000;
     letter-spacing: normal !important;
 }
-quantity-input.quantity {
-    border: 1px solid #000;
-    position: relative;
-    height: 40px;
-    width: 90px;
-}
+
 quantity-input.quantity input {
-    height: 38px;
-    width: 68px;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 600;
@@ -109,31 +103,6 @@ quantity-input.quantity input {
     color: #000000;
 }
 
-button.quantity__button {
-    position: absolute;
-    right: -1px;
-    border: 1px solid #000;
-    padding: 0;
-    height: 20.5px;
-    padding: 0 5px;
-    line-height: 18px;
-    border-radius: 0;
-    width: 31px;
-    border-top: 0px;
-    cursor: pointer !important;
-    z-index: 111;
-}
-button.quantity__button[name="plus"] {
-    bottom: 0;
-    border-bottom: 0;
-}
-quantity-input.quantity {
-    border: 1px solid #000;
-    position: relative;
-    height: 40px;
-    width: 90px;
-    padding-right: 32px;
-}
 
 quantity-input.quantity:focus-visible {
     border: 0 !important;
@@ -152,6 +121,13 @@ button.quantity__button {
 }
 cart-remove-button .button {
     font-weight: 700 !important;
+}
+
+td.cart-item__totals.cart_item_product_price {
+    padding-left: 0px;
+}
+quantity-input.quantity input {
+    width: 40px;
 }
 </style>
 
@@ -290,19 +266,6 @@ cart-remove-button .button {
                     </td>
 
                     <td class="cart-item__totals cart_item_product_price">
-                      <div class="loading-overlay hidden">
-                        <div class="loading-overlay__spinner">
-                          <svg
-                            aria-hidden="true"
-                            focusable="false"
-                            class="spinner"
-                            viewBox="0 0 66 66"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
-                          </svg>
-                        </div>
-                      </div>
                       {%- if item.original_price != item.final_price -%}
                         <div class="cart-item__discounted-prices">
                           <span class="visually-hidden">
@@ -335,7 +298,7 @@ cart-remove-button .button {
                             <span class="visually-hidden">
                               {{- 'products.product.quantity.decrease' | t: product: item.product.title | escape -}}
                             </span>
-                            <img src="{{ 'Vector (4).svg' | asset_url }}">
+                            {% render 'icon-minus' %}
                           </button>
                           <input
                             class="quantity__input"
@@ -351,10 +314,9 @@ cart-remove-button .button {
                             <span class="visually-hidden">
                               {{- 'products.product.quantity.increase' | t: product: item.product.title | escape -}}
                             </span>
-                            <img src="{{ 'Vector (5).svg' | asset_url }}">
+                            {% render 'icon-plus' %}
                           </button>
                         </quantity-input>
-
                       </div>
                       <div class="cart-item__error" id="Line-item-error-{{ item.index | plus: 1 }}" role="alert">
                         <small class="cart-item__error-text"></small>

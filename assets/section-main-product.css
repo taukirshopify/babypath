@@ -59,7 +59,7 @@
   }
 
   .product--large:not(.product--no-media) .product__info-wrapper {
-    padding: 34px 20px;
+    padding: 0 0 0 4rem;
     max-width: 35%;
     width: calc(35% - var(--grid-desktop-horizontal-spacing) / 2);
   }
@@ -227,7 +227,7 @@ fieldset.product-form__input .form__label {
 
 .product-form__input input[type='radio']:checked + label {
   background-color: rgb(var(--color-foreground));
-  color: #fff !important;
+  color: rgb(var(--color-background));
 }
 
 .product-form__input input[type='radio']:not(.disabled) + label > .visually-hidden {

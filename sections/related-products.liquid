@@ -1,10 +1,11 @@
 <link rel="stylesheet" href="{{ 'component-card.css' | asset_url }}" media="print" onload="this.media='all'">
 <link rel="stylesheet" href="{{ 'component-price.css' | asset_url }}" media="print" onload="this.media='all'">
-<link rel="stylesheet" href="{{ 'section-product-recommendations.css' | asset_url }}" media="print" onload="this.media='all'">
-
-<noscript>{{ 'component-card.css' | asset_url | stylesheet_tag }}</noscript>
-<noscript>{{ 'component-price.css' | asset_url | stylesheet_tag }}</noscript>
-<noscript>{{ 'section-product-recommendations.css' | asset_url | stylesheet_tag }}</noscript>
+<link
+  rel="stylesheet"
+  href="{{ 'section-related-products.css' | asset_url }}"
+  media="print"
+  onload="this.media='all'"
+>
 
 {%- style -%}
   .section-{{ section.id }}-padding {
@@ -20,53 +21,38 @@
   }
 {%- endstyle -%}
 
-<div class="color-{{ section.settings.color_scheme }} gradient">
-<div class="container">
+<div class="color-{{ section.settings.color_scheme }} gradient no-js-hidden">
+  <div class="container">
    <div class="row">
-    <product-recommendations class="product-recommendations page-width section-{{ section.id }}-padding isolate" data-url="{{ routes.product_recommendations_url }}?section_id={{ section.id }}&product_id={{ product.id }}&limit=10">
-      <div class=" splide" id="image-carousel">
-      {% if recommendations.performed and recommendations.products_count > 0 %}
-        <h2 class="product-recommendations__heading {{ section.settings.heading_size }}">{{ section.settings.heading | escape }}</h2>
-        <div class="grid product-grid{% if section.settings.columns_desktop == 1 %} grid--full-width{% else %} grid--{{ section.settings.columns_desktop }}-col-desktop{% endif %} grid--{{ section.settings.columns_mobile }}-col-tablet-down" role="list">
-    <div class="splide__track">
-        <ul class="splide__list">
-          {% for recommendation in recommendations.products %}
-            <li class="grid__item splide__slide">
-              <div class="remomended-space">
-                {% include 'proudct-grid-item' %}
-                </div>
-            </li>
-          {% endfor %}
-        </ul>
-      </div>
-        </div>
-        <div class="splide__arrows splide__arrows--ltr">
-          <button
-            class="splide__arrow splide__arrow--prev"
-            type="button"
-            aria-label="Previous slide"
-            aria-controls="splide01-track"
-          >
-            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="40" height="40" viewBox="0 0 32 32">
-              <title>gallery-next15x</title>
-              <path fill="none" stroke="#000" stroke-width="1.8" stroke-miterlimit="4" stroke-linecap="butt" stroke-linejoin="miter" d="M9.75 4.010l12.51 12.51-12.48 12.47"></path>
-              </svg>
-          </button>
-          <button
-            class="splide__arrow splide__arrow--next"
-            type="button"
-            aria-label="Next slide"
-            aria-controls="splide01-track"
-          >
-            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="40" height="40" viewBox="0 0 32 32">
-              <title>gallery-next15x</title>
-              <path fill="none" stroke="#000" stroke-width="1.8" stroke-miterlimit="4" stroke-linecap="butt" stroke-linejoin="miter" d="M9.75 4.010l12.51 12.51-12.48 12.47"></path>
-              </svg>
-          </button>
-        </div>
-      {% endif %}
-      <div>
-    </product-recommendations>
+  <product-recommendations
+    class="related-products page-width section-{{ section.id }}-padding isolate"
+    data-url="{{ routes.product_recommendations_url }}?section_id={{ section.id }}&product_id={{ product.id }}&limit={{ section.settings.products_to_show }}"
+  >
+    {% if recommendations.performed and recommendations.products_count > 0 %}
+      <h2 class="related-products__heading {{ section.settings.heading_size }}">
+        {{ section.settings.heading | escape }}
+      </h2>
+      <ul
+        class="grid product-grid grid--{{ section.settings.columns_desktop }}-col-desktop grid--{{ section.settings.columns_mobile }}-col-tablet-down"
+        role="list"
+      >
+        {% for recommendation in recommendations.products %}
+          <li class="grid__item">
+            <div class="product_item">
+            <a class="justin-items" href="{{ recommendation.url }}">
+                <img class="justin-item-img" src="{{ recommendation.featured_image | img_url: 'medium' }}" alt="{{ recommendation.title }}">
+                <div class="justin-item-p-text">
+                    <p class="justin-item-text">{{ recommendation.title }}</p>
+                    <p class="justin-item-text">{{ recommendation.price | money }}</p>   
+                </div> 
+            </a>
+</div>
+          </li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+  </product-recommendations>
+  </div>
   </div>
 </div>
 </div>
@@ -128,7 +114,7 @@ left: 20px;
             let splide = new Splide( '#image-carousel', {
               pagination : false,
               paginationKeyboard:false,
-              type   : 'loop',
+            
               drag   : 'free',
               perPage: 4,
               perMove: 3,
@@ -166,19 +152,19 @@ left: 20px;
 
 {% schema %}
 {
-  "name": "t:sections.product-recommendations.name",
+  "name": "t:sections.related-products.name",
   "tag": "section",
   "class": "section",
   "settings": [
     {
       "type": "paragraph",
-      "content": "t:sections.product-recommendations.settings.paragraph__1.content"
+      "content": "t:sections.related-products.settings.paragraph__1.content"
     },
     {
       "type": "text",
       "id": "heading",
       "default": "You may also like",
-      "label": "t:sections.product-recommendations.settings.heading.label"
+      "label": "t:sections.related-products.settings.heading.label"
     },
     {
       "type": "select",
@@ -202,12 +188,21 @@ left: 20px;
     },
     {
       "type": "range",
-      "id": "columns_desktop",
-      "min": 1,
-      "max": 4,
+      "id": "products_to_show",
+      "min": 2,
+      "max": 10,
       "step": 1,
       "default": 4,
-      "label": "t:sections.product-recommendations.settings.columns_desktop.label"
+      "label": "t:sections.related-products.settings.products_to_show.label"
+    },
+    {
+      "type": "range",
+      "id": "columns_desktop",
+      "min": 1,
+      "max": 5,
+      "step": 1,
+      "default": 4,
+      "label": "t:sections.related-products.settings.columns_desktop.label"
     },
     {
       "type": "select",
@@ -240,7 +235,7 @@ left: 20px;
     },
     {
       "type": "header",
-      "content": "t:sections.product-recommendations.settings.header__2.content"
+      "content": "t:sections.related-products.settings.header__2.content"
     },
     {
       "type": "select",
@@ -248,56 +243,56 @@ left: 20px;
       "options": [
         {
           "value": "adapt",
-          "label": "t:sections.product-recommendations.settings.image_ratio.options__1.label"
+          "label": "t:sections.related-products.settings.image_ratio.options__1.label"
         },
         {
           "value": "portrait",
-          "label": "t:sections.product-recommendations.settings.image_ratio.options__2.label"
+          "label": "t:sections.related-products.settings.image_ratio.options__2.label"
         },
         {
           "value": "square",
-          "label": "t:sections.product-recommendations.settings.image_ratio.options__3.label"
+          "label": "t:sections.related-products.settings.image_ratio.options__3.label"
         }
       ],
       "default": "adapt",
-      "label": "t:sections.product-recommendations.settings.image_ratio.label"
+      "label": "t:sections.related-products.settings.image_ratio.label"
     },
     {
       "type": "checkbox",
       "id": "show_secondary_image",
       "default": false,
-      "label": "t:sections.product-recommendations.settings.show_secondary_image.label"
+      "label": "t:sections.related-products.settings.show_secondary_image.label"
     },
     {
       "type": "checkbox",
       "id": "show_vendor",
       "default": false,
-      "label": "t:sections.product-recommendations.settings.show_vendor.label"
+      "label": "t:sections.related-products.settings.show_vendor.label"
     },
     {
       "type": "checkbox",
       "id": "show_rating",
       "default": false,
-      "label": "t:sections.product-recommendations.settings.show_rating.label",
-      "info": "t:sections.product-recommendations.settings.show_rating.info"
+      "label": "t:sections.related-products.settings.show_rating.label",
+      "info": "t:sections.related-products.settings.show_rating.info"
     },
     {
       "type": "header",
-      "content": "t:sections.product-recommendations.settings.header_mobile.content"
+      "content": "t:sections.related-products.settings.header_mobile.content"
     },
     {
       "type": "select",
       "id": "columns_mobile",
       "default": "2",
-      "label": "t:sections.product-recommendations.settings.columns_mobile.label",
+      "label": "t:sections.related-products.settings.columns_mobile.label",
       "options": [
         {
           "value": "1",
-          "label": "t:sections.product-recommendations.settings.columns_mobile.options__1.label"
+          "label": "t:sections.related-products.settings.columns_mobile.options__1.label"
         },
         {
           "value": "2",
-          "label": "t:sections.product-recommendations.settings.columns_mobile.options__2.label"
+          "label": "t:sections.related-products.settings.columns_mobile.options__2.label"
         }
       ]
     },

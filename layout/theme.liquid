@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="theme-color" content="">
     <link rel="canonical" href="{{ canonical_url }}">
-    <link rel="preconnect"
+    <link
+    rel="preconnect"
       href="https://cdn.shopify.com"
       crossorigin>
 
@@ -438,98 +439,60 @@
     {{ 'main.css' | asset_url | stylesheet_tag }}
     {{ 'custom.css' | asset_url | stylesheet_tag }}
     {{ 'style.css' | asset_url | stylesheet_tag }}
+    <style>
 
-    {% comment %} <style>
-    @font-face {
-    font-family: 'T-Star Pro';
-    src: url("{{ 'TStarProLight.woff' | asset_url }}") format("woff");
-    font-weight: 300;
-    font-style: normal;
-    }
-    @font-face {
-    font-family: 'T-Star Pro';
-    src: url("{{ 'TStarProRegular.woff' | asset_url }}") format("woff");
-    font-weight: 400;
-    font-style: normal;
-    }
-    @font-face {
-    font-family: 'T-Star Pro';
-    src: url("{{ 'TStarProMedium.woff' | asset_url }}") format("woff");
-    font-weight: 500;
-    font-style: normal;
-    }
-    @font-face {
-    font-family: 'T-Star Pro';
-    src: url("{{ 'TStarProBold.woff' | asset_url }}") format("woff");
-    font-weight: 700;
-    font-style: normal;
-    }
-    @font-face {
-    font-family: 'T-Star Pro';
-    src: url("{{ 'TStarProHeavy.woff' | asset_url }}") format("woff");
-    font-weight: 900;
-    font-style: normal;
-    }
-    </style> {% endcomment %}
+      @font-face {
+        font-family: 'T-Star Pro';
+        src: url('{{ "T-StarPro-Medium.eot" | asset_url }}');
+        src: local('T-Star Pro Medium'), local('T-StarPro-Medium'), url('{{ "T-StarPro-Medium.eot" | asset_url }}?#iefix') format('embedded-opentype'), url('{{ "T-StarPro-Medium.woff2" | asset_url }}') format('woff2'), url('{{ "T-StarPro-Medium.woff" | asset_url }}') format('woff'), url('{{ "T-StarPro-Medium.ttf" | asset_url }}') format('truetype'), url('{{ "T-StarPro-Medium.svg" | asset_url }}#T-StarPro-Medium') format('svg');
+        font-weight: 500;
+        font-style: normal;
+        font-display: swap;
+      }
 
+      @font-face {
+        font-family: 'T-Star Pro';
+        src: url('{{ "T-StarPro-Regular.eot" | asset_url }}');
+        src: local('T-Star Pro Regular'), local('T-StarPro-Regular'), url('{{ "T-StarPro-Regular.eot" | asset_url }}?#iefix') format('embedded-opentype'), url('{{ "T-StarPro-Regular.woff2" | asset_url }}') format('woff2'), url('{{ "T-StarPro-Regular.woff" | asset_url }}') format('woff'), url('{{ "T-StarPro-Regular.ttf" | asset_url }}') format('truetype'), url('{{ "T-StarPro-Regular.svg" | asset_url }}#T-StarPro-Regular') format('svg');
+        font-weight: 300;
+        font-style: normal;
+        font-display: swap;
+      }
 
-    <!--New Fonts-->
-      <style>
+      @font-face {
+        font-family: 'T-Star Pro';
+        src: url('{{ "T-StarPro-Heavy.eot" | asset_url }}');
+        src: local('T-Star Pro Heavy'), local('T-StarPro-Heavy'), url('{{ "T-StarPro-Heavy.eot" | asset_url }}?#iefix') format('embedded-opentype'), url('{{ "T-StarPro-Heavy.woff2" | asset_url }}') format('woff2'), url('{{ "T-StarPro-Heavy.woff" | asset_url }}') format('woff'), url('{{ "T-StarPro-Heavy.ttf" | asset_url }}') format('truetype'), url('{{ "T-StarPro-Heavy.svg" | asset_url }}#T-StarPro-Heavy') format('svg');
+        font-weight: 900;
+        font-style: normal;
+        font-display: swap;
+      }
 
-@font-face {
-  font-family: 'T-Star Pro';
-  src: url('{{ "T-StarPro-Medium.eot" | asset_url }}');
-  src: local('T-Star Pro Medium'), local('T-StarPro-Medium'), url('{{ "T-StarPro-Medium.eot" | asset_url }}?#iefix') format('embedded-opentype'), url('{{ "T-StarPro-Medium.woff2" | asset_url }}') format('woff2'), url('{{ "T-StarPro-Medium.woff" | asset_url }}') format('woff'), url('{{ "T-StarPro-Medium.ttf" | asset_url }}') format('truetype'), url('{{ "T-StarPro-Medium.svg" | asset_url }}#T-StarPro-Medium') format('svg');
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
+      @font-face {
+        font-family: 'T-Star Pro';
+        src: url('{{ "T-StarPro-Light.eot" | asset_url }}');
+        src: local('T-Star Pro Light'), local('T-StarPro-Light'), url('{{ "T-StarPro-Light.eot" | asset_url }}?#iefix') format('embedded-opentype'), url('{{ "T-StarPro-Light.woff2" | asset_url }}') format('woff2'), url('{{ "T-StarPro-Light.woff" | asset_url }}') format('woff'), url('{{ "T-StarPro-Light.ttf" | asset_url }}') format('truetype'), url('{{ "T-StarPro-Light.svg" | asset_url }}#T-StarPro-Light') format('svg');
+        font-weight: 300;
+        font-style: normal;
+        font-display: swap;
+      }
 
-@font-face {
-  font-family: 'T-Star Pro';
-  src: url('{{ "T-StarPro-Regular.eot" | asset_url }}');
-  src: local('T-Star Pro Regular'), local('T-StarPro-Regular'), url('{{ "T-StarPro-Regular.eot" | asset_url }}?#iefix') format('embedded-opentype'), url('{{ "T-StarPro-Regular.woff2" | asset_url }}') format('woff2'), url('{{ "T-StarPro-Regular.woff" | asset_url }}') format('woff'), url('{{ "T-StarPro-Regular.ttf" | asset_url }}') format('truetype'), url('{{ "T-StarPro-Regular.svg" | asset_url }}#T-StarPro-Regular') format('svg');
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'T-Star Pro';
-  src: url('{{ "T-StarPro-Heavy.eot" | asset_url }}');
-  src: local('T-Star Pro Heavy'), local('T-StarPro-Heavy'), url('{{ "T-StarPro-Heavy.eot" | asset_url }}?#iefix') format('embedded-opentype'), url('{{ "T-StarPro-Heavy.woff2" | asset_url }}') format('woff2'), url('{{ "T-StarPro-Heavy.woff" | asset_url }}') format('woff'), url('{{ "T-StarPro-Heavy.ttf" | asset_url }}') format('truetype'), url('{{ "T-StarPro-Heavy.svg" | asset_url }}#T-StarPro-Heavy') format('svg');
-  font-weight: 900;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'T-Star Pro';
-  src: url('{{ "T-StarPro-Light.eot" | asset_url }}');
-  src: local('T-Star Pro Light'), local('T-StarPro-Light'), url('{{ "T-StarPro-Light.eot" | asset_url }}?#iefix') format('embedded-opentype'), url('{{ "T-StarPro-Light.woff2" | asset_url }}') format('woff2'), url('{{ "T-StarPro-Light.woff" | asset_url }}') format('woff'), url('{{ "T-StarPro-Light.ttf" | asset_url }}') format('truetype'), url('{{ "T-StarPro-Light.svg" | asset_url }}#T-StarPro-Light') format('svg');
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'T-Star Pro';
-  src: url('{{ "T-StarPro-Bold.eot" | asset_url }}');
-  src: local('T-Star Pro Bold'), local('T-StarPro-Bold'), url('{{ "T-StarPro-Bold.eot" | asset_url }}?#iefix') format('embedded-opentype'), url('{{ "T-StarPro-Bold.woff2" | asset_url }}') format('woff2'), url('{{ "T-StarPro-Bold.woff" | asset_url }}') format('woff'), url('{{ "T-StarPro-Bold.ttf" | asset_url }}') format('truetype'), url('{{ "T-StarPro-Bold.svg" | asset_url }}#T-StarPro-Bold') format('svg');
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
-</style>
+      @font-face {
+        font-family: 'T-Star Pro';
+        src: url('{{ "T-StarPro-Bold.eot" | asset_url }}');
+        src: local('T-Star Pro Bold'), local('T-StarPro-Bold'), url('{{ "T-StarPro-Bold.eot" | asset_url }}?#iefix') format('embedded-opentype'), url('{{ "T-StarPro-Bold.woff2" | asset_url }}') format('woff2'), url('{{ "T-StarPro-Bold.woff" | asset_url }}') format('woff'), url('{{ "T-StarPro-Bold.ttf" | asset_url }}') format('truetype'), url('{{ "T-StarPro-Bold.svg" | asset_url }}#T-StarPro-Bold') format('svg');
+        font-weight: bold;
+        font-style: normal;
+        font-display: swap;
+      }
+    </style>
   </head>
 
-    <body class="gradient"> <a class="skip-to-content-link button visually-hidden" href="#MainContent">
+  <body class="gradient">
+    <a class="skip-to-content-link button visually-hidden" href="#MainContent">
       {{ "accessibility.skip_to_text" | t }}
     </a>
 
-    {% comment %} {%- if settings.cart_type == 'drawer' -%}
-    {%- render 'cart-drawer' -%}
-    {%- endif -%} {% endcomment %}
 
     {% section 'announcement-bar' %}
     {% section 'header-global' %}
@@ -540,6 +503,7 @@
       tabindex="-1">
       {{ content_for_layout }}
     </main>
+
     {% section 'cart-drawyer' %}
     {% section 'footer-global' %}
 
@@ -582,12 +546,10 @@
       <script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
 
-
     {{ 'popper.min.js' | asset_url | script_tag }}
     {{ 'bootstrap.min.js' | asset_url | script_tag }}
     {{ 'splide.min.js' | asset_url | script_tag }}
     {{ 'theme.js' | asset_url | script_tag }}
-
 
   </body>
 </html>
