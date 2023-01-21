@@ -38,12 +38,13 @@
                   <li class="splide__slide">
 
                     <div class="collection_item">
-                      <a class="product-items" href="{{ product.url }}">
-                        <div class="product_image_wrapper ">
+                        <a class="product-items" href="{{ product.url }}">
+                         <div class="product_image_wrapper ">
                           <img
                             class="product-item-img firstImage"
                             src="{{ product.featured_image | img_url: 'master' }}"
                             alt="{{ product.title }}">
+
                           {% if product.images[1] %}
                             <img
                               class="product-item-img secondImage"
@@ -51,14 +52,15 @@
                               alt="{{ product.title }}">
                   
                           {% endif %}
+
                           {% if product.compare_at_price > product.price %}
                             <div class="proudct-sale">
                               On sale
                             </div>
                           {% endif %}
-                          
+                        </div>
                         </a>
-                      </div>
+                     
                       <div class="product-item-p-text">
                   
                   
