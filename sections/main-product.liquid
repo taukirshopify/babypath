@@ -13,6 +13,9 @@
   {{ 'component-deferred-media.css' | asset_url | stylesheet_tag }}
 
   {%- style -%}
+  .accordion details[open] > summary .icon-caret {
+    transform: rotate(180deg) scale(2);
+}
     .section-{{ section.id }}-padding {
       padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}
       px;

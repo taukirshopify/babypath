@@ -1,4 +1,8 @@
 <!-- header area strat -->
+
+
+
+
 <header class="fast-header-area">
   <div class="container">
     <div class="fast-header-item">
@@ -36,46 +40,11 @@
         </ul>
       </div>
       <ul class="header-sigin-btn">
-        <li class="currency-switcher-li">
-          <div class="currency-switcher">
-            <div class="dropdown">
-              <div class="caption">
-                <div class="n-flag">
-                  <img src="{{'flag.svg' | asset_url  }}" alt="">
-                </div>
-                USA
-              </div>
-              <div class="list">
-                <div class="item selected" data-item="RUB">
-                  <div class="n-flag">
-                    <img src="{{'flag.svg' | asset_url  }}" alt="">
-                  </div>
-                  USA
-                </div>
-                <div class="item" data-item="RUB">
-                  <div class="n-flag">
-                    <img src="{{'flag.svg' | asset_url  }}" alt="">
-                  </div>
-                  Россия
-                  <!-- <span>RUB</span> -->
-                </div>
-                <div class="item" data-item="UAH">
-                  <div class="n-flag">
-                    <img src="{{'flag.svg' | asset_url  }}" alt="">
-                  </div>
-                  Украина
-                  <!-- <span>UAH</span> -->
-                </div>
-                <div class="item" data-item="USD">
-                  <div class="n-flag">
-                    <img src="{{'flag.svg' | asset_url  }}" alt="">
-                  </div>
-                  Россия
-                </div>
-              </div>
-            </div>
-          </div>
-        </li>
+
+         {% include 'currency' %}
+ 
+
+
         <li>
           <div class="search-option">
             <!-- Search elament -->
@@ -181,8 +150,10 @@
     </div>
     <div class="mobile-menu-logins">
       <a href="/account">login</a>
-      <p>currency:<span>{{ cart.currency.symbol }}</span>
-      </p>
+      <div class="d-flex align-items-center currencymobile"> <span>currency:</span><div class="currency-flag d-inline-block currency-flag-{{ cart.currency.iso_code  | downcase }}"></div>
+
+      
+    </div>
       <p class="d-flex align-items-center" id="cartDrawyerOpener">shopping Bag
         <span>
           <img src="{{ 'Shoppingbagblack.svg' | asset_url }}">
@@ -224,6 +195,8 @@
 </div>
 
 
+
+
 {% schema %}
   {
     "name": "Header Global",
@@ -259,7 +232,24 @@
 
 
 <style>
+  .currencymobile span{
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 13.1097px;
+    line-height: 130%;
+    text-transform: uppercase;
+    color: #000000;
+    margin-right:5px;
 
+  }
+  .currencymobile{
+    padding-bottom: 24px;
+  }
+  .disclosure__list {
+    position: absolute !important;
+    padding: 0;
+    z-index: 200;
+}
   .minous .menu-plus {
     display: none;
   }
@@ -268,5 +258,9 @@
   }
   button#menu-opener {
     border: none;
+  }
+
+  .disclosure input{
+   display: none;
   }
 </style>

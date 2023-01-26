@@ -1,0 +1,203 @@
+<li class="currency-switcher-li">
+
+<localization-form class="d-none d-md-block" >
+    {% form 'localization' %}
+      <div class="disclosure">
+        <button type="button" class="disclosure__button d-flex align-items-center" aria-expanded="false" aria-controls="CountryList">
+
+         
+
+          <div class="currency-flag currency-flag-{{ localization.country.currency.iso_code | downcase }}"></div>
+
+          <span>
+            {{ localization.country.currency.iso_code }}
+          </span>
+        </button>
+
+        <ul id="CountryList" role="list" class="disclosure__list"             hidden>
+         {% comment %} {% for country in localization.available_countries %}
+            <li class="disclosure__item" tabindex="-1">
+              <a href="#"{% if country.iso_code == localization.country.iso_code %} aria-current="true"{% endif %} data-value="{{ country.iso_code }}">
+                    {{ country.currency.iso_code }}
+              </a>
+            </li>
+          {% endfor %} {% endcomment %}
+        </ul>
+
+        <input type="hidden" name="country_code" value="{{ localization.country.iso_code }}">
+        <input type="submit" value="button">
+      </div>
+    {% endform %}
+  </localization-form>
+</li>
+  <script>
+    function removeDuplicates(arr) {
+const result = [];
+
+for (let i = 0; i < arr.length; i++) {
+let duplicate = false;
+for (let j = 0; j < result.length; j++) {
+ if (arr[i][0] === result[j][0]) {
+   duplicate = true;
+   break;
+ }
+}
+if (!duplicate) {
+ result.push(arr[i]);
+}
+}
+
+return result;
+}
+const originalArray = [     {% for country in localization.available_countries %}
+ 
+
+["{{ country.currency.iso_code }}","{{ country.iso_code }}"]
+
+     
+{% unless forloop.last %} , {% endunless -%}
+
+{% endfor %}      ];
+const uniqueArray = removeDuplicates(originalArray);
+const element = document.getElementById('CountryList');
+uniqueArray.forEach((item)=>{
+element.innerHTML +=  ` <li class="disclosure__item" tabindex="-1">
+<a href="#" data-value="${item[1]}">
+  <div class="currency-flag currency-flag-${item[0].toLowerCase()}"></div>
+${item[0]}
+</a>
+</li>`
+
+});
+
+</script>
+
+<script>
+    class LocalizationForm extends HTMLElement {
+        constructor() {
+          super();
+          this.elements = {
+            input: this.querySelector('input[name="language_code"], input[name="country_code"]'),
+            button: this.querySelector('button'),
+            panel: this.querySelector('ul'),
+          };
+          this.elements.button.addEventListener('click', this.openSelector.bind(this));
+          this.elements.button.addEventListener('focusout', this.closeSelector.bind(this));
+          this.addEventListener('keyup', this.onContainerKeyUp.bind(this));
+      
+          this.querySelectorAll('a').forEach(item => item.addEventListener('click', this.onItemClick.bind(this)));
+        }
+      
+        hidePanel() {
+          this.elements.button.setAttribute('aria-expanded', 'false');
+          this.elements.panel.setAttribute('hidden', true);
+        }
+      
+        onContainerKeyUp(event) {
+          if (event.code.toUpperCase() !== 'ESCAPE') return;
+      
+          this.hidePanel();
+          this.elements.button.focus();
+        }
+      
+        onItemClick(event) {
+          event.preventDefault();
+          const form = this.querySelector('form');
+          this.elements.input.value = event.currentTarget.dataset.value;
+          if (form) form.submit();
+        }
+      
+        openSelector() {
+          this.elements.button.focus();
+          this.elements.panel.toggleAttribute('hidden');
+          this.elements.button.setAttribute('aria-expanded', (this.elements.button.getAttribute('aria-expanded') === 'false').toString());
+        }
+      
+        closeSelector(event) {
+          const shouldClose = event.relatedTarget && event.relatedTarget.nodeName === 'BUTTON';
+          if (event.relatedTarget === null || shouldClose) {
+            this.hidePanel();
+          }
+        }
+      }
+      customElements.define('localization-form', LocalizationForm);
+
+
+
+
+</script>
+
+     
+
+
+
+
+
+<style>
+
+  .disclosure__button span{
+    margin-left: 4px;
+    color:#fff;
+    font-family: 'T-Star Pro';
+font-style: normal;
+font-weight: 900;
+font-size: 12px;
+line-height:1;
+  }
+  .currency-flag{
+    display: inline-block !important;
+  }
+  .header-sigin-btn .disclosure__item a {
+    color: #000;
+    padding-top: 5px;
+}
+  .disclosure__item {
+   border-bottom:1px solid #000;
+  }
+  .disclosure button {
+    border: none;
+    padding: 0;
+    font-size: 16px;
+    color: var(--title-color);
+}
+
+.disclosure button svg{
+ width:18px;
+ margin-left:5px;
+
+}
+.disclosure button {
+  border: none;
+  padding: 0;
+  font-size: 16px;
+  color: var(--title-color);
+  margin-left: 0px;
+  background: transparent;
+}
+.disclosure__list {
+  position: absolute !important;
+  padding: 0;
+  z-index: 200;
+  width: 66px;
+  max-height:45svh;
+  overflow: scroll;
+}
+ul#CountryList {
+  border:1px solid;
+  border-color: var(--border-color);
+}
+.disclosure__list  li {
+  background:#fff;
+  padding: 5px 16px!important;
+  text-align: center;
+  color:#000;
+}
+.disclosure__list  a{
+
+  color:#000;
+}
+
+ul#CountryList li:hover > a {
+  color:{{  section.settings.color }};
+}
+</style>
