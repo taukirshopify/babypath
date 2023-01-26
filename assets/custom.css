@@ -489,73 +489,21 @@ fieldset.js.product-form__input label {
     font-style: normal;
     font-weight: 900;
     font-size: 25px;
-    line-height: 130%;
+    line-height: 1;
     text-transform: uppercase;
     color: #FFFFFF;
     background: #000000;
     border-radius: 5px;
     height: 52px;
-    padding-top: 8px;
-}.product-form__buttons button {
-    font-family: 'T-Star Pro';
-    font-style: normal;
-    font-weight: 900;
-    font-size: 25px;
-    line-height: 130%;
-    text-transform: uppercase;
-    color: #FFFFFF;
-    background: #000000;
-    border-radius: 5px;
-    height: 52px;
-    padding-top: 8px;
-}.product-form__buttons button {
-    font-family: 'T-Star Pro';
-    font-style: normal;
-    font-weight: 900;
-    font-size: 25px;
-    line-height: 130%;
-    text-transform: uppercase;
-    color: #FFFFFF;
-    background: #000000;
-    border-radius: 5px;
-    height: 52px;
-    padding-top: 8px;
-}.product-form__buttons button {
-    font-family: 'T-Star Pro';
-    font-style: normal;
-    font-weight: 900;
-    font-size: 25px;
-    line-height: 130%;
-    text-transform: uppercase;
-    color: #FFFFFF;
-    background: #000000;
-    border-radius: 5px;
-    height: 52px;
-    padding-top: 8px;
-}.product-form__buttons button {
-    font-family: 'T-Star Pro';
-    font-style: normal;
-    font-weight: 900;
-    font-size: 25px;
-    line-height: 130%;
-    text-transform: uppercase;
-    color: #FFFFFF;
-    background: #000000;
-    border-radius: 5px;
-    height: 52px;
-    padding-top: 8px;
-}.product-form__buttons button {
-    font-family: 'T-Star Pro';
-    font-style: normal;
-    font-weight: 900;
-    font-size: 25px;
-    line-height: 130%;
-    text-transform: uppercase;
-    color: #FFFFFF;
-    background: #000000;
-    border-radius: 5px;
-    height: 52px;
-    padding-top: 8px;
+
+}
+.product-form__input input[type='radio']:checked + label {
+    background-color: rgb(var(--color-foreground));
+   
+    color: #fff !important;
+}
+.shopify-cleanslate span {
+    color: #fff;
 }
 h2.related-products__heading.h2 {
     font-family: 'T-Star Pro';
@@ -1118,13 +1066,13 @@ input.addcart__buttonwrap {
         font-style: normal;
         font-weight: 900;
         font-size: 22px;
-        line-height: 130%;
+        line-height: 1;
         text-transform: uppercase;
         color: #fff;
         background: #000000;
         border-radius: 5px;
         height: 54px;
-        padding-top: 8px;
+    
     }
     h1.main-page-title.page-title.h0 {
         font-size: 32px;
