@@ -93,6 +93,7 @@
         "f8a71ebb-fe9b-44ac-840c-473b14c08f2a": {
           "type": "slide",
           "settings": {
+            "collection_image": "shopify:\/\/shop_images\/featured-gift-2_3844b177-a6cd-4f3c-bdc8-92221d69eaaa.png",
             "collection_title": "Best deal",
             "collection_subtitle": "",
             "collection_cta_title": "Shop Now",
@@ -136,6 +137,7 @@
         "49e3b5db-b178-424f-adaf-b184a72fd732": {
           "type": "slide",
           "settings": {
+            "shop_range_image": "shopify:\/\/shop_images\/featured-gift-3_26deb5ec-7bc3-4244-ae6c-e051ba664179.png",
             "shop_range_title": "GIFTS UNDER $200",
             "shop_range_subtitle": "Celebrate them with special gifts",
             "shop_range_cta_title": "Shop Now",
@@ -155,6 +157,7 @@
         "51dcd6b8-4ff8-4680-98d9-c22471a4836f": {
           "type": "slide",
           "settings": {
+            "shop_range_image": "shopify:\/\/shop_images\/featured-gift-4.png",
             "shop_range_title": "LUXE GIFTS",
             "shop_range_subtitle": "Premium picks on every wishlist.",
             "shop_range_cta_title": "Shop Now",
@@ -255,21 +258,13 @@
             "collection_name": "test 3",
             "collection_url": ""
           }
-        },
-        "66022d9a-e306-4d18-b044-97208885409e": {
-          "type": "slide",
-          "settings": {
-            "collection_name": "",
-            "collection_url": ""
-          }
         }
       },
       "block_order": [
         "e8585a02-ccf6-4c2c-a92a-0eeedc14edda",
         "484a1b21-91ea-48b6-95c6-68f129c44641",
         "a28ffa8b-4d94-4e2b-b2db-6d099bf127e8",
-        "1b2326ca-31d9-4217-97b7-1218f3adfb0c",
-        "66022d9a-e306-4d18-b044-97208885409e"
+        "1b2326ca-31d9-4217-97b7-1218f3adfb0c"
       ],
       "settings": {
         "section_title": "BELIEVE THE HYPE\nOUR COLLECTIONS HAVE OVER 26,000 FIVE STAR\nREVIEWS, AND COUNTING!"
