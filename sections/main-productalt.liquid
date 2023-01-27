@@ -13,13 +13,7 @@
   {{ 'component-deferred-media.css' | asset_url | stylesheet_tag }}
 
   {%- style -%}
-  .splide__track--nav>.splide__list>.splide__slide.is-active {
-    border: none;
-}
-    .splide__slide img {
-    vertical-align: bottom;
-    width: 100%;
-}
+
   .accordion details[open] > summary .icon-caret {
     transform: rotate(180deg) scale(2);
 }
@@ -70,13 +64,11 @@
 
   {% assign variant_images = product.images | where: 'attached_to_variant?', true | map: 'src' %}
 
-<div class="container d-lg-flex">
-    <div class="col-lg-6">
-      {% include 'product-image' %}
-
+  <div class="product product--{{ section.settings.media_size }} product--{{ section.settings.media_position }} product--{{ section.settings.gallery_layout }} product--mobile-{{ section.settings.mobile_thumbnails }} grid grid--1-col {% if product.media.size > 0 %}grid--2-col-tablet{% else %}product--no-media{% endif %}">
+    <div class="grid__item product__media-wrapper{% if section.settings.media_position == 'right' %} medium-hide large-up-hide{% endif %}">
+      {% render 'product-media-gallery', variant_images: variant_images %}
     </div>
-
-    <div class="col-lg-6">
+    <div class="product__info-wrapper grid__item{% if settings.page_width > 1400 and section.settings.media_size == "small" %} product__info-wrapper--extra-padding{% endif %}">
       <div id="ProductInfo-{{ section.id }}" class="product__info-container{% if section.settings.enable_sticky_info %} product__column-sticky{% endif %}">
         {%- assign product_form_id = 'product-form-' | append: section.id -%}
 
@@ -550,18 +542,6 @@
   {%- endif -%}
 
   <script>
-
-
-
-
-
-
-
-
-
-
-
-
     document.addEventListener('DOMContentLoaded', function() {
       function isIE() {
         const ua = window.navigator.userAgent;
@@ -642,13 +622,6 @@ endif
     }
   </script>
 </section>
-
-
-
-
-{% comment %} testin start herer  {% endcomment %}
-
-{% comment %} testin end herer  {% endcomment %}
 
 {% schema %}
   {
@@ -1906,68 +1879,9 @@ endif
   }
 {% endschema %}
 
-<script>
- // new Splide(".second-slider").mount();
- 
- function moveDiv(){
-  var exampleDiv0 = document.getElementById("example-one");
-  var exampleDiv1 =     exampleDiv0.children
-  var newDiv = document.getElementById("new-div");
-  newDiv.appendChild(exampleDiv1);
-}
-document.addEventListener("DOMContentLoaded", function() {
-  moveDiv();
-}); 
 
- window.addEventListener('load', function () {
-  var main = new Splide( '#main-carousel', { 
-    type      : 'fade',
-    rewind    : true,
-    pagination: false,
-    breakpoints : {
-      800: {
-        pagination: true,
-      },
-    },
-    arrows    : false,
-   } );
-  var thumbnails = new Splide( '.thumbnail-carousel', { 
-    fixedWidth : 100,
-    direction: 'ttb',
-    fixedHeight: 110,
-    perMove :1,
-    height   : '670px',
-    arrows:  false,
-    gap        : 10,
-    autoplay:false,
-    rewind     : true,
-    interval:5000,
-    pagination : false,
-    isNavigation: true,
-    breakpoints : {
-      600: {
-        fixedWidth : 60,
-        fixedHeight: 44,
-        direction: 'ltr',
-      },
-    },
-
-   } );
-  
-  main.sync( thumbnails );
-  main.mount();
-  thumbnails.mount();
-  })
-
-</script>
 
 <style>
-
-  .splide__track--nav>.splide__list>.splide__slide {
-    border: 3px solid transparent;
-    cursor: pointer;
-    margin: 18px 0;
-}
   .product-form__input.varinatcolor input[type='radio']:disabled + label,
   .product-form__input.varinatcolor input[type='radio'].disabled + label {
     position: relative;

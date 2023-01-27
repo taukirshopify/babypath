@@ -1,0 +1,82 @@
+<div class="product-slider-wrapper">
+    <div class="row">
+
+      <div class="col-xl-2 p-ab d-none d-xl-block" id="example-one">
+          
+        <!-- slider nav start here  -->
+          <section
+          id="thumbnail-carousel"
+          class="splide thumbnail-carousel"
+          aria-label="The carousel with thumbnails. Selecting a thumbnail will change the Beautiful Gallery carousel.">
+
+
+        
+           <div class="splide__track">
+
+
+            <ul class="splide__list" id="thumpnai-group">
+
+              {% for image in product.images %}
+                {% comment %} {{ image.src | img_url: '' }} {% endcomment %}
+              <li class="splide__slide imageslider-image" data-image="{{ image.src | img_url: '' }}">
+                  <img src="{{ image.src | img_url: '' }}" alt="{{ image.alt}}">
+                  
+                  
+              </li>
+            {% endfor %}
+          
+            </ul>
+
+
+          </div>
+
+
+          
+        </section>
+
+        <!-- slider nav start here  -->
+        </div>
+
+        <div class="col-md-12 col-xl-10 p-0">
+          <section
+          id="main-carousel"
+          class="splide"
+          aria-label="The carousel with thumbnails. Selecting a thumbnail will change the Beautiful Gallery carousel."
+                                 >
+
+
+      
+          <div class="splide__track">
+
+
+            <ul class="splide__list">
+              {% for image in product.images %}
+              <li class="splide__slide product-page">
+                <img src="{{ image.src | img_url: '' }}" alt="{{ image.alt}}">
+              </li>
+            {% endfor %}
+              
+             
+          
+            </ul>
+
+
+          </div>
+
+
+          
+        </section>
+        
+        </div>
+
+
+        {% comment %} mobile carusel  {% endcomment %}
+         <div class="col-xl-2" id ="new-div">
+        
+        
+        </div>
+
+        {% comment %} mobile carusel end {% endcomment %}
+        
+    </div>
+  </div>
