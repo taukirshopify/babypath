@@ -104,6 +104,31 @@
                 {% endfor %}
               </ul>
             </div>
+            <div class="splide__arrows splide__arrows--ltr">
+              <button
+                class="splide__arrow splide__arrow--prev"
+                type="button"
+                aria-label="Previous slide"
+                aria-controls="splide01-track"
+              >
+                  <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 32 32">
+                      <title>gallery-next15x</title>
+                      <path fill="none" stroke="#000" stroke-width="1.8" stroke-miterlimit="4" stroke-linecap="butt" stroke-linejoin="miter" d="M9.75 4.010l12.51 12.51-12.48 12.47"></path>
+                      </svg>
+              </button>
+              <button
+                class="splide__arrow splide__arrow--next"
+                type="button"
+                aria-label="Next slide"
+                aria-controls="splide01-track"
+              >
+                  <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 32 32">
+                      <title>gallery-next15x</title>
+                      <path fill="none" stroke="#000" stroke-width="1.8" stroke-miterlimit="4" stroke-linecap="butt" stroke-linejoin="miter" d="M9.75 4.010l12.51 12.51-12.48 12.47"></path>
+                      </svg>
+              </button>
+            </div>
+
           </div>
 
         </div>
@@ -162,12 +187,14 @@
         gap: '10px',
         type: 'loop',
         perMove: 1,
+       
         pagination: false,
         breakpoints: {
           1024: {
             perPage: 3
           },
           640: {
+            arrows:false,
             perPage: 2
           },
 

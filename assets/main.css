@@ -899,8 +899,8 @@ theme.
   }
 
   .logo-991 img {
-    max-width: 53% !important;
-  }
+    max-height: 49px;
+}
 
   .fast-header-area {
     padding: 0 15px;

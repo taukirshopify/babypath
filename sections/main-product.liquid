@@ -16,6 +16,7 @@
   .splide__track--nav>.splide__list>.splide__slide.is-active {
     border: none;
 }
+
     .splide__slide img {
     vertical-align: bottom;
     width: 100%;
@@ -70,13 +71,13 @@
 
   {% assign variant_images = product.images | where: 'attached_to_variant?', true | map: 'src' %}
 
-<div class="container d-lg-flex">
-    <div class="col-lg-6">
+<div class="container d-lg-flex"   >
+    <div class="col-lg-7">
       {% include 'product-image' %}
 
     </div>
 
-    <div class="col-lg-6">
+    <div class="col-lg-5">
       <div id="ProductInfo-{{ section.id }}" class="product__info-container{% if section.settings.enable_sticky_info %} product__column-sticky{% endif %}">
         {%- assign product_form_id = 'product-form-' | append: section.id -%}
 
@@ -270,7 +271,7 @@
 
               <quantity-input class="quantity">
                 <button
-                  class="quantity__button no-js-hidden"
+                  class="quantity__button no-js-hidden incrise-minus"
                   name="minus"
                   type="button">
                   <span class="visually-hidden">
@@ -1910,35 +1911,46 @@ endif
  // new Splide(".second-slider").mount();
  
  function moveDiv(){
-  var exampleDiv0 = document.getElementById("example-one");
-  var exampleDiv1 =     exampleDiv0.children
-  var newDiv = document.getElementById("new-div");
-  newDiv.appendChild(exampleDiv1);
+  let displaywidth = $(window).width();
+   console.log(displaywidth);
+
+   if (displaywidth > 940){
+   }
+   else if (displaywidth < 940  )  {
+    var mash_potatoe = $("#example-one").html(); // Copy content
+    $("#example-one").html(''); // Erase content
+    $("#new-div").html(mash_potatoe); 
+  }
+  
+
+
+
+
 }
 document.addEventListener("DOMContentLoaded", function() {
   moveDiv();
 }); 
+
+
+
+window.onresize = moveDiv;
+
 
  window.addEventListener('load', function () {
   var main = new Splide( '#main-carousel', { 
     type      : 'fade',
     rewind    : true,
     pagination: false,
-    breakpoints : {
-      800: {
-        pagination: true,
-      },
-    },
-    arrows    : false,
+    arrows    : true,
    } );
   var thumbnails = new Splide( '.thumbnail-carousel', { 
-    fixedWidth : 100,
+
     direction: 'ttb',
-    fixedHeight: 110,
+    perPage: 6,
     perMove :1,
-    height   : '670px',
-    arrows:  false,
-    gap        : 10,
+    height: '100%',
+arrows    : true,
+    gap        : 5,
     autoplay:false,
     rewind     : true,
     interval:5000,
@@ -1946,8 +1958,7 @@ document.addEventListener("DOMContentLoaded", function() {
     isNavigation: true,
     breakpoints : {
       600: {
-        fixedWidth : 60,
-        fixedHeight: 44,
+    
         direction: 'ltr',
       },
     },
@@ -1962,11 +1973,40 @@ document.addEventListener("DOMContentLoaded", function() {
 </script>
 
 <style>
+  .product-slider-wrapper{
+  padding:30px 0;
+ }
+.product__info-container{
+ padding: 30px 0;
+
+}
+
+
+  #main-carousel .splide__arrow {
+    top: 50% !important;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+  #thumbnail-carousel .splide__arrow {
+
+    transform: translateY(46589aaa);
+    z-index: 1;
+}
+  
+.product__info-container.product__column-sticky {
+  margin-left: 15px;
+}
+
+
+.padding-extra{
+  padding:0 20px 0 0;
+}
+
 
   .splide__track--nav>.splide__list>.splide__slide {
     border: 3px solid transparent;
     cursor: pointer;
-    margin: 18px 0;
+
 }
   .product-form__input.varinatcolor input[type='radio']:disabled + label,
   .product-form__input.varinatcolor input[type='radio'].disabled + label {
@@ -1993,4 +2033,93 @@ document.addEventListener("DOMContentLoaded", function() {
     outline: 0.2px solid black;
     z-index: 100;
   }
+
+  button.quantity__button {
+    position: absolute;
+
+    padding: 0;
+    height: 23.5px;
+    padding: 0 5px;
+    line-height: 18px;
+    border-radius: 0;
+    width: 31px;
+    border-top: 0px;
+    cursor: pointer !important;
+    z-index: 111;
+    right: 0;
+
+}
+
+  .quantity__button.no-js-hidden.incrise-minus{
+    left: 0;
+  
+  }
+  quantity-input.quantity {
+    border: 1px solid #000;
+    position: relative;
+    height: 45px;
+    width: 177px;
+    padding-right:0;
+    box-shadow: none !important;
+    outline: none !important;
+    display: inline-block;
+}
+
+button.quantity__button {
+  position: absolute;
+  padding: 0;
+  height: 23.5px;
+  padding: 0 5px;
+  line-height: 18px;
+  border-radius: 0;
+  width: 31px;
+  border-top: 0px;
+  cursor: pointer !important;
+  z-index: 111;
+  right: 0;
+  top: 50%;
+  margin-top: -11.75px;
+}
+.quantity__input {
+  font-family: 'T-Star Pro';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 45px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.product__view-details {
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+}
+@media only screen and (max-width: 920px) {
+  .product__info-container {
+    padding: 0;
+}
+  section#thumbnail-carousel {
+    margin-top: 10px;
+}
+
+  .quantity__input {
+
+    line-height: 40px;
+
+}
+  #thumbnail-carousel .splide__arrow {
+
+
+    top: 50% !important;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+  .padding-extra{
+    padding:0  0;
+  }
+  .product-form__buttons{
+    max-width: 100%;
+  }
+}
 </style>
