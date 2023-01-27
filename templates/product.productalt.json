@@ -47,7 +47,6 @@
         "32662724-486d-46f1-9609-1e7cc7e4edd0": {
           "type": "usp_slide",
           "settings": {
-            "usp_inline_image": "shopify:\/\/shop_images\/material-symbols_alarm-outline-rounded.png",
             "usp_inline_title": "Get it by thu, Dec 25 with Rush Shipping",
             "usp_inline_tooltiptext": "Get it by thu, Dec 25 with Rush Shipping",
             "usp_inline_text": ""
@@ -56,7 +55,6 @@
         "d685d488-b472-44e9-bf6f-e30007fffeaf": {
           "type": "usp_slide",
           "settings": {
-            "usp_inline_image": "shopify:\/\/shop_images\/Frame_186.png",
             "usp_inline_title": "Free Shipping *",
             "usp_inline_tooltiptext": "Free Shipping  always",
             "usp_inline_text": "Estimated Delivery: Saturday, December 27"
@@ -129,14 +127,13 @@
         "c1b87b81-e837-4c13-8832-6c6bd8c2349b": {
           "type": "slide",
           "settings": {
-            "usp_image": "shopify:\/\/shop_images\/Frame_186.png",
+            "usp_image": "shopify:\/\/shop_images\/Vector_2.png",
             "usp_title": "Free & express shipping available"
           }
         },
         "17086dcf-aee0-4b36-8bea-9ab82a900f7d": {
           "type": "slide",
           "settings": {
-            "usp_image": "shopify:\/\/shop_images\/Group.png",
             "usp_title": "hassle-free returns"
           }
         },
