@@ -1461,11 +1461,7 @@ section {
 .belive-items {
   display: block;
 }
-.belive-items img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
+
 .belive-items a {
   display: inline-block;
   text-align: center;
