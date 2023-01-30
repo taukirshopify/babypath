@@ -280,6 +280,7 @@
     },
     "7f28b300-5f5c-4dae-af34-56e21cba1acc": {
       "type": "custom-liquid",
+      "disabled": true,
       "settings": {
         "custom_liquid": "<div class=\"free-shop-bottom-heading\">\n        <h2>SKIMS IS A SOLUTIONS ORIENTED BRAND CREATING THE NEXT GENERATION OF UNDERWEAR, LOUNGEWEAR AND SHAPEWEAR.<\/h2>\n    <\/div>",
         "color_scheme": "background-1",
