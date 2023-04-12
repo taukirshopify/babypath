@@ -669,7 +669,7 @@ p.usp_title img {
 
 .usp_inline_item {
     display: flex;
-    gap: 20px;
+    gap: 15px;
     margin-bottom: 20px !important;
 }
 .usp_icon img {
