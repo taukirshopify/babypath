@@ -48,6 +48,7 @@
         "32662724-486d-46f1-9609-1e7cc7e4edd0": {
           "type": "usp_slide",
           "settings": {
+            "usp_inline_image": "shopify:\/\/shop_images\/Group.png",
             "usp_inline_title": "Get it by thu, Dec 25 with Rush Shipping",
             "usp_inline_tooltiptext": "Get it by thu, Dec 25 with Rush Shipping",
             "usp_inline_text": ""
@@ -56,6 +57,7 @@
         "d685d488-b472-44e9-bf6f-e30007fffeaf": {
           "type": "usp_slide",
           "settings": {
+            "usp_inline_image": "shopify:\/\/shop_images\/Vector_2.png",
             "usp_inline_title": "Free Shipping *",
             "usp_inline_tooltiptext": "Free Shipping  always",
             "usp_inline_text": "Estimated Delivery: Saturday, December 27"
