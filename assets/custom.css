@@ -1324,3 +1324,6 @@ input.addcart__buttonwrap {
 .product-container{
   max-width: 1600px;
 }
+.featured-collection-items img{
+  object-fit: cover;
+}
