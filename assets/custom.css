@@ -651,14 +651,16 @@ input.quantity__input {
     box-shadow: none !important;
 }
 p.usp_title {
-    display: flex;
-    align-items: center;
-    font-family: 'T-Star Pro';
-    font-style: normal;
-    font-weight: 900;
-    font-size: 19.9078px;
-    line-height: 130%;
-    color: #000000;
+  display: flex;
+  align-items: center;
+  font-family: 'T-Star Pro';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0;
+  line-height: 130%;
+  color: #000000;
 }
 p.usp_title img {
     max-width: 25px;
