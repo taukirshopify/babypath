@@ -1330,3 +1330,7 @@ input.addcart__buttonwrap {
 .belive-wraper{
   grid-template-columns: repeat(auto-fit,minmax(328px,1fr));
 }
+.belive-items img{
+  max-height: 405px;
+  height: auto;
+}
