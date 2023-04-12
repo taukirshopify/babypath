@@ -1327,3 +1327,6 @@ input.addcart__buttonwrap {
 .featured-collection-items img{
   object-fit: cover;
 }
+.belive-wraper{
+  grid-template-columns: repeat(auto-fit,minmax(328px,1fr));
+}
