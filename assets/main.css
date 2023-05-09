@@ -884,6 +884,11 @@ theme.
     width: 90%;
   }
 }
+@media (max-width: 975px) {
+  .logo-991 img {
+    max-height: 49px;
+}
+}
 @media (max-width: 575px) {
   .sidebar-menus {
     width: 100%;
@@ -898,9 +903,7 @@ theme.
     margin-right: 10px;
   }
 
-  .logo-991 img {
-    max-height: 49px;
-}
+
 
   .fast-header-area {
     padding: 0 15px;
