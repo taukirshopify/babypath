@@ -33,6 +33,25 @@
       "settings": {
       }
     },
+    "4706e9d7-7316-4f4a-b734-608b992bd3cc": {
+      "type": "announcement-bar",
+      "blocks": {
+        "432701b4-42b1-4e2f-999f-cbc6506fc103": {
+          "type": "announcement",
+          "settings": {
+            "text": "INTERNATIONAL SHIIPING AVAILABLE",
+            "text_alignment": "center",
+            "color_scheme": "accent-1",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "432701b4-42b1-4e2f-999f-cbc6506fc103"
+      ],
+      "settings": {
+      }
+    },
     "98ee248a-d7e9-41e0-8d0b-ee1e8ac51671": {
       "type": "product-slider-tab",
       "blocks": {
@@ -291,6 +310,7 @@
   },
   "order": [
     "094b5fd8-471d-48db-bdaf-311f742106b9",
+    "4706e9d7-7316-4f4a-b734-608b992bd3cc",
     "98ee248a-d7e9-41e0-8d0b-ee1e8ac51671",
     "b0f3a8d9-9b46-4838-940b-648b9749ead9",
     "d03cce9e-2841-44b5-a243-6609d92df8f8",
