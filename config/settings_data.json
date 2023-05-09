@@ -154,6 +154,14 @@
       "footer": {
         "type": "footer",
         "blocks": {
+          "9fd714f7-49bb-4d82-9072-9214fbaa7143": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Asset_2bp-blk_18537307-48d6-4c85-99df-1c47625f8679.png",
+              "image_width": 100,
+              "alignment": "center"
+            }
+          },
           "footer-0": {
             "type": "link_list",
             "settings": {
@@ -177,6 +185,7 @@
           }
         },
         "block_order": [
+          "9fd714f7-49bb-4d82-9072-9214fbaa7143",
           "footer-0",
           "footer-1",
           "footer-2"
