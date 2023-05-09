@@ -274,12 +274,13 @@
     "0a2b3531-5ba6-4435-8457-4384dfeb7124": {
       "type": "trending-product-grid",
       "settings": {
-        "product_grid_name": "tranding",
+        "product_grid_name": "Trending",
         "product_grid_collection": "kimoras-favorites"
       }
     },
     "7f28b300-5f5c-4dae-af34-56e21cba1acc": {
       "type": "custom-liquid",
+      "disabled": true,
       "settings": {
         "custom_liquid": "<div class=\"free-shop-bottom-heading\">\n        <h2>SKIMS IS A SOLUTIONS ORIENTED BRAND CREATING THE NEXT GENERATION OF UNDERWEAR, LOUNGEWEAR AND SHAPEWEAR.<\/h2>\n    <\/div>",
         "color_scheme": "background-1",

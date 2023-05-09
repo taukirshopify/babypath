@@ -1,1 +1,182 @@
-{"sections":{"main":{"type":"main-product","blocks":{"vendor":{"type":"text","settings":{"text":"{{ product.vendor }}","text_style":"uppercase"}},"title":{"type":"title","settings":{}},"caption":{"type":"text","settings":{"text":"{{ product.metafields.descriptors.subtitle.value }}","text_style":"subtitle"}},"price":{"type":"price","settings":{}},"variant_picker":{"type":"variant_picker","settings":{"picker_type":"button"}},"quantity_selector":{"type":"quantity_selector","settings":{}},"buy_buttons":{"type":"buy_buttons","settings":{"show_dynamic_checkout":true}},"32662724-486d-46f1-9609-1e7cc7e4edd0":{"type":"usp_slide","settings":{"usp_inline_image":"shopify:\/\/shop_images\/material-symbols_alarm-outline-rounded.png","usp_inline_title":"Get it by thu, Dec 25 with Rush Shipping","usp_inline_tooltiptext":"Get it by thu, Dec 25 with Rush Shipping","usp_inline_text":""}},"d685d488-b472-44e9-bf6f-e30007fffeaf":{"type":"usp_slide","settings":{"usp_inline_image":"shopify:\/\/shop_images\/Frame_186.png","usp_inline_title":"Free Shipping *","usp_inline_tooltiptext":"Free Shipping  always","usp_inline_text":"Estimated Delivery: Saturday, December 27"}},"bc850ca8-f26e-462a-94f5-6b9cb150c689":{"type":"text","settings":{"text":"Details","text_style":"subtitle"}},"description":{"type":"description","settings":{}},"collapsible-row-0":{"type":"collapsible_tab","settings":{"heading":"Fit & fabric","icon":"none","content":"<p>FIT FABRIC<br\/>This velvet jacket features a zip-front closure, Baby Phat embroidered chest logo, long sleeves, a funnel neck, and exposed seams.<br\/>- © 2022 BABY PHAT HOLDING COMPANY, LLC. Used Under License<\/p>","page":""}},"collapsible-row-1":{"type":"collapsible_tab","settings":{"heading":"Shipping & Returns","icon":"none","content":"<p><strong>SHIPPING<\/strong><br\/>This velvet jacket features a zip-front closure, Baby Phat embroidered chest logo, long sleeves, a funnel neck, and exposed seams.<br\/>- © 2022 BABY PHAT HOLDING COMPANY, LLC. Used Under License<\/p>","page":""}}},"block_order":["vendor","title","caption","price","variant_picker","quantity_selector","buy_buttons","32662724-486d-46f1-9609-1e7cc7e4edd0","d685d488-b472-44e9-bf6f-e30007fffeaf","bc850ca8-f26e-462a-94f5-6b9cb150c689","description","collapsible-row-0","collapsible-row-1"],"settings":{"enable_sticky_info":true,"media_size":"large","constrain_to_viewport":false,"media_fit":"contain","gallery_layout":"stacked","media_position":"left","image_zoom":"lightbox","mobile_thumbnails":"hide","hide_variants":true,"enable_video_looping":false,"padding_top":36,"padding_bottom":12}},"5edb8150-cd43-4a29-86ff-c03f6a80ad80":{"type":"usp","blocks":{"c1b87b81-e837-4c13-8832-6c6bd8c2349b":{"type":"slide","settings":{"usp_image":"shopify:\/\/shop_images\/Frame_186.png","usp_title":"Free & express shipping available"}},"17086dcf-aee0-4b36-8bea-9ab82a900f7d":{"type":"slide","settings":{"usp_image":"shopify:\/\/shop_images\/Group.png","usp_title":"hassle-free returns"}},"81d24718-927f-47e6-b053-b83279d5a6fb":{"type":"slide","settings":{"usp_image":"shopify:\/\/shop_images\/Vector.png","usp_title":"100% secure checkout"}}},"block_order":["c1b87b81-e837-4c13-8832-6c6bd8c2349b","17086dcf-aee0-4b36-8bea-9ab82a900f7d","81d24718-927f-47e6-b053-b83279d5a6fb"],"settings":{}},"related-products":{"type":"related-products","settings":{"heading":"You may also like","heading_size":"h0","products_to_show":4,"columns_desktop":4,"color_scheme":"background-1","image_ratio":"square","show_secondary_image":true,"show_vendor":false,"show_rating":false,"columns_mobile":"2","padding_top":36,"padding_bottom":28}}},"order":["main","5edb8150-cd43-4a29-86ff-c03f6a80ad80","related-products"]}
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "vendor": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "{{ product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+          }
+        },
+        "caption": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.metafields.descriptors.subtitle.value }}",
+            "text_style": "subtitle"
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true
+          }
+        },
+        "32662724-486d-46f1-9609-1e7cc7e4edd0": {
+          "type": "usp_slide",
+          "settings": {
+            "usp_inline_image": "shopify:\/\/shop_images\/Group.png",
+            "usp_inline_title": "Get it by thu, Dec 25 with Rush Shipping",
+            "usp_inline_tooltiptext": "Get it by thu, Dec 25 with Rush Shipping",
+            "usp_inline_text": ""
+          }
+        },
+        "d685d488-b472-44e9-bf6f-e30007fffeaf": {
+          "type": "usp_slide",
+          "settings": {
+            "usp_inline_image": "shopify:\/\/shop_images\/Vector_2.png",
+            "usp_inline_title": "Free Shipping *",
+            "usp_inline_tooltiptext": "Free Shipping  always",
+            "usp_inline_text": "Estimated Delivery: Saturday, December 27"
+          }
+        },
+        "bc850ca8-f26e-462a-94f5-6b9cb150c689": {
+          "type": "text",
+          "settings": {
+            "text": "Details",
+            "text_style": "subtitle"
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+          }
+        },
+        "collapsible-row-0": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Fit & fabric",
+            "icon": "none",
+            "content": "<p>FIT FABRIC<br\/>This velvet jacket features a zip-front closure, Baby Phat embroidered chest logo, long sleeves, a funnel neck, and exposed seams.<br\/>- © 2022 BABY PHAT HOLDING COMPANY, LLC. Used Under License<\/p>",
+            "page": ""
+          }
+        },
+        "collapsible-row-1": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Shipping & Returns",
+            "icon": "none",
+            "content": "<p><strong>SHIPPING<\/strong><br\/>This velvet jacket features a zip-front closure, Baby Phat embroidered chest logo, long sleeves, a funnel neck, and exposed seams.<br\/>- © 2022 BABY PHAT HOLDING COMPANY, LLC. Used Under License<\/p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "caption",
+        "price",
+        "variant_picker",
+        "quantity_selector",
+        "buy_buttons",
+        "32662724-486d-46f1-9609-1e7cc7e4edd0",
+        "d685d488-b472-44e9-bf6f-e30007fffeaf",
+        "bc850ca8-f26e-462a-94f5-6b9cb150c689",
+        "description",
+        "collapsible-row-0",
+        "collapsible-row-1"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "media_size": "large",
+        "constrain_to_viewport": false,
+        "media_fit": "contain",
+        "gallery_layout": "stacked",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "mobile_thumbnails": "hide",
+        "hide_variants": true,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 12
+      }
+    },
+    "5edb8150-cd43-4a29-86ff-c03f6a80ad80": {
+      "type": "usp",
+      "blocks": {
+        "c1b87b81-e837-4c13-8832-6c6bd8c2349b": {
+          "type": "slide",
+          "settings": {
+            "usp_image": "shopify:\/\/shop_images\/Vector_2.png",
+            "usp_title": "Free & express shipping available"
+          }
+        },
+        "17086dcf-aee0-4b36-8bea-9ab82a900f7d": {
+          "type": "slide",
+          "settings": {
+            "usp_image": "shopify:\/\/shop_images\/Group.png",
+            "usp_title": "hassle-free returns"
+          }
+        },
+        "81d24718-927f-47e6-b053-b83279d5a6fb": {
+          "type": "slide",
+          "settings": {
+            "usp_image": "shopify:\/\/shop_images\/Vector.png",
+            "usp_title": "100% secure checkout"
+          }
+        }
+      },
+      "block_order": [
+        "c1b87b81-e837-4c13-8832-6c6bd8c2349b",
+        "17086dcf-aee0-4b36-8bea-9ab82a900f7d",
+        "81d24718-927f-47e6-b053-b83279d5a6fb"
+      ],
+      "settings": {
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "settings": {
+        "heading": "You may also like",
+        "heading_size": "h0",
+        "columns_desktop": 4,
+        "color_scheme": "background-1",
+        "image_ratio": "square",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "columns_mobile": "2",
+        "padding_top": 36,
+        "padding_bottom": 28
+      }
+    }
+  },
+  "order": [
+    "main",
+    "5edb8150-cd43-4a29-86ff-c03f6a80ad80",
+    "related-products"
+  ]
+}
