@@ -30,7 +30,8 @@ theme.
 
 
 .fast-header-area {
-  position: relative;
+  position: fixed;
+  width: 100%;
   z-index: 99999;
   background: rgba(3, 3, 3, 0.5);
 }
@@ -1159,10 +1160,7 @@ section {
 
 .hero-area {
   position: relative;
-  left: 0;
-  right: 0;
-  top: -50px;
-  margin-bottom: -50px;
+
 }
 
 .splide__pagination {
@@ -2808,10 +2806,10 @@ body a:focus, body a:hover, body .btn:focus, body .btn:hover, body button:focus,
   }
 }
 @media (max-width: 1200px) {
-  .hero-area {
+  /* .hero-area {
     top: -38px;
     margin-bottom: -38px;
-  }
+  } */
 
   .splide__arrow--next {
     right: 15px;
