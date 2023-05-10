@@ -119,10 +119,10 @@
 }
 
 .footer-block--newsletter {
-  display: flex;
+  /* display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: flex-end;
+  align-items: flex-end; */
   margin-top: 3rem;
 }
 
