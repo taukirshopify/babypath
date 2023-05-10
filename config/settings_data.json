@@ -175,12 +175,20 @@
               "heading": "Quick links",
               "menu": "main-menu"
             }
+          },
+          "5d1d417b-2a4b-42b4-bb27-ffb09c2324db": {
+            "type": "News",
+            "settings": {
+              "heading": "Heading",
+              "subtext": "<p>Share contact information, store details, and brand content with your customers.<\/p>"
+            }
           }
         },
         "block_order": [
           "9fd714f7-49bb-4d82-9072-9214fbaa7143",
           "footer-0",
-          "a0b2174c-64a2-407e-ab84-f4e9d0f9296f"
+          "a0b2174c-64a2-407e-ab84-f4e9d0f9296f",
+          "5d1d417b-2a4b-42b4-bb27-ffb09c2324db"
         ],
         "settings": {
           "color_scheme": "background-1",
