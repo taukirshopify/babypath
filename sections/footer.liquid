@@ -75,10 +75,10 @@
                   {%- endif -%}
                 {%- when 'New' -%}
                   <div class="footer-block--newsletter">
-                    {%- if section.settings.newsletter_enable -%}
+           
                       <div class="footer-block__newsletter">
-                        {%- if section.settings.newsletter_heading != blank -%}
-                          <h2 class="footer-block__heading">{{ section.settings.newsletter_heading | escape }}</h2>
+                        {%- if block.settings.subtext != blank -%}
+                          <h2 class="footer-block__heading" > {{ block.settings.subtext }} </h2>
                         {%- endif -%}
                         {%- form 'customer', id: 'ContactFooter', class: 'footer__newsletter newsletter-form' -%}
                           <input type="hidden" name="contact[tags]" value="newsletter">
@@ -120,7 +120,7 @@
                           {%- endif -%}
                         {%- endform -%}
                       </div>
-                    {%- endif -%}
+      
             
                     {%- if section.settings.show_social -%}
                       <ul class="footer__list-social list-unstyled list-social" role="list">
