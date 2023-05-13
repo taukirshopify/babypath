@@ -122,9 +122,18 @@ ul.header-sigin-btn {
 
 
 
-.menu-plus ,.menu-minous {
+.menu-plus  {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100%;
+}
+
+
+.minous .menu-minous {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+
 }
