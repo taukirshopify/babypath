@@ -159,35 +159,11 @@
             "shop_range_cta_title": "Shop Now",
             "shop_range_cta_url": "#"
           }
-        },
-        "2f650d4c-5123-4b68-8500-9430123c440f": {
-          "type": "slide",
-          "disabled": true,
-          "settings": {
-            "shop_range_image": "shopify:\/\/shop_images\/featured-gift-2.png",
-            "shop_range_title": "Starts from $520",
-            "shop_range_subtitle": "Celebrate them with special gifts",
-            "shop_range_cta_title": "Shop Now",
-            "shop_range_cta_url": ""
-          }
-        },
-        "51dcd6b8-4ff8-4680-98d9-c22471a4836f": {
-          "type": "slide",
-          "disabled": true,
-          "settings": {
-            "shop_range_image": "shopify:\/\/shop_images\/featured-gift-4.png",
-            "shop_range_title": "LUXE GIFTS",
-            "shop_range_subtitle": "Premium picks on every wishlist.",
-            "shop_range_cta_title": "Shop Now",
-            "shop_range_cta_url": "#"
-          }
         }
       },
       "block_order": [
         "284e3cce-e08e-4419-b0d0-ad09b39d3a70",
-        "49e3b5db-b178-424f-adaf-b184a72fd732",
-        "2f650d4c-5123-4b68-8500-9430123c440f",
-        "51dcd6b8-4ff8-4680-98d9-c22471a4836f"
+        "49e3b5db-b178-424f-adaf-b184a72fd732"
       ],
       "settings": {
       }
