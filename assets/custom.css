@@ -440,7 +440,20 @@ h1.main-page-title.page-title.h0 {
     font-weight: 900;
     font-size: 36px;
     line-height: 130%;
-    text-decoration-line: underline;
+    text-decoration-line: none;
+    text-transform: uppercase;
+    color: #000000;
+    text-align: center;
+    margin-bottom: 25px;
+    margin-top: 50px;
+}
+.shopify-policy__title h1 {
+    font-family: 'T-Star Pro';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 130%;
+    text-decoration-line: none;
     text-transform: uppercase;
     color: #000000;
     text-align: center;
@@ -1330,4 +1343,15 @@ button.shopify-payment-button__button.shopify-payment-button__button--unbranded 
 }
 .footer-help-item ul li{
   padding-bottom: 8px;
+}
+
+.shopify-policy__container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px
+}
+
+.shopify-policy__title {
+    text-align: center
 }
