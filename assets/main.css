@@ -30,7 +30,7 @@ theme.
 
 
 .fast-header-area {
-  position: fixed;
+
   width: 100%;
   z-index: 99999;
   background: rgba(3, 3, 3, 0.5);
