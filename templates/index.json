@@ -162,6 +162,7 @@
         },
         "2f650d4c-5123-4b68-8500-9430123c440f": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "shop_range_image": "shopify:\/\/shop_images\/featured-gift-2.png",
             "shop_range_title": "Starts from $520",
@@ -172,6 +173,7 @@
         },
         "51dcd6b8-4ff8-4680-98d9-c22471a4836f": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "shop_range_image": "shopify:\/\/shop_images\/featured-gift-4.png",
             "shop_range_title": "LUXE GIFTS",
