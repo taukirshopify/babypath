@@ -110,6 +110,7 @@ color: #FFFFFF;
 }
 .product-form__submit span{
     color: #fff;
+    line-height: revert;
 }
 
 ul.header-sigin-btn {

@@ -246,7 +246,8 @@
   <div class="footer__content-bottom">
     <div class="footer__content-bottom-wrapper page-width">
       <div class="footer__column footer__localization isolate">
-        {%- if section.settings.enable_country_selector and localization.available_countries.size > 1 -%}
+        {% comment %} {% include 'currency' %} {% endcomment %}
+        {% comment %} {%- if section.settings.enable_country_selector and localization.available_countries.size > 1 -%}
           <noscript>
             {%- form 'localization', id: 'FooterCountryFormNoScript', class: 'localization-form' -%}
               <div class="localization-form__select">
@@ -333,7 +334,7 @@
               </div>
             {%- endform -%}
           </localization-form>
-        {%- endif -%}
+        {%- endif -%} {% endcomment %}
       </div>
       <div class="footer__column footer__column--info">
         {%- if section.settings.payment_enable -%}
