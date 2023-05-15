@@ -124,7 +124,7 @@
 
 .card__information {
   grid-row-start: 2;
-  padding: 1.3rem 1rem;
+  padding: 1.3rem 1rem;grid-template-rows: repeat(2,1fr);
 }
 
 .card:not(.ratio) > .card__content {

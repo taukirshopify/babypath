@@ -1344,7 +1344,7 @@ section {
   display: grid;
   gap: 16px 13px;
   grid-template-columns: repeat(auto-fit, minmax(444px, 1fr));
-  grid-template-rows: repeat(2, 1fr);
+
   grid-auto-rows: 1fr;
   grid-auto-flow: dense;
 }
