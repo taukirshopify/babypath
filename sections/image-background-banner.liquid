@@ -1,7 +1,7 @@
 <!-- panties-area strat -->
-<section class="footer-container">
+<section class="x-container">
 <div class="row">
-<div class="col-xl-12 col-lg-8 offset-lg-2">
+<div class="col-12">
   <div class="video-wrapper">
     <video muted autoplay loop playsinline controls>
       <source src="{{ section.settings.u }}" type="video/mp4">
@@ -33,3 +33,16 @@
         ]
     }
 {% endschema %}
+
+<style>
+
+video {
+  display: inline-block;
+  width: 100%;
+}
+@media only screen and (min-width: 600px) {
+  .video-wrapper{
+    padding:0 200px
+   }
+}
+</style>
