@@ -223,6 +223,7 @@
       "blocks": {
         "e8585a02-ccf6-4c2c-a92a-0eeedc14edda": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "collection_image": "shopify:\/\/shop_images\/featured-collection-2.png",
             "collection_name": "Test",
@@ -231,6 +232,7 @@
         },
         "484a1b21-91ea-48b6-95c6-68f129c44641": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "collection_image": "shopify:\/\/shop_images\/featured-collection-3.png",
             "collection_name": "test",
@@ -239,6 +241,7 @@
         },
         "a28ffa8b-4d94-4e2b-b2db-6d099bf127e8": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "collection_image": "shopify:\/\/shop_images\/featured-collection-4.png",
             "collection_name": "Test",
@@ -247,6 +250,7 @@
         },
         "1b2326ca-31d9-4217-97b7-1218f3adfb0c": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "collection_image": "shopify:\/\/shop_images\/featured-collection-1.png",
             "collection_name": "test 3",
@@ -261,7 +265,7 @@
         "1b2326ca-31d9-4217-97b7-1218f3adfb0c"
       ],
       "settings": {
-        "section_title": "BELIEVE THE HYPE\nOUR COLLECTIONS HAVE OVER 26,000 FIVE STAR\nREVIEWS, AND COUNTING!"
+        "section_title": "I am thrilled to share our latest collection with you, featuring the same glam and boldness that has defined Baby Phat for over two decades.” - KLS"
       }
     },
     "0a2b3531-5ba6-4435-8457-4384dfeb7124": {

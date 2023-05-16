@@ -4,6 +4,13 @@ html, body {
   body {
     position: relative
   }
+
+._ks_text {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
 .f-hero-container {
     padding: 0;
     background-repeat: no-repeat;
