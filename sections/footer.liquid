@@ -424,13 +424,11 @@
 <style>
 
   
-  #NewsletterForm--footer::placeholder {
-      color: #000;
-  }
-  
-  #NewsletterForm--footer .Form__Input {
-      color: #000;
-  }
+ /* all */
+::-webkit-input-placeholder { color:#000; }
+::-moz-placeholder { color:#000; } /* firefox 19+ */
+:-ms-input-placeholder { color:#000; } /* ie */
+input:-moz-placeholder { color:#000; }
 
 </style>
 {% schema %}
