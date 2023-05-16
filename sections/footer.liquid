@@ -421,7 +421,39 @@
 
   customElements.define('localization-form', LocalizationForm);
 {% endjavascript %}
+<style>
+  button,
+  input,
+  optgroup,
+  select,
+  textarea {
+    color: black;
+  }
+  
+  input::-webkit-input-placeholder,
+  textarea::-webkit-input-placeholder {
+    color: black;
+  }
+  
+  input:-ms-input-placeholder,
+  textarea:-ms-input-placeholder {
+    color: black;
+  }
+  
+  input::placeholder,
+  textarea::placeholder {
+    color: black;
+  }
+  
+  ::placeholder {
+      color: #000;
+  }
+  
+  .NewsletterPopup .Form__Input {
+      color: #000;
+  }
 
+</style>
 {% schema %}
 {
   "name": "t:sections.footer.name",
