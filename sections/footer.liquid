@@ -96,7 +96,7 @@
 
                        
 
-                        {% comment %} {%- form 'customer', id: 'ContactFooter', class: 'footer__newsletter newsletter-form' -%}
+                      {%- form 'customer', id: 'ContactFooter', class: 'footer__newsletter newsletter-form' -%}
                           <input type="hidden" name="contact[tags]" value="newsletter">
                           <div class="newsletter-form__field-wrapper">
                             <div class="field">
@@ -133,7 +133,7 @@
                           {%- if form.posted_successfully? -%}
                             <h3 class="newsletter-form__message newsletter-form__message--success form__message" id="ContactFooter-success" tabindex="-1" autofocus>{% render 'icon-success' %}{{ 'newsletter.success' | t }}</h3>
                           {%- endif -%}
-                        {%- endform -%} {% endcomment %}
+                        {%- endform -%} 
                       </div>
       
             
