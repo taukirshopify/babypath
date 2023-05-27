@@ -14,10 +14,26 @@
         "title": " A<span class=\"text-invert\">bou<\/span>t                        <span class=\"text-small\">US<\/span>",
         "img": "shopify:\/\/shop_images\/Rectangle_8.png"
       }
+    },
+    "01f752d5-961c-44a5-81b9-9378b839aa1b": {
+      "type": "about-story",
+      "settings": {
+        "title": "Our story",
+        "des": "Our story begins in 1999 with a simple baby tee, which would quickly change the landscape of women's fashion.",
+        "img": "shopify:\/\/shop_images\/Rectangle_2.png",
+        "text": "Baby Phat is a dynamic, truly diverse, and inclusive brand with an unwavering finger on the pulse of hip hop and streetwear. Though many fashion elites snubbed Baby Phat early on, the brand's success forced them to reevaluate the meaning of style.",
+        "img2": "shopify:\/\/shop_images\/Rectangle_3.png",
+        "text1": "Baby Phat is a dynamic, truly diverse, and inclusive brand with an unwavering finger on the pulse of hip hop and streetwear. Though many fashion elites snubbed Baby Phat early on, the brand's success forced them to reevaluate the meaning of style.",
+        "text2": "While the industry treated diversity and inclusivity as dirty words, Baby Phat empowered women of color by creating flattering clothing for all body types, using curvy models with various complexions in fashion shows.",
+        "text3": "Baby Phat is a dynamic, truly diverse, and inclusive brand with an unwavering finger on the pulse of hip hop and streetwear. Though many fashion elites snubbed Baby Phat early on, the brand's success forced them to reevaluate the meaning of style.",
+        "text4": "While the industry treated diversity and inclusivity as dirty words, Baby Phat empowered women of color by creating flattering clothing for all body types, using curvy models with various complexions in fashion shows.",
+        "text5": "The company developed a cult following across the globe, with some fans proving their devotion with permanent Baby Phat tattoos. Baby Phat remains one of the world's most diverse and inclusive fashion disruptors to define an era of pop culture. Its impact is undeniable across the industry even today."
+      }
     }
   },
   "order": [
     "main",
-    "86197f7c-1691-40d9-b43f-0b7fd3ed4f41"
+    "86197f7c-1691-40d9-b43f-0b7fd3ed4f41",
+    "01f752d5-961c-44a5-81b9-9378b839aa1b"
   ]
 }
