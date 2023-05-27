@@ -11,7 +11,7 @@
     "86197f7c-1691-40d9-b43f-0b7fd3ed4f41": {
       "type": "about-benner",
       "settings": {
-        "title": " About                        US",
+        "title": "A<span class=\"text-invert\">bou<\/span>t<span class=\"text-small\">US<\/span>",
         "img": "shopify:\/\/shop_images\/Rectangle_8.png"
       }
     },
