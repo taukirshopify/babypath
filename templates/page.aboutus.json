@@ -29,11 +29,23 @@
         "text4": "While the industry treated diversity and inclusivity as dirty words, Baby Phat empowered women of color by creating flattering clothing for all body types, using curvy models with various complexions in fashion shows.",
         "text5": "The company developed a cult following across the globe, with some fans proving their devotion with permanent Baby Phat tattoos. Baby Phat remains one of the world's most diverse and inclusive fashion disruptors to define an era of pop culture. Its impact is undeniable across the industry even today."
       }
+    },
+    "5d581aa2-5a83-4a34-921a-d61af2686b27": {
+      "type": "about-story2",
+      "settings": {
+        "title": "",
+        "des": "Is a leading businesswoman, venture capitalist, entrepreneur, fashion designer, TV personality, author and philanthropist.",
+        "img": "shopify:\/\/shop_images\/Rectangle_4.png",
+        "text": "Kimora began her career as a fashion model at the age of 13, and was soon on an exclusive contract with the House of Chanel, in addition to being on the covers and pages of international fashion magazines such as Vogue, Elle, and Harper’s Bazaar.",
+        "img2": "shopify:\/\/shop_images\/Rectangle_5.png",
+        "text1": "In 1999, Kimora launched the global lifestyle brand Baby Phat. As President and Founder of Phat Fashions – which included Baby Phat and its male equivalent, Phat Farm - she established the premier metropolitan collection of its generation."
+      }
     }
   },
   "order": [
     "main",
     "86197f7c-1691-40d9-b43f-0b7fd3ed4f41",
-    "01f752d5-961c-44a5-81b9-9378b839aa1b"
+    "01f752d5-961c-44a5-81b9-9378b839aa1b",
+    "5d581aa2-5a83-4a34-921a-d61af2686b27"
   ]
 }
