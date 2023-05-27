@@ -1,4 +1,52 @@
- :root {
+/*
+Template Name: BabyPhat
+*/
+@font-face {
+    font-family: 'T-Star Pro';
+    src: url("//kvqdbc76k1bzq4g4-25382846550.shopifypreview.com/cdn/shop/t/36/assets/T-StarPro-Medium.eot?v=58777084748991143981673978264");
+    src: local("T-Star Pro Medium"), local("T-StarPro-Medium"), url("//kvqdbc76k1bzq4g4-25382846550.shopifypreview.com/cdn/shop/t/36/assets/T-StarPro-Medium.eot?v=58777084748991143981673978264?#iefix") format("embedded-opentype"), url("//kvqdbc76k1bzq4g4-25382846550.shopifypreview.com/cdn/shop/t/36/assets/T-StarPro-Medium.woff2?v=3268589531036331841673978265") format("woff2"), url("//kvqdbc76k1bzq4g4-25382846550.shopifypreview.com/cdn/shop/t/36/assets/T-StarPro-Medium.woff?v=43823674427180701901673978265") format("woff"), url("//kvqdbc76k1bzq4g4-25382846550.shopifypreview.com/cdn/shop/t/36/assets/T-StarPro-Medium.ttf?v=37293351044640387451673978260") format("truetype"), url("//kvqdbc76k1bzq4g4-25382846550.shopifypreview.com/cdn/shop/t/36/assets/T-StarPro-Medium.svg?v=154182739399391444271673978263#T-StarPro-Medium") format("svg");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'T-Star Pro';
+    src: url("//kvqdbc76k1bzq4g4-25382846550.shopifypreview.com/cdn/shop/t/36/assets/T-StarPro-Regular.eot?v=174829801644348488071673978263");
+    src: local("T-Star Pro Regular"), local("T-StarPro-Regular"), url("//kvqdbc76k1bzq4g4-25382846550.shopifypreview.com/cdn/shop/t/36/assets/T-StarPro-Regular.eot?v=174829801644348488071673978263?#iefix") format("embedded-opentype"), url("//kvqdbc76k1bzq4g4-25382846550.shopifypreview.com/cdn/shop/t/36/assets/T-StarPro-Regular.woff2?v=51635680676854564961673978263") format("woff2"), url("//kvqdbc76k1bzq4g4-25382846550.shopifypreview.com/cdn/shop/t/36/assets/T-StarPro-Regular.woff?v=175471296979818164811673978266") format("woff"), url("//kvqdbc76k1bzq4g4-25382846550.shopifypreview.com/cdn/shop/t/36/assets/T-StarPro-Regular.ttf?v=134555650551988390931673978264") format("truetype"), url("//kvqdbc76k1bzq4g4-25382846550.shopifypreview.com/cdn/shop/t/36/assets/T-StarPro-Regular.svg?v=146300185717871765621673978264#T-StarPro-Regular") format("svg");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'T-Star Pro';
+    src: url("//kvqdbc76k1bzq4g4-25382846550.shopifypreview.com/cdn/shop/t/36/assets/T-StarPro-Heavy.eot?v=148801335433475041001673978265");
+    src: local("T-Star Pro Heavy"), local("T-StarPro-Heavy"), url("//kvqdbc76k1bzq4g4-25382846550.shopifypreview.com/cdn/shop/t/36/assets/T-StarPro-Heavy.eot?v=148801335433475041001673978265?#iefix") format("embedded-opentype"), url("//kvqdbc76k1bzq4g4-25382846550.shopifypreview.com/cdn/shop/t/36/assets/T-StarPro-Heavy.woff2?v=79052384764228053891673978262") format("woff2"), url("//kvqdbc76k1bzq4g4-25382846550.shopifypreview.com/cdn/shop/t/36/assets/T-StarPro-Heavy.woff?v=56907742470196316521673978264") format("woff"), url("//kvqdbc76k1bzq4g4-25382846550.shopifypreview.com/cdn/shop/t/36/assets/T-StarPro-Heavy.ttf?v=172514058320633239671673978265") format("truetype"), url("//kvqdbc76k1bzq4g4-25382846550.shopifypreview.com/cdn/shop/t/36/assets/T-StarPro-Heavy.svg?v=130306307781840567361673978264#T-StarPro-Heavy") format("svg");
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'T-Star Pro';
+    src: url("//kvqdbc76k1bzq4g4-25382846550.shopifypreview.com/cdn/shop/t/36/assets/T-StarPro-Light.eot?v=57303476432820782351673978258");
+    src: local("T-Star Pro Light"), local("T-StarPro-Light"), url("//kvqdbc76k1bzq4g4-25382846550.shopifypreview.com/cdn/shop/t/36/assets/T-StarPro-Light.eot?v=57303476432820782351673978258?#iefix") format("embedded-opentype"), url("//kvqdbc76k1bzq4g4-25382846550.shopifypreview.com/cdn/shop/t/36/assets/T-StarPro-Light.woff2?v=139769869650592926461673978263") format("woff2"), url("//kvqdbc76k1bzq4g4-25382846550.shopifypreview.com/cdn/shop/t/36/assets/T-StarPro-Light.woff?v=152155191442233487781673978264") format("woff"), url("//kvqdbc76k1bzq4g4-25382846550.shopifypreview.com/cdn/shop/t/36/assets/T-StarPro-Light.ttf?v=85344263071767181761673978262") format("truetype"), url("//kvqdbc76k1bzq4g4-25382846550.shopifypreview.com/cdn/shop/t/36/assets/T-StarPro-Light.svg?v=105023533005193635031673978263#T-StarPro-Light") format("svg");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'T-Star Pro';
+    src: url("//kvqdbc76k1bzq4g4-25382846550.shopifypreview.com/cdn/shop/t/36/assets/T-StarPro-Bold.eot?v=119981765397269769611673978265");
+    src: local("T-Star Pro Bold"), local("T-StarPro-Bold"), url("//kvqdbc76k1bzq4g4-25382846550.shopifypreview.com/cdn/shop/t/36/assets/T-StarPro-Bold.eot?v=119981765397269769611673978265?#iefix") format("embedded-opentype"), url("//kvqdbc76k1bzq4g4-25382846550.shopifypreview.com/cdn/shop/t/36/assets/T-StarPro-Bold.woff2?v=56669301100764878551673978264") format("woff2"), url("//kvqdbc76k1bzq4g4-25382846550.shopifypreview.com/cdn/shop/t/36/assets/T-StarPro-Bold.woff?v=179324153774351493391673978263") format("woff"), url("//kvqdbc76k1bzq4g4-25382846550.shopifypreview.com/cdn/shop/t/36/assets/T-StarPro-Bold.ttf?v=24263369401432379421673978264") format("truetype"), url("//kvqdbc76k1bzq4g4-25382846550.shopifypreview.com/cdn/shop/t/36/assets/T-StarPro-Bold.svg?v=126449138696970663431673978262#T-StarPro-Bold") format("svg");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  :root {
     --theme-color: #0a58ca;
     --title-color: #000;
     --body-color: #000;
@@ -33,7 +81,21 @@
     width: 10px;
     background-color: #f5f5f5;
   }
-
+  
+  html::-webkit-scrollbar-thumb {
+    background-color: var(--theme-color);
+    background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent);
+  }
+  
+  body {
+    font-family: var(--title-font);
+    font-size: 22px;
+    font-weight: 400;
+    color: var(--body-color);
+    line-height: 32px;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+  }
   
   @media only screen and (min-width: 1300px) {
     .container-xxl,
