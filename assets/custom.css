@@ -1044,6 +1044,7 @@ button.shopify-payment-button__button.shopify-payment-button__button--unbranded 
         height: 100svh !important;
     }
     button#menu-opener {
+        height: 17px;
         padding: 0;
         background: transparent;
    
