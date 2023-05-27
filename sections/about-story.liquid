@@ -1,0 +1,107 @@
+{{ 'about.css' | asset_url | stylesheet_tag }}
+
+
+<section class="space-bottom">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 wow fadeInUp" data-wow-delay="0.2s">
+                <h2 class="story-title1">{{ section.settings.title }}</h2>
+                <p class="fs-18 mb-30">{{ section.settings.des }}</p>
+                <div class="story-img1">
+                    <img class="w-100" src="{{ section.settings.img | img_url:'' }}" alt="Image">
+                </div>
+            </div>
+            <div class="col-lg-5 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="d-block d-lg-none">
+                    <p class="fs-18 mt-30 mb-4 wow fadeInUp" data-wow-delay="0.4s">{{ section.settings.text }}</p>
+                    <p class="fs-18 mb-30 wow fadeInUp" data-wow-delay="0.5s">{{ section.settings.text2 }}</p>
+                </div>
+                <div class="story-img2 mb-30">img2
+                    <img class="w-100" src="{{ section.settings.img2 | img_url:'' }}" alt="Image">
+                </div>
+            </div>
+            <div class="col-lg-4 align-self-center">
+                <div class="d-none d-lg-block">
+                    <p class="fs-18 mb-4 wow fadeInUp" data-wow-delay="0.4s">{{ section.settings.text3 }}</p>
+                    <p class="fs-18 mb-4 wow fadeInUp" data-wow-delay="0.5s">{{ section.settings.text4 }}</p>
+                </div>
+                <p class="fs-18 mb-0 wow fadeInUp" data-wow-delay="0.6s">{{ section.settings.text5 }}</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+  {% schema %}
+    {
+        "name": "Our story",
+        "class": "store",
+        "settings": [
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Section title",
+            "default": "Our story"
+          },
+          {
+            "type": "text",
+            "id": "des",
+            "label": "Description",
+            "default": "Our story begins in 1999 with a simple baby tee, which would quickly change the landscape of women's fashion."
+          },
+          {
+            "type": "image_picker",
+            "id": "img",
+            "label": "Our story Image"
+          },
+          {
+            "type": "text",
+            "id": "text",
+            "label": "Description 01",
+            "default": "Baby Phat is a dynamic, truly diverse, and inclusive brand with an unwavering finger on the pulse of hip hop and streetwear. Though many fashion elites snubbed Baby Phat early on, the brand's success forced them to reevaluate the meaning of style."
+          },
+          {
+            "type": "image_picker",
+            "id": "img2",
+            "label": "Our story Image two"
+          },
+          {
+            "type": "text",
+            "id": "text1",
+            "label": "Description 01",
+            "default": "Baby Phat is a dynamic, truly diverse, and inclusive brand with an unwavering finger on the pulse of hip hop and streetwear. Though many fashion elites snubbed Baby Phat early on, the brand's success forced them to reevaluate the meaning of style."
+          },
+          {
+            "type": "text",
+            "id": "text2",
+            "label": "Description 03",
+            "default": "While the industry treated diversity and inclusivity as dirty words, Baby Phat empowered women of color by creating flattering clothing for all body types, using curvy models with various complexions in fashion shows."
+          },
+          {
+            "type": "text",
+            "id": "text3",
+            "label": "Description 04",
+            "default": "Baby Phat is a dynamic, truly diverse, and inclusive brand with an unwavering finger on the pulse of hip hop and streetwear. Though many fashion elites snubbed Baby Phat early on, the brand's success forced them to reevaluate the meaning of style."
+          },
+          {
+            "type": "text",
+            "id": "text4",
+            "label": "Description 05",
+            "default": "While the industry treated diversity and inclusivity as dirty words, Baby Phat empowered women of color by creating flattering clothing for all body types, using curvy models with various complexions in fashion shows."
+          },
+          {
+            "type": "text",
+            "id": "text5",
+            "label": "Description 06",
+            "default": "The company developed a cult following across the globe, with some fans proving their devotion with permanent Baby Phat tattoos. Baby Phat remains one of the world's most diverse and inclusive fashion disruptors to define an era of pop culture. Its impact is undeniable across the industry even today."
+          }
+        ],
+        "presets": [
+            {
+              "name": "About Our Store"
+            }
+          ]
+    }
+  {% endschema %}
+  

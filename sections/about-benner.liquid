@@ -1,0 +1,45 @@
+{{ 'about.css' | asset_url | stylesheet_tag }}
+
+
+<section class="space">
+    <div class="container">
+        <div class="breadcumb-area">
+            <div class="breadcumb-img wow fadeInUp" data-wow-delay="0.2s">
+                <img src="{{ section.settings.img | img_url:'' }}" alt="Image">
+            </div>
+            <div class="breadcumb-title-wrap">
+                <h1 class="breadcumb-title wow fadeInUp" data-wow-delay="0.4s">
+                    {{ section.settings.title }}
+                    {% comment %} A<span class="text-invert">bou</span>t
+                    <span class="text-small">US</span> {% endcomment %}
+                </h1>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+{% schema %}
+{
+    "name": "About me",
+    "class": "aboutme",
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Section title"
+      },
+     
+      {
+        "type": "image_picker",
+        "id": "img",
+        "label": "Our story Image"
+      }
+    ],
+    "presets": [
+        {
+          "name": "About Benner"
+        }
+      ]
+}
+{% endschema %}
