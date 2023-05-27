@@ -380,7 +380,7 @@ Template Name: BabyPhat
     font-size: 370px;
     font-weight: 900;
     text-transform: uppercase;
-    /* line-height: 1; */
+    line-height: 1;
     position: relative;
   }
   
@@ -508,7 +508,7 @@ Template Name: BabyPhat
   .story-big-text {
     font-size: 160px;
     font-weight: 900;
-    /* line-height: 1; */
+    line-height: 1;
     text-transform: uppercase;
     margin-bottom: 0;
   }
