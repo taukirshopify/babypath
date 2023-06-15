@@ -35,6 +35,9 @@
     },
     "5d581aa2-5a83-4a34-921a-d61af2686b27": {
       "type": "about-story2",
+      "custom_css": [
+        ".story-image-area img {width: 635px;}"
+      ],
       "settings": {
         "title": "Kimora LeeSimmons",
         "des": "Is a leading businesswoman, venture capitalist, entrepreneur, fashion designer, TV personality, author and philanthropist.",
