@@ -14,7 +14,7 @@
         ".breadcumb-img img {max-width: 551px;}"
       ],
       "settings": {
-        "title": "AboutUS",
+        "title": "A<span class=\"text-invert\">bou<\/span>t <span class=\"text-small\">US<\/span>",
         "img": "shopify:\/\/shop_images\/3.1_3864f1e0-fff9-4284-8b6e-c1f23c056bea.jpg"
       }
     },
