@@ -400,9 +400,7 @@
       bottom: -35%;
       font-size: 36px;
     }
-    .breadcumb-area .breadcumb-img {
-      max-width: 220px;
-    }
+
   }
   
   @media (max-width: 350px) {
