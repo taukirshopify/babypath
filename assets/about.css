@@ -394,7 +394,7 @@
   /* Extra small devices */
   @media (max-width: 575px) {
     .breadcumb-area .breadcumb-title {
-      font-size: 6.2em;
+      font-size: 5.5em;
     }
     .breadcumb-area .breadcumb-title .text-small {
       bottom: -35%;
