@@ -46,11 +46,11 @@ html, body {
 }
 
 .faq .tab-toggle:checked ~ .tab-label {
-    background-color: #faeee9;
+    background-color: rgb(247,206,242);
 }
 
 .faq .tab-content {
-    background-color: #faeee9;
+    background-color: rgb(247,206,242);
     max-height: 0px;
     overflow: hidden;
     transition: all 0.4s;
