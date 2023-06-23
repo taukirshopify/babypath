@@ -30,12 +30,36 @@
             "faq-title": "Do you ship internationally?",
             "faq-content": "<p>Yes! We provide international shipping services to various regions through UPS. We strive to make our products accessible to customers worldwide. However, please note that our ability to ship to specific international locations may be subject to change at any time and for various reasons. If we determine that we are unable to ship to your country, we will promptly cancel your order and issue a refund.<\/p><p><\/p><p>Shipping charges for your order will be calculated and presented to you during the checkout process. The exact cost will depend on factors such as the destination, package weight, and shipping method chosen.<\/p>"
           }
+        },
+        "86e5896a-eb43-4105-967a-d23cd8adc3ee": {
+          "type": "text",
+          "settings": {
+            "faq-title": "Do I need to pay custom duties \/ import fees for my order?",
+            "faq-content": "<p>You may be subject to import duties and taxes charged by your local customs authority. The specific duty rates vary depending on factors such as the value of the goods, their composition, and their country of origin. Each country has its own customs regulations, and we cannot provide exact information on the duties you may be required to pay, as this is determined by local customs officials upon import.<\/p><p>Please be aware that if you choose not to pay the import taxes or duties and decide to reject the parcel, you will not be eligible for a refund for your order.<\/p><p>We value transparency and want to ensure that our customers are well-informed about any potential customs charges associated with their international orders.<\/p>"
+          }
+        },
+        "43d74a1e-c9ab-4323-8eba-9ff4a703e8ad": {
+          "type": "text",
+          "settings": {
+            "faq-title": "I didn't receive an email confirmation when I placed my order. What should I do?",
+            "faq-content": "<p>If you didn't receive an email confirmation after placing your order, there are a few steps you can take:<\/p><p>Check your spam or junk folder: Sometimes, automated emails can end up in these folders by mistake. Please make sure to check these folders in your email account.<\/p><p>Wait for a while: Occasionally, there may be a delay in the delivery of email confirmations. It's possible that it may take a bit longer to receive the confirmation. Wait for some time, typically up to an hour, to see if the email arrives.<\/p><p>Contact customer support: If you have checked your spam folder and waited for a reasonable amount of time but still haven't received the confirmation email, we recommend reaching out to our customer support team. Provide them with your order details, including the name and email address used to place the order. They will be able to verify if the order was successfully placed and can assist you further.<\/p>"
+          }
+        },
+        "c51fe837-3edb-4e4a-9f5b-a1d27e870d50": {
+          "type": "text",
+          "settings": {
+            "faq-title": "Can I return my item?",
+            "faq-content": "<p>Unworn, unwashed, undamaged, unaltered merchandise will be eligible for an EXCHANGE ONLY within 21 days of the date your order was shipped. Items must be free of stains, makeup, deodorant, and any signs of wear. Note: All items being returned for exchange must have original tags attached and include all original packaging. All final sale products are Final Sale and cannot be exchanged. <\/p><p>Please review our Exchange Policy for instructions and further details. <\/p><p><em>TO OUR INTERNATIONAL CUSTOMERS<\/em> – Regrettably, we are unable to accept exchanges from outside the United States of America at this time.<\/p>"
+          }
         }
       },
       "block_order": [
         "90a37bff-599f-4907-a370-7f9a8f451041",
         "4a86ed3f-884a-410a-90a2-25e2986af7e1",
-        "f04007be-101a-4153-ab5d-587caf41a2a1"
+        "f04007be-101a-4153-ab5d-587caf41a2a1",
+        "86e5896a-eb43-4105-967a-d23cd8adc3ee",
+        "43d74a1e-c9ab-4323-8eba-9ff4a703e8ad",
+        "c51fe837-3edb-4e4a-9f5b-a1d27e870d50"
       ],
       "settings": {
         "padding_top": 36,
