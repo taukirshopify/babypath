@@ -139,13 +139,21 @@
             "faq-title": "What if my item is faulty?",
             "faq-content": "<p>Items are classified as faulty if they are received damaged, or where a manufacturing fault occurs within 1 month of purchase. After 1 month from your order date, items are not considered faulty and are as a result of normal wear and tear.<\/p><p>If your item is damaged upon arrival, it will be eligible for an exchange.<\/p>"
           }
+        },
+        "286551fc-b050-44b3-865f-9f20af5986d7": {
+          "type": "text",
+          "settings": {
+            "faq-title": "I received the wrong product. What should I do?",
+            "faq-content": "<p>We apologize for any inconvenience caused by receiving the wrong product. Contact our Customer Care team via our contact form to confirm the wrong item was received, so they may begin to process an Exchange.<\/p><p>Please attach a picture of the incorrect items you received along with the invoice that was included inside your package.<\/p>"
+          }
         }
       },
       "block_order": [
         "38a419e4-4193-441b-a117-6e131d325f50",
         "04ca6e74-6665-40d8-8307-2663275ac5da",
         "de2037ff-2f2b-4f71-9e97-ebb3b4263638",
-        "95d94ea8-91ee-40ae-bbc1-efd958905167"
+        "95d94ea8-91ee-40ae-bbc1-efd958905167",
+        "286551fc-b050-44b3-865f-9f20af5986d7"
       ],
       "settings": {
         "padding_top": 36,
