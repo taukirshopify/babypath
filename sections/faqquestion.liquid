@@ -13,7 +13,10 @@
 {% endstyle %}
 
 <div class="faq page-width faq-{{ section.id }}-padding" data-section-id="{{ section.id }}">
-  <h3>{{section.settings.faq_title}}</h3>
+
+<div class="featured-collection-title text-center">
+            <h3>{{section.settings.faq_title}}</h3>
+        </div>
   
   {% for block in section.blocks %}
    <div class="tab">
