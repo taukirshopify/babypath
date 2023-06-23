@@ -108,11 +108,55 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "ab8b7617-63ac-46e6-a8c8-99b8c9244d08": {
+      "type": "faqquestion",
+      "blocks": {
+        "38a419e4-4193-441b-a117-6e131d325f50": {
+          "type": "text",
+          "settings": {
+            "faq-title": "How do I choose my right size?",
+            "faq-content": "<p>An easy way to calculate your size is to use our <span style=\"text-decoration:underline\">Size Guide<\/span>, which can also be found on the product pages. Please note that same size garments may still vary depending on fit. Baby Phat follows the standard body measurement lists, based on average body measurements for all sizes.<\/p><p>On the product page, we provide measurements in both centimeters and inches for certain products. These measurements offer insight into the model or fit of the specific garment. Please keep in mind that these measurements may have slight variations of a few centimeters or inches due to the materials used in its production.<\/p>"
+          }
+        },
+        "04ca6e74-6665-40d8-8307-2663275ac5da": {
+          "type": "text",
+          "settings": {
+            "faq-title": "Do you offer plus sizes?",
+            "faq-content": "<p>Yes, our sizes range from XS- XXL. Please refer to our size guide or filter options on our website to explore the available plus-size options within our collection.<\/p>"
+          }
+        },
+        "de2037ff-2f2b-4f71-9e97-ebb3b4263638": {
+          "type": "text",
+          "settings": {
+            "faq-title": "Do you have a size guide?",
+            "faq-content": "<p>Yes, our Size Guide can be found <span style=\"text-decoration:underline\">here<\/span>, as well as on each product page.<\/p>"
+          }
+        },
+        "95d94ea8-91ee-40ae-bbc1-efd958905167": {
+          "type": "text",
+          "settings": {
+            "faq-title": "What if my item is faulty?",
+            "faq-content": "<p>Items are classified as faulty if they are received damaged, or where a manufacturing fault occurs within 1 month of purchase. After 1 month from your order date, items are not considered faulty and are as a result of normal wear and tear.<\/p><p>If your item is damaged upon arrival, it will be eligible for an exchange.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "38a419e4-4193-441b-a117-6e131d325f50",
+        "04ca6e74-6665-40d8-8307-2663275ac5da",
+        "de2037ff-2f2b-4f71-9e97-ebb3b4263638",
+        "95d94ea8-91ee-40ae-bbc1-efd958905167"
+      ],
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
     "main",
     "64b35c5f-7080-46aa-b3e9-b1c8604a2e82",
-    "2fee9781-6a83-4bd7-90c8-272c09c2c6d8"
+    "2fee9781-6a83-4bd7-90c8-272c09c2c6d8",
+    "ab8b7617-63ac-46e6-a8c8-99b8c9244d08"
   ]
 }
