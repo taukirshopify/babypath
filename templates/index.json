@@ -220,6 +220,7 @@
     },
     "7a3daecf-2b44-4375-8c98-596c7f6aeb64": {
       "type": "collection-lists-bottom",
+      "disabled": true,
       "blocks": {
         "e8585a02-ccf6-4c2c-a92a-0eeedc14edda": {
           "type": "slide",
