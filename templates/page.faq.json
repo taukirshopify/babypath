@@ -89,12 +89,20 @@
             "faq-title": "What is Klarna and how does it work?",
             "faq-content": "<p>Klarna is a popular payment solution that allows customers to make purchases online and choose from various flexible payment options. It provides an alternative to traditional payment methods by offering options like \"Buy Now, Pay Later\" or installment payments.<\/p><p><\/p><p>When making a purchase on a website that offers Klarna as a payment option, you can choose to pay with Klarna during the checkout process. Klarna allows you to split your purchase into equal, interest-free payments over a specific period. You'll be able to see the amount of each installment and the total cost before confirming the purchase.<\/p><p><\/p><p>Once you've chosen your preferred Klarna payment method, you can complete your purchase on the website as usual. Klarna will handle the payment process and notify you of the payment terms and due dates.<\/p>"
           }
+        },
+        "782bd1d1-aaf7-465f-b701-21c890993ae1": {
+          "type": "text",
+          "settings": {
+            "faq-title": "What currencies can I pay in?",
+            "faq-content": "<p>Please select your shipping destination from the top right hand corner of our e-store. This will automatically adjust the relevant currency too.<\/p>"
+          }
         }
       },
       "block_order": [
         "3d4b168c-4781-4a05-b854-624bd2879fbc",
         "67bbd9d7-d683-41ed-9fe9-a94c20354da0",
-        "86623930-222b-4708-b459-c44803751da5"
+        "86623930-222b-4708-b459-c44803751da5",
+        "782bd1d1-aaf7-465f-b701-21c890993ae1"
       ],
       "settings": {
         "padding_top": 36,
