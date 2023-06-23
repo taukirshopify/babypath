@@ -29,7 +29,7 @@ html, body {
 }
 
 .faq .tab-label {
-  background-color: #faeee9;
+  background-color: rgb(247,206,242);
   display: flex;
   justify-content: space-between;
   padding: 1em;
@@ -38,7 +38,7 @@ html, body {
 }
 
 .faq .tab-label:hover {
-   background-color: #faeee9;
+   background-color: rgb(247,206,242);
 }
 
 .faq .tab-toggle:checked ~ .tab-label::after {
