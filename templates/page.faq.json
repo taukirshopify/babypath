@@ -1,1 +1,54 @@
-{"sections":{"main":{"type":"main-page","settings":{"padding_top":28,"padding_bottom":28}}},"order":["main"]}
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "64b35c5f-7080-46aa-b3e9-b1c8604a2e82": {
+      "type": "faqquestion",
+      "blocks": {
+        "90a37bff-599f-4907-a370-7f9a8f451041": {
+          "type": "text",
+          "settings": {
+            "faq-title": "How do I track my order?",
+            "faq-content": "<p> Once your order has been shipped, you will receive a tracking number via email. You can enter this tracking number on our website's Order Tracking page to monitor the status and location of your package.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "90a37bff-599f-4907-a370-7f9a8f451041"
+      ],
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "2fee9781-6a83-4bd7-90c8-272c09c2c6d8": {
+      "type": "faqquestion",
+      "blocks": {
+        "3d4b168c-4781-4a05-b854-624bd2879fbc": {
+          "type": "text",
+          "settings": {
+            "faq-title": "Which payment methods do you accept?",
+            "faq-content": "<ul><li>Visa<\/li><li>Mastercard<\/li><li>Discover<\/li><li>American Express<\/li><li>Klarna<\/li><li>Afterpay<\/li><li>PayPal<\/li><li>Apple Pay<\/li><li>Google Pay<\/li><\/ul>"
+          }
+        }
+      },
+      "block_order": [
+        "3d4b168c-4781-4a05-b854-624bd2879fbc"
+      ],
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "64b35c5f-7080-46aa-b3e9-b1c8604a2e82",
+    "2fee9781-6a83-4bd7-90c8-272c09c2c6d8"
+  ]
+}
