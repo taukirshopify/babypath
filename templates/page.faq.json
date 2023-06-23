@@ -16,10 +16,18 @@
             "faq-title": "How do I track my order?",
             "faq-content": "<p> Once your order has been shipped, you will receive a tracking number via email. You can enter this tracking number on our website's Order Tracking page to monitor the status and location of your package.<\/p>"
           }
+        },
+        "4a86ed3f-884a-410a-90a2-25e2986af7e1": {
+          "type": "text",
+          "settings": {
+            "faq-title": "I want to edit or cancel my order",
+            "faq-content": "<h5>Due to our prompt order processing, we are unable to accommodate certain changes or cancellations to your order. These include, but are not limited to:<\/h5><p>Canceling your order or specific items within the order.<\/p><p>Changing the billing or shipping address associated with your order.<\/p><p>Modifying the payment method used for the order.<\/p><p>Altering the selected shipping method for the delivery.<\/p><p>Changing the color or size of any item(s) in your order.<\/p><p>Adding or removing item(s) from the order.<\/p><p>If for any reason you decide that you no longer wish to keep your order, you can initiate an exchange after the items have been delivered to you. Our exchange policy provides details on the process and eligibility for exchanges.<\/p>"
+          }
         }
       },
       "block_order": [
-        "90a37bff-599f-4907-a370-7f9a8f451041"
+        "90a37bff-599f-4907-a370-7f9a8f451041",
+        "4a86ed3f-884a-410a-90a2-25e2986af7e1"
       ],
       "settings": {
         "padding_top": 36,
