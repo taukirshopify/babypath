@@ -14,7 +14,7 @@
           "type": "text",
           "settings": {
             "faq-title": "How do I track my order?",
-            "faq-content": "<p> Once your order has been shipped, you will receive a tracking number via email. You can enter this tracking number on our website's Order Tracking page to monitor the status and location of your package.<\/p>"
+            "faq-content": "<p> Once your order has been shipped, you will receive a tracking number via email. You can enter this tracking number on our website's Order Tracking page to monitor the status and location of your package.<\/p><p><\/p><p>If you do not receive your tracking number, please contact <a href=\"mailto:orders@babyphat.com\"><span style=\"text-decoration:underline\">orders@babyphat.com<\/span><\/a> with your order number.<\/p>"
           }
         },
         "4a86ed3f-884a-410a-90a2-25e2986af7e1": {
