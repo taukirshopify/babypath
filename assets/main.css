@@ -460,9 +460,9 @@ theme.
     background: #F5F5F5;
   }
 
-  .fast-header-area.navbar-fixed {
+  /* .fast-header-area.navbar-fixed {
     background: #F5F5F5;
-  }
+  } */
 
   .logo img {
     display: none;
