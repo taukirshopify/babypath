@@ -238,7 +238,7 @@ html.no-js .no-js:not(html) {
 html.no-js .no-js-inline {
   display: inline-block !important;
 }
-.price-item--regular {
+.price-item.price-item--regular {
   font-weight: bold;
 }
 html.no-js .no-js-hidden {
