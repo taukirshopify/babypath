@@ -7,7 +7,7 @@
         if ( $('.fast-header-area').length ){
             $(window).on('scroll', function() {
                 var scroll = $(window).scrollTop();   
-                if (scroll >=90) {
+                if (scroll >=150) {
                     $(".fast-header-area").addClass("navbar-fixed").fadeIn();
                 } else {
                     $(".fast-header-area").removeClass("navbar-fixed");
