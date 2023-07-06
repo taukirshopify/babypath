@@ -61,6 +61,16 @@
 
 
 <script>
+  var divElement = document.querySelector('.show-more');
+
+  // Add a click event listener to the div element
+  divElement.addEventListener('click', function() {
+    // Add the class 'new-class' to the div element
+    divElement.classList.add('d-none');
+  });
+
+
+
   function showDivs() {
 
     var divs = document.getElementsByClassName("div-element");
