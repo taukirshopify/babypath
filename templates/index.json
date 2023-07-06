@@ -272,7 +272,7 @@
     "0a2b3531-5ba6-4435-8457-4384dfeb7124": {
       "type": "trending-product-grid",
       "settings": {
-        "product_grid_name": "Trending",
+        "product_grid_name": "Shop",
         "product_grid_collection": "kimoras-favorites"
       }
     },
@@ -291,6 +291,7 @@
       "blocks": {
         "bf452241-b434-470d-bacc-1d4d8bf7dd01": {
           "type": "shopify:\/\/apps\/shoppable-instagram-ugc\/blocks\/custom_bubbles\/e2616dfe-fbb6-4e7d-874d-d250b973556d",
+          "disabled": true,
           "settings": {
             "indicator_color": "#ffffff",
             "post_spacing": 1,
@@ -305,10 +306,60 @@
             "custom_css": "",
             "custom_js": ""
           }
+        },
+        "fe3c4599-8609-445f-8ab6-93e1f3b6077c": {
+          "type": "shopify:\/\/apps\/stamped-product-reviews-ugc\/blocks\/carousel\/a103faaf-2125-4b0e-89fa-de5149736723",
+          "disabled": true,
+          "settings": {
+            "title": "Real Reviews from Real Customers",
+            "auto_play": false,
+            "take": 30,
+            "color_title": "",
+            "color_star": "",
+            "color_text": "",
+            "color_link": "",
+            "review_ids": "",
+            "product_ids": "",
+            "category": "",
+            "product_brand": "",
+            "tags": "",
+            "min_rating": "none",
+            "fill_empty": false,
+            "random": false,
+            "with_photos": false
+          }
+        },
+        "4043025e-9375-46e2-a338-86277aefef78": {
+          "type": "shopify:\/\/apps\/shoppable-instagram-ugc\/blocks\/custom_slider\/e2616dfe-fbb6-4e7d-874d-d250b973556d",
+          "settings": {
+            "foreground_color": "#ffffff",
+            "background_color": "#000000",
+            "background_color_alpha": 90,
+            "post_spacing": 1,
+            "hover_margin": 0,
+            "cell_size": "20%",
+            "target_blank": false,
+            "arrows_outside": false,
+            "show_icon": true,
+            "show_text": false,
+            "show_date": false,
+            "call_to_action": "SHOP IT",
+            "shop_type": "button",
+            "body_font_size": 14,
+            "body_font": "helvetica_n4",
+            "accent_font_size": 14,
+            "accent_font": "helvetica_n4",
+            "override_feed_id": "",
+            "arbitrary_attributes": "",
+            "custom_css": "",
+            "custom_js": ""
+          }
         }
       },
       "block_order": [
-        "bf452241-b434-470d-bacc-1d4d8bf7dd01"
+        "bf452241-b434-470d-bacc-1d4d8bf7dd01",
+        "fe3c4599-8609-445f-8ab6-93e1f3b6077c",
+        "4043025e-9375-46e2-a338-86277aefef78"
       ],
       "settings": {
         "include_margins": true
