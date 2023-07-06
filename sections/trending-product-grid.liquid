@@ -63,8 +63,6 @@
 <script>
   function showDivs() {
 
-    const collection = document.getElementsByClassName("show-more");
-    collection.classList.add("d-none");
     var divs = document.getElementsByClassName("div-element");
   
     // Loop through all the divs
@@ -75,5 +73,8 @@
         divs[i].classList.remove("d-none");
       }
     }
+
+    
+ const newdetias = document.getElementsByClassName("show-more").classList.add("d-none");
   }
 </script>
