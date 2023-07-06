@@ -1168,7 +1168,10 @@ section {
   z-index: 1;
 
 }
-
+div#shopify-section-header-global {
+  position: relative;
+  z-index: 100000;
+}
 .splide__pagination {
   bottom: 20px;
 }
