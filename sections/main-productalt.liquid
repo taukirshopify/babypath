@@ -580,8 +580,8 @@ endif
   <script type="application/ld+json">
     {
     "@context": "http://schema.org/",
-                                                                                                                  "@type": "Product",
-                                                                                                                  "name": {{ product.title | json }},
+    "@type": "Product",
+    "name": {{ product.title | json }},
     "url": {{ request.origin | append: product.url | json }},
     {% if seo_media -%}
       "image": [
