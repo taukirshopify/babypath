@@ -9,15 +9,18 @@
           <div class="collection_grid row pt-4">
             {% for product in collections[section.settings.product_grid_collection].products limit:16 %}
               {% if forloop.index > 8 %}
-              <div class="col-md-3 d-none">
+              <div class="col-md-3 d-none div-element">
                  {% include 'proudct-grid-item' %}
               </div>
               {% else %}
-              <div class="col-md-3 ">
+              <div class="col-md-3  div-element">
                 {% include 'proudct-grid-item' %}
              </div>
             {% endif %}
               {% endfor %}
+              <div class="col-12 text-center">
+                <button onclick="showDivs()">Show Divs</button>
+              </div>
           </div>
         </div> 
     </div>
@@ -55,3 +58,19 @@
   
   {% javascript %}
   {% endjavascript %}
+
+
+<script>
+  function showDivs() {
+    var divs = document.getElementsByClassName("div-element");
+  
+    // Loop through all the divs
+    for (var i = 0; i < divs.length; i++) {
+      // Check if the div has the "d-none" class
+      if (divs[i].classList.contains("d-none")) {
+        // Remove the "d-none" class from the div
+        divs[i].classList.remove("d-none");
+      }
+    }
+  }
+</script>
