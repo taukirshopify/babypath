@@ -25,9 +25,9 @@
           "type": "images",
           "settings": {
             "img": "shopify:\/\/shop_images\/Copy_of_26.jpg",
-            "padding_top": 1,
+            "padding_top": 28,
             "padding_bottom": 1,
-            "padding_left": 1,
+            "padding_left": 38,
             "padding_right": 1
           }
         },
@@ -45,10 +45,10 @@
           "type": "images",
           "settings": {
             "img": "shopify:\/\/shop_images\/Rectangle_5.png",
-            "padding_top": 1,
+            "padding_top": 31,
             "padding_bottom": 1,
             "padding_left": 1,
-            "padding_right": 1
+            "padding_right": 34
           }
         },
         "dd97b2d2-429b-452b-a6f3-4e5588881aab": {
