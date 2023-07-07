@@ -20,10 +20,21 @@
             "padding_left": 1,
             "padding_right": 1
           }
+        },
+        "023ed995-f443-440f-b500-20b088f328c7": {
+          "type": "images",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/Copy_of_26.jpg",
+            "padding_top": 1,
+            "padding_bottom": 1,
+            "padding_left": 1,
+            "padding_right": 1
+          }
         }
       },
       "block_order": [
-        "5a2d9bdc-b605-4a7e-a36f-6f8b1c7412ee"
+        "5a2d9bdc-b605-4a7e-a36f-6f8b1c7412ee",
+        "023ed995-f443-440f-b500-20b088f328c7"
       ],
       "settings": {
       }
