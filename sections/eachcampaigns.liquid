@@ -5,17 +5,17 @@
  
     <div class="singel-page-campainwrapper">
 
-        <h3>{{ settings.settings.h2 }}</h3> 
+        <h3>{{ section.settings.h2 }}</h3> 
 
         <div class="video-wrapper">
             <video muted autoplay loop playsinline controls>
-            <source src="{{ settings.settings.u.sources[1].url }}" type="video/mp4">
+            <source src="{{ section.settings.u.sources[1].url }}" type="video/mp4">
             </video>
         </div>
     
 
         {% if settings.settings.p != blank %}
-            <p>{{ settings.settings.p }}</p>
+            <p>{{ section.settings.p }}</p>
         {% endif %}
         <img src="{{ section.settings.img | img_url:'' }}" alt="">
        
