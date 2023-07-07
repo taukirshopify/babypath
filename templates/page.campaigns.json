@@ -1,7 +1,33 @@
 {
   "sections": {
     "main": {
-      "type": "campaigns"
+      "type": "campaigns",
+      "blocks": {
+        "548df7dc-45f9-4288-b427-2cc21428b36d": {
+          "type": "campaing",
+          "settings": {
+            "h2": "Baby Phat x Forever 21",
+            "p": "",
+            "btn": "shop lookbook",
+            "url": ""
+          }
+        },
+        "2f35cca4-c223-4d3e-8586-ef6d78d4770d": {
+          "type": "campaing",
+          "settings": {
+            "h2": "Baby Phat x Forever 21",
+            "p": "",
+            "btn": "shop lookbook",
+            "url": ""
+          }
+        }
+      },
+      "block_order": [
+        "548df7dc-45f9-4288-b427-2cc21428b36d",
+        "2f35cca4-c223-4d3e-8586-ef6d78d4770d"
+      ],
+      "settings": {
+      }
     }
   },
   "order": [
