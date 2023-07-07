@@ -1,0 +1,120 @@
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/isotope-layout@3.0.6/dist/isotope.pkgd.min.js"></script>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js" integrity="sha512-IsNh5E3eYy3tr/JiX2Yx4vsCujtkhwl7SLqgnwLNgf04Hrt9BT9SXlLlZlWx+OK4ndzAoALhsMNcCmkggjZB1w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" integrity="sha512-+EoPw+Fiwh6eSeRK7zwIKG2MA8i3rV/DGa3tdttQGgWyatG/SkncT53KHQaS5Jh9MNOT3dmFL0FjTY08And/Cw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<div class="gallery-wrapper">
+ <div class="container">
+  <div class="page-width grid">
+   {% for c in section.blocks %}
+    <div class="grid-item gallery-inner">
+    
+  
+     <div data-aos="fade-up"
+        data-aos-duration="3000" class="singel-image-wrapper col-lg-4 " style="margin:{{ c.settings.padding_top }}% {{ c.settings.padding_right }}% {{ c.settings.padding_bottom}}% {{ c.settings.padding_left }}%"      >
+          <a  class="test-popup-link" href="{{ c.settings.img | img_url:'' }}"><img src="{{ c.settings.img | img_url:'' }}" alt="">  </a>  
+     </div>
+    </div>
+   {% endfor %}
+  </div>
+ </div>
+</div>
+
+{% schema %}
+    {
+        "name": "Gallery",
+        "class": "gallery",
+        "blocks": [
+            {
+                "type": "images",
+                "name": "image",
+                "settings": [
+                {
+                    "type": "image_picker",
+                    "id": "img",
+                    "label": "Select your Image"
+                },
+                   {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 1
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 1
+    },
+                   {
+      "type": "range",
+      "id": "padding_left",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Padding Left",
+      "default": 1
+    },
+                     {
+      "type": "range",
+      "id": "padding_right",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Padding Right",
+      "default": 1
+    }
+                ]
+            }
+        ],
+        "presets": [
+            {
+              "name": "Gallery"}]
+        
+    }
+{% endschema %}
+<style>
+    .singel-image-wrapper.col-lg-4 img {
+        width: 100%;
+    }
+
+    .gallery-inner {
+        width: 50%;
+    }
+    @media only screen and (max-width: 3000px) and (min-width: 1333px)  {
+        .gallery-inner {
+            width: 33.3%;
+        }
+    }
+    .singel-image-wrapper {
+        padding: 1%;
+    }
+</style>
+<script>
+// external js: isotope.pkgd.js
+
+// A $( document ).ready() block.
+$( document ).ready(function() {
+    $('.grid').isotope({
+        itemSelector: '.grid-item'
+      });
+      $('.test-popup-link').magnificPopup({
+        type: 'image'
+        // other options
+      });
+});
+
+  
+    AOS.init();
+  </script>
