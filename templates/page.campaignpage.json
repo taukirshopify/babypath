@@ -60,6 +60,16 @@
             "padding_left": 1,
             "padding_right": 1
           }
+        },
+        "04a6e2ba-718e-4521-aa93-6d1ddbe29c90": {
+          "type": "images",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/belive-img-3.png",
+            "padding_top": 1,
+            "padding_bottom": 1,
+            "padding_left": 1,
+            "padding_right": 1
+          }
         }
       },
       "block_order": [
@@ -67,7 +77,8 @@
         "023ed995-f443-440f-b500-20b088f328c7",
         "bad0cbac-b713-43c4-b27a-c3f2603c7d32",
         "297bdc18-ac56-4461-8900-e19e62950a9b",
-        "dd97b2d2-429b-452b-a6f3-4e5588881aab"
+        "dd97b2d2-429b-452b-a6f3-4e5588881aab",
+        "04a6e2ba-718e-4521-aa93-6d1ddbe29c90"
       ],
       "settings": {
       }
