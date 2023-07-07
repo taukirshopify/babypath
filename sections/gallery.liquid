@@ -5,10 +5,10 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" integrity="sha512-+EoPw+Fiwh6eSeRK7zwIKG2MA8i3rV/DGa3tdttQGgWyatG/SkncT53KHQaS5Jh9MNOT3dmFL0FjTY08And/Cw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <div class="gallery-wrapper">
- <div class="container">
-  <div class="page-width grid">
+ <div class="product-container">
+  <div class="row gridalt">
    {% for c in section.blocks %}
-    <div class="grid-item gallery-inner">
+    <div class="grid-itema gallery-inner">
     
   
      <div data-aos="fade-up"
@@ -108,8 +108,8 @@
 
 // A $( document ).ready() block.
 $( document ).ready(function() {
-    $('.grid').isotope({
-        itemSelector: '.grid-item'
+    $('.gridalt').isotope({
+        itemSelector: '.grid-itema'
       });
       $('.test-popup-link').magnificPopup({
         type: 'image'
