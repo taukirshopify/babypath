@@ -3,6 +3,9 @@
     "main": {
       "type": "eachcampaigns",
       "settings": {
+        "u": "shopify:\/\/files\/videos\/Baby Phat Main V2.mp4",
+        "h2": "Baby Phat x Forever 21",
+        "p": "hello"
       }
     }
   },
