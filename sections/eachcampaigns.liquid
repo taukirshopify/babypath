@@ -17,7 +17,6 @@
         {% if settings.settings.p != blank %}
             <p class="dec">{{ section.settings.p }}</p>
         {% endif %}
-        <img src="{{ section.settings.img | img_url:'' }}" alt="">
        
    
 
@@ -89,11 +88,6 @@
             "type": "text",
             "id": "p",
             "label": "Decription"
-           },
-           {
-            "type": "image_picker",
-            "id": "img",
-            "label": "Select your image"
            }
            
         ],
