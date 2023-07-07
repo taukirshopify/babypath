@@ -15,7 +15,7 @@
     
 
         {% if settings.settings.p != blank %}
-            <p>{{ section.settings.p }}</p>
+            <p class="dec">{{ section.settings.p }}</p>
         {% endif %}
         <img src="{{ section.settings.img | img_url:'' }}" alt="">
        
@@ -25,7 +25,31 @@
 
 
 
-
+    <style>
+        .video-wrapper video {
+            width: 100%;
+        }
+        h3 {
+            font-size: 28px;
+            font-weight: 900;
+            line-height: 1;
+            margin: 15px 0;
+        }
+        a.btn {
+            padding: 11px 17px;
+            background: black;
+            FONT-SIZE: 16px;
+            color: #FFF;
+            text-transform: capitalize;
+            line-height: 1;
+        }
+        .singel-page-campainwrapper {
+            margin: 30px 0;
+        }
+        .dec{
+         margin:10px 0;
+        }
+    </style>
 
 
 </div>
