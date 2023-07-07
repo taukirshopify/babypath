@@ -1,0 +1,83 @@
+
+<div class="product-container">
+<div class="row">
+<div class="col-12">
+  {% for c in section.blocks %}
+    <div class="singel-campainwrapper">
+
+        <div class="video-wrapper">
+            <video muted autoplay loop playsinline controls>
+            <source src="{{ c.settings.u.sources[1].url }}" type="video/mp4">
+            </video>
+        </div>
+        <a href="{{ c.settings.url }}"> <h3>{{ c.settings.h2 }}</h3> </a>
+
+        {% if c.settings.p != blank %}
+            <p>{{ c.settings.p }}</p>
+        {% endif %}
+       
+        <a href="{{ c.settings.url }}" class="btn">{{ c.settings.btn }}</a>
+
+    </div>
+
+
+  {% endfor %}
+
+
+
+</div>
+</div>
+</div>
+
+
+{% schema %}
+    {
+        "name": "campaing",
+        "class": "campaing",
+        "blocks": [
+            {
+                "type": "campaing",
+                "name": "campaing",
+                "settings": [
+                      
+                      {
+            
+                        "id": "u",
+                        "label": "Video Upload",
+                        "type": "video"
+                       },
+                       {
+                        "type": "text",
+                        "id": "h2",
+                        "label": "Campaing Title",
+                        "default": "Baby Phat x Forever 21"
+           
+                       },
+                       {
+                        "type": "text",
+                        "id": "p",
+                        "label": "Decription"
+                       },
+                       {
+                        "type": "text",
+                        "id": "btn",
+                        "label": "Butoon Title",
+                        "default": "shop lookbook"
+                       },
+                       {
+                        "type": "url",
+                        "id": "url",
+                        "label": "Connect the link"
+                       }
+                ]
+            }
+        ],
+        "presets": [
+            {
+            "name": "campaing"
+
+            }
+        ]
+        
+    }
+{% endschema %}

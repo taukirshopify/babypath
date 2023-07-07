@@ -1,0 +1,74 @@
+
+<div class="product-container">
+<div class="row">
+<div class="col-12">
+ 
+    <div class="singel-page-campainwrapper">
+
+        <h3>{{ settings.settings.h2 }}</h3> 
+
+        <div class="video-wrapper">
+            <video muted autoplay loop playsinline controls>
+            <source src="{{ settings.settings.u.sources[1].url }}" type="video/mp4">
+            </video>
+        </div>
+    
+
+        {% if settings.settings.p != blank %}
+            <p>{{ settings.settings.p }}</p>
+        {% endif %}
+        <img src="{{ section.settings.img | img_url:'' }}" alt="">
+       
+   
+
+    </div>
+
+
+
+
+
+
+</div>
+</div>
+</div>
+
+
+
+{% schema %}
+    {
+        "name": "campaing",
+        "class": "campaing",
+        "settings": [
+            {
+            "id": "u",
+            "label": "Video Upload",
+            "type": "video"
+           },
+           {
+            "type": "text",
+            "id": "h2",
+            "label": "Campaing Title",
+            "default": "Baby Phat x Forever 21"
+
+           },
+           {
+            "type": "text",
+            "id": "p",
+            "label": "Decription"
+           },
+           {
+            "type": "image_picker",
+            "id": "img",
+            "label": "Select your image"
+           }
+           
+        ],
+        "presets": [
+            {
+            "name": "campaing Page"
+
+            }
+        ]
+        
+    }
+{% endschema %}
