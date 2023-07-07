@@ -1,7 +1,7 @@
 {
   "sections": {
     "main": {
-      "type": "campaigns"
+      "type": "eachcampaigns"
     }
   },
   "order": [
