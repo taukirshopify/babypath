@@ -1,7 +1,13 @@
 {
   "sections": {
     "main": {
-      "type": "eachcampaigns"
+      "type": "eachcampaigns",
+      "settings": {
+        "u": "shopify:\/\/files\/videos\/Baby Phat Main V2.mp4",
+        "h2": "Baby Phat x Forever 21",
+        "p": "hello",
+        "img": "shopify:\/\/shop_images\/custom_resized_e2625e44-ab4a-4cfa-9c68-a518fb65fe44.jpg"
+      }
     }
   },
   "order": [
