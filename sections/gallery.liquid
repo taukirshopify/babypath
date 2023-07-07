@@ -101,9 +101,15 @@
 
 // A $( document ).ready() block.
 $( document ).ready(function() {
-    $('.gridalt').isotope({
+    var $grid =  $('.gridalt').isotope({
         itemSelector: '.grid-itema'
       });
+
+      // layout Isotope after each image loads
+$grid.imagesLoaded().progress( function() {
+    $grid.isotope('layout');
+  });
+
       $('.test-popup-link').magnificPopup({
         type: 'image'
         // other options
