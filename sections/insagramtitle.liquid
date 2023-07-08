@@ -1,0 +1,69 @@
+
+<div class="product-container">
+<div class="row">
+<div class="col-12">
+ 
+    <div class="instagram-text text-center">
+
+        <h3>{{ section.settings.h2 }}   <svg viewBox="0 0 50 50" height="32" fill="#000000"><path d="M16 3C8.832 3 3 8.832 3 16v18c0 7.168 5.832 13 13 13h18c7.168 0 13-5.832 13-13V16c0-7.168-5.832-13-13-13H16zm0 2h18c6.086 0 11 4.914 11 11v18c0 6.086-4.914 11-11 11H16C9.914 45 5 40.086 5 34V16C5 9.914 9.914 5 16 5zm21 6a2 2 0 00-2 2 2 2 0 002 2 2 2 0 002-2 2 2 0 00-2-2zm-12 3c-6.063 0-11 4.937-11 11s4.937 11 11 11 11-4.937 11-11-4.937-11-11-11zm0 2c4.982 0 9 4.018 9 9s-4.018 9-9 9-9-4.018-9-9 4.018-9 9-9z"></path></svg></h3> 
+        <p><a href="{{ section.settings.url }}"> {{section.settings.p }} </a></p>
+        
+   
+
+    </div>
+
+
+
+    <style>
+
+       .instagram-text h3 {
+            font-size: 28px;
+            font-weight: 900;
+            line-height: 1;
+            margin: 15px 0 30px;
+        }
+  
+    </style>
+
+
+</div>
+</div>
+</div>
+
+
+
+{% schema %}
+    {
+        "name": "Instagram",
+        "class": "Instagram",
+        "settings": [
+ 
+           {
+            "type": "text",
+            "id": "h2",
+            "label": "Campaing Title",
+            "default": "Checkout Baby Phat on"
+
+           },
+           {
+            "type": "text",
+            "id": "p",
+            "label": "Decription",
+            "default": "@babyphat"
+           },
+           {
+            "type": "url",
+            "id": "url",
+            "label": "Instagram url"
+           }
+           
+        ],
+        "presets": [
+            {
+            "name": "Instagram"
+
+            }
+        ]
+        
+    }
+{% endschema %}
