@@ -279,10 +279,18 @@
     "7f28b300-5f5c-4dae-af34-56e21cba1acc": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "<div class=\"free-shop-bottom-heading\">\n        <h1>Baby Phat on Instagram<\/h1>\n    <\/div>",
+        "custom_liquid": "",
         "color_scheme": "background-1",
         "padding_top": 0,
         "padding_bottom": 0
+      }
+    },
+    "b800ac90-5ec6-41ec-b4af-b3921d4f2b34": {
+      "type": "insagramtitle",
+      "settings": {
+        "h2": "Checkout Baby Phat on",
+        "p": "@babyphat",
+        "url": ""
       }
     },
     "1687741535b9698047": {
@@ -376,6 +384,7 @@
     "7a3daecf-2b44-4375-8c98-596c7f6aeb64",
     "0a2b3531-5ba6-4435-8457-4384dfeb7124",
     "7f28b300-5f5c-4dae-af34-56e21cba1acc",
+    "b800ac90-5ec6-41ec-b4af-b3921d4f2b34",
     "1687741535b9698047"
   ]
 }
