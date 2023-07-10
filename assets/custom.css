@@ -57,6 +57,7 @@ html, body {
     transition: all 0.4s;
     padding: 0 1em;
     color: #727272;
+    font-size: 1.4rem;
 }
 
 .faq .tab-toggle:checked ~ .tab-content {
