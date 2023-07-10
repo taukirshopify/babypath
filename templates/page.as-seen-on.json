@@ -10,6 +10,30 @@
     "1688751776f1fbb64b": {
       "type": "apps",
       "blocks": {
+        "4cc84e71-88f5-4f3d-96c7-61a72a749f9a": {
+          "type": "shopify:\/\/apps\/shoppable-instagram-ugc\/blocks\/custom_pinboard\/e2616dfe-fbb6-4e7d-874d-d250b973556d",
+          "settings": {
+            "indicator_color": "#ffffff",
+            "background_color": "#eeeeee",
+            "post_spacing": 1,
+            "target_blank": false,
+            "initially_show_links": false,
+            "primary_font_size": 14,
+            "primary_font": "helvetica_n4",
+            "secondary_font_size": 14,
+            "secondary_font": "helvetica_n4",
+            "call_to_action": "Add To Cart",
+            "button_color": "#000000",
+            "button_text_color": "#ffffff",
+            "button_padding": 8,
+            "button_font_size": 14,
+            "button_font": "helvetica_n4",
+            "override_feed_id": "",
+            "arbitrary_attributes": "",
+            "custom_css": "",
+            "custom_js": ""
+          }
+        },
         "3898b386-9773-4049-a287-b6a8f64f7ee7": {
           "type": "shopify:\/\/apps\/shoppable-instagram-ugc\/blocks\/custom_fullpage\/e2616dfe-fbb6-4e7d-874d-d250b973556d",
           "settings": {
@@ -54,6 +78,7 @@
         }
       },
       "block_order": [
+        "4cc84e71-88f5-4f3d-96c7-61a72a749f9a",
         "3898b386-9773-4049-a287-b6a8f64f7ee7",
         "b02e5ef1-3c50-496b-a22f-0b4825166c20"
       ],
