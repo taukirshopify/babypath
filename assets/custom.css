@@ -35,6 +35,7 @@ html, body {
   padding: 1em;
   color: #822523;
   font-weight: 600;
+  font-size: 1.5rem;
 }
 
 .faq .tab-label:hover {
