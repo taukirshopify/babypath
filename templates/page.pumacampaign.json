@@ -1,0 +1,157 @@
+{
+  "sections": {
+    "main": {
+      "type": "eachcampaigns",
+      "settings": {
+        "u": "shopify:\/\/files\/videos\/Baby Phat Main V2.mp4",
+        "h2": "Baby Phat x Forever 21",
+        "p": ""
+      }
+    },
+    "1ecf01aa-357e-457a-a37b-c4ce31c50fe2": {
+      "type": "gallery",
+      "blocks": {
+        "5a2d9bdc-b605-4a7e-a36f-6f8b1c7412ee": {
+          "type": "images",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/IMG_8567_fae0fa22-10f6-4dab-aa19-ea2974190b21.jpg",
+            "padding_top": 1,
+            "padding_bottom": 1,
+            "padding_left": 1,
+            "padding_right": 1
+          }
+        },
+        "023ed995-f443-440f-b500-20b088f328c7": {
+          "type": "images",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/IMG_8584.jpg",
+            "padding_top": 28,
+            "padding_bottom": 1,
+            "padding_left": 38,
+            "padding_right": 1
+          }
+        },
+        "bad0cbac-b713-43c4-b27a-c3f2603c7d32": {
+          "type": "images",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/IMG_8594.jpg",
+            "padding_top": 1,
+            "padding_bottom": 1,
+            "padding_left": 1,
+            "padding_right": 1
+          }
+        },
+        "297bdc18-ac56-4461-8900-e19e62950a9b": {
+          "type": "images",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/IMG_8586.jpg",
+            "padding_top": 31,
+            "padding_bottom": 1,
+            "padding_left": 1,
+            "padding_right": 34
+          }
+        },
+        "dd97b2d2-429b-452b-a6f3-4e5588881aab": {
+          "type": "images",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/IMG_8585.jpg",
+            "padding_top": 1,
+            "padding_bottom": 1,
+            "padding_left": 1,
+            "padding_right": 1
+          }
+        },
+        "04a6e2ba-718e-4521-aa93-6d1ddbe29c90": {
+          "type": "images",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/IMG_8587.jpg",
+            "padding_top": 1,
+            "padding_bottom": 1,
+            "padding_left": 1,
+            "padding_right": 1
+          }
+        },
+        "4f555e7a-486a-4865-b0ec-c06c6b22a2bd": {
+          "type": "images",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/IMG_8588.jpg",
+            "padding_top": 1,
+            "padding_bottom": 1,
+            "padding_left": 1,
+            "padding_right": 1
+          }
+        },
+        "68a1b789-e8e3-4b78-be7b-bdac2d7b23fd": {
+          "type": "images",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/IMG_8589.jpg",
+            "padding_top": 1,
+            "padding_bottom": 1,
+            "padding_left": 1,
+            "padding_right": 1
+          }
+        },
+        "addb2297-ae6b-4af2-8c5b-fd2c749ae79c": {
+          "type": "images",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/IMG_8590.jpg",
+            "padding_top": 1,
+            "padding_bottom": 1,
+            "padding_left": 1,
+            "padding_right": 1
+          }
+        },
+        "65e6df80-5fc6-4c21-afe3-8a2b2ede3a48": {
+          "type": "images",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/IMG_8591.jpg",
+            "padding_top": 1,
+            "padding_bottom": 1,
+            "padding_left": 1,
+            "padding_right": 1
+          }
+        },
+        "32b47959-8e65-4f7c-bf7c-c0df813e237b": {
+          "type": "images",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/IMG_8593.jpg",
+            "padding_top": 1,
+            "padding_bottom": 1,
+            "padding_left": 1,
+            "padding_right": 1
+          }
+        },
+        "01c80f11-ae8d-467a-a753-9056fdbd9e4f": {
+          "type": "images",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/IMG_8594.jpg",
+            "padding_top": 1,
+            "padding_bottom": 1,
+            "padding_left": 1,
+            "padding_right": 1
+          }
+        }
+      },
+      "block_order": [
+        "5a2d9bdc-b605-4a7e-a36f-6f8b1c7412ee",
+        "023ed995-f443-440f-b500-20b088f328c7",
+        "bad0cbac-b713-43c4-b27a-c3f2603c7d32",
+        "297bdc18-ac56-4461-8900-e19e62950a9b",
+        "dd97b2d2-429b-452b-a6f3-4e5588881aab",
+        "04a6e2ba-718e-4521-aa93-6d1ddbe29c90",
+        "4f555e7a-486a-4865-b0ec-c06c6b22a2bd",
+        "68a1b789-e8e3-4b78-be7b-bdac2d7b23fd",
+        "addb2297-ae6b-4af2-8c5b-fd2c749ae79c",
+        "65e6df80-5fc6-4c21-afe3-8a2b2ede3a48",
+        "32b47959-8e65-4f7c-bf7c-c0df813e237b",
+        "01c80f11-ae8d-467a-a753-9056fdbd9e4f"
+      ],
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1ecf01aa-357e-457a-a37b-c4ce31c50fe2"
+  ]
+}
