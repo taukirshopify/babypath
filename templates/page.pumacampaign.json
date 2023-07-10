@@ -140,6 +140,46 @@
             "padding_left": 1,
             "padding_right": 1
           }
+        },
+        "73080740-aa55-45d2-b64c-474ab2b46b78": {
+          "type": "images",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/22SS_PNA_Baby-Phat_April-Ming_0581.jpg",
+            "padding_top": 1,
+            "padding_bottom": 1,
+            "padding_left": 1,
+            "padding_right": 1
+          }
+        },
+        "4d809236-61ee-442b-bde1-b615fa149d8e": {
+          "type": "images",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/22SS_PNA_Baby-Phat_April-Ming_0595.jpg",
+            "padding_top": 1,
+            "padding_bottom": 1,
+            "padding_left": 1,
+            "padding_right": 1
+          }
+        },
+        "40415d7e-d7f7-441a-825c-2d9990f8d6ec": {
+          "type": "images",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/22SS_PNA_Baby-Phat_April-Ming_0650_5c845fe4-18c9-4c3a-b6bc-2fead2ea6637.jpg",
+            "padding_top": 1,
+            "padding_bottom": 1,
+            "padding_left": 1,
+            "padding_right": 1
+          }
+        },
+        "9880d4ec-24e2-4846-a8e4-cbfb6d5fe44e": {
+          "type": "images",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/22SS_PNA_Baby-Phat_July-Group_1344_ebfef5d2-f551-4de6-8591-bcea35931ddb.jpg",
+            "padding_top": 1,
+            "padding_bottom": 1,
+            "padding_left": 1,
+            "padding_right": 1
+          }
         }
       },
       "block_order": [
@@ -155,7 +195,11 @@
         "65e6df80-5fc6-4c21-afe3-8a2b2ede3a48",
         "32b47959-8e65-4f7c-bf7c-c0df813e237b",
         "01c80f11-ae8d-467a-a753-9056fdbd9e4f",
-        "8e03cbf6-4687-48c6-b467-b6734dce2d5a"
+        "8e03cbf6-4687-48c6-b467-b6734dce2d5a",
+        "73080740-aa55-45d2-b64c-474ab2b46b78",
+        "4d809236-61ee-442b-bde1-b615fa149d8e",
+        "40415d7e-d7f7-441a-825c-2d9990f8d6ec",
+        "9880d4ec-24e2-4846-a8e4-cbfb6d5fe44e"
       ],
       "settings": {
       }
