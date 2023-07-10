@@ -94,7 +94,7 @@
         "addb2297-ae6b-4af2-8c5b-fd2c749ae79c": {
           "type": "images",
           "settings": {
-            "img": "shopify:\/\/shop_images\/IMG_8590.jpg",
+            "img": "shopify:\/\/shop_images\/22SS_PNA_Baby-Phat_April-Group_1050.jpg",
             "padding_top": 1,
             "padding_bottom": 1,
             "padding_left": 1,
@@ -104,7 +104,7 @@
         "65e6df80-5fc6-4c21-afe3-8a2b2ede3a48": {
           "type": "images",
           "settings": {
-            "img": "shopify:\/\/shop_images\/IMG_8591.jpg",
+            "img": "shopify:\/\/shop_images\/22SS_PNA_Baby-Phat_April-Kimora_0267_4bcfd420-10f6-41ab-8705-97aa8ceb5674.jpg",
             "padding_top": 1,
             "padding_bottom": 1,
             "padding_left": 1,
@@ -114,7 +114,7 @@
         "32b47959-8e65-4f7c-bf7c-c0df813e237b": {
           "type": "images",
           "settings": {
-            "img": "shopify:\/\/shop_images\/IMG_8593.jpg",
+            "img": "shopify:\/\/shop_images\/22SS_PNA_Baby-Phat_April-Kimora_1062_75f88b04-0f77-453a-8817-6d330adcca4d.jpg",
             "padding_top": 1,
             "padding_bottom": 1,
             "padding_left": 1,
@@ -124,7 +124,17 @@
         "01c80f11-ae8d-467a-a753-9056fdbd9e4f": {
           "type": "images",
           "settings": {
-            "img": "shopify:\/\/shop_images\/IMG_8594.jpg",
+            "img": "shopify:\/\/shop_images\/22SS_PNA_Baby-Phat_April-Ming_0500_cd43aa79-2c16-42a7-8384-6ef84156bea7.jpg",
+            "padding_top": 1,
+            "padding_bottom": 1,
+            "padding_left": 1,
+            "padding_right": 1
+          }
+        },
+        "8e03cbf6-4687-48c6-b467-b6734dce2d5a": {
+          "type": "images",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/22SS_PNA_Baby-Phat_April-Ming_0521.jpg",
             "padding_top": 1,
             "padding_bottom": 1,
             "padding_left": 1,
@@ -144,7 +154,8 @@
         "addb2297-ae6b-4af2-8c5b-fd2c749ae79c",
         "65e6df80-5fc6-4c21-afe3-8a2b2ede3a48",
         "32b47959-8e65-4f7c-bf7c-c0df813e237b",
-        "01c80f11-ae8d-467a-a753-9056fdbd9e4f"
+        "01c80f11-ae8d-467a-a753-9056fdbd9e4f",
+        "8e03cbf6-4687-48c6-b467-b6734dce2d5a"
       ],
       "settings": {
       }
