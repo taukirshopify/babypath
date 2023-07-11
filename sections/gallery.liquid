@@ -1,5 +1,5 @@
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/5.0.0/imagesloaded.pkgd.min.js"></script>
+<script src=""></script>
 <script src="https://cdn.jsdelivr.net/npm/isotope-layout@3.0.6/dist/isotope.pkgd.min.js"></script>
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js" integrity="sha512-IsNh5E3eYy3tr/JiX2Yx4vsCujtkhwl7SLqgnwLNgf04Hrt9BT9SXlLlZlWx+OK4ndzAoALhsMNcCmkggjZB1w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -101,12 +101,17 @@
 // external js: isotope.pkgd.js
 
 // A $( document ).ready() block.
-AOS.init();
+
 $( document ).ready(function() {
     $('.grid').imagesLoaded( function() {
-   $('.gridalt').isotope({
+
+      $('.gridalt').isotope({
         itemSelector: '.grid-itema'
+
       });
+
+
+      AOS.init();
     });
 
       // layout Isotope after each image loads
@@ -115,7 +120,10 @@ $( document ).ready(function() {
         type: 'image'
         // other options
       });
+
+
 });
+
 
   
 
