@@ -19,7 +19,7 @@ html, body {
 }
 
 .faq .tab-label::after {
-  content: '\02C3';
+  content: '\2192';
   transition: all .4s;
 }
 
