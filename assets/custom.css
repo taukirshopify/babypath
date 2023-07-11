@@ -33,7 +33,7 @@ html, body {
   display: flex;
   justify-content: space-between;
   padding: 1em;
-  color: #fff;
+  color: #000;
   font-weight: 600;
   font-size: 1.5rem;
   border-bottom: 1px solid black;
