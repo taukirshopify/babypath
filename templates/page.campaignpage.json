@@ -25,9 +25,9 @@
           "type": "images",
           "settings": {
             "img": "shopify:\/\/shop_images\/IMG_8584.jpg",
-            "padding_top": 28,
-            "padding_bottom": 1,
-            "padding_left": 38,
+            "padding_top": 0,
+            "padding_bottom": 0,
+            "padding_left": 0,
             "padding_right": 1
           }
         },
@@ -45,7 +45,7 @@
           "type": "images",
           "settings": {
             "img": "shopify:\/\/shop_images\/IMG_8586.jpg",
-            "padding_top": 31,
+            "padding_top": 0,
             "padding_bottom": 1,
             "padding_left": 1,
             "padding_right": 34
