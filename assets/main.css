@@ -1068,7 +1068,8 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   font: inherit;
   vertical-align: baseline;
   color: #000000;
-  font-size: 100%;
+  /* GS3 font size increased */
+  font-size: 110%;
   font-style: inherit;
   font-weight: inherit;
   font-family: 'T-Star Pro';
