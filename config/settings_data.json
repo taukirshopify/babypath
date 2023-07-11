@@ -121,6 +121,7 @@
     "predictive_search_show_price": false,
     "currency_code_enabled": true,
     "cart_type": "drawer",
+    "checkout_logo_image": "shopify:\/\/shop_images\/bp_footer_logo_4_1_1.png",
     "sections": {
       "announcement-bar": {
         "type": "announcement-bar",
