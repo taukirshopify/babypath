@@ -391,6 +391,14 @@
     }
   }
   
+  @media (max-width: 450px) {
+
+    .breadcumb-area .breadcumb-img {
+      max-width: 192px;
+      height: 580px;
+    }
+  }
+  
   /* Extra small devices */
   @media (max-width: 575px) {
     .breadcumb-area .breadcumb-title {
