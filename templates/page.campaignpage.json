@@ -65,8 +65,8 @@
           "type": "images",
           "settings": {
             "img": "shopify:\/\/shop_images\/IMG_8587.jpg",
-            "padding_top": 1,
-            "padding_bottom": 1,
+            "padding_top": 0,
+            "padding_bottom": 0,
             "padding_left": 1,
             "padding_right": 1
           }
