@@ -1099,7 +1099,6 @@ button.shopify-payment-button__button.shopify-payment-button__button--unbranded 
         max-height: 760px;
         object-fit: cover;
         object-position: top;
-        height: 100svh !important;
     }
     button#menu-opener {
         height: 17px;
