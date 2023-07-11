@@ -317,7 +317,7 @@
   .breadcumb-area .breadcumb-title-wrap {
     position: absolute;
     top: 50%;
-    left: 0;
+    right: 0;
     width: 100%;
     -webkit-transform: translateY(-55%);
         -ms-transform: translateY(-55%);
