@@ -1,0 +1,245 @@
+{
+  "sections": {
+    "main": {
+      "type": "eachcampaigns",
+      "settings": {
+        "u": "shopify:\/\/files\/videos\/Baby Phat x Puma Video VHS.mp4",
+        "h2": "Baby Phat x Forever 21",
+        "p": ""
+      }
+    },
+    "1ecf01aa-357e-457a-a37b-c4ce31c50fe2": {
+      "type": "gallery",
+      "blocks": {
+        "5a2d9bdc-b605-4a7e-a36f-6f8b1c7412ee": {
+          "type": "images",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/22SS_PNA_Baby-Phat_April-Aoki_0786.jpg",
+            "padding_top": 1,
+            "padding_bottom": 1,
+            "padding_left": 1,
+            "padding_right": 1
+          }
+        },
+        "023ed995-f443-440f-b500-20b088f328c7": {
+          "type": "images",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/22SS_PNA_Baby-Phat_April-Aoki_0804.jpg",
+            "padding_top": 28,
+            "padding_bottom": 1,
+            "padding_left": 38,
+            "padding_right": 1
+          }
+        },
+        "bad0cbac-b713-43c4-b27a-c3f2603c7d32": {
+          "type": "images",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/22SS_PNA_Baby-Phat_April-Aoki_0882_4483e946-06ce-4dc9-a92c-f10e7d7c2fe1.jpg",
+            "padding_top": 1,
+            "padding_bottom": 1,
+            "padding_left": 1,
+            "padding_right": 1
+          }
+        },
+        "297bdc18-ac56-4461-8900-e19e62950a9b": {
+          "type": "images",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/22SS_PNA_Baby-Phat_April-Aoki_0893.jpg",
+            "padding_top": 31,
+            "padding_bottom": 1,
+            "padding_left": 1,
+            "padding_right": 34
+          }
+        },
+        "dd97b2d2-429b-452b-a6f3-4e5588881aab": {
+          "type": "images",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/22SS_PNA_Baby-Phat_April-Aoki_0910.jpg",
+            "padding_top": 1,
+            "padding_bottom": 1,
+            "padding_left": 1,
+            "padding_right": 1
+          }
+        },
+        "04a6e2ba-718e-4521-aa93-6d1ddbe29c90": {
+          "type": "images",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/22SS_PNA_Baby-Phat_April-Group_0951.jpg",
+            "padding_top": 1,
+            "padding_bottom": 1,
+            "padding_left": 1,
+            "padding_right": 1
+          }
+        },
+        "4f555e7a-486a-4865-b0ec-c06c6b22a2bd": {
+          "type": "images",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/22SS_PNA_Baby-Phat_April-Group_0994_19dee143-f60f-4a8a-87df-9feb1bdbacc1.jpg",
+            "padding_top": 1,
+            "padding_bottom": 1,
+            "padding_left": 1,
+            "padding_right": 1
+          }
+        },
+        "68a1b789-e8e3-4b78-be7b-bdac2d7b23fd": {
+          "type": "images",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/22SS_PNA_Baby-Phat_April-Group_1018.jpg",
+            "padding_top": 1,
+            "padding_bottom": 1,
+            "padding_left": 1,
+            "padding_right": 1
+          }
+        },
+        "addb2297-ae6b-4af2-8c5b-fd2c749ae79c": {
+          "type": "images",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/22SS_PNA_Baby-Phat_April-Group_1050.jpg",
+            "padding_top": 1,
+            "padding_bottom": 1,
+            "padding_left": 1,
+            "padding_right": 1
+          }
+        },
+        "65e6df80-5fc6-4c21-afe3-8a2b2ede3a48": {
+          "type": "images",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/22SS_PNA_Baby-Phat_April-Kimora_0267_4bcfd420-10f6-41ab-8705-97aa8ceb5674.jpg",
+            "padding_top": 1,
+            "padding_bottom": 1,
+            "padding_left": 1,
+            "padding_right": 1
+          }
+        },
+        "32b47959-8e65-4f7c-bf7c-c0df813e237b": {
+          "type": "images",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/22SS_PNA_Baby-Phat_April-Kimora_1062_75f88b04-0f77-453a-8817-6d330adcca4d.jpg",
+            "padding_top": 1,
+            "padding_bottom": 1,
+            "padding_left": 1,
+            "padding_right": 1
+          }
+        },
+        "01c80f11-ae8d-467a-a753-9056fdbd9e4f": {
+          "type": "images",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/22SS_PNA_Baby-Phat_April-Ming_0500_cd43aa79-2c16-42a7-8384-6ef84156bea7.jpg",
+            "padding_top": 1,
+            "padding_bottom": 1,
+            "padding_left": 1,
+            "padding_right": 1
+          }
+        },
+        "8e03cbf6-4687-48c6-b467-b6734dce2d5a": {
+          "type": "images",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/22SS_PNA_Baby-Phat_April-Ming_0521.jpg",
+            "padding_top": 1,
+            "padding_bottom": 1,
+            "padding_left": 1,
+            "padding_right": 1
+          }
+        },
+        "73080740-aa55-45d2-b64c-474ab2b46b78": {
+          "type": "images",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/22SS_PNA_Baby-Phat_April-Ming_0581.jpg",
+            "padding_top": 1,
+            "padding_bottom": 1,
+            "padding_left": 1,
+            "padding_right": 1
+          }
+        },
+        "4d809236-61ee-442b-bde1-b615fa149d8e": {
+          "type": "images",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/22SS_PNA_Baby-Phat_April-Ming_0595.jpg",
+            "padding_top": 1,
+            "padding_bottom": 1,
+            "padding_left": 1,
+            "padding_right": 1
+          }
+        },
+        "40415d7e-d7f7-441a-825c-2d9990f8d6ec": {
+          "type": "images",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/22SS_PNA_Baby-Phat_April-Ming_0650_5c845fe4-18c9-4c3a-b6bc-2fead2ea6637.jpg",
+            "padding_top": 1,
+            "padding_bottom": 1,
+            "padding_left": 1,
+            "padding_right": 1
+          }
+        },
+        "9880d4ec-24e2-4846-a8e4-cbfb6d5fe44e": {
+          "type": "images",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/22SS_PNA_Baby-Phat_July-Group_1344_ebfef5d2-f551-4de6-8591-bcea35931ddb.jpg",
+            "padding_top": 1,
+            "padding_bottom": 1,
+            "padding_left": 1,
+            "padding_right": 1
+          }
+        },
+        "453e984a-b02e-45c3-89ff-c7ec55168157": {
+          "type": "images",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/22SS_PNA_Baby-Phat_July-Group_1365_58da3097-acbe-4020-b0d8-e3cf4cc181df.jpg",
+            "padding_top": 1,
+            "padding_bottom": 1,
+            "padding_left": 1,
+            "padding_right": 1
+          }
+        },
+        "90d038c4-3e47-4bca-ab82-bc63db052f24": {
+          "type": "images",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/22SS_PNA_Baby-Phat_July-Group_1418.jpg",
+            "padding_top": 1,
+            "padding_bottom": 1,
+            "padding_left": 1,
+            "padding_right": 1
+          }
+        },
+        "553a23ac-2a20-4e5a-90ce-b23e0c6e3ccb": {
+          "type": "images",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/22SS_PNA_Baby-Phat_July-Group_1529.jpg",
+            "padding_top": 1,
+            "padding_bottom": 1,
+            "padding_left": 1,
+            "padding_right": 1
+          }
+        }
+      },
+      "block_order": [
+        "5a2d9bdc-b605-4a7e-a36f-6f8b1c7412ee",
+        "023ed995-f443-440f-b500-20b088f328c7",
+        "bad0cbac-b713-43c4-b27a-c3f2603c7d32",
+        "297bdc18-ac56-4461-8900-e19e62950a9b",
+        "dd97b2d2-429b-452b-a6f3-4e5588881aab",
+        "04a6e2ba-718e-4521-aa93-6d1ddbe29c90",
+        "4f555e7a-486a-4865-b0ec-c06c6b22a2bd",
+        "68a1b789-e8e3-4b78-be7b-bdac2d7b23fd",
+        "addb2297-ae6b-4af2-8c5b-fd2c749ae79c",
+        "65e6df80-5fc6-4c21-afe3-8a2b2ede3a48",
+        "32b47959-8e65-4f7c-bf7c-c0df813e237b",
+        "01c80f11-ae8d-467a-a753-9056fdbd9e4f",
+        "8e03cbf6-4687-48c6-b467-b6734dce2d5a",
+        "73080740-aa55-45d2-b64c-474ab2b46b78",
+        "4d809236-61ee-442b-bde1-b615fa149d8e",
+        "40415d7e-d7f7-441a-825c-2d9990f8d6ec",
+        "9880d4ec-24e2-4846-a8e4-cbfb6d5fe44e",
+        "453e984a-b02e-45c3-89ff-c7ec55168157",
+        "90d038c4-3e47-4bca-ab82-bc63db052f24",
+        "553a23ac-2a20-4e5a-90ce-b23e0c6e3ccb"
+      ],
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1ecf01aa-357e-457a-a37b-c4ce31c50fe2"
+  ]
+}

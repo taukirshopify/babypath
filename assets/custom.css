@@ -19,7 +19,7 @@ html, body {
 }
 
 .faq .tab-label::after {
-  content: '\276F';
+  content: '\2192';
   transition: all .4s;
 }
 
@@ -29,16 +29,19 @@ html, body {
 }
 
 .faq .tab-label {
-  background-color: rgb(247,206,242);
+  background-color: rgb(255,255,255);
   display: flex;
   justify-content: space-between;
   padding: 1em;
-  color: #822523;
+  color: #000;
   font-weight: 600;
+  font-size: 1.7rem;
+  border-bottom: 1px solid black;
 }
 
 .faq .tab-label:hover {
-   background-color: rgb(247,206,242);
+   /*background-color: rgb(0,0,0); */
+  color: rgb(0,0,0);
 }
 
 .faq .tab-toggle:checked ~ .tab-label::after {
@@ -46,16 +49,17 @@ html, body {
 }
 
 .faq .tab-toggle:checked ~ .tab-label {
-    background-color: rgb(247,206,242);
+    /*background-color: rgb(0,0,0);*/
 }
 
 .faq .tab-content {
-    background-color: rgb(247,206,242);
+    /* background-color: rgb(0,0,0); */
     max-height: 0px;
     overflow: hidden;
     transition: all 0.4s;
     padding: 0 1em;
     color: #727272;
+    font-size: 1.4rem;
 }
 
 .faq .tab-toggle:checked ~ .tab-content {

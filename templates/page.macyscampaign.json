@@ -1,0 +1,234 @@
+{
+  "sections": {
+    "main": {
+      "type": "eachcampaigns",
+      "settings": {
+        "u": "shopify:\/\/files\/videos\/CAMPAIGN KMA 2.mp4",
+        "h2": "Baby Phat x Forever 21",
+        "p": ""
+      }
+    },
+    "1ecf01aa-357e-457a-a37b-c4ce31c50fe2": {
+      "type": "gallery",
+      "blocks": {
+        "5a2d9bdc-b605-4a7e-a36f-6f8b1c7412ee": {
+          "type": "images",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/3.1_20e3e126-a9b3-4707-b9f6-ffedefa7cd15.jpg",
+            "padding_top": 1,
+            "padding_bottom": 1,
+            "padding_left": 1,
+            "padding_right": 1
+          }
+        },
+        "023ed995-f443-440f-b500-20b088f328c7": {
+          "type": "images",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/4.1.jpg",
+            "padding_top": 28,
+            "padding_bottom": 1,
+            "padding_left": 38,
+            "padding_right": 1
+          }
+        },
+        "bad0cbac-b713-43c4-b27a-c3f2603c7d32": {
+          "type": "images",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/5_8d32f0be-40f0-4fe6-9d71-8dff34620e26.jpg",
+            "padding_top": 1,
+            "padding_bottom": 1,
+            "padding_left": 1,
+            "padding_right": 1
+          }
+        },
+        "297bdc18-ac56-4461-8900-e19e62950a9b": {
+          "type": "images",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/6_14499796-7a55-4092-8308-0091d9a55fd7.jpg",
+            "padding_top": 31,
+            "padding_bottom": 1,
+            "padding_left": 1,
+            "padding_right": 34
+          }
+        },
+        "dd97b2d2-429b-452b-a6f3-4e5588881aab": {
+          "type": "images",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/8_with_faceapp_1.jpg",
+            "padding_top": 1,
+            "padding_bottom": 1,
+            "padding_left": 1,
+            "padding_right": 1
+          }
+        },
+        "04a6e2ba-718e-4521-aa93-6d1ddbe29c90": {
+          "type": "images",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/9_e68be325-fc79-45e1-9a4f-39257dedbaf7.jpg",
+            "padding_top": 1,
+            "padding_bottom": 1,
+            "padding_left": 1,
+            "padding_right": 1
+          }
+        },
+        "4f555e7a-486a-4865-b0ec-c06c6b22a2bd": {
+          "type": "images",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/10_90eca127-b600-467e-b966-0ca8ac9de0b1.jpg",
+            "padding_top": 1,
+            "padding_bottom": 1,
+            "padding_left": 1,
+            "padding_right": 1
+          }
+        },
+        "68a1b789-e8e3-4b78-be7b-bdac2d7b23fd": {
+          "type": "images",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/13.1_c79311d9-5efa-48c1-8ca2-8263a76d0a0d.jpg",
+            "padding_top": 1,
+            "padding_bottom": 1,
+            "padding_left": 1,
+            "padding_right": 1
+          }
+        },
+        "addb2297-ae6b-4af2-8c5b-fd2c749ae79c": {
+          "type": "images",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/14_a0f22c29-f046-494e-a9b6-696b3726b81d.jpg",
+            "padding_top": 1,
+            "padding_bottom": 1,
+            "padding_left": 1,
+            "padding_right": 1
+          }
+        },
+        "65e6df80-5fc6-4c21-afe3-8a2b2ede3a48": {
+          "type": "images",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/17_d687798a-7676-4268-b9d6-1c182a068f80.jpg",
+            "padding_top": 1,
+            "padding_bottom": 1,
+            "padding_left": 1,
+            "padding_right": 1
+          }
+        },
+        "32b47959-8e65-4f7c-bf7c-c0df813e237b": {
+          "type": "images",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/18_484b327a-d8d3-4066-a5b5-6968ff45fcc4.jpg",
+            "padding_top": 1,
+            "padding_bottom": 1,
+            "padding_left": 1,
+            "padding_right": 1
+          }
+        },
+        "01c80f11-ae8d-467a-a753-9056fdbd9e4f": {
+          "type": "images",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/20_97aaafe6-3bf5-4830-80d2-641390915bfb.jpg",
+            "padding_top": 1,
+            "padding_bottom": 1,
+            "padding_left": 1,
+            "padding_right": 1
+          }
+        },
+        "552af65e-214d-46ba-b70c-c437bfca3c8d": {
+          "type": "images",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/22_1e513f7f-36a4-4a2f-84bb-7c71b187a7fc.jpg",
+            "padding_top": 1,
+            "padding_bottom": 1,
+            "padding_left": 1,
+            "padding_right": 1
+          }
+        },
+        "b7b9165d-f1a8-422e-b4a3-8f8e3f0b6348": {
+          "type": "images",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/23_3a41a4b8-43c8-42bb-82c5-9b02a5eea317.jpg",
+            "padding_top": 1,
+            "padding_bottom": 1,
+            "padding_left": 1,
+            "padding_right": 1
+          }
+        },
+        "2ab64731-47bf-487d-872f-d48da1e29eaa": {
+          "type": "images",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/25_9a807230-59cb-4f97-9cf3-96f1d3b91fe8.jpg",
+            "padding_top": 1,
+            "padding_bottom": 1,
+            "padding_left": 1,
+            "padding_right": 1
+          }
+        },
+        "cecf6239-c941-4b91-80d5-a9dc9dbb6e4a": {
+          "type": "images",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/AOKI_APPROVED_565d8fdc-08f0-41c8-a37d-8b79aa6cd247.jpg",
+            "padding_top": 1,
+            "padding_bottom": 1,
+            "padding_left": 1,
+            "padding_right": 1
+          }
+        },
+        "41873e6c-1131-4c0d-a64b-635c737023a9": {
+          "type": "images",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/Copy_of_19_45c20047-2c3c-49f4-b586-83e4fa5add8a.jpg",
+            "padding_top": 1,
+            "padding_bottom": 1,
+            "padding_left": 1,
+            "padding_right": 1
+          }
+        },
+        "98cf8f6f-be2c-42f0-a6e9-071c425e0bc0": {
+          "type": "images",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/Copy_of_26_3e8af843-beb7-4425-965c-27d34e60223a.jpg",
+            "padding_top": 1,
+            "padding_bottom": 1,
+            "padding_left": 1,
+            "padding_right": 1
+          }
+        },
+        "72940971-e937-4525-b06d-41cdaef0e828": {
+          "type": "images",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/Copy_of_2021.11.27.BABYPHAT.Relaunch9478highres_09cdc087-1f78-489c-b015-58b58b7c3f49.jpg",
+            "padding_top": 1,
+            "padding_bottom": 1,
+            "padding_left": 1,
+            "padding_right": 1
+          }
+        }
+      },
+      "block_order": [
+        "5a2d9bdc-b605-4a7e-a36f-6f8b1c7412ee",
+        "023ed995-f443-440f-b500-20b088f328c7",
+        "bad0cbac-b713-43c4-b27a-c3f2603c7d32",
+        "297bdc18-ac56-4461-8900-e19e62950a9b",
+        "dd97b2d2-429b-452b-a6f3-4e5588881aab",
+        "04a6e2ba-718e-4521-aa93-6d1ddbe29c90",
+        "4f555e7a-486a-4865-b0ec-c06c6b22a2bd",
+        "68a1b789-e8e3-4b78-be7b-bdac2d7b23fd",
+        "addb2297-ae6b-4af2-8c5b-fd2c749ae79c",
+        "65e6df80-5fc6-4c21-afe3-8a2b2ede3a48",
+        "32b47959-8e65-4f7c-bf7c-c0df813e237b",
+        "01c80f11-ae8d-467a-a753-9056fdbd9e4f",
+        "552af65e-214d-46ba-b70c-c437bfca3c8d",
+        "b7b9165d-f1a8-422e-b4a3-8f8e3f0b6348",
+        "2ab64731-47bf-487d-872f-d48da1e29eaa",
+        "cecf6239-c941-4b91-80d5-a9dc9dbb6e4a",
+        "41873e6c-1131-4c0d-a64b-635c737023a9",
+        "98cf8f6f-be2c-42f0-a6e9-071c425e0bc0",
+        "72940971-e937-4525-b06d-41cdaef0e828"
+      ],
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1ecf01aa-357e-457a-a37b-c4ce31c50fe2"
+  ]
+}
