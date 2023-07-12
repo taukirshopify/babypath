@@ -59,13 +59,21 @@
           <a href="/account"><img src="{{'Profile.svg' | asset_url  }}" alt="My account"></a>
         </li>
         <li class="header-bag-991">
-          <a id="cartDrawyerOpener"><img src="{{'shopping.svg' | asset_url  }}" alt="My cart"></a>
+          <a id="cartDrawyerOpener"><img src="{{'shopping.svg' | asset_url  }}" alt="My cart">
+        
+          <span> {{ cart.item_count }}
+        </span></a>
+
         </li>
       </ul>
       <div class="header-r-991">
         <ul>
           <li class="header-bag-991">
-            <a id="cartDrawyerOpener"><img src="{{'Shopping2.svg' | asset_url  }}" alt="My cart"></a>
+            <a id="cartDrawyerOpener"><img src="{{'Shopping2.svg' | asset_url  }}" alt="My cart">
+          
+            <span>{{ cart.item_count }}
+          </span></a>
+            
           </li>
         </ul>
         <button class="menu-oparetor sidebar-menu" id="menu-opener">
