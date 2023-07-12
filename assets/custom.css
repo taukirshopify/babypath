@@ -1039,6 +1039,9 @@ a#cartDrawyerOpener span {
     top: 0;
     left: 11px;
     font-size: 12px;
+    width: 18px;
+    text-align: center;
+    letter-spacing: unset;
 }
 button#menu-opener {
     border: none;
