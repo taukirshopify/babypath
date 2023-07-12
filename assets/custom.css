@@ -1024,10 +1024,11 @@ li.currency-switcher-li {
 }
 a#cartDrawyerOpener {
     display: inline-block;
+    position: relative;
 }
 
-a#cartDrawyerOpener   span {
- 
+
+a#cartDrawyerOpener span {
     padding: 3px 5px;
     background: #fff;
     border-radius: 50%;
@@ -1035,6 +1036,9 @@ a#cartDrawyerOpener   span {
     display: inline-block;
     color: #000;
     position: absolute;
+    top: 0;
+    left: 11px;
+    font-size: 12px;
 }
 button#menu-opener {
     border: none;
