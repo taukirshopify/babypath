@@ -221,7 +221,7 @@
            
             $(".main-card-btn").removeClass('d-none');
             $(".empty_cart_msg").addClass('d-none');
-            $(".main-card-btn").addClass('d-none');
+         
 
         } else {
             $(".product_items_subwrapper").replaceWith(cart_items);
@@ -268,6 +268,7 @@
                       
                       $('.cart-drawer__header-info').attr('hidden',true);
                       $('.cart-drawer__header').append('<div class="empty_cart_msg">Your Cart is Empty!</div>');
+                      $(".main-card-btn").addClass('d-none');
                     };
                     0 == i ? $(".cart-drawer__no-item").addClass("cart-drawer__no-item_visible") : $(".cart-drawer__no-item").removeClass("cart-drawer__no-item_visible"),
                         $(".cart-drawer__count").html(i),
@@ -307,6 +308,7 @@
                       $('.cart-drawer__footer').addClass('hidden');
                       $('.cart-drawer__header-info').attr('hidden',true);
                       $('.cart-drawer__header').append('<div class="empty_cart_msg">Your Cart is Empty!</div>');
+                      $(".main-card-btn").addClass('d-none');
                     };
                     0 == n ? $(".cart-drawer__no-item").addClass("cart-drawer__no-item_visible") : $(".cart-drawer__no-item").removeClass("cart-drawer__no-item_visible"),
                         $(".cart-drawer__count").html(n),
