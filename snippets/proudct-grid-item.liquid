@@ -21,6 +21,7 @@
     </a>
   </div>
   <div class="product-item-p-text">
+    {% comment %}
     {% if product.available %}
       <form
         method="post"
@@ -40,6 +41,7 @@
     {% else %}
       <a href="#" class="sold-item-cart">sold out</a>
     {% endif %}
+    {% endcomment %}
     <p class="product-item-text">{{ product.title }}</p>
     <p class="product-item-text product_price">
       {% if product.compare_at_price > product.price %}
