@@ -84,12 +84,12 @@
                 {{- 'products.product.on_sale' | t -}}
               </span>
             {%- endif -%}
-            {% if product.metafields.custom.custom_badge_text.value %}
+            {% if custom.custom_badge_text.value %}
               <span
                 id="NoMediaStandardBadge-{{ section_id }}-{{ card_product.id }}"
                 class="badge badge--bottom-left color-{{ settings.sold_out_badge_color_scheme }}"
               >
-                {{ product.metafields.custom.custom_badge_text.value }}
+                {{ custom.custom_badge_text.value }}
               </span>
             {% endif %}
           </div>
