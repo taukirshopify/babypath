@@ -207,13 +207,13 @@
           var cart_count = $(".cart-drawer__count", cart_html);
 
             console.log(cart_count);
-            //$("#cartDrawyerOpener .cart-count").append(cart_count);
+            $("#cartDrawyerOpener .cart-count").append(cart_count);
       
           var cart_subtotal = $(".cart-drawer__total-amount", cart_html);
- 
-        // var cartData2 = JSON.parse(cart_items); 
- console.log(cartData2);
-         
+       
+       // var cartData2 = JSON.parse(cart_items); 
+ //console.log(cartData2);
+      
           if ($(".product_items_empt_subwrapper")[0]){
 
              $(".product_items_empt_subwrapper").empty();
