@@ -225,7 +225,7 @@
             $(".product_items_subwrapper").replaceWith(cart_items);
         }
 
-          
+        
           $('.cart-drawer__count').replaceWith(cart_count);
           $('.cart-drawer__total-amount').replaceWith(cart_subtotal);
         });
