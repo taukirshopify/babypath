@@ -17,7 +17,14 @@
           On sale
         </div>
       {% endif %}
-
+            {% if card_product.metafields.my_fields.custom_badge_text %}
+              <span
+                id="NoMediaStandardBadge-{{ section_id }}-{{ card_product.id }}"
+                class="badge badge--bottom-left color-{{ settings.sold_out_badge_color_scheme }}"
+              >
+                {{ card_product.metafields.my_fields.custom_badge_text.value }}
+              </span>
+            {% endif %}
     </a>
   </div>
   <div class="product-item-p-text">
