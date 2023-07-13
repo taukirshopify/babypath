@@ -227,10 +227,12 @@
 
         
           $('.cart-drawer__count').replaceWith(cart_count);
+          
           $('.cart-drawer__total-amount').replaceWith(cart_subtotal);
+   
+          $("#cartDrawyerOpener .cart-count").replaceWith(cart_count);
         });
-        console.log(cart_count);
-        $("#cartDrawyerOpener .cart-count").append(cart_count);
+     
       };
 
 
