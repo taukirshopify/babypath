@@ -231,7 +231,7 @@
           
           $('.cart-drawer__total-amount').replaceWith(cart_subtotal);
    
-          $("#cartDrawyerOpener .cart-count").replaceWith(cart_counta);
+          $("#cartDrawyerOpener .cart-count").replaceWith(cart_count);
         });
      
       };
