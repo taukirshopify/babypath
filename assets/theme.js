@@ -221,6 +221,7 @@
            
             $(".main-card-btn").removeClass('d-none');
             $(".empty_cart_msg").addClass('d-none');
+            $(".main-card-btn").addClass('d-none');
 
         } else {
             $(".product_items_subwrapper").replaceWith(cart_items);
