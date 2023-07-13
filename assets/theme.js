@@ -205,6 +205,7 @@
           var cart_items = $(".product_items_subwrapper", cart_html);
 
           var cart_count = $(".cart-drawer__count", cart_html);
+          var cart_counta = $(".cart-drawer__count", cart_html);
 
           
       
@@ -230,7 +231,7 @@
           
           $('.cart-drawer__total-amount').replaceWith(cart_subtotal);
    
-          $("#cartDrawyerOpener .cart-count").replaceWith(cart_count);
+          $("#cartDrawyerOpener .cart-count").replaceWith(cart_counta);
         });
      
       };
