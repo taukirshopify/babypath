@@ -1,4 +1,11 @@
-{%- unless product.has_only_default_variant -%}
+
+
+
+{%- if item.product.has_only_default_variant == false -%}
+
+
+  {% else %}
+
     {%- for option in product.options_with_values -%}
 
       {% if option.name == "Color" %}
@@ -25,7 +32,7 @@
   
 
     {%- endfor -%}
-  {%- endunless -%}
+  {%- endif -%}
 
   <style>
   .singel-top-option{
