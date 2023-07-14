@@ -80,7 +80,7 @@ if (!customElements.get('product-form')) {
               $("#cartDrawyerOpener .cart-count").replaceWith(cart_count);
               
             });
-            $('.main-card-area').addClass('active');
+            // $('.main-card-area').addClass('active');
             return;
           }
     

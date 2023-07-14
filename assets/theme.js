@@ -155,15 +155,15 @@
 })(jQuery);
 
     // sidebar_menu All Page/
-    $(".sidebar-card").on('click', function () {
-        $(".main-card-area").addClass("active");
-    });
-    $("#cartDrawyerOpener,a#cartDrawyerOpener,p#cartDrawyerOpener").on('click', function () {
-        $('.main-card-area').addClass('active');
-    });
-    $(".main-card-remove").on('click', function () {
-        $(".main-card-area").removeClass("active");
-    });
+    // $(".sidebar-card").on('click', function () {
+    //     $(".main-card-area").addClass("active");
+    // });
+    // $("#cartDrawyerOpener,a#cartDrawyerOpener,p#cartDrawyerOpener").on('click', function () {
+    //     $('.main-card-area').addClass('active');
+    // });
+    // $(".main-card-remove").on('click', function () {
+    //     $(".main-card-area").removeClass("active");
+    // });
 
 
     // $("button.quantity__button").on('click', function () {
