@@ -10,11 +10,15 @@
             {% for product in collections[section.settings.product_grid_collection].products limit:16 %}
               {% if forloop.index > 8 %}
               <div class="col-md-3 d-none div-element">
-                 {% include 'proudct-grid-item' %}
+                
+                {% render 'homepagegrid',
+                  product: product, %}
               </div>
               {% else %}
               <div class="col-md-3  div-element">
-                {% include 'proudct-grid-item' %}
+                
+                {% render 'homepagegrid',
+                  product: product, %}
              </div>
             {% endif %}
               {% endfor %}

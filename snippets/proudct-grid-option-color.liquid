@@ -1,0 +1,91 @@
+
+{% comment %} Geting the color  {% endcomment %}
+<div class="card-bottom-color-details">
+
+
+{%- for option in product.options_with_values -%}
+
+  {% if option.name == "Color" %}
+
+      {%- for value in option.values -%}
+        
+
+        <p> {{ forloop.index }}  color  available</p>
+
+
+{%- endfor -%}
+
+{% endif %}
+
+{%- endfor -%}
+
+  
+  {%- for option in product.options_with_values -%}
+
+      {% if option.name == "Color" %}
+        <div class=" product-item-color product_price d-flex align-items-center">
+          {%- for value in option.values -%}
+            
+
+
+
+        <div class="card-product-wrapper-color"
+          
+          {% if value contains ' ' %}  style="background: var(--{{ value | remove:" " }})"
+          {% else %}
+          style="background: {{ value }}"
+          {% endif %}
+        >
+                  
+        </div>
+      
+     
+
+
+            
+          {%- endfor -%}
+        </div>
+
+       {% endif %}
+  
+    {%- endfor -%}
+
+  </div>
+
+    <style>
+      .product-item-text-color{
+       height:25px;
+       line-height:25px;
+      }
+    .card-product-wrapper-color {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background:#6F8FAF;
+    border-radius:30px;
+    
+}
+.card-bottom-color-details{
+ position: relative;
+}
+.product-item-color{ 
+  position: absolute;
+  margin: 0 auto;
+  width: 100%;
+  height:100%;
+  bottom: 0;
+
+  opacity: 0;
+  visibility: hidden;
+    background-color: #fff;
+    transition: top 300ms ease 0s, opacity 300ms ease 0s, visibility 300ms ease 0s;
+
+}
+.collection_item:hover .product-item-color {
+  opacity: 1;
+  visibility: visible;
+}
+.card-bottom-color-details {
+  height: 30px;
+}
+    </style>

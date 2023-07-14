@@ -1,0 +1,50 @@
+<div class="collection_item">
+    <div class="product_image_wrapper ">
+      <a class="product-items" href="{{ product.url }}">
+       
+          <img
+            class="product-item-img firstImage"
+            src="{{ product.featured_image | img_url: 'master' }}"
+            alt="{{ product.title }}">
+          {% if product.images[1] %}
+            <img
+              class="product-item-img secondImage"
+              src="{{ product.images[1] | product_img_url: 'master' }}"
+              alt="{{ product.title }}">
+  
+          {% endif %}
+          
+          {% if product.compare_at_price > product.price %}
+            <div class="proudct-sale">
+              On sale
+            </div>
+          {% endif %}
+          
+      </a>
+      {% render 'proudct-grid-option-top',
+        product: product,
+    
+    %}
+    </div>
+
+    <div class="product-item-p-text">
+      <p class="product-item-text">{{ product.title }}      
+           {% if product.compare_at_price > product.price %}
+        <span class="sale-price">{{ product.price | money }}</span>
+        <span class="regular-price compare_at_price">
+          <del>{{ product.compare_at_price | money }}</del>
+        </span>
+      {% else %}
+        <span class="regular-price">{{ product.price | money }}</span>
+      {% endif %}</p>
+
+
+       {% render 'proudct-grid-option-color' ,
+    
+        product: product,    %}
+
+
+    </div>
+
+
+  </div>

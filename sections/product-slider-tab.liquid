@@ -37,65 +37,8 @@
                 {% for product in collections[block.settings.tab_collection].products %}
                   <li class="splide__slide">
 
-                    <div class="collection_item">
-                      <a class="product-items" href="{{ product.url }}">
-                        <div class="product_image_wrapper ">
-                          <img
-                            class="product-item-img firstImage"
-                            src="{{ product.featured_image | img_url: 'master' }}"
-                            alt="{{ product.title }}">
-                          {% if product.images[1] %}
-                            <img
-                              class="product-item-img secondImage"
-                              src="{{ product.images[1] | product_img_url: 'master' }}"
-                              alt="{{ product.title }}">
-                  
-                          {% endif %}
-                          {% if product.compare_at_price > product.price %}
-                            <div class="proudct-sale">
-                              On sale
-                            </div>
-                          {% endif %}
-                          
-                        </a>
-                      </div>
-                      <div class="product-item-p-text">
-                        {% comment %}
-                        {% if product.available %}
-                          <form
-                            method="post"
-                            action="/cart/add"
-                            class="add_to_cart_form">
-                            <input
-                              type="hidden"
-                              name="id"
-                              value="{{ product.first_available_variant.id }}" />
-                            <input
-                              type="submit"
-                              class="addcart__buttonwrap theme-btn shape-btn bg-black"
-                              data-id="{{ product.first_available_variant.id }}"
-                              value="Add to cart" />
-                          </form>
-                  
-                        {% else %}
-                        <a href="#" class="sold-item-cart">sold out</a>
-                        {% endif %}
-                        {% endcomment %}
-                        <p class="product-item-text">{{ product.title }}</p>
-                        <p class="product-item-text product_price">
-                          {% if product.compare_at_price > product.price %}
-                            <span class="sale-price">{{ product.price | money }}</span>
-                            <span class="regular-price compare_at_price">
-                              <del>{{ product.compare_at_price | money }}</del>
-                            </span>
-                          {% else %}
-                            <span class="regular-price">{{ product.price | money }}</span>
-                          {% endif %}
-                        </p>
-                      </div>
-                  
-                  
-                    </div>
+                  {% render 'homepagegrid',
+                    product: product, %}
 
                   </li>
                 {% endfor %}

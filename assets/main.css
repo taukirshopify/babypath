@@ -1248,7 +1248,7 @@ div#shopify-section-header-global {
 }
 
 .product-item-text {
-  text-align: center;
+  /* text-align: center; */
   font-weight: 900;
   font-size: 12px;
   line-height: 14px;
