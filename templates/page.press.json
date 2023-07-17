@@ -81,6 +81,54 @@
             "img": "shopify:\/\/shop_images\/fashionista-logo-promo-2.png",
             "dec": "GREAT OUTFITS IN FASHION HISTORY, QUEEN OF THE AUGHTS EDITION: KIMORA LEE SIMMONS"
           }
+        },
+        "597ab754-e100-40b8-8b59-6d8c795cfdc6": {
+          "type": "press",
+          "settings": {
+            "url": "https:\/\/www.vice.com\/en\/article\/yw848y\/kimora-lee-simmons-baby-phat-legacy",
+            "img": "shopify:\/\/shop_images\/1280px-Vice_Logo_40a3fc85-47e6-46ee-bd8b-a54e8853da26.png",
+            "dec": "How Baby Phat Won the Early 2000s"
+          }
+        },
+        "f91a09b0-45a5-4469-9076-3acf16eb7dda": {
+          "type": "press",
+          "settings": {
+            "url": "https:\/\/www.complex.com\/style\/2019\/12\/baby-phat-by-kimora-lee-simmons-holiday-collection-online-store",
+            "img": "shopify:\/\/shop_images\/COMPLEX_Magazine_Logo-2.png",
+            "dec": "Baby Phat by Kimora Lee Simmons Launches Holiday 2019 Collection and Online Store"
+          }
+        },
+        "174a1d06-bde4-4335-b34b-58a5f5fce691": {
+          "type": "press",
+          "settings": {
+            "url": "https:\/\/www.nylon.com\/beauty\/baby-phat-beauty-has-arrived-with-a-modern-day-take-on-90s-shimmer",
+            "img": "shopify:\/\/shop_images\/Nylon_magazine_logo.svg_c1db34b8-7269-4933-bdb7-c5e83acee4ed.png",
+            "dec": "Baby Phat by Kimora Lee Simmons Brings Surprise Capsule to Macy’sBABY PHAT BEAUTY LAUNCHED WITH THREE SHIMMER-FILLED MAKEUP SETS"
+          }
+        },
+        "029f215c-3235-4d99-9c09-23f9a2ed769a": {
+          "type": "press",
+          "settings": {
+            "url": "https:\/\/www.popsugar.com\/beauty\/baby-phat-beauty-products-47749955",
+            "img": "shopify:\/\/shop_images\/Popsugar_Logo-2.png",
+            "dec": "It's Obviously the Year 2000 Again, Because Baby Phat Is Back With New Beauty Products"
+          }
+        },
+        "9bf61b82-8ed2-4e59-8e54-01c60fdb03d1": {
+          "type": "press",
+          "settings": {
+            "url": "https:\/\/www.allure.com\/story\/baby-phat-beauty-launch-kimora-lee-simmons",
+            "img": "shopify:\/\/shop_images\/allure-logo-2.png",
+            "dec": "Baby Phat Beauty Just Launched, and It's a Shimmery Retro Dream"
+          }
+        },
+        "8768ea63-ac95-4fa9-9bb5-8f9bc041df94": {
+          "type": "press",
+          "settings": {
+            "url": "https:\/\/www.refinery29.com\/en-us\/2019\/06\/235280\/baby-phat-forever-21-collaboration",
+            "img": "shopify:\/\/shop_images\/Refinery29_logo-2.png",
+            "dec": "The Baby Phat x Forever 21 Items You’ll See Everywhere This Summer"
+          }
         }
       },
       "block_order": [
@@ -92,7 +140,13 @@
         "3eb42bb5-2ecd-43d1-b807-12213550d39a",
         "e0f265b9-5862-4a7f-a0f3-271e0859c287",
         "e83514bb-d089-4f73-b824-776ea6b1aa90",
-        "929ecff7-8845-4bae-930e-08b0da7a77c7"
+        "929ecff7-8845-4bae-930e-08b0da7a77c7",
+        "597ab754-e100-40b8-8b59-6d8c795cfdc6",
+        "f91a09b0-45a5-4469-9076-3acf16eb7dda",
+        "174a1d06-bde4-4335-b34b-58a5f5fce691",
+        "029f215c-3235-4d99-9c09-23f9a2ed769a",
+        "9bf61b82-8ed2-4e59-8e54-01c60fdb03d1",
+        "8768ea63-ac95-4fa9-9bb5-8f9bc041df94"
       ],
       "settings": {
       }
