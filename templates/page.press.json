@@ -49,6 +49,14 @@
             "img": "shopify:\/\/shop_images\/essence-black-logo-2.png",
             "dec": "Kimora Lee Simmons Talks About Her Influence On Y2K Fashion And Sharing The Baby Phat Legacy With Her Daughters"
           }
+        },
+        "3eb42bb5-2ecd-43d1-b807-12213550d39a": {
+          "type": "press",
+          "settings": {
+            "url": "https:\/\/www.lofficielusa.com\/fashion\/kimora-lee-simmons-baby-phat-family-kids",
+            "img": "shopify:\/\/shop_images\/Lofficiel_logo-2.png",
+            "dec": "How Kimora Lee Simmons' Baby Phat Became Y2K's Favorite Family-Run Fashion Label"
+          }
         }
       },
       "block_order": [
@@ -56,7 +64,8 @@
         "287d5dd2-80d2-4512-8f3b-9a76b538d4f7",
         "036dc93c-3b97-4dee-82b3-b7a7dc6b5518",
         "3c1a0c70-655c-40de-bc88-a2bdb5eed250",
-        "33dff979-a85f-475c-b0e9-6f7dcac93eb1"
+        "33dff979-a85f-475c-b0e9-6f7dcac93eb1",
+        "3eb42bb5-2ecd-43d1-b807-12213550d39a"
       ],
       "settings": {
       }
