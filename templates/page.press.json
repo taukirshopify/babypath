@@ -233,6 +233,14 @@
             "img": "shopify:\/\/shop_images\/hypebeast-logo-2.png",
             "dec": "Baby Phat Is Back After a 10-Year Hiatus"
           }
+        },
+        "4da621df-257d-4626-8f20-c5eabfab76b6": {
+          "type": "press",
+          "settings": {
+            "url": "https:\/\/www.thefader.com\/2016\/10\/11\/kimora-lee-simmons-baby-phat-black-fashion-interview",
+            "img": "shopify:\/\/shop_images\/fader-logo-2.png",
+            "dec": "Kimora Lee Simmons Turned Her Culture Into A Billion-Dollar Fashion Brand. Now She Says A Little Credit Is Due."
+          }
         }
       },
       "block_order": [
@@ -263,7 +271,8 @@
         "eff5543f-b339-4ea2-9911-251e13c9bfca",
         "7a6fa9e9-51ca-4014-a7c6-9413c5fdf1d9",
         "b2ad83c7-a8bb-4b79-a4a2-517bc12808c8",
-        "28907579-f2b7-404d-aee7-917722283d40"
+        "28907579-f2b7-404d-aee7-917722283d40",
+        "4da621df-257d-4626-8f20-c5eabfab76b6"
       ],
       "settings": {
       }
