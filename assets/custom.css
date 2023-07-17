@@ -1245,9 +1245,9 @@ button.shopify-payment-button__button.shopify-payment-button__button--unbranded 
     li.cl-item.f-help-m {
         position: relative;
     }
-    p.product-item-text {
+    /* p.product-item-text {
         height: 36px;
-    }
+    } */
     p.product-item-text.product_price {
         height: auto;
         margin-top: 5px;

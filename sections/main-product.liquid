@@ -71,13 +71,13 @@
 
   {% assign variant_images = product.images | where: 'attached_to_variant?', true | map: 'src' %}
 
-<div class="container d-lg-flex"   >
-    <div class="col-lg-7">
+<div class="container d-lg-flex p-0"   >
+    <div class="col-lg-7 p-0">
       {% include 'product-image' %}
 
     </div>
 
-    <div class="col-lg-5">
+    <div class="col-lg-5 p-0">
       <div id="ProductInfo-{{ section.id }}" class="product__info-container{% if section.settings.enable_sticky_info %} product__column-sticky{% endif %}">
         {%- assign product_form_id = 'product-form-' | append: section.id -%}
 
@@ -92,7 +92,14 @@
             {%- when 'title' -%}
             <div class="product__title" {{ block.shopify_attributes }}>
               <h1>{{ product.title | escape }}</h1>
+              {%- render 'pricev2' 
+                , product: product,
+                use_variant: true,
+                show_badges: true,
+                price_class: 'price--large' -%}
               <a href="{{ product.url }}" class="product__title">
+
+                
                 <h2 class="h1">
                   {{ product.title | escape }}
                 </h2>
@@ -1988,9 +1995,9 @@ arrows    : true,
     z-index: 1;
 }
   
-.product__info-container.product__column-sticky {
+{% comment %} .product__info-container.product__column-sticky {
   margin-left: 15px;
-}
+} {% endcomment %}
 
 
 .padding-extra{
