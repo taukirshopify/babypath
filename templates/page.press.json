@@ -153,6 +153,14 @@
             "img": "shopify:\/\/shop_images\/1280px-VOGUE_LOGO.svg_4f516e37-04bd-4977-ae4e-96e64d34a44a.png",
             "dec": "Kimora Lee Simmons and Her Daughters Chat Baby Phat, DIY Hair Care, and Their Biggest Beauty Lessons"
           }
+        },
+        "9c590291-7c74-41ff-8cd9-4498b887bbd6": {
+          "type": "press",
+          "settings": {
+            "url": "https:\/\/www.complex.com\/style\/baby-phat-is-bringing-back-its-iconic-costume-jewelry\/",
+            "img": "shopify:\/\/shop_images\/COMPLEX_Magazine_Logo-2.png",
+            "dec": "Exclusive: Baby Phat Is Bringing Back Its Costume Jewelry"
+          }
         }
       },
       "block_order": [
@@ -173,7 +181,8 @@
         "8768ea63-ac95-4fa9-9bb5-8f9bc041df94",
         "a467d62d-dcef-4eb7-a417-4739ea9df0df",
         "4105b33b-a919-498e-865b-77d3bfb1eff7",
-        "063971d7-c6d9-4b03-a5e8-9635e2e40df5"
+        "063971d7-c6d9-4b03-a5e8-9635e2e40df5",
+        "9c590291-7c74-41ff-8cd9-4498b887bbd6"
       ],
       "settings": {
       }
