@@ -129,6 +129,14 @@
             "img": "shopify:\/\/shop_images\/Refinery29_logo-2.png",
             "dec": "The Baby Phat x Forever 21 Items You’ll See Everywhere This Summer"
           }
+        },
+        "a467d62d-dcef-4eb7-a417-4739ea9df0df": {
+          "type": "press",
+          "settings": {
+            "url": "https:\/\/www.bustle.com\/p\/baby-phat-just-relaunched-at-forever-21-everything-goes-up-to-a-4x-18001019",
+            "img": "shopify:\/\/shop_images\/Bustle_logo_2020.svg_9281e3de-e75c-490a-ab24-fee3c369ca24.png",
+            "dec": "Baby Phat Just Relaunched At Forever 21 & Everything Goes Up To A 4X"
+          }
         }
       },
       "block_order": [
@@ -146,7 +154,8 @@
         "174a1d06-bde4-4335-b34b-58a5f5fce691",
         "029f215c-3235-4d99-9c09-23f9a2ed769a",
         "9bf61b82-8ed2-4e59-8e54-01c60fdb03d1",
-        "8768ea63-ac95-4fa9-9bb5-8f9bc041df94"
+        "8768ea63-ac95-4fa9-9bb5-8f9bc041df94",
+        "a467d62d-dcef-4eb7-a417-4739ea9df0df"
       ],
       "settings": {
       }
