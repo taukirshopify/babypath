@@ -145,6 +145,14 @@
             "img": "shopify:\/\/shop_images\/CNN-Logo-1980-2.png",
             "dec": "Baby Phat could be coming back very soon, teases Forever 21"
           }
+        },
+        "063971d7-c6d9-4b03-a5e8-9635e2e40df5": {
+          "type": "press",
+          "settings": {
+            "url": "https:\/\/www.vogue.com\/article\/kimora-lee-simmons-and-her-daughters-chat-baby-phat-diy-hair-care-and-their-biggest-beauty-lessons",
+            "img": "shopify:\/\/shop_images\/1280px-VOGUE_LOGO.svg_4f516e37-04bd-4977-ae4e-96e64d34a44a.png",
+            "dec": "Kimora Lee Simmons and Her Daughters Chat Baby Phat, DIY Hair Care, and Their Biggest Beauty Lessons"
+          }
         }
       },
       "block_order": [
@@ -164,7 +172,8 @@
         "9bf61b82-8ed2-4e59-8e54-01c60fdb03d1",
         "8768ea63-ac95-4fa9-9bb5-8f9bc041df94",
         "a467d62d-dcef-4eb7-a417-4739ea9df0df",
-        "4105b33b-a919-498e-865b-77d3bfb1eff7"
+        "4105b33b-a919-498e-865b-77d3bfb1eff7",
+        "063971d7-c6d9-4b03-a5e8-9635e2e40df5"
       ],
       "settings": {
       }
