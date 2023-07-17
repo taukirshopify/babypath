@@ -17,10 +17,19 @@
             "img": "shopify:\/\/shop_images\/COMPLEX_Magazine_Logo-2.png",
             "dec": "Baby Phat by Kimora Lee Simmons Brings Surprise Capsule to Macy’s"
           }
+        },
+        "add02278-61a8-4bfb-9065-b2d7eba18657": {
+          "type": "press",
+          "settings": {
+            "url": "https:\/\/wwd.com\/business-news\/retail\/baby-phat-by-kimora-lee-simmons-lands-at-macys-for-the-holiday-1235007095",
+            "img": "shopify:\/\/shop_images\/Women_s_Wear_Daily_logo.png",
+            "dec": "Baby Phat by Kimora Lee Simmons Lands at Macy’s for the Holiday"
+          }
         }
       },
       "block_order": [
-        "59d564ee-02f3-4bc4-a29b-1ff22afafb13"
+        "59d564ee-02f3-4bc4-a29b-1ff22afafb13",
+        "add02278-61a8-4bfb-9065-b2d7eba18657"
       ],
       "settings": {
       }
