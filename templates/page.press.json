@@ -18,14 +18,6 @@
             "dec": "Baby Phat by Kimora Lee Simmons Brings Surprise Capsule to Macy’s"
           }
         },
-        "add02278-61a8-4bfb-9065-b2d7eba18657": {
-          "type": "press",
-          "settings": {
-            "url": "https:\/\/wwd.com\/business-news\/retail\/baby-phat-by-kimora-lee-simmons-lands-at-macys-for-the-holiday-1235007095",
-            "img": "shopify:\/\/shop_images\/Women_s_Wear_Daily_logo.png",
-            "dec": "Baby Phat by Kimora Lee Simmons Lands at Macy’s for the Holiday"
-          }
-        },
         "287d5dd2-80d2-4512-8f3b-9a76b538d4f7": {
           "type": "press",
           "settings": {
@@ -41,13 +33,66 @@
             "img": "shopify:\/\/shop_images\/new-hellobeautiful-logo-2.png",
             "dec": "Kimora Lee Simmons & Daughters Celebrate Launch Of Baby Phat Holiday Collection In Style"
           }
+        },
+        "3c1a0c70-655c-40de-bc88-a2bdb5eed250": {
+          "type": "press",
+          "settings": {
+            "url": "https:\/\/hellobeautiful.com\/3065819\/baby-phat-photos\/",
+            "img": "shopify:\/\/shop_images\/new-hellobeautiful-logo-2_f1ec0ead-43bc-4f3f-8631-9343400ec1af.png",
+            "dec": "Baby Phat’s Influence In The 90s And Early 2000s Brought Streetwear To The Mainstream"
+          }
+        },
+        "33dff979-a85f-475c-b0e9-6f7dcac93eb1": {
+          "type": "press",
+          "settings": {
+            "url": "https:\/\/www.essence.com\/celebrity\/kimora-and-aoki-lee-simmons\/",
+            "img": "shopify:\/\/shop_images\/essence-black-logo-2.png",
+            "dec": "Kimora Lee Simmons Talks About Her Influence On Y2K Fashion And Sharing The Baby Phat Legacy With Her Daughters"
+          }
+        },
+        "3eb42bb5-2ecd-43d1-b807-12213550d39a": {
+          "type": "press",
+          "settings": {
+            "url": "https:\/\/www.lofficielusa.com\/fashion\/kimora-lee-simmons-baby-phat-family-kids",
+            "img": "shopify:\/\/shop_images\/Lofficiel_logo-2.png",
+            "dec": "How Kimora Lee Simmons' Baby Phat Became Y2K's Favorite Family-Run Fashion Label"
+          }
+        },
+        "e0f265b9-5862-4a7f-a0f3-271e0859c287": {
+          "type": "press",
+          "settings": {
+            "url": "https:\/\/coveteur.com\/2020\/10\/16\/kimora-lee-simmons-baby-phat-beauty\/",
+            "img": "shopify:\/\/shop_images\/Coveteur_Logo_3005x_a0f8a709-73a3-450b-9379-39251a06889a.png",
+            "dec": "Kimora Lee Simmons Is Making Fabulosity a Family Affair"
+          }
+        },
+        "e83514bb-d089-4f73-b824-776ea6b1aa90": {
+          "type": "press",
+          "settings": {
+            "url": "https:\/\/www.teenvogue.com\/story\/baby-phat-2019-relaunch",
+            "img": "shopify:\/\/shop_images\/teenvoguelogo-2.png",
+            "dec": "Baby Phat Is Back Just In Time For The Holidays"
+          }
+        },
+        "929ecff7-8845-4bae-930e-08b0da7a77c7": {
+          "type": "press",
+          "settings": {
+            "url": "https:\/\/fashionista.com\/2022\/05\/kimora-lee-simmons-best-outfits-early-2000s",
+            "img": "shopify:\/\/shop_images\/fashionista-logo-promo-2.png",
+            "dec": "GREAT OUTFITS IN FASHION HISTORY, QUEEN OF THE AUGHTS EDITION: KIMORA LEE SIMMONS"
+          }
         }
       },
       "block_order": [
         "59d564ee-02f3-4bc4-a29b-1ff22afafb13",
-        "add02278-61a8-4bfb-9065-b2d7eba18657",
         "287d5dd2-80d2-4512-8f3b-9a76b538d4f7",
-        "036dc93c-3b97-4dee-82b3-b7a7dc6b5518"
+        "036dc93c-3b97-4dee-82b3-b7a7dc6b5518",
+        "3c1a0c70-655c-40de-bc88-a2bdb5eed250",
+        "33dff979-a85f-475c-b0e9-6f7dcac93eb1",
+        "3eb42bb5-2ecd-43d1-b807-12213550d39a",
+        "e0f265b9-5862-4a7f-a0f3-271e0859c287",
+        "e83514bb-d089-4f73-b824-776ea6b1aa90",
+        "929ecff7-8845-4bae-930e-08b0da7a77c7"
       ],
       "settings": {
       }
