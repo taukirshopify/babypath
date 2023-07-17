@@ -186,6 +186,14 @@
             "dec": "Baby Phat by Kimora Lee Simmons Brings Surprise Capsule to Macy’s"
           }
         },
+        "6bc6510e-e42c-4ba3-ab0c-3cabd68ad6b5": {
+          "type": "press",
+          "settings": {
+            "url": "",
+            "img": "shopify:\/\/shop_images\/Paper_logo-2.png",
+            "dec": "Baby Phat by Kimora Lee Simmons Brings Surprise Capsule to Macy’s"
+          }
+        },
         "a39a65d5-7716-41c8-871f-c270d7cfdd4a": {
           "type": "press",
           "settings": {
@@ -218,6 +226,7 @@
         "4ab5ab05-39be-400b-af42-cb1279720499",
         "a5ae7e6f-823a-4a0f-94c3-d5c5cb9ea999",
         "7e9720b9-1a2f-4c81-b7c2-56545b08bc84",
+        "6bc6510e-e42c-4ba3-ab0c-3cabd68ad6b5",
         "a39a65d5-7716-41c8-871f-c270d7cfdd4a"
       ],
       "settings": {
