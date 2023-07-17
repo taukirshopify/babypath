@@ -225,6 +225,14 @@
             "img": "shopify:\/\/shop_images\/madamenoire_logo-2.png",
             "dec": "Baby Phat Has Officially Relaunched"
           }
+        },
+        "28907579-f2b7-404d-aee7-917722283d40": {
+          "type": "press",
+          "settings": {
+            "url": "https:\/\/hypebeast.com\/2019\/12\/baby-phat-kimora-lee-simmons-return-news",
+            "img": "shopify:\/\/shop_images\/hypebeast-logo-2.png",
+            "dec": "Baby Phat Is Back After a 10-Year Hiatus"
+          }
         }
       },
       "block_order": [
@@ -254,7 +262,8 @@
         "a39a65d5-7716-41c8-871f-c270d7cfdd4a",
         "eff5543f-b339-4ea2-9911-251e13c9bfca",
         "7a6fa9e9-51ca-4014-a7c6-9413c5fdf1d9",
-        "b2ad83c7-a8bb-4b79-a4a2-517bc12808c8"
+        "b2ad83c7-a8bb-4b79-a4a2-517bc12808c8",
+        "28907579-f2b7-404d-aee7-917722283d40"
       ],
       "settings": {
       }
