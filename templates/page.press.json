@@ -169,6 +169,14 @@
             "img": "shopify:\/\/shop_images\/ELLE_Magazine_Logo.svg_151bda47-ffc1-41a3-95e3-a51b6781e486.png",
             "dec": "Kimora Lee Simmons Talks Baby Phat Beauty, Running A 20-Year-Old Empire, And Kamala Harri"
           }
+        },
+        "a5ae7e6f-823a-4a0f-94c3-d5c5cb9ea999": {
+          "type": "press",
+          "settings": {
+            "url": "https:\/\/www.dazeddigital.com\/fashion\/article\/43682\/1\/baby-phat-cult-00s-y2k-fashion-label-hip-hop-kimora-lee-simmons-lil-kim-aaliyah",
+            "img": "shopify:\/\/shop_images\/dazed-logo-2.png",
+            "dec": "A brief history of Baby Phat, the cult 00s label bringing sexy back"
+          }
         }
       },
       "block_order": [
@@ -191,7 +199,8 @@
         "4105b33b-a919-498e-865b-77d3bfb1eff7",
         "063971d7-c6d9-4b03-a5e8-9635e2e40df5",
         "9c590291-7c74-41ff-8cd9-4498b887bbd6",
-        "4ab5ab05-39be-400b-af42-cb1279720499"
+        "4ab5ab05-39be-400b-af42-cb1279720499",
+        "a5ae7e6f-823a-4a0f-94c3-d5c5cb9ea999"
       ],
       "settings": {
       }
