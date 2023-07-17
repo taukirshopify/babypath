@@ -161,6 +161,14 @@
             "img": "shopify:\/\/shop_images\/COMPLEX_Magazine_Logo-2.png",
             "dec": "Exclusive: Baby Phat Is Bringing Back Its Costume Jewelry"
           }
+        },
+        "4ab5ab05-39be-400b-af42-cb1279720499": {
+          "type": "press",
+          "settings": {
+            "url": "https:\/\/www.elle.com\/beauty\/a34316913\/kimora-lee-simmons-baby-phat-beauty-interview\/",
+            "img": "shopify:\/\/shop_images\/ELLE_Magazine_Logo.svg_151bda47-ffc1-41a3-95e3-a51b6781e486.png",
+            "dec": "Kimora Lee Simmons Talks Baby Phat Beauty, Running A 20-Year-Old Empire, And Kamala Harri"
+          }
         }
       },
       "block_order": [
@@ -182,7 +190,8 @@
         "a467d62d-dcef-4eb7-a417-4739ea9df0df",
         "4105b33b-a919-498e-865b-77d3bfb1eff7",
         "063971d7-c6d9-4b03-a5e8-9635e2e40df5",
-        "9c590291-7c74-41ff-8cd9-4498b887bbd6"
+        "9c590291-7c74-41ff-8cd9-4498b887bbd6",
+        "4ab5ab05-39be-400b-af42-cb1279720499"
       ],
       "settings": {
       }
