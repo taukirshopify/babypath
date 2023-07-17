@@ -137,6 +137,14 @@
             "img": "shopify:\/\/shop_images\/Bustle_logo_2020.svg_9281e3de-e75c-490a-ab24-fee3c369ca24.png",
             "dec": "Baby Phat Just Relaunched At Forever 21 & Everything Goes Up To A 4X"
           }
+        },
+        "4105b33b-a919-498e-865b-77d3bfb1eff7": {
+          "type": "press",
+          "settings": {
+            "url": "https:\/\/www.cnn.com\/style\/article\/baby-phat-forever-21-comeback-trnd\/index.html",
+            "img": "shopify:\/\/shop_images\/CNN-Logo-1980-2.png",
+            "dec": "Baby Phat could be coming back very soon, teases Forever 21"
+          }
         }
       },
       "block_order": [
@@ -155,7 +163,8 @@
         "029f215c-3235-4d99-9c09-23f9a2ed769a",
         "9bf61b82-8ed2-4e59-8e54-01c60fdb03d1",
         "8768ea63-ac95-4fa9-9bb5-8f9bc041df94",
-        "a467d62d-dcef-4eb7-a417-4739ea9df0df"
+        "a467d62d-dcef-4eb7-a417-4739ea9df0df",
+        "4105b33b-a919-498e-865b-77d3bfb1eff7"
       ],
       "settings": {
       }
