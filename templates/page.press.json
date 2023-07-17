@@ -25,11 +25,29 @@
             "img": "shopify:\/\/shop_images\/Women_s_Wear_Daily_logo.png",
             "dec": "Baby Phat by Kimora Lee Simmons Lands at Macy’s for the Holiday"
           }
+        },
+        "287d5dd2-80d2-4512-8f3b-9a76b538d4f7": {
+          "type": "press",
+          "settings": {
+            "url": "https:\/\/wwd.com\/business-news\/retail\/baby-phat-by-kimora-lee-simmons-lands-at-macys-for-the-holiday-1235007095",
+            "img": "shopify:\/\/shop_images\/Women_s_Wear_Daily_logo.png",
+            "dec": "Baby Phat by Kimora Lee Simmons Lands at Macy’s for the Holiday"
+          }
+        },
+        "036dc93c-3b97-4dee-82b3-b7a7dc6b5518": {
+          "type": "press",
+          "settings": {
+            "url": "https:\/\/hellobeautiful.com\/3531949\/kimora-lee-simmons-baby-phat-relaunch\/",
+            "img": "shopify:\/\/shop_images\/new-hellobeautiful-logo-2.png",
+            "dec": "Kimora Lee Simmons & Daughters Celebrate Launch Of Baby Phat Holiday Collection In Style"
+          }
         }
       },
       "block_order": [
         "59d564ee-02f3-4bc4-a29b-1ff22afafb13",
-        "add02278-61a8-4bfb-9065-b2d7eba18657"
+        "add02278-61a8-4bfb-9065-b2d7eba18657",
+        "287d5dd2-80d2-4512-8f3b-9a76b538d4f7",
+        "036dc93c-3b97-4dee-82b3-b7a7dc6b5518"
       ],
       "settings": {
       }
