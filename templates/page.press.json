@@ -113,6 +113,14 @@
             "img": "shopify:\/\/shop_images\/Popsugar_Logo-2.png",
             "dec": "It's Obviously the Year 2000 Again, Because Baby Phat Is Back With New Beauty Products"
           }
+        },
+        "9bf61b82-8ed2-4e59-8e54-01c60fdb03d1": {
+          "type": "press",
+          "settings": {
+            "url": "https:\/\/www.allure.com\/story\/baby-phat-beauty-launch-kimora-lee-simmons",
+            "img": "shopify:\/\/shop_images\/allure-logo-2.png",
+            "dec": "Baby Phat Beauty Just Launched, and It's a Shimmery Retro Dream"
+          }
         }
       },
       "block_order": [
@@ -128,7 +136,8 @@
         "597ab754-e100-40b8-8b59-6d8c795cfdc6",
         "f91a09b0-45a5-4469-9076-3acf16eb7dda",
         "174a1d06-bde4-4335-b34b-58a5f5fce691",
-        "029f215c-3235-4d99-9c09-23f9a2ed769a"
+        "029f215c-3235-4d99-9c09-23f9a2ed769a",
+        "9bf61b82-8ed2-4e59-8e54-01c60fdb03d1"
       ],
       "settings": {
       }
