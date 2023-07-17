@@ -1,0 +1,51 @@
+<div class="press-wrapper">
+<div class="row">
+   <div class="col-md-4 col-sm-6 col-12 d-flex aligns-item-center">
+    {% for item in section.blocks %}
+         <div class="singel-press ">
+            <a href="{{ item.settings.url }}"> <img src="{{  item.settings.img | img_url:''  }}" alt=""></a>
+            <a href="{{ item.settings.url }}">{{ item.settings.dec }}</a>
+         </div>
+    {% endfor %}
+
+   </div>
+</div>
+
+</div>
+
+<style>
+.singel-press{
+ padding:3vw 1vw;
+ 
+}
+</style>
+
+{% schema %}
+    {
+        "name": "Press",
+        "class": "press",
+        "settings": [
+            {
+                "type": "url",
+                "id": "url",
+                "label": "Link"
+            },
+           {
+            "type": "image_picker",
+            "id": "img",
+            "label": "Select your image"
+           },
+           {
+            "type": "text",
+            "id": "dec",
+            "label": "Decription",
+            "default": "Baby Phat by Kimora Lee Simmons Brings Surprise Capsule to Macy’s"
+           }
+        ],
+      "presets": [
+        {
+            "name": "Press"
+          }
+      ]
+    }
+{% endschema %}
