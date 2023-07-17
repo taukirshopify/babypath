@@ -105,6 +105,14 @@
             "img": "shopify:\/\/shop_images\/Nylon_magazine_logo.svg_c1db34b8-7269-4933-bdb7-c5e83acee4ed.png",
             "dec": "Baby Phat by Kimora Lee Simmons Brings Surprise Capsule to Macy’sBABY PHAT BEAUTY LAUNCHED WITH THREE SHIMMER-FILLED MAKEUP SETS"
           }
+        },
+        "029f215c-3235-4d99-9c09-23f9a2ed769a": {
+          "type": "press",
+          "settings": {
+            "url": "https:\/\/www.popsugar.com\/beauty\/baby-phat-beauty-products-47749955",
+            "img": "shopify:\/\/shop_images\/Popsugar_Logo-2.png",
+            "dec": "It's Obviously the Year 2000 Again, Because Baby Phat Is Back With New Beauty Products"
+          }
         }
       },
       "block_order": [
@@ -119,7 +127,8 @@
         "929ecff7-8845-4bae-930e-08b0da7a77c7",
         "597ab754-e100-40b8-8b59-6d8c795cfdc6",
         "f91a09b0-45a5-4469-9076-3acf16eb7dda",
-        "174a1d06-bde4-4335-b34b-58a5f5fce691"
+        "174a1d06-bde4-4335-b34b-58a5f5fce691",
+        "029f215c-3235-4d99-9c09-23f9a2ed769a"
       ],
       "settings": {
       }
