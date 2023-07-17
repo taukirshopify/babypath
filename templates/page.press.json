@@ -217,6 +217,14 @@
             "img": "shopify:\/\/shop_images\/hypebae-logo-2.png",
             "dec": "KIMORA LEE SIMMONS RELAUNCHES BABY PHAT AFTER A 10-YEAR HIATUS"
           }
+        },
+        "b2ad83c7-a8bb-4b79-a4a2-517bc12808c8": {
+          "type": "press",
+          "settings": {
+            "url": "https:\/\/madamenoire.com\/1118458\/baby-phat-relaunch-2\/",
+            "img": "shopify:\/\/shop_images\/madamenoire_logo-2.png",
+            "dec": "Baby Phat Has Officially Relaunched"
+          }
         }
       },
       "block_order": [
@@ -245,7 +253,8 @@
         "6bc6510e-e42c-4ba3-ab0c-3cabd68ad6b5",
         "a39a65d5-7716-41c8-871f-c270d7cfdd4a",
         "eff5543f-b339-4ea2-9911-251e13c9bfca",
-        "7a6fa9e9-51ca-4014-a7c6-9413c5fdf1d9"
+        "7a6fa9e9-51ca-4014-a7c6-9413c5fdf1d9",
+        "b2ad83c7-a8bb-4b79-a4a2-517bc12808c8"
       ],
       "settings": {
       }
