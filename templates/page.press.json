@@ -89,6 +89,14 @@
             "img": "shopify:\/\/shop_images\/1280px-Vice_Logo_40a3fc85-47e6-46ee-bd8b-a54e8853da26.png",
             "dec": "How Baby Phat Won the Early 2000s"
           }
+        },
+        "f91a09b0-45a5-4469-9076-3acf16eb7dda": {
+          "type": "press",
+          "settings": {
+            "url": "https:\/\/www.complex.com\/style\/2019\/12\/baby-phat-by-kimora-lee-simmons-holiday-collection-online-store",
+            "img": "shopify:\/\/shop_images\/COMPLEX_Magazine_Logo-2.png",
+            "dec": "Baby Phat by Kimora Lee Simmons Launches Holiday 2019 Collection and Online Store"
+          }
         }
       },
       "block_order": [
@@ -101,7 +109,8 @@
         "e0f265b9-5862-4a7f-a0f3-271e0859c287",
         "e83514bb-d089-4f73-b824-776ea6b1aa90",
         "929ecff7-8845-4bae-930e-08b0da7a77c7",
-        "597ab754-e100-40b8-8b59-6d8c795cfdc6"
+        "597ab754-e100-40b8-8b59-6d8c795cfdc6",
+        "f91a09b0-45a5-4469-9076-3acf16eb7dda"
       ],
       "settings": {
       }
