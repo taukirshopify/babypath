@@ -15,11 +15,11 @@
           {% endif %}
            
       
-            
-            <div class="proudct-sale">
+          {% if product.metafields.custom.custom_badge_text %}
+            <div class="proudct-sale" style="background:{{ product.metafields.custom.custom_badge_color  }}">
               {{ product.metafields.custom.custom_badge_text }}
             </div>
-        
+          {% endif %}
           {% if product.compare_at_price > product.price %}
             <div class="proudct-sale">
               On sale
