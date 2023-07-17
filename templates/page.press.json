@@ -121,6 +121,14 @@
             "img": "shopify:\/\/shop_images\/allure-logo-2.png",
             "dec": "Baby Phat Beauty Just Launched, and It's a Shimmery Retro Dream"
           }
+        },
+        "8768ea63-ac95-4fa9-9bb5-8f9bc041df94": {
+          "type": "press",
+          "settings": {
+            "url": "https:\/\/www.refinery29.com\/en-us\/2019\/06\/235280\/baby-phat-forever-21-collaboration",
+            "img": "shopify:\/\/shop_images\/Refinery29_logo-2.png",
+            "dec": "The Baby Phat x Forever 21 Items You’ll See Everywhere This Summer"
+          }
         }
       },
       "block_order": [
@@ -137,7 +145,8 @@
         "f91a09b0-45a5-4469-9076-3acf16eb7dda",
         "174a1d06-bde4-4335-b34b-58a5f5fce691",
         "029f215c-3235-4d99-9c09-23f9a2ed769a",
-        "9bf61b82-8ed2-4e59-8e54-01c60fdb03d1"
+        "9bf61b82-8ed2-4e59-8e54-01c60fdb03d1",
+        "8768ea63-ac95-4fa9-9bb5-8f9bc041df94"
       ],
       "settings": {
       }
