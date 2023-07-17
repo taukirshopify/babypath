@@ -1,20 +1,25 @@
-<div class="press-wrapper">
-    <div class="product-container">
-    
-    
-<div class="row">
-   <div class="col-md-4 col-sm-6 col-12 d-flex aligns-item-center">
-    {% for item in section.blocks %}
-         <div class="singel-press ">
-            <a href="{{ item.settings.url }}"> <img src="{{  item.settings.img | img_url:''  }}" alt=""></a>
-            <a href="{{ item.settings.url }}">{{ item.settings.dec }}</a>
-         </div>
-    {% endfor %}
 
-   </div>
+    <div class="product-container">
+    <div class="wrapper">
+    
+   
+    
+        <div class="row">
+        
+            {% for item in section.blocks %}
+                <div class="col-md-4 col-sm-6 col-12 d-flex aligns-item-center text-center">
+                  <div class="singel-press ">
+                        <a href="{{ item.settings.url }}" target="_blank" class="d-block"> <img src="{{  item.settings.img | img_url:''  }}" alt=""></a>
+                        <a href="{{ item.settings.url }} " target="_blank" class="d-block">{{ item.settings.dec }}</a>
+                    </div>
+                </div>
+            {% endfor %}
+
+        
+        </div>
+    </div>
 </div>
-</div>
-</div>
+
 
 <style>
 .singel-press{
@@ -22,7 +27,12 @@
  
 }
 .singel-press img {
-    width: 100%;
+    max-width: 200px;
+    
+}
+.singel-press a.d-block {
+    font-size: 1.25rem;
+    margin:10px 0;
 }
 </style>
 
