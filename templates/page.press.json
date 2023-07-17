@@ -97,6 +97,13 @@
             "img": "shopify:\/\/shop_images\/COMPLEX_Magazine_Logo-2.png",
             "dec": "Baby Phat by Kimora Lee Simmons Launches Holiday 2019 Collection and Online Store"
           }
+        },
+        "174a1d06-bde4-4335-b34b-58a5f5fce691": {
+          "type": "press",
+          "settings": {
+            "url": "https:\/\/www.nylon.com\/beauty\/baby-phat-beauty-has-arrived-with-a-modern-day-take-on-90s-shimmer",
+            "dec": "Baby Phat by Kimora Lee Simmons Brings Surprise Capsule to Macy’s"
+          }
         }
       },
       "block_order": [
@@ -110,7 +117,8 @@
         "e83514bb-d089-4f73-b824-776ea6b1aa90",
         "929ecff7-8845-4bae-930e-08b0da7a77c7",
         "597ab754-e100-40b8-8b59-6d8c795cfdc6",
-        "f91a09b0-45a5-4469-9076-3acf16eb7dda"
+        "f91a09b0-45a5-4469-9076-3acf16eb7dda",
+        "174a1d06-bde4-4335-b34b-58a5f5fce691"
       ],
       "settings": {
       }
