@@ -209,6 +209,14 @@
             "img": "shopify:\/\/shop_images\/hypebae-logo-2.png",
             "dec": "BABY PHAT LAUNCHES NOSTALGIC FOUR-PIECE JEWELRY CAPSULE"
           }
+        },
+        "7a6fa9e9-51ca-4014-a7c6-9413c5fdf1d9": {
+          "type": "press",
+          "settings": {
+            "url": "https:\/\/hypebae.com\/2019\/12\/baby-phat-kimora-ming-aoki-lee-simmons-holiday-collection-campaign-womens-streetwear-release",
+            "img": "shopify:\/\/shop_images\/hypebae-logo-2.png",
+            "dec": "KIMORA LEE SIMMONS RELAUNCHES BABY PHAT AFTER A 10-YEAR HIATUS"
+          }
         }
       },
       "block_order": [
@@ -236,7 +244,8 @@
         "7e9720b9-1a2f-4c81-b7c2-56545b08bc84",
         "6bc6510e-e42c-4ba3-ab0c-3cabd68ad6b5",
         "a39a65d5-7716-41c8-871f-c270d7cfdd4a",
-        "eff5543f-b339-4ea2-9911-251e13c9bfca"
+        "eff5543f-b339-4ea2-9911-251e13c9bfca",
+        "7a6fa9e9-51ca-4014-a7c6-9413c5fdf1d9"
       ],
       "settings": {
       }
