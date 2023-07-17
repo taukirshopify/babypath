@@ -65,6 +65,14 @@
             "img": "shopify:\/\/shop_images\/Coveteur_Logo_3005x_a0f8a709-73a3-450b-9379-39251a06889a.png",
             "dec": "Kimora Lee Simmons Is Making Fabulosity a Family Affair"
           }
+        },
+        "e83514bb-d089-4f73-b824-776ea6b1aa90": {
+          "type": "press",
+          "settings": {
+            "url": "https:\/\/www.teenvogue.com\/story\/baby-phat-2019-relaunch",
+            "img": "shopify:\/\/shop_images\/teenvoguelogo-2.png",
+            "dec": "Baby Phat Is Back Just In Time For The Holidays"
+          }
         }
       },
       "block_order": [
@@ -74,7 +82,8 @@
         "3c1a0c70-655c-40de-bc88-a2bdb5eed250",
         "33dff979-a85f-475c-b0e9-6f7dcac93eb1",
         "3eb42bb5-2ecd-43d1-b807-12213550d39a",
-        "e0f265b9-5862-4a7f-a0f3-271e0859c287"
+        "e0f265b9-5862-4a7f-a0f3-271e0859c287",
+        "e83514bb-d089-4f73-b824-776ea6b1aa90"
       ],
       "settings": {
       }
