@@ -73,6 +73,14 @@
             "img": "shopify:\/\/shop_images\/teenvoguelogo-2.png",
             "dec": "Baby Phat Is Back Just In Time For The Holidays"
           }
+        },
+        "929ecff7-8845-4bae-930e-08b0da7a77c7": {
+          "type": "press",
+          "settings": {
+            "url": "https:\/\/fashionista.com\/2022\/05\/kimora-lee-simmons-best-outfits-early-2000s",
+            "img": "shopify:\/\/shop_images\/fashionista-logo-promo-2.png",
+            "dec": "GREAT OUTFITS IN FASHION HISTORY, QUEEN OF THE AUGHTS EDITION: KIMORA LEE SIMMONS"
+          }
         }
       },
       "block_order": [
@@ -83,7 +91,8 @@
         "33dff979-a85f-475c-b0e9-6f7dcac93eb1",
         "3eb42bb5-2ecd-43d1-b807-12213550d39a",
         "e0f265b9-5862-4a7f-a0f3-271e0859c287",
-        "e83514bb-d089-4f73-b824-776ea6b1aa90"
+        "e83514bb-d089-4f73-b824-776ea6b1aa90",
+        "929ecff7-8845-4bae-930e-08b0da7a77c7"
       ],
       "settings": {
       }
