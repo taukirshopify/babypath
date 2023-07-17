@@ -9,10 +9,20 @@
     },
     "0e55067f-1a99-4467-9ea6-3b31af49f03f": {
       "type": "main-press",
+      "blocks": {
+        "59d564ee-02f3-4bc4-a29b-1ff22afafb13": {
+          "type": "press",
+          "settings": {
+            "url": "https:\/\/www.complex.com\/style\/baby-phat-by-kimora-lee-simmons-surprise-capsule-macys",
+            "img": "shopify:\/\/shop_images\/COMPLEX_Magazine_Logo-2.png",
+            "dec": "Baby Phat by Kimora Lee Simmons Brings Surprise Capsule to Macy’s"
+          }
+        }
+      },
+      "block_order": [
+        "59d564ee-02f3-4bc4-a29b-1ff22afafb13"
+      ],
       "settings": {
-        "url": "https:\/\/www.complex.com\/style\/baby-phat-by-kimora-lee-simmons-surprise-capsule-macys",
-        "img": "shopify:\/\/shop_images\/COMPLEX_Magazine_Logo-2.png",
-        "dec": "Baby Phat by Kimora Lee Simmons Brings Surprise Capsule to Macy’s"
       }
     }
   },
