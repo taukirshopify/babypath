@@ -16,12 +16,12 @@
            
       
           {% if product.metafields.custom.custom_badge_text %}
-            <div class="proudct-sale" style="background:{{ product.metafields.custom.custom_badge_color  }}">
+            <div class="proudct-sale-v1" style="background:{{ product.metafields.custom.custom_badge_color  }}">
               {{ product.metafields.custom.custom_badge_text }}
             </div>
           {% endif %}
           {% if product.compare_at_price > product.price %}
-            <div class="proudct-sale">
+            <div class="proudct-sale-v2">
               On sale
             </div>
           {% endif %}

@@ -2965,3 +2965,33 @@ details-disclosure > details {
     outline: transparent solid 1px;
   }
 }
+
+
+.proudct-sale-v2 {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  background: black;
+  padding: 5px;
+  font-family: T-Star Pro;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 12px;
+  line-height: 1;
+  text-transform: uppercase;
+  color: #fff;
+}
+.proudct-sale-v1 {
+  position: absolute;
+  top: 10px;
+  background: black;
+  padding: 5px;
+  font-family: T-Star Pro;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 12px;
+  left: 10px;
+  line-height: 1;
+  text-transform: uppercase;
+  color: #fff;
+}
