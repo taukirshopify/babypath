@@ -496,8 +496,12 @@
       {{ "accessibility.skip_to_text" | t }}
     </a>
 
-
+    {% if template == 'index' %}
+      {% section 'announcement-bar' %}
+    {% endif %}
+ 
     {% section 'header-global' %}
+
     <main
       id="MainContent"
       class="content-for-layout focus-none"
