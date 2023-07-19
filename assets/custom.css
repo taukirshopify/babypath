@@ -691,7 +691,7 @@ h2.h4.accordion__title {
     display: flex;
     align-items: center;
 }
-@media screen (min-width:991px) and (max-width: 1200px){
+@media screen and (min-width:991px) and (max-width: 1200px){
   .usp_content{
     padding: 24px 18px;
   }
