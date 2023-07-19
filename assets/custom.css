@@ -704,6 +704,17 @@ h2.h4.accordion__title {
     text-transform: uppercase;
     color: #000000;
 }
+@media screen and (min-width: 1200px){
+  .usp_content p{
+    font-size: 16.9078px;
+    white-space: nowrap;
+  }
+}
+@media screen and (min-width: 1400px){
+  .usp_content p{
+    font-size: 19.9078px;
+  }
+}
 h2.related-products__heading.h0 {
     font-family: 'T-Star Pro';
     font-style: normal;
