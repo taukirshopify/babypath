@@ -708,12 +708,12 @@ h2.h4.accordion__title {
     line-height: 130%;
     text-transform: uppercase;
     color: #000000;
-    white-space: nowrap;
 
 }
 @media screen and (min-width: 991px){
   .usp_content p{
     font-size: 13.9078px;
+    white-space: nowrap;
   }
 }
 @media screen and (min-width: 1200px){
