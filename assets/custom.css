@@ -711,7 +711,7 @@ h2.h4.accordion__title {
     white-space: nowrap;
 
 }
-@media screen and (min-width: 1200px){
+@media screen and (min-width: 991px){
   .usp_content p{
     font-size: 13.9078px;
   }
