@@ -58,16 +58,10 @@
             "usp_inline_text": "Estimated Delivery: Saturday, December 27"
           }
         },
-        "bc850ca8-f26e-462a-94f5-6b9cb150c689": {
-          "type": "text",
-          "settings": {
-            "text": "Details",
-            "text_style": "subtitle"
-          }
-        },
         "description": {
           "type": "description",
           "settings": {
+            "heading": "Details"
           }
         },
         "collapsible-row-0": {
@@ -98,7 +92,6 @@
         "buy_buttons",
         "32662724-486d-46f1-9609-1e7cc7e4edd0",
         "d685d488-b472-44e9-bf6f-e30007fffeaf",
-        "bc850ca8-f26e-462a-94f5-6b9cb150c689",
         "description",
         "collapsible-row-0",
         "collapsible-row-1"
