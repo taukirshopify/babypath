@@ -334,14 +334,14 @@ span.cart-drawer__total-amount span {
     text-transform: uppercase;
 }
 variant-radios label {
-    height: 45px;
-    width: 45px;
+    height: 40px;
+    width: 40px;
     background-color: transparent;
     border-radius: 50%;
     border: 1px solid #000;
     font-family: 'T-Star Pro';
     font-weight: 400;
-    font-size: 20px;
+    font-size: 10px;
     line-height: 40px;
     text-align: center;
     text-transform: uppercase;
@@ -691,6 +691,11 @@ h2.h4.accordion__title {
     display: flex;
     align-items: center;
 }
+@media screen and (min-width:991px) and (max-width: 1200px){
+  .usp_content{
+    padding: 24px 18px;
+  }
+}
 .usp_content img {
     width: 20px;
     margin-right: 20px;
@@ -703,6 +708,24 @@ h2.h4.accordion__title {
     line-height: 130%;
     text-transform: uppercase;
     color: #000000;
+
+}
+@media screen and (min-width: 991px){
+  .usp_content p{
+    font-size: 13.9078px;
+    white-space: nowrap;
+  }
+}
+@media screen and (min-width: 1200px){
+  .usp_content p{
+    font-size: 16.9078px;
+  }
+}
+@media screen and (min-width: 1400px){
+  .usp_content p{
+    font-size: 19.9078px;
+    white-space:normal;
+  }
 }
 h2.related-products__heading.h0 {
     font-family: 'T-Star Pro';
