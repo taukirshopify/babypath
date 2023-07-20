@@ -1257,9 +1257,7 @@ div#shopify-section-header-global {
   text-transform: uppercase;
 }
 
-.product-item-p-text {
-  padding-top: 40px;
-}
+
 
 .splide__arrow {
   background: none;
@@ -2972,9 +2970,7 @@ body a:focus, body a:hover, body .btn:focus, body .btn:hover, body button:focus,
     margin-top: 30px;
   }
 
-  .product-item-p-text {
-    padding-top: 20px;
-  }
+
 
   .product-area {
     padding: 0px 0 40px;

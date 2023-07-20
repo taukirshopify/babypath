@@ -1043,7 +1043,7 @@ a:hover{
 .product-item-p-text {
     padding-top: 15px;
     @media only screen and (max-width: 600px)  {
-        padding-top: 0px;
+        padding-top: 2px;
     
     
       }
