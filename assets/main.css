@@ -755,6 +755,12 @@ theme.
     right: 30px;
     top: 30px;
   }
+  .sidebar-menus .logo {
+    background: black;
+    position: absolute;
+    right: 30px;
+    top: 30px;
+  }
   .sidebar-menus.active {
     right: 0;
   }
