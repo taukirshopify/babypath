@@ -1038,6 +1038,11 @@ a:hover{
 
 .product-item-p-text {
     padding-top: 15px;
+    @media only screen and (max-width: 600px)  {
+        padding-top: 7px;
+    
+    
+      }
 }
 
 .tab-main-box .splide__arrow {
