@@ -755,7 +755,7 @@ theme.
     right: 30px;
     top: 30px;
   }
-  .sidebar-menu__logo .logo {
+  .sidebar-menus .sidebar-menu__logo {
     background: black;
     position: absolute;
     right: 30px;
