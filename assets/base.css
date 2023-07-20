@@ -2980,6 +2980,11 @@ details-disclosure > details {
   line-height: 1;
   text-transform: uppercase;
   color: #fff;
+  @media only screen and (max-width: 600px)  {
+    font-size: 9px;
+
+
+  }
 }
 .proudct-sale-v1 {
   position: absolute;
@@ -2994,4 +2999,9 @@ details-disclosure > details {
   line-height: 1;
   text-transform: uppercase;
   color: #fff;
+  @media only screen and (max-width: 600px)  {
+    font-size: 9px;
+
+
+  }
 }
