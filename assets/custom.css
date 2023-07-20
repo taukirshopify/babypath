@@ -264,6 +264,10 @@ input.addcart__buttonwrap {
 }
 .collection_item {
     margin-bottom: 30px;
+    @media only screen and (max-width: 600px)  {
+        margin-bottom: 10px;
+
+    }
 }
 
 .main-card-container {
