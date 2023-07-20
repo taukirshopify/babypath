@@ -122,10 +122,16 @@ html, body {
     transition: .3s linear all;
     opacity: 0;
 }
-.product-items:hover .secondImage{
-    transition: .3s linear all;
-    opacity: 1;
+@media only screen and (min-width: 600px)  {
+
+    .product-items:hover .secondImage{
+        transition: .3s linear all;
+        opacity: 1;
+    }
+
 }
+
+
 span.regular-price.compare_at_price del {
     color: #919191 !important;
 }
