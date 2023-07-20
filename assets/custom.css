@@ -1068,7 +1068,7 @@ a#cartDrawyerOpener span {
 }
 button#menu-opener {
     border: none;
-    margin-left: 7px;
+    margin-left: 10px;
 }
 
 .sidebar-menus li.cl-item.f-help-m::after{

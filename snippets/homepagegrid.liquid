@@ -38,7 +38,7 @@
         
         
         
-      <p class="product-item-text ">{{ product.title }}</p>
+      <p class="product-item-text ">  <a class="product-items" href="{{ product.url }}"> {{ product.title }}</a> </p>
                 <div class="price-wrapper">
                             {% if product.compare_at_price > product.price %}
                                 <span class="sale-price">{{ product.price | money }}</span>
