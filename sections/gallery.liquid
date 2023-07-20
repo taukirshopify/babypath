@@ -1,12 +1,7 @@
 
 {% include 'imageloadjs' %}
-<script src="https://cdn.jsdelivr.net/npm/isotope-layout@3.0.6/dist/isotope.pkgd.min.js"></script>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js" integrity="sha512-IsNh5E3eYy3tr/JiX2Yx4vsCujtkhwl7SLqgnwLNgf04Hrt9BT9SXlLlZlWx+OK4ndzAoALhsMNcCmkggjZB1w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" integrity="sha512-+EoPw+Fiwh6eSeRK7zwIKG2MA8i3rV/DGa3tdttQGgWyatG/SkncT53KHQaS5Jh9MNOT3dmFL0FjTY08And/Cw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 <div class="gallery-wrapper">
  <div class="product-container">
@@ -22,7 +17,16 @@
     {% endcomment %}
      <div class="singel-image-wrapper wow animate__fadeInUp"   data-wow-duration="2s" data-wow-delay="0.5s"    >
           <div class="gallery-image-wrapper">
-            <a  class="test-popup-link" href="{{ c.settings.img | img_url:'' }}"><img src="{{ c.settings.img | img_url:'master' }}" alt="">  </a> 
+            <a  class="test-popup-link" href="{{ c.settings.img | img_url:'' }}">
+              {{ c.settings.img | image_url: width: 450 | image_tag:
+                loading: 'lazy',
+                height: height,
+                sizes: "100vw",
+   format: 'webp',
+                widths: '375, 550, 750'
+              }}
+              
+              </a> 
           </div> 
      </div>
     </div>
@@ -124,14 +128,14 @@ $( document ).ready(function() {
       });
 
 
-      {% comment %} AOS.init(); {% endcomment %}
+     
     });
 
-      // layout Isotope after each image loads
+
 
       $('.test-popup-link').magnificPopup({
         type: 'image'
-        // other options
+
       });
   
 
