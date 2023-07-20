@@ -758,8 +758,8 @@ theme.
   .sidebar-menus .sidebar-menu__logo {
     background: black;
     position: absolute;
-    right: 30px;
-    top: 30px;
+    left: 19px;
+    top: 10px;
   }
   .sidebar-menus.active {
     right: 0;
