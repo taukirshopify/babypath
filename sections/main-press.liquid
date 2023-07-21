@@ -7,7 +7,7 @@
         <div class="row">
         
             {% for item in section.blocks %}
-                <div style="test flex-direction:column;justif-content:space-between;" class="col-md-4 col-sm-6 col-12 d-flex justify-content-center aligns-item-center text-center">
+                <div style=" flex-direction:column;justif-content:space-between;" class="test col-md-4 col-sm-6 col-12 d-flex justify-content-center aligns-item-center text-center">
                         <a  href="{{ item.settings.url }}" target="_blank" class="d-block"> <img  src="{{  item.settings.img | img_url:"250x250"  }}" alt=""></a>
                         <a href="{{ item.settings.url }} " target="_blank" class="d-block">{{ item.settings.dec }}</a>
 <!--                   <div class="singel-press ">
