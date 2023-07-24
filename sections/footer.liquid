@@ -13,7 +13,11 @@
 <noscript>{{ 'component-list-social.css' | asset_url | stylesheet_tag }}</noscript>
 <noscript>{{ 'component-rte.css' | asset_url | stylesheet_tag }}</noscript>
 <noscript>{{ 'disclosure.css' | asset_url | stylesheet_tag }}</noscript>
-
+<style>
+  .popup-search-box{
+    display:block!important;
+  }
+</style>
 {%- style -%}
   .footer {
     margin-top: {{ section.settings.margin_top | times: 0.75 | round: 0 }}px;
