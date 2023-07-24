@@ -1161,12 +1161,14 @@ button.shopify-payment-button__button.shopify-payment-button__button--unbranded 
         object-position: top;
     }
     button#menu-opener {
-        height: 17px;
+        /* height: 17px; */
         padding: 0;
         background: transparent;
    
     }
-
+    button#menu-opener svg {
+        margin-top: -33%;
+    }
     /*Product Page*/
     .row.usp_row {
         gap: 15px;

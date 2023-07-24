@@ -62,10 +62,13 @@ div#new-div {
     assign money_price = 'products.product.price.from_price_html' | t: price: money_price
   endif
 -%}
-<div class="product-price-wrapper">
+<div class="     {% if compare_at_price %} product-price-wrapper    {% endif %}">
 
   <h1>
-  <del>{{ compare_at_price | money_without_trailing_zeros }}</del>
+    {% if compare_at_price %}
+      <del>{{ compare_at_price | money_without_trailing_zeros }}</del>
+    {% endif %}
+
   <span class="pirce-on">{{ product.price | money_without_trailing_zeros }}</span>
 
 </h1>

@@ -16,6 +16,9 @@
   .splide__track--nav>.splide__list>.splide__slide.is-active {
     border: none;
 }
+.mt-15 {
+    margin: 8px 0;
+}
 
     .splide__slide img {
     vertical-align: bottom;
@@ -73,6 +76,22 @@
 
 <div class="container d-lg-flex p-0"   >
     <div class="col-lg-7 p-0">
+      <div class="product__title d-md-none mt-15" {{ block.shopify_attributes }}>
+        <h1>{{ product.title | escape }}</h1>
+        {%- render 'pricev2' 
+          , product: product,
+          use_variant: true,
+          show_badges: true,
+          price_class: 'price--large' -%}
+        <a href="{{ product.url }}" class="product__title">
+
+          
+          <h2 class="h1">
+            {{ product.title | escape }}
+          </h2>
+        </a>
+      </div>
+      
       {% include 'product-image' %}
 
     </div>
@@ -90,7 +109,7 @@
               {{- block.settings.text -}}
             </p>
             {%- when 'title' -%}
-            <div class="product__title" {{ block.shopify_attributes }}>
+            <div class="product__title d-none d-md-flex" {{ block.shopify_attributes }}>
               <h1>{{ product.title | escape }}</h1>
               {%- render 'pricev2' 
                 , product: product,
@@ -1994,7 +2013,12 @@ arrows    : true,
 
 <style>
   .product-slider-wrapper{
-  padding:30px 0;
+
+  @media only screen and (min-width: 600px)  {
+    padding:30px 0;
+  
+  }
+
  }
 .product__info-container{
  padding: 30px 0;
