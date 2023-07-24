@@ -168,14 +168,14 @@
           "footer-0": {
             "type": "link_list",
             "settings": {
-              "heading": "Quick links",
+              "heading": "Customer Care",
               "menu": "footer"
             }
           },
           "a0b2174c-64a2-407e-ab84-f4e9d0f9296f": {
             "type": "link_list",
             "settings": {
-              "heading": "Quick links",
+              "heading": "Information",
               "menu": "main-menu"
             }
           },
