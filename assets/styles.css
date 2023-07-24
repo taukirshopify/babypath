@@ -1,3 +1,7 @@
+.fs-slider-next-button, .fs-slider-prev-button {
+    opacity: 1;
+}
+
 .currency-flag {
   display: inline-block;
   width: 24px;
