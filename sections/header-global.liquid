@@ -45,15 +45,7 @@
 
 
         <li>
-          <div class="search-option">
-            <!-- Search elament -->
-            <div class="navigation-bar">
-              <button type="button" class="simple-icon searchBoxToggler">
-             <a href="/search">   <img src="{{'Search.svg' | asset_url  }}" alt="search"></a>
-              </button>
-            </div>
-
-          </div>
+          {% render "search-button" %}
         </li>
         <li class="header-user-991">
           <a href="/account"><img src="{{'Profile.svg' | asset_url  }}" alt="My account"></a>
