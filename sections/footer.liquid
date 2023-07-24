@@ -371,6 +371,101 @@
     </div>
   </div>
 </footer>
+<div div class="popup-search-box d-none d-lg-block" id="popupfooter">
+  <button class="searchClose border-theme text-theme">
+     {% include 'search-crose' %}
+  </button>
+<div class="all-serach-wrpper">
+  <predictive-search>
+    <form action="/search" method="get" role="search" class="custome-serach-new">
+    <input type="hidden" name="type" value="product">
+      <label for="Search">Search</label>
+      <input
+        id="Search"
+        type="search"
+        name="q"
+        value=""role="combobox"
+          aria-expanded="false"
+          aria-owns="predictive-search-results-list"
+          aria-controls="predictive-search-results-list"
+          aria-haspopup="listbox"
+          aria-autocomplete="list"
+          autocorrect="off"
+          autocomplete="off"
+          autocapitalize="off"
+          spellcheck="false">
+      <input name="options[prefix]" type="hidden" value="last">
+      <div id="predictive-search" tabindex="-1"></div>
+      </form>
+  </predictive-search>
+  </div>
+
+</div>
+
+<script>
+  class PredictiveSearch extends HTMLElement {
+    constructor() {
+      super();
+  
+      this.input = this.querySelector('input[type="search"]');
+      this.predictiveSearchResults = this.querySelector('#predictive-search');
+  
+      this.input.addEventListener('input', this.debounce((event) => {
+        this.onChange(event);
+      }, 300).bind(this));
+    }
+  
+    onChange() {
+      const searchTerm = this.input.value.trim();
+  
+      if (!searchTerm.length) {
+        this.close();
+        return;
+      }
+  
+      this.getSearchResults(searchTerm);
+    }
+  
+    getSearchResults(searchTerm) {
+      fetch(`/search/suggest?q=${searchTerm}&resources[type]=product&resources[limit]=4&section_id=predictive-search`)
+        .then((response) => {
+          if (!response.ok) {
+            var error = new Error(response.status);
+            this.close();
+            throw error;
+          }
+  
+          return response.text();
+        })
+        .then((text) => {
+          const resultsMarkup = new DOMParser().parseFromString(text, 'text/html').querySelector('#shopify-section-predictive-search').innerHTML;
+          this.predictiveSearchResults.innerHTML = resultsMarkup;
+          this.open();
+        })
+        .catch((error) => {
+          this.close();
+          throw error;
+        });
+    }
+  
+    open() {
+      this.predictiveSearchResults.style.display = 'block';
+    }
+  
+    close() {
+      this.predictiveSearchResults.style.display = 'none';
+    }
+  
+    debounce(fn, wait) {
+      let t;
+      return (...args) => {
+        clearTimeout(t);
+        t = setTimeout(() => fn.apply(this, args), wait);
+      };
+    }
+  }
+  customElements.define('predictive-search', PredictiveSearch);
+</script>
 
 {% javascript %}
   class LocalizationForm extends HTMLElement {
@@ -737,4 +832,169 @@ input:-moz-placeholder { color:#000; }
     });
   });
 
+</script>
+<style>
+  /*------------------- 4.10. Popup Search  -------------------*/
+.popup-search-box {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  background-color: rgba(0, 0, 0, 0.95);
+  height: 0;
+  width: 0;
+  overflow: hidden;
+  z-index: 999999;
+  opacity: 0;
+  visibility: hidden;
+  border-radius: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  -webkit-transition: all ease 0.4s;
+  transition: all ease 0.4s;
+}
+.popup-search-box button.searchClose {
+  width: 60px;
+  height: 60px;
+  line-height: 1;
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #fff;
+  background-color: transparent;
+  font-size: 22px;
+  border-radius: 50%;
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
+  -webkit-transition: all ease 0.4s;
+  transition: all ease 0.4s;
+}
+.popup-search-box button.searchClose:hover {
+  color: var(--body-color);
+  background-color: #fff;
+  border-color: transparent;
+  border-color: transparent;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+.popup-search-box form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: inline-block;
+  padding-bottom: 40px;
+  cursor: auto;
+  width: 100%;
+  max-width: 700px;
+  -webkit-transform: translate(-50%, -50%) scale(0);
+          transform: translate(-50%, -50%) scale(0);
+  -webkit-transition: -webkit-transform ease 0.4s;
+  transition: -webkit-transform ease 0.4s;
+  transition: transform ease 0.4s;
+  transition: transform ease 0.4s, -webkit-transform ease 0.4s;
+  /* Large devices */
+}
+@media (max-width: 1199px) {
+  .popup-search-box form {
+    max-width: 600px;
+  }
+}
+.popup-search-box form input {
+  font-size: 18px;
+  height: 55px;
+  width: 100%;
+  border: 2px solid #fff;
+  border-color: #fff;
+  background-color: transparent;
+  padding-left: 30px;
+  color: #fff;
+  border-radius: 50px;
+}
+.popup-search-box form input::-moz-placeholder {
+  color: #fff;
+}
+.popup-search-box form input::-webkit-input-placeholder {
+  color: #fff;
+}
+.popup-search-box form input:-ms-input-placeholder {
+  color: #fff;
+}
+.popup-search-box form input::-ms-input-placeholder {
+  color: #fff;
+}
+.popup-search-box form input::placeholder {
+  color: #fff;
+}
+.popup-search-box form button {
+  position: absolute;
+  top: 0px;
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  font-size: 24px;
+  right: 12px;
+  color: var(--white-color);
+  cursor: pointer;
+  width: 70px;
+  height: 40px;
+  line-height: 1;
+  -webkit-transition: all ease 0.4s;
+  transition: all ease 0.4s;
+  -webkit-transform: scale(1.001);
+          transform: scale(1.001);
+}
+.popup-search-box form button:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+.popup-search-box.show {
+  opacity: 1;
+  visibility: visible;
+  width: 100.1%;
+  height: 100%;
+  -webkit-transition: all ease 0.4s;
+  transition: all ease 0.4s;
+  border-radius: 0;
+}
+.popup-search-box.show form {
+  -webkit-transition-delay: 0.5s;
+          transition-delay: 0.5s;
+  -webkit-transform: translate(-50%, -50%) scale(1);
+          transform: translate(-50%, -50%) scale(1);
+}
+
+.popup-search-box form input {
+  border: 3px solid #fff;
+}
+
+</style>
+
+
+<script>
+   /*----------- 06. Search Toogle ----------*/
+$('.search-form button').on('click', function (e) {
+  $('.search-form input').toggleClass('active');
+});
+   /*---------- 09. Search Box Popup ----------*/
+function popupSarchBox($searchBox, $searchOpen, $searchCls, $toggleCls) {
+  $($searchOpen).on('click', function (e) {
+    e.preventDefault();
+    $($searchBox).addClass($toggleCls);
+  });
+  $($searchBox).on('click', function (e) {
+    e.stopPropagation();
+    $($searchBox).removeClass($toggleCls);
+  });
+  $($searchBox).find('form').on('click', function (e) {
+    e.stopPropagation();
+    $($searchBox).addClass($toggleCls);
+  });
+  $($searchCls).on('click', function (e) {
+    e.preventDefault();
+    e.stopPropagation();
+    $($searchBox).removeClass($toggleCls);
+  });
+};
+popupSarchBox('.popup-search-box', '.searchBoxToggler', '.searchClose', 'show');
 </script>

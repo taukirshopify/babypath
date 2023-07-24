@@ -56,21 +56,11 @@ label.field__label{
     font-style: normal;
     font-weight: 900;
     font-size: 32px;
-    line-height: 130%;
+
     text-transform: uppercase;
     color: #000000;
 }
-.search_header p {
-    font-family: 'Arial';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 130%;
-    text-align: center;
-    color: #000000;
-    max-width: 280px;
-    margin: 0 auto;
-}
+
 .template-search__search .search {
     margin-top: 85px;
 }
@@ -79,9 +69,9 @@ label.field__label{
     max-width: 530px;
     width: 100%;
 }
-.search_header {
+{% comment %} .search_header {
     margin-top: 120px;
-}
+} {% endcomment %}
   @media screen and (min-width: 750px) {
     .template-search__header {
       margin-bottom: 5rem;
@@ -121,9 +111,7 @@ label.field__label{
       {%- else -%}
         <h1 class="h2">{{ 'general.search.search' | t }}</h1>
       {%- endif -%}
-        <p>
-          Tip: Try rephrasing your search term, or using a related term.
-        </p>
+   
     </div>
    
     <div class="template-search__search">
@@ -220,7 +208,7 @@ label.field__label{
                   {%- endif -%}
 
                   <div class="col-md-3">
-                    {% include 'proudct-grid-item-search' %}
+                    {% render 'homepagegrid', product: item, %}
                   </div>
                 {%- endfor -%}
               </div>
@@ -394,3 +382,20 @@ label.field__label{
   ]
 }
 {% endschema %}
+
+
+<style>
+  .pagination {
+    display: flex;
+    padding-left: 0;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+}
+.pagination__list {
+  display: flex;
+  flex-wrap: unset;
+  justify-content: center;
+  align-items: center;
+}
+</style>
