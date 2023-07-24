@@ -13,11 +13,7 @@
 <noscript>{{ 'component-list-social.css' | asset_url | stylesheet_tag }}</noscript>
 <noscript>{{ 'component-rte.css' | asset_url | stylesheet_tag }}</noscript>
 <noscript>{{ 'disclosure.css' | asset_url | stylesheet_tag }}</noscript>
-<style>
-  .popup-search-box{
-    display:block!important;
-  }
-</style>
+
 {%- style -%}
   .footer {
     margin-top: {{ section.settings.margin_top | times: 0.75 | round: 0 }}px;
@@ -375,7 +371,7 @@
     </div>
   </div>
 </footer>
-<div div class="popup-search-box d-none d-lg-block" id="popupfooter">
+<div div class="popup-search-box d-block" id="popupfooter">
   <button class="searchClose border-theme text-theme">
      {% include 'search-crose' %}
   </button>
