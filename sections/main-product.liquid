@@ -77,7 +77,7 @@
 <div class="container d-lg-flex p-0"   >
     <div class="col-lg-7 p-0">
       <div class="product__title d-md-none mt-15" {{ block.shopify_attributes }}>
-        <h1>{{ product.title | escape }}</h1>
+        <h1 class="product-t">{{ product.title | escape }}</h1>
         {%- render 'pricev2' 
           , product: product,
           use_variant: true,
