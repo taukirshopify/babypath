@@ -110,7 +110,7 @@
             </p>
             {%- when 'title' -%}
             <div class="product__title d-none d-md-flex" {{ block.shopify_attributes }}>
-              <h1>{{ product.title | escape }}</h1>
+              <h1 class='product-t'>{{ product.title | escape }}</h1>
               {%- render 'pricev2' 
                 , product: product,
                 use_variant: true,
@@ -681,7 +681,11 @@ endif
 
 
 
-
+<style>
+  h1.product-t {
+    width: 80%;
+}
+</style>
 
 
 {% schema %}
