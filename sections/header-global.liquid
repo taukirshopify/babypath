@@ -45,15 +45,7 @@
 
 
         <li>
-          <div class="search-option">
-            <!-- Search elament -->
-            <div class="navigation-bar">
-              <button type="button" class="simple-icon searchBoxToggler">
-             <a href="/search">   <img src="{{'Search.svg' | asset_url  }}" alt="search"></a>
-              </button>
-            </div>
-
-          </div>
+          {% render "search-button" %}
         </li>
         <li class="header-user-991">
           <a href="/account"><img src="{{'Profile.svg' | asset_url  }}" alt="My account"></a>
@@ -67,6 +59,9 @@
         </li>
       </ul>
       <div class="header-r-991">
+        <div style="margin-right:.5rem;margin-top:.5rem;">
+          {% render "search-button" %}
+        </div>
         <ul>
           <li class="header-bag-991">
             <a id="cartDrawyerOpener"><img src="{{'Shopping2.svg' | asset_url  }}" alt="My cart">
