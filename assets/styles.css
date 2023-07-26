@@ -2,6 +2,10 @@
     opacity: 1;
 }
 
+.qsc2-stickybar__action-name--desktop, .qsc2-stickybar__action-name--mobile {
+  color: #fff;
+}
+
 .currency-flag {
   display: inline-block;
   width: 24px;
