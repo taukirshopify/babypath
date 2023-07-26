@@ -1251,6 +1251,9 @@ button.shopify-payment-button__button.shopify-payment-button__button--unbranded 
     .collection_grid.row.pt-4 .col-md-3 {
         width: 50%;
     }
+    .price-wrapper {
+        margin-left: 15px;
+    }
     .belive-items img {
         width: 100%;
         height: 50svh;
