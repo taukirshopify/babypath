@@ -2,7 +2,7 @@
     opacity: 1;
 }
 
-.qsc2-stickybar__action-name--desktop, .qsc2-stickybar__action-name--mobile > * {
+.qsc2-stickybar__action-name--desktop, .qsc2-stickybar__action-name--mobile > *, .qsc2-stickybar__action__price-label > * {
   color: #fff;
 }
 
