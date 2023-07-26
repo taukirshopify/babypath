@@ -22,26 +22,28 @@
          </div>
           {%- for value in option.values -%}
            <div class="singel-top-option text-center">
-          
-        
-            {% if forloop.first %}
+            {% if forloop.index <= 1 %}
               <p class="d-inline-block"> {{ value | escape }} 
               
               
             </p>
-            {% endif %}
+            {% else %}
+
+
+                {% if forloop.first %}
+                  <p class="d-inline-block"> {{ value | escape }} </p>
+                {% endif %}
                
                {% if forloop.last %}
                 <span>-</span>
                 <p class="d-inline-block"> {{ value | escape }}
-                {% else %}
-                
-              
-              
-              </p>
+                   </p>
+                {% else %} {% endif %}
+
+
                {% endif %}
 
-           
+            
 
             </div>
           {%- endfor -%}
