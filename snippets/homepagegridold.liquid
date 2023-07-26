@@ -29,10 +29,10 @@
           {% endif %}
           
       </a>
-      {% comment %} {% render 'proudct-grid-option-top',
+      {% render 'proudct-grid-option-top',
         product: product,
     
-    %} {% endcomment %}
+    %}
     </div>
 
     <div class="product-item-p-text">
@@ -41,8 +41,6 @@
         
         
       <p class="product-item-text ">  <a class="product-items" href="{{ product.url }}"> {{ product.title }}</a> </p>
-    
-
                 <div class="price-wrapper">
                             {% if product.compare_at_price > product.price %}
                                 <span class="sale-price">{{ product.price | money_without_trailing_zeros }}</span>
@@ -55,10 +53,6 @@
 
                     </div>
         </div>
-        {% render 'proudct-grid-option-top-v2',
-          product: product,
-      
-      %}
        {% render 'proudct-grid-option-color' ,
     
         product: product, 
@@ -120,20 +114,17 @@ transition: top 300ms ease 0s, opacity 300ms ease 0s, visibility 300ms ease 0s;
 
 }
 
-
-.collection_item:hover .product-item-color {
+@media only screen and (min-width: 600px)  {
+  .collection_item:hover .product-item-color {
+    opacity: 1;
+    visibility: visible;
+    }
+}
+.collection_item .product-item-color {
   opacity: 1;
   visibility: visible;
   }
 
-  @media only screen and (max-width: 600px)  {
-
-
-      .collection_item .product-item-color {
-        opacity: 1;
-  visibility: visible;
-        }
-  }
 .card-bottom-color-details {
 height: 30px;
 }

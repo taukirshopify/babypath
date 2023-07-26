@@ -838,7 +838,7 @@ input:-moz-placeholder { color:#000; }
 .popup-search-box {
   position: fixed;
   top: 0;
-  left: 50%;
+  left: 0%;
   background-color: rgba(0, 0, 0, 0.95);
   height: 0;
   width: 0;
@@ -847,14 +847,14 @@ input:-moz-placeholder { color:#000; }
   opacity: 0;
   visibility: hidden;
   border-radius: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  {% comment %} -webkit-transform: translateX(-50%);
+          transform: translateX(-50%); {% endcomment %}
   -webkit-transition: all ease 0.4s;
   transition: all ease 0.4s;
 }
 .popup-search-box button.searchClose {
-  width: 60px;
-  height: 60px;
+  width: 45px;
+  height: 45px;
   line-height: 1;
   position: absolute;
   top: 40px;
@@ -869,6 +869,28 @@ input:-moz-placeholder { color:#000; }
           transform: rotate(0);
   -webkit-transition: all ease 0.4s;
   transition: all ease 0.4s;
+}
+@media only screen and (max-width: 600px)  {
+
+  button.predictive-search__item{
+    margin-left: 10px;
+}
+
+  .predictive-search__item-content--centered * {
+    color: #fff;
+    font-size: 15px;
+}
+.popup-search-box form button {
+
+  font-size: 19px;
+
+}
+.popup-search-box button.searchClose {
+
+  top: 27px;
+  right: 19px;
+
+}
 }
 .popup-search-box button.searchClose:hover {
   color: var(--body-color);
@@ -886,7 +908,7 @@ input:-moz-placeholder { color:#000; }
   padding-bottom: 40px;
   cursor: auto;
   width: 100%;
-  max-width: 700px;
+  max-width: 500px;
   -webkit-transform: translate(-50%, -50%) scale(0);
           transform: translate(-50%, -50%) scale(0);
   -webkit-transition: -webkit-transform ease 0.4s;
@@ -897,19 +919,20 @@ input:-moz-placeholder { color:#000; }
 }
 @media (max-width: 1199px) {
   .popup-search-box form {
-    max-width: 600px;
+    max-width: 450px;
+    padding: 10px;
   }
 }
 .popup-search-box form input {
   font-size: 18px;
-  height: 55px;
+  height: 40px;
   width: 100%;
   border: 2px solid #fff;
   border-color: #fff;
   background-color: transparent;
   padding-left: 30px;
   color: #fff;
-  border-radius: 50px;
+  border-radius: 0px;
 }
 .popup-search-box form input::-moz-placeholder {
   color: #fff;
@@ -951,11 +974,15 @@ input:-moz-placeholder { color:#000; }
 .popup-search-box.show {
   opacity: 1;
   visibility: visible;
-  width: 100.1%;
+  width: 50%;
   height: 100%;
   -webkit-transition: all ease 0.4s;
   transition: all ease 0.4s;
   border-radius: 0;
+  @media only screen and (max-width: 600px)  {
+    width: 100%;
+  
+  }
 }
 .popup-search-box.show form {
   -webkit-transition-delay: 0.5s;
@@ -965,7 +992,7 @@ input:-moz-placeholder { color:#000; }
 }
 
 .popup-search-box form input {
-  border: 3px solid #fff;
+  border: 2px solid #fff;
 }
 
 </style>

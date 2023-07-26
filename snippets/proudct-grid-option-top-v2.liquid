@@ -1,0 +1,108 @@
+
+
+
+{%- if item.product.has_only_default_variant == false -%}
+
+
+  {% else %}
+
+    {%- for option in product.options_with_values -%}
+
+      {% if option.name == "Color" %}
+        {%- for value in option.values -%}
+          
+            {% comment %} {{ value | escape }} {% endcomment %}
+          
+        {%- endfor -%}
+        {% else %}
+    
+        <div class="option-top-option-wrapper-v2 ">
+          <div class="singel-top-option text-center">
+            <p class="singels-sing-option">  Available in </p>
+         </div>
+          {%- for value in option.values -%}
+           <div class="singel-top-option text-center">
+          
+        
+              <p class="d-inline-block"> {{ value | escape }} 
+            
+            
+            </p>
+             {% if forloop.last %}
+              {% else %}
+              <span>-</span>
+             {% endif %}
+            
+           
+
+            </div>
+          {%- endfor -%}
+        </div>
+        {% endif %}
+  
+
+    {%- endfor -%}
+  {%- endif -%}
+
+  <style>
+  .singel-top-option{
+   display:inline-block;
+   {% comment %} width:25px; {% endcomment %}
+   {% comment %} height:25px; {% endcomment %}
+   {% comment %} padding:0 5px; {% endcomment %}
+
+   {% comment %} @media only screen and (min-width: 600px)  {
+  
+
+    padding:0 10px;
+  } {% endcomment %}
+  }
+
+
+  .singel-top-option span {
+    line-height: 1;
+    margin: 0 5px;
+}
+  .option-top-option-wrapper {
+    position: absolute;
+    margin: 0 auto;
+    width: 100%;
+    bottom: 0;
+    overflow-x: scroll;
+    opacity: 0;
+    visibility: hidden;
+      background-color: rgba(255, 255, 255, 0.7);
+      transition: top 300ms ease 0s, opacity 300ms ease 0s, visibility 300ms ease 0s;
+  
+}
+.proudct-sale {
+  transition: top 300ms ease 0s, opacity 300ms ease 0s, visibility 300ms ease 0s;
+}
+.collection_item:hover .proudct-sale {
+
+
+
+  bottom: 32px;
+
+}
+
+.singels-sing-option{
+  margin-right:10px;
+}
+.collection_item:hover .option-top-option-wrapper {
+  opacity: 1;
+  visibility: visible;
+}
+@media only screen and (max-width: 600px)  {
+
+  .collection_item .option-top-option-wrapper {
+    opacity: 1;
+    visibility: visible;
+  }
+  .option-top-option-wrapper-v2 {
+    margin: 1px 0;
+}
+
+}
+
+  </style>
