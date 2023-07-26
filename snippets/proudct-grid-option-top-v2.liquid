@@ -24,15 +24,22 @@
            <div class="singel-top-option text-center">
           
         
+            {% if forloop.first %}
               <p class="d-inline-block"> {{ value | escape }} 
-            
-            
+              
+              
             </p>
-             {% if forloop.last %}
-              {% else %}
-              <span>-</span>
-             {% endif %}
-            
+            {% endif %}
+               
+               {% if forloop.last %}
+                <span>-</span>
+                {% else %}
+                <p class="d-inline-block"> {{ value | escape }} 
+              
+              
+              </p>
+               {% endif %}
+
            
 
             </div>
