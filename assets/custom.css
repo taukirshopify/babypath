@@ -10,6 +10,10 @@ html, body {
     font-weight: bold;
 }
 
+.swym-ui-components .swym-bg-2, .swym-ui-component .swym-bg-2 {
+  background-color: #000 !important;
+}
+
 /* FAQ Section */
 
 .faq {
