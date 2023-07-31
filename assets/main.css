@@ -2426,6 +2426,9 @@ div#shopify-section-header-global {
   .main-card-btn {
     margin-top: 30px;
   }
+.fast-header-area {
+    padding: 0 ;
+}
 }
 @media (max-width: 360px) {
   .main-cart-texts-item h3 {
