@@ -20,7 +20,7 @@ html, body {
 }
 
 .qsc2-btn span {
-  color: #fff;
+  color: #fff !important;
 }
 
 /* FAQ Section */
