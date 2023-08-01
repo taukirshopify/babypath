@@ -141,9 +141,16 @@ a:hover {
 .firstImage{
     transition: .3s linear all;
 }
-.product-items:hover .firstImage{
+/* .product-items:hover .firstImage{
     transition: .3s linear all;
     opacity: 0;
+} */
+@media only screen and (max-width: 600px)  {
+
+    .product-items .firstImage{
+
+        opacity: 1;
+    }
 }
 @media only screen and (min-width: 600px)  {
 
