@@ -376,7 +376,7 @@
     </div>
   </div>
 </footer>
-<div div class="popup-search-box d-block" id="popupfooter">
+<div class="popup-search-box d-block" id="popupfooter">
   <div class="searchClose border-theme text-theme d-flex align-items-center justify-content-center" >
      {% include 'search-crose' %}
   </div>
@@ -857,6 +857,24 @@ input:-moz-placeholder { color:#000; }
   transition: all ease 0.4s;
 }
 .popup-search-box button.searchClose {
+  width: 45px;
+  height: 45px;
+  line-height: 1;
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #fff;
+  background-color: transparent;
+  font-size: 22px;
+  border-radius: 50%;
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
+  -webkit-transition: all ease 0.4s;
+  transition: all ease 0.4s;
+}
+.popup-search-box .searchClose {
   width: 45px;
   height: 45px;
   line-height: 1;
