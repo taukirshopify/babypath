@@ -19,7 +19,7 @@ html, body {
   margin-top: 25px !important;
 }
 
-.qsc2-btn span {
+.qsc2-btn > span {
   color: #fff !important;
 }
 
