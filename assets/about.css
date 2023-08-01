@@ -524,8 +524,8 @@
     .story-image-area .story-big-text {
       margin-left: 0;
       margin-top: -11.5%;
-      background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.78) 33%, #000 33%);
-      background: linear-gradient(to bottom, rgba(255, 255, 255, 0.78) 33%, #000 33%);
+      background: -webkit-linear-gradient(top, rgba(254, 196, 250, 0.78) 33%, #000 33%);
+      background: linear-gradient(to bottom,rgba(254, 196, 250,.78) 33%,#000 33%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       z-index: 2;
