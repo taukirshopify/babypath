@@ -151,6 +151,10 @@ a:hover {
         transition: .3s linear all;
         opacity: 1;
     }
+    .product-items:hover .firstImage{
+        transition: .3s linear all;
+        opacity: 1;
+    }
 
 }
 
