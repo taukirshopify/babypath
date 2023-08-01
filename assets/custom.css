@@ -137,6 +137,8 @@ a:hover {
     top: 50%;
     transition: .3s linear all;
     opacity: 0;
+    width: 100%;
+    height: 100%;cl-start-wrap help-571 mm-help
 }
 .firstImage{
     transition: .3s linear all;
