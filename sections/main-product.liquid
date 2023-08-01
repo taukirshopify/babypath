@@ -284,7 +284,7 @@
                     {% render 'icon-caret' %}
                   </summary>
                   <div class="accordion__content rte" id="ProductAccordion-{{ block.id }}-{{ section.id }}">
-                    <p>{{ product.metafields.custom.fit_fabric }}</p>
+                    <p>{{ product.metafields.custom.fit_fabric | metafield_tag }}</p>
                   </div>
                 </details>
               </div>
