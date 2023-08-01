@@ -19,6 +19,10 @@ html, body {
   margin-top: 25px !important;
 }
 
+.qsc2-btn span {
+  color: #fff;
+}
+
 /* FAQ Section */
 
 .faq {
