@@ -16,7 +16,8 @@
                 {%- if section.settings.show_newsletter -%}
                 <h3>{{ section.settings.newsletter_title }}</h3>
                 <p>{{ section.settings.newsletter_text }}</p>
-
+                <div class="klaviyo-form-ViAdWj"></div>
+                {% comment %}
                 {%- form 'customer', id: 'ContactFooter', class: 'subscribe_form footer-form' -%}
                     <input type="hidden" name="contact[tags]" value="newsletter">
                     <div class="input-group">
@@ -60,6 +61,7 @@
                 <small>
                     {{ section.settings.newsletter_footer_text }}
                 </small>
+                {% endcomment %}
                 {%- endif -%}
                 {%- if section.settings.show_social -%}
                     <ul class="footer-socil-item" role="list">

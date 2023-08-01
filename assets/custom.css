@@ -5,9 +5,32 @@ html, body {
     position: relative
   }
 
+a:hover {
+    color: #fec4fa !important;
+}
+
 ._ks_text {
     font-size: 20px;
     font-weight: bold;
+}
+
+.swym-ui-components .swym-bg-2, .swym-ui-component .swym-bg-2 {
+  background-color: #000 !important;
+}
+
+.social-footer-heading {
+  margin-bottom: 0 !important;
+  margin-top: 25px !important;
+}
+
+@media screen and (max-width: 749px) {
+  .social-footer-heading {
+  text-align: center;
+  }
+}
+
+.qsc2-btn > span {
+  color: #fff !important;
 }
 
 /* FAQ Section */

@@ -1,7 +1,5 @@
 <!-- header area strat -->
 
-
-
 {% comment %} {% if template == 'index' %} position-fixed {% endif %} {% endcomment %}
 <header class="fast-header-area ">
   <div class="container">
@@ -47,8 +45,11 @@
         <li>
           {% render "search-button" %}
         </li>
+        <li class="header-wishlist">
+          <a href="#swym-wishlist" class="swym-wishlist">{% render 'icon-heart' %}</a>
+        </li>
         <li class="header-user-991">
-          <a href="/account"><img src="{{'Profile.svg' | asset_url  }}" alt="My account"></a>
+          <a href="/account">{% render 'icon-account' %}</a>
         </li>
         <li class="header-bag-991">
           <a id="cartDrawyerOpener"><img src="{{'shopping.svg' | asset_url  }}" alt="My cart">
@@ -59,10 +60,16 @@
         </li>
       </ul>
       <div class="header-r-991">
-        <div style="margin-right:.5rem;margin-top:.5rem;">
+        <div style="margin-right:1.2rem; position:relative;top:2px" >
           {% render "search-button" %}
         </div>
-        <ul>
+        <ul style="display:flex;gap:1.2rem; position:relative;top:2px">
+        <li class="header-wishlist">
+          <a href="#swym-wishlist" class="swym-wishlist">{% render 'icon-heart' %}</a>
+        </li>
+        <li class="header-user-991">
+          <a href="/account">{% render 'icon-account' %}</a>
+        </li>
           <li class="header-bag-991">
             <a id="cartDrawyerOpener"><img src="{{'Shopping2.svg' | asset_url  }}" alt="My cart">
           

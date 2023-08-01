@@ -107,11 +107,11 @@
     "sale_badge_color_scheme": "accent-2",
     "sold_out_badge_color_scheme": "inverse",
     "accent_icons": "text",
-    "social_twitter_link": "#",
-    "social_facebook_link": "#",
+    "social_twitter_link": "https:\/\/twitter.com\/BabyPhat",
+    "social_facebook_link": "https:\/\/www.facebook.com\/Babyphat\/",
     "social_pinterest_link": "",
-    "social_instagram_link": "",
-    "social_tiktok_link": "#",
+    "social_instagram_link": "https:\/\/www.instagram.com\/babyphat\/?hl=en",
+    "social_tiktok_link": "",
     "social_tumblr_link": "",
     "social_snapchat_link": "",
     "social_youtube_link": "",
@@ -272,6 +272,30 @@
         "type": "shopify:\/\/apps\/qikify-cart-drawer\/blocks\/app-embed\/39da5d6e-3e04-4687-bc69-e23fafb93294",
         "disabled": false,
         "settings": {
+        }
+      },
+      "4697538150380142411": {
+        "type": "shopify:\/\/apps\/stamped-product-reviews-ugc\/blocks\/reviews-popup\/a103faaf-2125-4b0e-89fa-de5149736723",
+        "disabled": true,
+        "settings": {
+          "layout": "horizontal",
+          "effect": "slidetop",
+          "delay_seconds": 3,
+          "show_seconds": 10,
+          "pause_seconds": 10,
+          "position": "bottomleft",
+          "color_background": "",
+          "color_star": "",
+          "color_text": "",
+          "review_ids": "",
+          "product_ids": "",
+          "category": "",
+          "product_brand": "",
+          "tags": "",
+          "min_rating": "none",
+          "fill_empty": false,
+          "random": false,
+          "with_photos": false
         }
       }
     }

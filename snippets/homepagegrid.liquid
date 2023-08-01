@@ -59,11 +59,7 @@
           product: product,
       
       %}
-       {% render 'proudct-grid-option-color' ,
-    
-        product: product, 
-    
-    %}
+       {% render 'proudct-grid-option-color', product: product %}
 
 
     </div>
@@ -122,8 +118,10 @@ width: 100%;
 height:100%;
 bottom: 0;
 
-opacity: 0;
-visibility: hidden;
+/*opacity: 0;
+visibility: hidden;*/
+    opacity: 1;
+  visibility: visible;
 background-color: #fff;
 transition: top 300ms ease 0s, opacity 300ms ease 0s, visibility 300ms ease 0s;
 
