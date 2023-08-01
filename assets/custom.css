@@ -19,6 +19,12 @@ html, body {
   margin-top: 25px !important;
 }
 
+@media screen and (max-width: 749px) {
+  .social-footer-heading {
+  text-align: center;
+  }
+}
+
 .qsc2-btn > span {
   color: #fff !important;
 }
