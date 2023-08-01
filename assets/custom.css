@@ -5,6 +5,10 @@ html, body {
     position: relative
   }
 
+a:hover {
+    color: #fec4fa
+}
+
 ._ks_text {
     font-size: 20px;
     font-weight: bold;
