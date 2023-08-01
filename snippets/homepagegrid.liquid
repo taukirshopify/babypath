@@ -1,6 +1,11 @@
+{%- assign sold_out = true-%}
+{%- if product.available -%}
+  {%- assign sold_out = false -%}
+{%- endif -%}
+
 <a class="product-items d-block" href="{{ product.url }}">
 
-<div class="collection_item">
+<div class="collection_item {% if sold_out %} sold_out  {% endif %}">
     <div class="product_image_wrapper ">
       <a class="product-items" href="{{ product.url }}">
        
