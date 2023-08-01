@@ -6,7 +6,7 @@ html, body {
   }
 
 a:hover {
-    color: #fec4fa
+    color: #fec4fa !important;
 }
 
 ._ks_text {
