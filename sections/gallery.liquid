@@ -1,146 +1,119 @@
-
 {% include 'imageloadjs' %}
 
-
 <div class="gallery-wrapper">
- <div class="product-container">
-  <div class="row gridalt">
-   {% for c in section.blocks %}
-    <div class="grid-itema gallery-inner  col-lg-4 col-6 p-0">
-{% comment %}     
-      style="margin:{{ c.settings.padding_top }}% {{ c.settings.padding_right }}% {{ c.settings.padding_bottom}}% {{ c.settings.padding_left }}%"
-    
-    data-aos="fade-up"
-        data-aos-duration="3000" 
-    
-    {% endcomment %}
-     <div class="singel-image-wrapper wow animate__fadeInUp"   data-wow-duration="2s" data-wow-delay="0.5s"    >
-          <div class="gallery-image-wrapper">
-            <a  class="test-popup-link" href="{{ c.settings.img | img_url:'' }}">
-              {{ c.settings.img | image_url: width: 450 | image_tag:
-                loading: 'lazy',
-                height: height,
-                sizes: "100vw",
-   format: 'webp',
-                widths: '375, 550, 750'
-              }}
-              
-              </a> 
-          </div> 
-     </div>
+  <div class="product-container">
+    <div class="row gridalt">
+      {% for c in section.blocks %}
+        <div class="grid-itema gallery-inner  col-lg-4 col-6 p-0">
+          <div class="singel-image-wrapper wow animate__fadeInUp" data-wow-duration="2s" data-wow-delay="0.5s">
+            <div class="gallery-image-wrapper">
+              <a class="test-popup-link" href="{{ c.settings.img | img_url:'' }}">
+                {{
+                  c.settings.img
+                  | image_url: width: 450
+                  | image_tag: loading: 'lazy', height: height, sizes: '100vw', format: 'webp', widths: '375, 550, 750'
+                }}
+              </a>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
     </div>
-   {% endfor %}
   </div>
- </div>
 </div>
 
 {% schema %}
-    {
-        "name": "Gallery",
-        "class": "gallery",
-        "blocks": [
+{
+    "name": "Gallery",
+    "class": "gallery",
+    "blocks": [
+        {
+            "type": "images",
+            "name": "image",
+            "settings": [
             {
-                "type": "images",
-                "name": "image",
-                "settings": [
-                {
-                    "type": "image_picker",
-                    "id": "img",
-                    "label": "Select your Image"
-                },
-                   {
-      "type": "range",
-      "id": "padding_top",
-      "min": 0,
-      "max": 100,
-      "step": 1,
-      "unit": "px",
-      "label": "t:sections.all.padding.padding_top",
-      "default": 1
-    },
-    {
-      "type": "range",
-      "id": "padding_bottom",
-      "min": 0,
-      "max": 100,
-      "step": 1,
-      "unit": "px",
-      "label": "t:sections.all.padding.padding_bottom",
-      "default": 1
-    },
-                   {
-      "type": "range",
-      "id": "padding_left",
-      "min": 0,
-      "max": 100,
-      "step": 1,
-      "unit": "px",
-      "label": "Padding Left",
-      "default": 1
-    },
-                     {
-      "type": "range",
-      "id": "padding_right",
-      "min": 0,
-      "max": 100,
-      "step": 1,
-      "unit": "px",
-      "label": "Padding Right",
-      "default": 1
-    }
-                ]
-            }
-        ],
-        "presets": [
-            {
-              "name": "Gallery"}]
-        
-    }
+                "type": "image_picker",
+                "id": "img",
+                "label": "Select your Image"
+            },
+               {
+  "type": "range",
+  "id": "padding_top",
+  "min": 0,
+  "max": 100,
+  "step": 1,
+  "unit": "px",
+  "label": "t:sections.all.padding.padding_top",
+  "default": 1
+},
+{
+  "type": "range",
+  "id": "padding_bottom",
+  "min": 0,
+  "max": 100,
+  "step": 1,
+  "unit": "px",
+  "label": "t:sections.all.padding.padding_bottom",
+  "default": 1
+},
+               {
+  "type": "range",
+  "id": "padding_left",
+  "min": 0,
+  "max": 100,
+  "step": 1,
+  "unit": "px",
+  "label": "Padding Left",
+  "default": 1
+},
+                 {
+  "type": "range",
+  "id": "padding_right",
+  "min": 0,
+  "max": 100,
+  "step": 1,
+  "unit": "px",
+  "label": "Padding Right",
+  "default": 1
+}
+            ]
+        }
+    ],
+    "presets": [
+        {
+          "name": "Gallery"}]
+
+}
 {% endschema %}
 <style>
-  .gallery-image-wrapper img {
-    width: 100%;
-    padding: 2px 2.88px;
-}
-    .gallery-image-wrapper a {
-      display: block;
-      padding: 0px;
-      margin: 0;
+    .gallery-image-wrapper img {
+      width: 100%;
+      padding: 2px 2.88px;
   }
-    .mfp-wrap {
-  
-        z-index: 1000000000000000;
-      
+      .gallery-image-wrapper a {
+        display: block;
+        padding: 0px;
+        margin: 0;
     }
+      .mfp-wrap {
+
+          z-index: 1000000000000000;
+
+      }
 </style>
 <script>
-// external js: isotope.pkgd.js
+  // external js: isotope.pkgd.js
 
-// A $( document ).ready() block.
-
-$( document ).ready(function() {
-    $('.gridalt').imagesLoaded( function() {
-
-      $('.gridalt').isotope({
-        itemSelector: '.grid-itema'
-       
-      });
-
-
-     
+  // A $( document ).ready() block.
+  
+$(document).ready(function() {
+    $('.gridalt').imagesLoaded(function() {
+        $('.gridalt').isotope({
+            itemSelector: '.grid-itema'
+        });
     });
-
-
-
-      $('.test-popup-link').magnificPopup({
+    $('.test-popup-link').magnificPopup({
         type: 'image'
-
-      });
-  
-
+    });
 });
-
-
-  
-
-  </script>
+</script>
