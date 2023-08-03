@@ -686,16 +686,11 @@ theme.
     position: absolute;
     right: 0;
     left: auto;
-    top: -1px;
+    top: 0;
     opacity: 1;
     display: block !important;
-  }
-
-  .dropdown-btn {
-    display: block;
-    height: 40px;
+    height: 100%;
     width: 20px;
-    line-height: 47px;
   }
 
   .header-nav-item .top-nav-area li .nav-menu {
