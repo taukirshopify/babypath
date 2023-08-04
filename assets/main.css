@@ -689,7 +689,7 @@ theme.
     top: 0;
     opacity: 1;
     display: block !important;
-    height: 46px;
+    height: 100%;
     width: 20px;
   }
 
