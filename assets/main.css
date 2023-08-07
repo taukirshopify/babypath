@@ -3657,5 +3657,5 @@ body a:focus, body a:hover, body .btn:focus, body .btn:hover, body button:focus,
     color: #fff;
 }
 .header__cart-img{
- vertical-align:bottom
+ /* vertical-align:bottom */
 }
