@@ -1102,6 +1102,7 @@ li.currency-switcher-li {
 a#cartDrawyerOpener {
     display: inline-block;
     position: relative;
+  top: 3px;
 }
 
 
