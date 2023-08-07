@@ -52,7 +52,6 @@
           <a href="/account">{% render 'icon-account' %}</a>
         </li>
         <li class="header-bag-991">
-          <script>console.log("hi")</script>
           <a style="vertical-align:middle;" id="cartDrawyerOpener"><img src="{{'shopping.svg' | asset_url  }}" alt="My cart">
         
           <span class="cart-count"> {{ cart.item_count }}
@@ -71,7 +70,7 @@
         <li class="header-user-991">
           <a href="/account">{% render 'icon-account' %}</a>
         </li>
-          <li class="header-bag-991">
+          <li  style="vertical-align:middle;" class="header-bag-991">
             <a id="cartDrawyerOpener"><img src="{{'Shopping2.svg' | asset_url  }}" alt="My cart">
           
             <span class="cart-count">{{ cart.item_count }}
