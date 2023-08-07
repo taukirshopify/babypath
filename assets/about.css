@@ -41,10 +41,10 @@
   
   body {
     font-family: var(--title-font);
-    font-size: 22px;
+    /* font-size: 22px;
+    line-height: 32px; */
     font-weight: 400;
     color: var(--body-color);
-    line-height: 32px;
     overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
   }
