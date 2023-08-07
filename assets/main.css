@@ -3656,3 +3656,6 @@ body a:focus, body a:hover, body .btn:focus, body .btn:hover, body button:focus,
   a.theme-btn.main-card-btn span {
     color: #fff;
 }
+.header__icon-cart[
+ vertical-align:bottom
+]
