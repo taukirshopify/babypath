@@ -1113,7 +1113,7 @@ a#cartDrawyerOpener span {
     display: inline-block;
     color: #000;
     position: absolute;
-    top: 0;
+    top: 6px;
     left: 11px;
     font-size: 12px;
     width: 18px;
