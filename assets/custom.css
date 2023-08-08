@@ -9,6 +9,10 @@ a:hover {
     color: #fec4fa !important;
 }
 
+.stamped-widget-poweredby {
+  display: none;
+}
+
 ._ks_text {
     font-size: 20px;
     font-weight: bold;
