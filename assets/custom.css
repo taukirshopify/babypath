@@ -190,7 +190,7 @@ body #accessiblyOtmButton [class^=icon-] {
 
 span.regular-price.compare_at_price del {
     color: #919191 !important;
-    font-size: 12px;
+    font-size: 13px;
 }
 .belive-items img {
     width: 100%;
