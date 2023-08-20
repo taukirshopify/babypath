@@ -13,6 +13,10 @@ a:hover {
   display: none;
 }
 
+body [class^=accessibly-otm-] [class^=icon-] {
+  font-size: 100%;
+}
+
 ._ks_text {
     font-size: 20px;
     font-weight: bold;
