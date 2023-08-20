@@ -16,6 +16,9 @@ a:hover {
 body [class^=accessibly-otm-] [class^=icon-] {
   font-size: 100%;
 }
+body #accessiblyOtmButton [class^=icon-] {
+  color: #fff !important;
+}
 
 ._ks_text {
     font-size: 20px;
