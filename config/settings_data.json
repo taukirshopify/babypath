@@ -289,7 +289,7 @@
         "disabled": false,
         "settings": {
           "themeColor": "#fec4fa",
-          "iconColor": "#fec4fa",
+          "iconColor": "#121212",
           "showLogo": true,
           "topBottomPosition": 10,
           "rightLeftPosition": 10,
