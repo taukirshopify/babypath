@@ -20,8 +20,10 @@ body #accessiblyOtmButton [class^=icon-] {
   color: #fff !important;
 }
 
-.list-social__item .list-social__link:first-child {
-  padding-left: 0;
+@media screen and (min-width: 750px) {
+  .list-social__item .list-social__link:first-child {
+    padding-left: 0;
+  }
 }
 
 ._ks_text {
