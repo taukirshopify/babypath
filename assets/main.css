@@ -1255,14 +1255,14 @@ div#shopify-section-header-global {
 .product-item-text {
   /* text-align: center; */
   font-weight: 900;
-  line-height: 14px;
+  line-height: 13px;
   color: #000000;
   /* padding: 3px 0; */
   text-transform: uppercase;
 }
 
 .product-item-text a {
-  font-size: 12px !important;
+  font-size: 13px !important;
 }
 
 .splide__arrow {
