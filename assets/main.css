@@ -1252,17 +1252,18 @@ div#shopify-section-header-global {
   height: auto;
 }
 
-.product-item-text, .product-item-text a {
+.product-item-text {
   /* text-align: center; */
   font-weight: 900;
-  font-size: 12px !important;
   line-height: 14px;
   color: #000000;
   /* padding: 3px 0; */
   text-transform: uppercase;
 }
 
-
+.product-item-text a {
+  font-size: 12px !important;
+}
 
 .splide__arrow {
   background: none;
