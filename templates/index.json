@@ -61,8 +61,8 @@
     "b0f3a8d9-9b46-4838-940b-648b9749ead9": {
       "type": "image-background-banner",
       "settings": {
-        "padding_top": 16,
-        "padding_bottom": 20,
+        "padding_top": 0,
+        "padding_bottom": 56,
         "u": "shopify:\/\/files\/videos\/Baby Phat Main V2-cmpr.mp4"
       }
     },
@@ -203,7 +203,6 @@
     },
     "7a3daecf-2b44-4375-8c98-596c7f6aeb64": {
       "type": "collection-lists-bottom",
-      "disabled": true,
       "blocks": {
         "e8585a02-ccf6-4c2c-a92a-0eeedc14edda": {
           "type": "slide",
@@ -248,6 +247,7 @@
         "a28ffa8b-4d94-4e2b-b2db-6d099bf127e8",
         "1b2326ca-31d9-4217-97b7-1218f3adfb0c"
       ],
+      "disabled": true,
       "settings": {
         "section_title": "I am thrilled to share our latest collection with you, featuring the same glam and boldness that has defined Baby Phat for over two decades.” - KLS"
       }
