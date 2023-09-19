@@ -376,7 +376,7 @@
              share_link: share_url %}
 
             {%- when 'variant_picker' -%}
-            {% render 'product-variant-picker', block: block, product: product %}
+            {% render 'old-product-variant-picker', block: block, product: product %}
             {%- when 'buy_buttons' -%}
             {%- render 'buy-buttons', block: block, product: product, product_form_id: product_form_id, show_pickup_availability: true -%}
             {%- when 'rating' -%}
@@ -2073,13 +2073,13 @@ arrows    : true,
     cursor: pointer;
 
 }
-  .product-form__input.varinatcolor input[type='radio']:disabled + label,
-  .product-form__input.varinatcolor input[type='radio'].disabled + label {
+   input[type='radio'].color-input:disabled + label,
+   input[type='radio'].color-input.disabled + label {
     position: relative;
   }
 
-  .product-form__input.varinatcolor input[type='radio']:disabled + label,
-  .product-form__input.varinatcolor input[type='radio'].disabled + label::before {
+  input[type='radio'].color-input:disabled + label,
+  input[type='radio'].color-input.disabled + label::before {
     position: absolute;
     width: 97%;
     height: 2px;
@@ -2092,7 +2092,7 @@ arrows    : true,
     transform: rotate(45deg);
   }
 
-  .product-form__input.varinatcolor input[type='radio']:checked + label {
+  input[type='radio'].color-input:checked + label {
     color: #fff !important;
     border: 3px solid #fff;
     outline: 0.2px solid black;
