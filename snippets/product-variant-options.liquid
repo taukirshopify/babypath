@@ -65,9 +65,7 @@
       {% if option.selected_value == value %}
         checked
       {% endif %}
-      {% if option_disabled %}
-        class="disabled"
-      {% endif %}
+      class="{% if option_disabled %} disabled {% endif %} {% if colorValue %} color-input {% endif %}"
     >
     <label {% if colorValue %} style="background:{{ colorValue }}" {% endif %}for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}">
       {{ value -}}
