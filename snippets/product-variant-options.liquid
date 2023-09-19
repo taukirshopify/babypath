@@ -51,7 +51,7 @@
     {% if option.name == "Color" %}
       {% assign variantsOfThisColor = product.variants | where: "option2", value %}
       {% for variant in variantsOfThisColor %}
-        <script>console.log({{variant|json}})</script>
+        <script>console.log({{variant.metafields.custom.color_swatch.value|json}})</script>
       {% endfor %}
     {% endif %}
     <input
