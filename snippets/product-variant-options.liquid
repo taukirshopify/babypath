@@ -47,7 +47,7 @@
 <script>console.log("hi")
   console.log({{ product.variants | json }})
 
-console.log({{ product.variants | where: "option1", "Color" | json }})
+console.log({{ product.variants | where: "option2", value | json }})
 </script>
   {%- if block.settings.picker_type == 'button' -%}
     <input
