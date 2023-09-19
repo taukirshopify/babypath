@@ -69,9 +69,17 @@
     >
     <label {% if colorValue %} style="background:{{ colorValue }}" {% endif %}for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}">
       
-      {% unless colorValue %}
+      {% if colorValue %}
+        <span 
+          style="position: absolute;
+    left: -3px;
+    height: auto;
+    display: inline;
+    bottom: -100%;"
+          >{{ value }}</span>
+      {% else %}
         {{ value -}}
-      {% endunless %}
+      {% endif %}
       <span class="visually-hidden">{{ 'products.product.variant_sold_out_or_unavailable' | t }}</span>
     </label>
   {%- elsif block.settings.picker_type == 'dropdown' -%}
