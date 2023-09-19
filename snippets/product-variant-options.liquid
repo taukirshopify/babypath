@@ -51,7 +51,9 @@
     {% if option.name == "Color" %}
       {% assign variantsOfThisColor = product.variants | where: "option2", value %}
       {% for variant in variantsOfThisColor %}
-        <script>console.log({{variant.metafields.custom.color_swatch.value|json}})</script>
+        {% if variant.metafields.custom.color_swatch.value %}
+          {% assign colorValue = variant.metafields.custom.color_swatch.value  %}
+        {% endif %}
       {% endfor %}
     {% endif %}
     <input
@@ -67,7 +69,7 @@
         class="disabled"
       {% endif %}
     >
-    <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}">
+    <label {% if colorValue %} style="background:{{ colorValue }}" {% endif %}for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}">
       {{ value -}}
       <span class="visually-hidden">{{ 'products.product.variant_sold_out_or_unavailable' | t }}</span>
     </label>
