@@ -46,13 +46,12 @@
   -%}
 
   {%- if block.settings.picker_type == 'button' -%}
-    {% assign isColor = false %}
-    {% assign colorValue = nil %}
-    {% if option.name == "Color" %}
-      {% assign variantsOfThisColor = product.variants | where: "option2", value %}
+    {% assign colorValue = null %}
+    {% if option.name == 'Color' %}
+      {% assign variantsOfThisColor = product.variants | where: 'option2', value %}
       {% for variant in variantsOfThisColor %}
         {% if variant.metafields.custom.color_swatch.value %}
-          {% assign colorValue = variant.metafields.custom.color_swatch.value  %}
+          {% assign colorValue = variant.metafields.custom.color_swatch.value %}
         {% endif %}
       {% endfor %}
     {% endif %}
@@ -67,7 +66,12 @@
       {% endif %}
       class="{% if option_disabled %} disabled {% endif %} {% if colorValue %} color-input {% endif %}"
     >
-    <label {% if colorValue %} style="background:{{ colorValue }}" {% endif %}for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}">
+    <label
+      {% if colorValue %}
+        style="background:{{ colorValue }}"
+      {% endif -%}
+      for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}"
+    >
       {{ value -}}
       <span class="visually-hidden">{{ 'products.product.variant_sold_out_or_unavailable' | t }}</span>
     </label>
@@ -78,11 +82,13 @@
         selected="selected"
       {% endif %}
     >
-      {% if option_disabled -%}
-        {{- 'products.product.value_unavailable' | t: option_value: value -}}
-      {%- else -%}
-        {{- value -}}
-      {%- endif %}
+      {% unless colorValue %}
+        {% if option_disabled -%}
+          {{- 'products.product.value_unavailable' | t: option_value: value -}}
+        {%- else -%}
+          {{- value -}}
+        {%- endif %}
+      {% endunless %}
     </option>
   {%- endif -%}
 {%- endfor -%}
