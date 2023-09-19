@@ -44,13 +44,16 @@
       endcase
     endfor
   -%}
-<script>console.log("hi")
-  console.log({{ product.variants | json }})
 
-console.log({{ product.variants | where: "option2", value | where: "metafields.custom.color_swatch" | json }})
-  
-</script>
   {%- if block.settings.picker_type == 'button' -%}
+    {% assign isColor = false %}
+    {% assign colorValue = nil %}
+    {% if option.name == "Color" %}
+      {% assign variantsOfThisColor = product.variants | where: "option2", value %}
+      {% for variant in variantsOfThisColor %}
+        <script>console.log({{variant|json}})</script>
+      {% endfor %}
+    {% endif %}
     <input
       type="radio"
       id="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}"
