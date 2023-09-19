@@ -2003,7 +2003,27 @@ window.onresize = moveDiv;
     pagination: false,
     arrows    : true,
    } );
+  var thumbnails = new Splide( '.thumbnail-carousel', { 
 
+    direction: 'ttb',
+    perPage: 4,
+    perMove :1,
+    height: '100%',
+arrows    : true,
+    gap        : 5,
+    autoplay:false,
+    rewind     : true,
+    interval:5000,
+    pagination : false,
+    isNavigation: true,
+    breakpoints : {
+      600: {
+    
+        direction: 'ltr',
+      },
+    },
+
+   } );
   
   main.sync( thumbnails );
   main.mount();
