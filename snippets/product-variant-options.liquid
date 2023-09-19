@@ -45,6 +45,8 @@
     endfor
   -%}
 <script>console.log("hi")
+  console.log({{ product.variants | json }})
+
 console.log({{ product.variants | where: "option1", "Color" | json }})
 </script>
   {%- if block.settings.picker_type == 'button' -%}
