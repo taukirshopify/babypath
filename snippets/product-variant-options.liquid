@@ -49,7 +49,7 @@
     {% assign isColor = false %}
     {% assign colorValue = null %}
     {% if option.name == 'Color' %}
-      <script>console.log({{ product | json }})</script>
+      <script>console.log({{ product.metafields.custom.swatches-list.value | json }})</script>
       {% for metafieldProduct in product.metafields.custom.swatches-list.values %}
         <script>console.log({{ metafieldProduct | json }})</script>
       {% endfor %}
