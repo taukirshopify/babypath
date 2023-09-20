@@ -1,60 +1,32 @@
-
 {% comment %} Geting the color  {% endcomment %}
 
 {%- if item.product.has_only_default_variant == false -%}
-
-
-  {% else %}
-<div class="card-bottom-color-details">
-
-
-  {%- for option in product.options_with_values -%}
-
-    {% if option.name == "Color" %}
-
+{% else %}
+  <div class="card-bottom-color-details">
+    {%- for option in product.options_with_values -%}
+      {% if option.name == 'Color' %}
         {%- for value in option.values -%}
-          
+          <p>{{ forloop.index }} color available</p>
+        {%- endfor -%}
+      {% endif %}
+    {%- endfor -%}
 
-          <p> {{ forloop.index }}  color  available</p>
-
-
-  {%- endfor -%}
-
-{% endif %}
-
-{%- endfor -%}
-
-  
-  {%- for option in product.options_with_values -%}
-
-      {% if option.name == "Color" %}
+    {%- for option in product.options_with_values -%}
+      {% if option.name == 'Color' %}
         <div class=" product-item-color product_price d-flex align-items-center">
           {%- for value in option.values -%}
-            
+            <div
+              class="card-product-wrapper-color"
 
-
-
-        <div class="card-product-wrapper-color"
-          
-          {% if value contains ' ' %}  style="background: var(--{{ value | remove:" " }})"
-          {% else %}
-          style="background: {{ value }}"
-          {% endif %}
-        >
-
-        </div>
-      
-     
-
-
-            
+              {% if value contains ' ' %}
+                style="background: var(--{{ value | remove:" " }})"
+              {% else %}
+                style="background: {{ value }}"
+              {% endif %}
+            ></div>
           {%- endfor -%}
         </div>
-
-       {% endif %}
-  
-  {%- endfor -%}
-
-  {% endif %}
-
+      {% endif %}
+    {%- endfor -%}
   </div>
+{% endif %}
