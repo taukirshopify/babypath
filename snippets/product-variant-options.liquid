@@ -50,7 +50,7 @@
     {% assign colorValue = null %}
     {% if option.name == 'Color' %}
       <script>console.log({{ product | json }})</script>
-      {% for metafieldProduct in product.metafields.custom.swatches-list %}
+      {% for metafieldProduct in product.metafields.custom.swatches-list.values %}
         <script>console.log({{ metafieldProduct | json }})</script>
       {% endfor %}
       {% assign variantsOfThisColor = product.variants | where: 'option2', value %}
