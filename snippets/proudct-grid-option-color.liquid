@@ -21,11 +21,11 @@
             {% continue %}
           {% endif %}
         {% endfor %}
-        <div
+        <a href="{{ metafieldProduct.url }}"
           class="card-product-wrapper-color"
-          style="background: {{ colorValue }}"
+          style="background: {{ colorValue }};display:block;"
 
-        ></div>
+        ></a>
      {% comment %}   <a
           href="{{ metafieldProduct.url }}"
           style="width:40px;height:40px; display:inline-block;border-radius: 50%;margin-top:1rem;padding:2px;{% if product == metafieldProduct %} border: 1px solid;  {% endif %}"
