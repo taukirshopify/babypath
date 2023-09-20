@@ -3,13 +3,6 @@
 {%- if item.product.has_only_default_variant == false -%}
 {% else %}
   <div class="card-bottom-color-details">
-    {%- for option in product.options_with_values -%}
-      {% if option.name == 'Color' %}
-        {%- for value in option.values -%}
-          <p>{{ forloop.index }} color available</p>
-        {%- endfor -%}
-      {% endif %}
-    {%- endfor -%}
 
     {%- for option in product.options_with_values -%}
       {% if option.name == 'Color' %}
