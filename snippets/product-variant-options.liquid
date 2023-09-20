@@ -26,7 +26,7 @@
 {% assign colorValue = null %}
 {% if option.name == 'Color' %}
   {% for metafieldProduct in product.metafields.custom['swatches-list'].value %}
-    <script> console.log({{ metafieldProduct | json }}) </script>
+    <script> console.log({{ metafieldProduct.options_with_values | json }}) </script>
     {% continue %}
     {% assign variantsOfThisColor = metafieldProduct.variants | where: 'option2', value %}
     {% for variant in variantsOfThisColor %}
