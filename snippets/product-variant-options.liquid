@@ -39,8 +39,11 @@
     {% for variant in metafieldProduct.variants %}
       {% if variant.metafields.custom.color_swatch.value %}
         {% assign colorValue = variant.metafields.custom.color_swatch.value %}
+        {% continue %}
       {% endif %}
     {% endfor %}
+    <a style="width:40px;height:40px;background-color:{{ colorValue }}" href="{{ metafieldProduct.url }}"></a>
+    {% comment %}
     <input
       type="radio"
       id="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}"
@@ -75,6 +78,7 @@
       {% endif %}
       <span class="visually-hidden">{{ 'products.product.variant_sold_out_or_unavailable' | t }}</span>
     </label>
+    {% endcomment %}
   {% endfor %}
 {% else %}
   {%- for value in option.values -%}
