@@ -88,8 +88,8 @@
       }
 
       function getTimeRemaining(endtime) {
-          let total = parseDate(endtime) - Date.parse(new Date())
-        console.log(parseDate(endtime))
+          // let total = parseDate(endtime) - Date.parse(new Date())
+          let total = utcDate - new Date()
           let seconds = Math.floor((total / 1000) % 60)
           let minutes = Math.floor((total / 1000 / 60) % 60)
           let hours = Math.floor((total / (1000 * 60 * 60)) % 24)
