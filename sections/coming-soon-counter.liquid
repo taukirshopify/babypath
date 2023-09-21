@@ -62,7 +62,9 @@
               grid product-grid grid--2-col-tablet-down
               grid--4-col-desktop container">
     {% for block in section.blocks %}
+      <div class="col-md-3 col-6">
       {% render "homepagegrid", product: block.settings.product  %}
+      </div>
     {% endfor %}
   </section>
 </section>
