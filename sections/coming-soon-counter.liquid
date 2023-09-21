@@ -22,11 +22,22 @@
     font-weight: 800;
     line-height: 1;
   }
+  .count-down__label{
+    color: #fff;
+    letter-spacing: 0;
+    text-transform: uppercase;
+    text-shadow: 0 0 20px #fff;
+    background-image: none;
+    font-family: Montserrat, sans-serif;
+    font-size: 1.5rem;
+    font-weight: 800;
+    line-height: 1;
+  }
 </style>
 <section style="min-height:100vh;background:white;">
   <section style="background:black;min-height:50vh;display:flex;justify-content:center;gap:1rem;align-items:center;">
     <div>
-      <div>Day</div>
+      <div class="count-down__label">Day</div>
       <div class="count-down__box"><div id="js-clock-days" class="count-down__number"></div></div>
     </div>
     <div class="count-down__box"><div id="js-clock-hours" class="count-down__number"></div></div>
