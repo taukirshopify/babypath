@@ -58,6 +58,11 @@
       <div class="count-down__box"><div id="js-clock-seconds" class="count-down__number">99</div></div>
     </div>
   </section>
+  <section>
+    {% for block in section.blocks %}
+      {% render "homepagegrid", product: block.settings.product  %}
+    {% endfor %}
+  </section>
 </section>
 <script>
     (function () {
@@ -73,14 +78,12 @@
       
       var utcDate = new Date(Date.UTC(year, month, day, hours, minutes, seconds, milliseconds));
       
-      console.log('UTC Date:', utcDate);
 
       function pad(num, size) {
           var s = "0" + num;
           return s.substr(s.length - size);
       }
 
-      // fixes "Date.parse(date)" on safari
       function parseDate(date) {
           const parsed = Date.parse(date);
           if (!isNaN(parsed)) return parsed
@@ -88,13 +91,11 @@
       }
 
       function getTimeRemaining(endtime) {
-          // let total = parseDate(endtime) - Date.parse(new Date())
           let total = utcDate - new Date()
           let seconds = Math.floor((total / 1000) % 60)
           let minutes = Math.floor((total / 1000 / 60) % 60)
           let hours = Math.floor((total / (1000 * 60 * 60)) % 24)
           let days = Math.floor(total / (1000 * 60 * 60 * 24))
-
           return { total, days, hours, minutes, seconds };
       }
 
@@ -103,7 +104,6 @@
           let hours = document.getElementById(id + '-hours')
           let minutes = document.getElementById(id + '-minutes')
           let seconds = document.getElementById(id + '-seconds')
-          console.log(days);
           var timeinterval = setInterval(function () {
               var time = getTimeRemaining(endtime);
 
@@ -118,12 +118,25 @@
           }, 1000);
       }
 
-      clock('js-clock', deadline);
+      clock('js-clock');
   })();
 </script>
 {% schema %}
 {
   "name": "Coming soon counter",
+  "blocks": [
+    {
+      "type": "product-block",
+      "name": "Product block",
+      "settings": [
+      {
+        "type": "product",
+        "id": "product",
+        "label": "Product of this block"
+      }  
+      ]
+    }
+  ],
   "presets":[
     {
     "name": "Coming soon counter"
