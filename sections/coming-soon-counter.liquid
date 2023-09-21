@@ -1,5 +1,5 @@
 <style>
-  .count-down__container{
+  .count-down__section-container{
     min-height:100vh;background:white;display:flex;flex-direction:column;gap:2rem
   }
   .count-down__box{
@@ -38,9 +38,17 @@
     text-align:center;
     margin-bottom:1rem;
   }
+  .count-down__container{
+    background:black;min-height:30vh;display:flex;justify-content:center;gap:3rem;align-items:center;
+  }
+  @media (max-width:450px){
+    .count-down__container{
+      gap: 1rem;
+    }
+  }
 </style>
-<section class="count-down__container">
-  <section style="background:black;min-height:30vh;display:flex;justify-content:center;gap:3rem;align-items:center;">
+<section class="count-down__section-container">
+  <section class="count-down__container">
     <div>
       <div class="count-down__label">Day</div>
       <div class="count-down__box"><div id="js-clock-days" class="count-down__number">∞</div></div>
