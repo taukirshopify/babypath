@@ -1,9 +1,16 @@
+<style>
+  .count-down__item{
+   padding:1rem 3rem;
+    font-size:3rem;
+    color:white;
+  }
+</style>
 <section style="min-height:100vh;background:white;">
-  <section style="background:black;min-height:50vh;display:flex;justify-content:center;gap:1rem;">
-    <div style="color:white;" id="js-clock-days"></div>
-    <div style="color:white;" id="js-clock-hours"></div>
-    <div style="color:white;" id="js-clock-minutes"></div>
-    <div style="color:white;" id="js-clock-seconds"></div>
+  <section style="background:black;min-height:50vh;display:flex;justify-content:center;gap:1rem;align-items:center;">
+    <div class="count-down__item" id="js-clock-days"></div>
+    <div class="count-down__item" id="js-clock-hours"></div>
+    <div class="count-down__item" id="js-clock-minutes"></div>
+    <div class="count-down__item" id="js-clock-seconds"></div>
   </section>
 </section>
 <script>
