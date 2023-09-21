@@ -36,7 +36,7 @@
     margin-bottom:1rem;
   }
 </style>
-<section style="min-height:100vh;background:white;">
+<section style="min-height:100vh;background:white;display:flex;flex-direction:column;">
   <section style="background:black;min-height:50vh;display:flex;justify-content:center;gap:1rem;align-items:center;">
     <div>
       <div class="count-down__label">Day</div>
@@ -58,7 +58,7 @@
       <div class="count-down__box"><div id="js-clock-seconds" class="count-down__number">99</div></div>
     </div>
   </section>
-  <section class="row p-0 m-0
+  <section style="align-self:center;" class="row p-0 m-0
               grid product-grid grid--2-col-tablet-down
               grid--4-col-desktop container justify-content-center">
     {% for block in section.blocks %}
