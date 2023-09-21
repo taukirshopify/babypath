@@ -58,7 +58,9 @@
       <div class="count-down__box"><div id="js-clock-seconds" class="count-down__number">99</div></div>
     </div>
   </section>
-  <section>
+  <section class="row p-0 m-0
+              grid product-grid grid--2-col-tablet-down
+              grid--4-col-desktop container">
     {% for block in section.blocks %}
       {% render "homepagegrid", product: block.settings.product  %}
     {% endfor %}
