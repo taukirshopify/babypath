@@ -74,6 +74,7 @@
             <ul class="splide__list">
               {% for image in product.images %}
               <li class="splide__slide product-page">
+                <script>console.log({{ image.alt | json }})</script>
                 <img src="{{ image.src | img_url: '' }}" alt="{{ image.alt}}">
                                  <span 
                                    style="    background: black;
