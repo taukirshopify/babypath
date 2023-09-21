@@ -3,12 +3,6 @@
     "eae509da-5e3f-44bf-9ece-16894c3e7c40": {
       "type": "coming-soon-counter",
       "blocks": {
-        "4abc6d31-9f8d-46f7-bb1c-ec5ebbc0b812": {
-          "type": "product-block",
-          "settings": {
-            "product": ""
-          }
-        },
         "0881e8fd-d615-452a-8f30-0a593c00e285": {
           "type": "product-block",
           "settings": {
@@ -35,7 +29,6 @@
         }
       },
       "block_order": [
-        "4abc6d31-9f8d-46f7-bb1c-ec5ebbc0b812",
         "0881e8fd-d615-452a-8f30-0a593c00e285",
         "6fb640f5-f284-4d5e-bbe5-48955ff26dd1",
         "ffb9751a-bec4-4797-a346-ddaed6d77bb7",
