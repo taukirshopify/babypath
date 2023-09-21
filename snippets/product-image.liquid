@@ -1,147 +1,120 @@
 <div class="product-slider-wrapper ">
-    <div class="row">
-
-      <div class="col-xl-2" id="example-one">
-          
-        <!-- slider nav start here  -->
-          <section
-          id="thumbnail-carousel"
-          class="splide thumbnail-carousel"
-          aria-label="The carousel with thumbnails. Selecting a thumbnail will change the Beautiful Gallery carousel.">
-
-
-        
-           <div class="splide__track">
-
-
-            <ul class="splide__list" id="thumpnai-group">
-
-              {% for image in product.images %}
-                {% comment %} {{ image.src | img_url: '' }} {% endcomment %}
+  <div class="row">
+    <div class="col-xl-2" id="example-one">
+      <!-- slider nav start here -->
+      <section
+        id="thumbnail-carousel"
+        class="splide thumbnail-carousel"
+        aria-label="The carousel with thumbnails. Selecting a thumbnail will change the Beautiful Gallery carousel."
+      >
+        <div class="splide__track">
+          <ul class="splide__list" id="thumpnai-group">
+            {% for image in product.images %}
+              {% comment %} {{ image.src | img_url: '' }} {% endcomment %}
               <li class="splide__slide imageslider-image" data-image="{{ image.src | img_url: '' }}">
-                  <img src="{{ image.src | img_url: '' }}" alt="{{ image.alt}}">
-                  
-              </li>
-            {% endfor %}
-          
-            </ul>
-
-
-          </div>
-
-
-          <div class="splide__arrows splide__arrows--ltr">
-            <button
-              class="splide__arrow splide__arrow--prev"
-              type="button"
-              aria-label="Previous slide"
-              aria-controls="splide01-track"
-            >
-                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 32 32">
-                    <title>gallery-next15x</title>
-                    <path fill="none" stroke="#000" stroke-width="1.8" stroke-miterlimit="4" stroke-linecap="butt" stroke-linejoin="miter" d="M9.75 4.010l12.51 12.51-12.48 12.47"></path>
-                    </svg>
-            </button>
-            <button
-              class="splide__arrow splide__arrow--next"
-              type="button"
-              aria-label="Next slide"
-              aria-controls="splide01-track"
-            >
-                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 32 32">
-                    <title>gallery-next15x</title>
-                    <path fill="none" stroke="#000" stroke-width="1.8" stroke-miterlimit="4" stroke-linecap="butt" stroke-linejoin="miter" d="M9.75 4.010l12.51 12.51-12.48 12.47"></path>
-                    </svg>
-            </button>
-          </div>
-        </section>
-
-        <!-- slider nav start here  -->
-        </div>
-
-        <div class="col-md-12 col-xl-10 padding-extra" >
-          <section
-          id="main-carousel"
-          class="splide"
-          aria-label="The carousel with thumbnails. Selecting a thumbnail will change the Beautiful Gallery carousel."
-                                 >
-
-
-      
-          <div class="splide__track">
-
-
-            <ul class="splide__list">
-              {% for image in product.images %}
-              <li class="splide__slide product-page">
-                <script>console.log({{ image.alt | json }})</script>
-                <script>console.log({{ product.title | json }})</script>
                 <img src="{{ image.src | img_url: '' }}" alt="{{ image.alt}}">
-                                 <span 
-                                   style="    background: black;
-    color: white;
-    display: block;
-    text-align: center;
-    position: absolute;
-    width: 100%;
-    bottom: 0"
-                                   >{{ image.alt }}</span> 
-
               </li>
             {% endfor %}
-              
-             
-          
-            </ul>
-
-
-          </div>
-          {% comment %} arrow start here  {% endcomment %}
-          <div class="splide__arrows splide__arrows--ltr">
-            <button
-              class="splide__arrow splide__arrow--prev"
-              type="button"
-              aria-label="Previous slide"
-              aria-controls="splide01-track"
-            >
-                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 32 32">
-                    <title>gallery-next15x</title>
-                    <path fill="none" stroke="#000" stroke-width="1.8" stroke-miterlimit="4" stroke-linecap="butt" stroke-linejoin="miter" d="M9.75 4.010l12.51 12.51-12.48 12.47"></path>
-                    </svg>
-            </button>
-            <button
-              class="splide__arrow splide__arrow--next"
-              type="button"
-              aria-label="Next slide"
-              aria-controls="splide01-track"
-            >
-                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 32 32">
-                    <title>gallery-next15x</title>
-                    <path fill="none" stroke="#000" stroke-width="1.8" stroke-miterlimit="4" stroke-linecap="butt" stroke-linejoin="miter" d="M9.75 4.010l12.51 12.51-12.48 12.47"></path>
-                    </svg>
-            </button>
-          </div>
-          {% comment %} arrow end here  {% endcomment %}
-
-          
-        </section>
-        
+          </ul>
         </div>
 
-  
-
-
-        {% comment %} mobile carusel  {% endcomment %}
-         <div class="col-xl-2 " id ="new-div">
-        
-        
+        <div class="splide__arrows splide__arrows--ltr">
+          <button
+            class="splide__arrow splide__arrow--prev"
+            type="button"
+            aria-label="Previous slide"
+            aria-controls="splide01-track"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 32 32">
+              <title>gallery-next15x</title>
+              <path fill="none" stroke="#000" stroke-width="1.8" stroke-miterlimit="4" stroke-linecap="butt" stroke-linejoin="miter" d="M9.75 4.010l12.51 12.51-12.48 12.47"></path>
+            </svg>
+          </button>
+          <button
+            class="splide__arrow splide__arrow--next"
+            type="button"
+            aria-label="Next slide"
+            aria-controls="splide01-track"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 32 32">
+              <title>gallery-next15x</title>
+              <path fill="none" stroke="#000" stroke-width="1.8" stroke-miterlimit="4" stroke-linecap="butt" stroke-linejoin="miter" d="M9.75 4.010l12.51 12.51-12.48 12.47"></path>
+            </svg>
+          </button>
         </div>
+      </section>
 
-        {% comment %} mobile carusel end {% endcomment %}
-        
+      <!-- slider nav start here -->
     </div>
+
+    <div class="col-md-12 col-xl-10 padding-extra">
+      <section
+        id="main-carousel"
+        class="splide"
+        aria-label="The carousel with thumbnails. Selecting a thumbnail will change the Beautiful Gallery carousel."
+      >
+        <div class="splide__track">
+          <ul class="splide__list">
+            {% for image in product.images %}
+              <li class="splide__slide product-page">
+                <script>
+                  console.log({{ image.alt | json }})
+                </script>
+                <script>
+                  console.log({{ product.title | json }})
+                </script>
+                <img src="{{ image.src | img_url: '' }}" alt="{{ image.alt}}">
+                {% unless image.alt == product.title %}
+                  <span
+                    style="
+                      background: black;
+                      color: white;
+                      display: block;
+                      text-align: center;
+                      position: absolute;
+                      width: 100%;
+                      bottom: 0
+                    "
+                  >
+                    {{- image.alt -}}
+                  </span>
+                {% endunless %}
+              </li>
+            {% endfor %}
+          </ul>
+        </div>
+        {% comment %} arrow start here  {% endcomment %}
+        <div class="splide__arrows splide__arrows--ltr">
+          <button
+            class="splide__arrow splide__arrow--prev"
+            type="button"
+            aria-label="Previous slide"
+            aria-controls="splide01-track"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 32 32">
+              <title>gallery-next15x</title>
+              <path fill="none" stroke="#000" stroke-width="1.8" stroke-miterlimit="4" stroke-linecap="butt" stroke-linejoin="miter" d="M9.75 4.010l12.51 12.51-12.48 12.47"></path>
+            </svg>
+          </button>
+          <button
+            class="splide__arrow splide__arrow--next"
+            type="button"
+            aria-label="Next slide"
+            aria-controls="splide01-track"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 32 32">
+              <title>gallery-next15x</title>
+              <path fill="none" stroke="#000" stroke-width="1.8" stroke-miterlimit="4" stroke-linecap="butt" stroke-linejoin="miter" d="M9.75 4.010l12.51 12.51-12.48 12.47"></path>
+            </svg>
+          </button>
+        </div>
+        {% comment %} arrow end here  {% endcomment %}
+      </section>
+    </div>
+
+    {% comment %} mobile carusel  {% endcomment %}
+    <div class="col-xl-2 " id="new-div"></div>
+
+    {% comment %} mobile carusel end {% endcomment %}
   </div>
-
-
-
-  
+</div>
