@@ -20,7 +20,7 @@
                 {% comment %} {{ image.src | img_url: '' }} {% endcomment %}
               <li class="splide__slide imageslider-image" data-image="{{ image.src | img_url: '' }}">
                   <img src="{{ image.src | img_url: '' }}" alt="{{ image.alt}}">
-                  
+                 <span class="test" >{{ image.alt }}</span> 
                   
               </li>
             {% endfor %}
