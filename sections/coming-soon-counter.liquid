@@ -63,6 +63,17 @@
     (function () {
 
       var deadline = '2023/09/22 09:00';
+      var year = 2023;
+      var month = 8; // September (0-indexed)
+      var day = 25;
+      var hours = 16; // 4:00 PM in 24-hour format
+      var minutes = 0;
+      var seconds = 0;
+      var milliseconds = 0;
+      
+      var utcDate = new Date(Date.UTC(year, month, day, hours, minutes, seconds, milliseconds));
+      
+      console.log('UTC Date:', utcDate);
 
       function pad(num, size) {
           var s = "0" + num;
