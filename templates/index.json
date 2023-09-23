@@ -37,6 +37,13 @@
       "settings": {
       }
     },
+    "0a2b3531-5ba6-4435-8457-4384dfeb7124": {
+      "type": "trending-product-grid",
+      "settings": {
+        "product_grid_name": "Shop",
+        "product_grid_collection": "kimoras-favorites"
+      }
+    },
     "094b5fd8-471d-48db-bdaf-311f742106b9": {
       "type": "hero-slider",
       "blocks": {
@@ -67,6 +74,7 @@
         "d26faf3e-e689-42ae-9c12-5b23bd38328b",
         "e203f74b-954e-4fe9-8793-96c89a41ee31"
       ],
+      "disabled": true,
       "settings": {
       }
     },
@@ -92,11 +100,13 @@
         "3d8a258f-7b99-4039-b548-471c9f83a1b8",
         "d140f215-cd20-4b6d-9a0b-f1e2d8a741a3"
       ],
+      "disabled": true,
       "settings": {
       }
     },
     "b0f3a8d9-9b46-4838-940b-648b9749ead9": {
       "type": "image-background-banner",
+      "disabled": true,
       "settings": {
         "padding_top": 0,
         "padding_bottom": 56,
@@ -153,6 +163,7 @@
         "f8a71ebb-fe9b-44ac-840c-473b14c08f2a",
         "7e4464d9-422c-456b-9ef1-38cc3a6c3572"
       ],
+      "disabled": true,
       "settings": {
         "section_title": "Shop the Look"
       }
@@ -185,6 +196,7 @@
         "284e3cce-e08e-4419-b0d0-ad09b39d3a70",
         "49e3b5db-b178-424f-adaf-b184a72fd732"
       ],
+      "disabled": true,
       "settings": {
       }
     },
@@ -234,6 +246,7 @@
         "5c9f5ec8-c428-4941-8669-a3eb7ba9aafe",
         "688a5178-369b-42e6-ba38-7886000093b5"
       ],
+      "disabled": true,
       "settings": {
         "section_title": "SEE WHAT'S POPULAR"
       }
@@ -289,15 +302,9 @@
         "section_title": "I am thrilled to share our latest collection with you, featuring the same glam and boldness that has defined Baby Phat for over two decades.” - KLS"
       }
     },
-    "0a2b3531-5ba6-4435-8457-4384dfeb7124": {
-      "type": "trending-product-grid",
-      "settings": {
-        "product_grid_name": "Shop",
-        "product_grid_collection": "kimoras-favorites"
-      }
-    },
     "7f28b300-5f5c-4dae-af34-56e21cba1acc": {
       "type": "custom-liquid",
+      "disabled": true,
       "settings": {
         "custom_liquid": "",
         "color_scheme": "background-1",
@@ -307,6 +314,7 @@
     },
     "b800ac90-5ec6-41ec-b4af-b3921d4f2b34": {
       "type": "insagramtitle",
+      "disabled": true,
       "settings": {
         "h2": "Checkout Baby Phat on",
         "p": "@babyphat",
@@ -388,12 +396,14 @@
         "fe3c4599-8609-445f-8ab6-93e1f3b6077c",
         "4043025e-9375-46e2-a338-86277aefef78"
       ],
+      "disabled": true,
       "settings": {
         "include_margins": true
       }
     },
     "84aec532-dbfd-44a9-b6a8-c62425949217": {
       "type": "custom-liquid",
+      "disabled": true,
       "settings": {
         "custom_liquid": "<div id=\"fs-ambassadors\"><div class=\"instagram-text text-center\"><h3>As Seen On<\/h3><\/div><\/div><script src=\"https:\/\/foursixty.com\/media\/scripts\/fs.combined.v2.6.js\"><\/script>\n    <script src=\"https:\/\/foursixty.com\/media\/scripts\/ambassadors.v2.6.js\"><\/script>\n      <script>\n        document.addEventListener(\"DOMContentLoaded\", function() {\n          Foursixty.initAmbassadorEmbed(\n            document.getElementById(\"fs-ambassadors\"),\n            \"baby-phat\",\n            {\"theme\":\"home\",\"backText\":\"View All\",\"embedOptions\":{\"data-feed-id\":\"baby-phat\",\"data-theme\":\"slider_v2_6\",\"data-open-links-in-same-page\":true}}\n          );\n        });\n      <\/script>\n<style>.fs-has-links::after { padding:5px 7.5px;background-color:#ffffff;color:rgba(0, 0, 0, 0.8);content:\"Shop Now\"; } .fs-wrapper { height:auto; } .fs-slider_v2_6  .fs-entry-container { height:0 !important;width:20%!important;padding-top:20%!important; } .fs-wrapper div.fs-text-container .fs-entry-title, div.fs-detail-title { font-family:Times New Roman, serif;font-style:normal;font-weight:normal;font-size:14px; } div.fs-text-container .fs-entry-date, div.fs-detail-container .fs-post-info, div.fs-wrapper div.fs-has-links::after, .fs-text-product, .fs-overlink-text { font-family:Helvetica Neue, Helvetica, Arial, sans-serif;font-style:normal;font-weight:normal;font-size:14px; } .fs-wrapper div.fs-text-container * { color:#ffffff; } .fs-wrapper div.fs-text-container { background-color:rgba(0, 0, 0, 0.8);margin:0px; } div.fs-entry-date { display:none; } div.fs-entry-title { display:none; } .fs-slider_v2_6 .fs-wrapper div.fs-timeline-entry { margin:1px; } .fs-slider-next-button, .fs-slider-prev-button { opacity:1; } .fs-container { --padding:5px;--circles:140px; } @media only screen and (min-width:768px){.fs-container--slider, .fs-container--full { width:calc(100% - 60px); } }.fs-post__name { font-family:Helvetica Neue, Helvetica, Arial, sans-serif;font-style:normal;font-weight:normal;font-size:12px; } .fs-back-button-container { font-family:Helvetica Neue, Helvetica, Arial, sans-serif;font-style:normal;font-weight:normal;font-size:14px; } .fs-header-container h2 { font-family:Helvetica Neue, Helvetica, Arial, sans-serif;font-style:normal;font-weight:normal;font-size:18px; } .fs-header-container p { font-family:Helvetica Neue, Helvetica, Arial, sans-serif;font-style:normal;font-weight:normal;font-size:16px; } .fs-ambassadors .fs-ambassador__image:before { border:2px solid #CCCCCC;top:-5px;bottom:-5px;left:-5px;right:-5px; } .fs-ambassador--active .fs-ambassador__image:before { border:2px solid #EEEEEE; } .fs-ambassadors__feed .fs-slider-container { text-align:center; } <\/style>",
         "color_scheme": "background-1",
@@ -404,6 +414,7 @@
   },
   "order": [
     "eae509da-5e3f-44bf-9ece-16894c3e7c40",
+    "0a2b3531-5ba6-4435-8457-4384dfeb7124",
     "094b5fd8-471d-48db-bdaf-311f742106b9",
     "98ee248a-d7e9-41e0-8d0b-ee1e8ac51671",
     "b0f3a8d9-9b46-4838-940b-648b9749ead9",
@@ -411,7 +422,6 @@
     "e7d131da-0d09-4641-bc84-5bb60f5dd31a",
     "86ec624e-0517-47f0-b514-a6bf92502189",
     "7a3daecf-2b44-4375-8c98-596c7f6aeb64",
-    "0a2b3531-5ba6-4435-8457-4384dfeb7124",
     "7f28b300-5f5c-4dae-af34-56e21cba1acc",
     "b800ac90-5ec6-41ec-b4af-b3921d4f2b34",
     "1687741535b9698047",
