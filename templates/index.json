@@ -5,24 +5,28 @@
       "blocks": {
         "0881e8fd-d615-452a-8f30-0a593c00e285": {
           "type": "product-block",
+          "disabled": true,
           "settings": {
             "product": "crystal-kitty-denim-short-1"
           }
         },
         "6fb640f5-f284-4d5e-bbe5-48955ff26dd1": {
           "type": "product-block",
+          "disabled": true,
           "settings": {
             "product": "crystal-kitty-denim-short-1"
           }
         },
         "ffb9751a-bec4-4797-a346-ddaed6d77bb7": {
           "type": "product-block",
+          "disabled": true,
           "settings": {
             "product": "crystal-kitty-denim-short-1"
           }
         },
         "318976a1-a443-4a19-9471-424eb3923572": {
           "type": "product-block",
+          "disabled": true,
           "settings": {
             "product": "crystal-kitty-face-mask-baby-blue-with-blue-crystals"
           }
@@ -40,7 +44,7 @@
     "0a2b3531-5ba6-4435-8457-4384dfeb7124": {
       "type": "trending-product-grid",
       "settings": {
-        "product_grid_name": "Shop",
+        "product_grid_name": "Preview",
         "product_grid_collection": "all"
       }
     },
