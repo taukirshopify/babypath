@@ -41,7 +41,7 @@
       "type": "trending-product-grid",
       "settings": {
         "product_grid_name": "Shop",
-        "product_grid_collection": "kimoras-favorites"
+        "product_grid_collection": "all"
       }
     },
     "094b5fd8-471d-48db-bdaf-311f742106b9": {
