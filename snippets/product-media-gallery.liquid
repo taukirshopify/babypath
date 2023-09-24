@@ -10,7 +10,7 @@
   Usage:
   {% render 'product-media-gallery', is_duplicate: true %}
 {% endcomment %}
-
+<script>console.log("here")</script>
 {%- liquid
   if section.settings.hide_variants and variant_images.size == product.media.size
     assign single_media_visible = true
