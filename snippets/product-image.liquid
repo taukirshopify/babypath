@@ -86,7 +86,7 @@
                   <script>
                     console.log({{media|json}})
                   </script>
-                  {{ media | video_tag: image_size: "master" }}
+                  {{ media | external_video_tag: image_size: "master" }}
                 </li>
               {% endif %}
             {% endfor %}
