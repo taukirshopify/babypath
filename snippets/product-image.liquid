@@ -16,7 +16,7 @@
                   <img src="{{ media.src | img_url: '' }}" alt="{{ media.alt}}">
                 </li>
               {% else %}
-               <li class="splide__slide imageslider-image" data-image="{{ media.src | img_url: '' }}">
+                <li class="splide__slide imageslider-image" data-image="{{ media.src | img_url: '' }}">
                   <img src="{{ media | img_url: '' }}" alt="{{ media.alt}}">
                 </li>
               {% endif %}
@@ -63,7 +63,6 @@
           <ul class="splide__list">
             {% for media in product.media %}
               {% if media.media_type == 'image' %}
-                
                 <li class="splide__slide product-page">
                   <img src="{{ media.src | img_url: '' }}" alt="{{ media.alt}}">
                   {% unless media.alt == product.title %}
@@ -83,7 +82,12 @@
                   {% endunless %}
                 </li>
               {% else %}
-              <script>console.log({{media|json}})</script>
+                <li class="splide__slide product-page">
+                  <script>
+                    console.log({{media|json}})
+                  </script>
+                  {{ media | video_tag: image_size: "master" }}
+                </li>
               {% endif %}
             {% endfor %}
           </ul>
