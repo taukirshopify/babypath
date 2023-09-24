@@ -13,11 +13,11 @@
               {% comment %} {{ media.src | img_url: '' }} {% endcomment %}
               {% if media.media_type == 'image' %}
                 <li class="splide__slide imageslider-image" data-image="{{ media.src | img_url: '' }}">
-                  <img src="{{ media.src | img_url: '' }}" alt="{{ image.alt}}">
+                  <img src="{{ media.src | img_url: '' }}" alt="{{ media.alt}}">
                 </li>
               {% else %}
                <li class="splide__slide imageslider-image" data-image="{{ media.src | img_url: '' }}">
-                  <img src="{{ media.src | img_url: '' }}" alt="{{ image.alt}}">
+                  <img src="{{ media | img_url: '' }}" alt="{{ media.alt}}">
                 </li>
               {% endif %}
             {% endfor %}
