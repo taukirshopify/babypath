@@ -9,6 +9,9 @@
       >
         <div class="splide__track">
           <ul class="splide__list" id="thumpnai-group">
+            {% for media in product.media %}
+              <script>console.log({{media|json}})</script>
+            {% endfor %}
             {% for image in product.images %}
               {% comment %} {{ image.src | img_url: '' }} {% endcomment %}
               <li class="splide__slide imageslider-image" data-image="{{ image.src | img_url: '' }}">
