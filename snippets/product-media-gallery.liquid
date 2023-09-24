@@ -10,7 +10,6 @@
   Usage:
   {% render 'product-media-gallery', is_duplicate: true %}
 {% endcomment %}
-<script>console.log("here")</script>
 {%- liquid
   if section.settings.hide_variants and variant_images.size == product.media.size
     assign single_media_visible = true
@@ -89,7 +88,6 @@
         </li>
       {%- endif -%}
       {%- for media in product.media -%}
-        <script>console.log({{media|json}})</script>
         {%- unless media.id == product.selected_or_first_available_variant.featured_media.id -%}
           <li
             id="Slide-{{ section.id }}-{{ media.id }}{{ id_append }}"
