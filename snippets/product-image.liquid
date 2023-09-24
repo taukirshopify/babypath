@@ -10,13 +10,16 @@
         <div class="splide__track">
           <ul class="splide__list" id="thumpnai-group">
             {% for media in product.media %}
-              <script>console.log({{media|json}})</script>
-            {% endfor %}
-            {% for image in product.images %}
-              {% comment %} {{ image.src | img_url: '' }} {% endcomment %}
-              <li class="splide__slide imageslider-image" data-image="{{ image.src | img_url: '' }}">
-                <img src="{{ image.src | img_url: '' }}" alt="{{ image.alt}}">
-              </li>
+              {% comment %} {{ media.src | img_url: '' }} {% endcomment %}
+              {% if media.media_type == 'image' %}
+                <li class="splide__slide imageslider-image" data-image="{{ media.src | img_url: '' }}">
+                  <img src="{{ media.src | img_url: '' }}" alt="{{ image.alt}}">
+                </li>
+              {% else %}
+               <li class="splide__slide imageslider-image" data-image="{{ media.src | img_url: '' }}">
+                  <img src="{{ media.src | img_url: '' }}" alt="{{ image.alt}}">
+                </li>
+              {% endif %}
             {% endfor %}
           </ul>
         </div>
@@ -58,25 +61,30 @@
       >
         <div class="splide__track">
           <ul class="splide__list">
-            {% for image in product.images %}
-              <li class="splide__slide product-page">
-                <img src="{{ image.src | img_url: '' }}" alt="{{ image.alt}}">
-                {% unless image.alt == product.title %}
-                  <span
-                    style="
-                      background: black;
-                      color: white;
-                      display: block;
-                      text-align: center;
-                      position: absolute;
-                      width: 100%;
-                      bottom: 0
-                    "
-                  >
-                    {{- image.alt -}}
-                  </span>
-                {% endunless %}
-              </li>
+            {% for media in product.media %}
+              {% if media.media_type == 'image' %}
+                
+                <li class="splide__slide product-page">
+                  <img src="{{ media.src | img_url: '' }}" alt="{{ media.alt}}">
+                  {% unless media.alt == product.title %}
+                    <span
+                      style="
+                        background: black;
+                        color: white;
+                        display: block;
+                        text-align: center;
+                        position: absolute;
+                        width: 100%;
+                        bottom: 0
+                      "
+                    >
+                      {{- media.alt -}}
+                    </span>
+                  {% endunless %}
+                </li>
+              {% else %}
+              <script>console.log({{media|json}})</script>
+              {% endif %}
             {% endfor %}
           </ul>
         </div>
