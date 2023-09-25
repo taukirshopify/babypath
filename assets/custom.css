@@ -9,6 +9,10 @@ a:hover {
     color: #fec4fa !important;
 }
 
+#BIS_trigger {
+  max-width: 44rem;
+}
+
 .stamped-widget-poweredby {
   display: none;
 }
