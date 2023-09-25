@@ -1517,9 +1517,9 @@ button.shopify-payment-button__button.shopify-payment-button__button--unbranded 
 
 }
 
-.product-container, .xm-container, .belive-container{
+/* .product-container, .xm-container, .belive-container{
   max-width: 1356px;
-}
+} */
 .featured-collection-items img{
   object-fit: cover;
 }
